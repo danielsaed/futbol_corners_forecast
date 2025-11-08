@@ -1,8 +1,5 @@
 import pandas as pd
-
-
-
-
+import os
 
 def get_ck(df, season, round_num, local, away, league=None):
     """Obtiene corners totales de un partido específico"""
@@ -327,205 +324,252 @@ def get_average(df, is_team=False, lst_avg=None):
         avg_ck
     )
 
-# ===========================
-# PROCESAMIENTO DE DATOS CON PPP Y NUEVAS MÉTRICAS
-# ===========================
 
-lst_years = ["1819", "1920", "2021", "2122", "2223", "2324", "2425", "2526"]
-lst_data = []
-y = []
 
-USE_ONE_HOT_ENCODING = True
+class PROCESS_DATA():
+    def __init__(self,use_one_hot_encoding):
 
-print("\n🔄 PROCESANDO DATOS CON PPP Y MÉTRICAS AVANZADAS...")
-print("=" * 80)
+        self.USE_ONE_HOT_ENCODING = use_one_hot_encoding
 
-for i in lst_1:
-    
-    if i[2] < 5:
-        continue
-    
-    local = i[0]
-    away = i[1]
-    round_num = i[2]
-    season = i[3]
-    date = i[4]
-    league_code = i[5]
-    
-    dic_df = {}
-    
-    # Promedios de liga
-    lst_avg = get_average(
-        df_database[
-            (df_database['season'] == season) & 
-            (df_database['round'] < round_num) &
-            (df_database['league'] == league_code)
-        ],
-        is_team=False
-    )
-    
-    # ✅ FUNCIÓN MEJORADA: Maneja métricas originales y avanzadas
-    def create_line(df, is_form=True, is_team=False, use_advanced=True):
-        """
-        Args:
-            df: DataFrame con datos del equipo
-            is_form: Si True, toma solo últimos 8 partidos
-            is_team: Si True, normaliza contra promedios de liga
-            use_advanced: Si True, incluye métricas avanzadas (23 valores)
-                         Si False, solo métricas originales (8 valores)
-        """
-        if is_form:
-            df = df[-6:]
+        self.init_variables()
+
+        self.load_clean_dataset()
+
+        self.process_all_matches()
+
+        self.clean_and_ouput_dataset()
+        # Excluir temporada 1718 si es necesario
         
-        if use_advanced:
-            # Retorna 23 valores (todas las métricas)
-            return get_average(df, is_team, lst_avg)
+        
+    def init_variables(self):
+
+        self.y = []
+
+        self.lst_years = ["1819", "1920", "2021", "2122", "2223", "2324", "2425", "2526"]
+
+        # ✅ CONSTRUIR VECTOR DE FEATURES CON NOMBRES DESCRIPTIVOS
+        self.lst_base_advanced = [
+            "avg_ck","var_ck",  # ✅ CAMBIADO
+            "xg", "sca", "cross", "poss", "att_3rd", "gf", "ga",
+            "sh_accuracy", "xg_shot", "attacking_presence", "possession_shot",
+            "progressive_pass_ratio", "final_third_involvement", "assist_sca", "creative_efficiency",
+            "high_press_intensity", "interception_tackle", "clearance_ratio",
+            "progressive_carry_ratio", "carry_pass_balance", "offensive_index", "transition_index"
+        ]
+        
+        self.lst_base_original = [
+            "var_ck","xg", "sca", "cross", "poss", "att_3rd", "gf", "ga","avg_ck"
+        ]
+
+    def load_clean_dataset(self):
+
+        #load clean dataset generated on generate_dataset.py
+        self.df_dataset_historic = pd.read_csv("dataset/cleaned/dataset_cleaned.csv")
+
+        if os.path.exists(r"dataset/cleaned/dataset_cleaned_current_year.csv"):
+            self.df_dataset_current_year = pd.read_csv("dataset/cleaned/dataset_cleaned_current_year.csv")
+
+            self.df_dataset = pd.concat([self.df_dataset_historic,self.df_dataset_current_year])
         else:
-            # Retorna solo 8 valores originales
-            result = get_average(df, is_team, lst_avg)
-            return result[:9]  # Primeros 8 valores
-    
-    # Extraer DataFrames
-    (team1_home, team1_away, team1_opp_home, team1_opp_away,
-     team2_home, team2_away, team2_opp_home, team2_opp_away) = get_dataframes(
-        df_database, season, round_num, local, away, league=league_code
-    )
-    
-    # Corners reales
-    ck = get_ck(df_database, season, round_num, local, away, league=league_code)
-    y.append(ck)
-    
-    # Head to Head
-    index = lst_years.index(season)
-    result = lst_years[:index+1]
-    team1_h2h, team2_h2h = get_head_2_head(
-        df_database, local, away, seasons=result, league=league_code
-    )
-    
-    # ✅ PPP
-    local_ppp = get_team_ppp(df_database, local, season, round_num, league=league_code)
-    away_ppp = get_team_ppp(df_database, away, season, round_num, league=league_code)
-    ppp_diff = local_ppp - away_ppp
-    
-    dic_df['ppp_local'] = (local_ppp,)
-    dic_df['ppp_away'] = (away_ppp,)
-    dic_df['ppp_difference'] = (ppp_diff,)
-    
-    # ✅ FEATURES CON MÉTRICAS AVANZADAS (23 valores cada una)
-    dic_df['lst_team1_home_form'] = create_line(team1_home, True, True, use_advanced=True)
-    dic_df['lst_team1_home_general'] = create_line(team1_home, False, True, use_advanced=True)
-    dic_df['lst_team1_away_form'] = create_line(team1_away, True, True, use_advanced=True)
-    dic_df['lst_team1_away_general'] = create_line(team1_away, False, True, use_advanced=True)
-    
-    dic_df['lst_team2_home_form'] = create_line(team2_home, True, True, use_advanced=True)
-    dic_df['lst_team2_home_general'] = create_line(team2_home, False, True, use_advanced=True)
-    dic_df['lst_team2_away_form'] = create_line(team2_away, True, True, use_advanced=True)
-    dic_df['lst_team2_away_general'] = create_line(team2_away, False, True, use_advanced=True)
-    
-    dic_df['lst_team1_h2h'] = create_line(team1_h2h, False, True, use_advanced=True)
-    dic_df['lst_team2_h2h'] = create_line(team2_h2h, False, True, use_advanced=True)
-    
-    # ✅ FEATURES CON MÉTRICAS ORIGINALES (8 valores) - SOLO PARA OPONENTES
-    dic_df['lst_team1_opp_away'] = create_line(team1_opp_away, False, True, use_advanced=False)
-    dic_df['lst_team2_opp_home'] = create_line(team2_opp_home, False, True, use_advanced=False)
-    
-    # One-Hot Encoding
-    if USE_ONE_HOT_ENCODING:
-        league_dummies = {
-            'league_ESP': 1 if league_code == 'ESP' else 0,
-            'league_GER': 1 if league_code == 'GER' else 0,
-            'league_FRA': 1 if league_code == 'FRA' else 0,
-            'league_ITA': 1 if league_code == 'ITA' else 0,
-            'league_NED': 1 if league_code == 'NED' else 0
-        }
+            self.df_dataset = self.df_dataset_historic
+
+        self.df_dataset["season"] = self.df_dataset["season"].astype(str)
+
+        self.df_dataset_export = self.df_dataset.copy()
+
+        #filter data to get key elements on mathces
+        self.df_dataset_export = self.df_dataset_export.drop_duplicates(subset=["game", "league"])
+        self.df_dataset_export = self.df_dataset_export[["local", "away", "round", "season", "date", "league"]]
+
+        #load all unique matches on a list to process
+        self.lst_matches = self.df_dataset_export.values.tolist()
+
+        self.lst_matches = [row for row in self.lst_matches if row[3] != "1718"]
+
+    def process_all_matches(self):
         
-        for key, value in league_dummies.items():
-            dic_df[key] = (value,)
-    
-    # ✅ CONSTRUIR VECTOR DE FEATURES CON NOMBRES DESCRIPTIVOS
-    lst_base_advanced = [
-        "avg_ck","var_ck",  # ✅ CAMBIADO
-        "xg", "sca", "cross", "poss", "att_3rd", "gf", "ga",
-        "sh_accuracy", "xg_shot", "attacking_presence", "possession_shot",
-        "progressive_pass_ratio", "final_third_involvement", "assist_sca", "creative_efficiency",
-        "high_press_intensity", "interception_tackle", "clearance_ratio",
-        "progressive_carry_ratio", "carry_pass_balance", "offensive_index", "transition_index"
-    ]
-    
-    lst_base_original = [
-        "var_ck","xg", "sca", "cross", "poss", "att_3rd", "gf", "ga","avg_ck"
-    ]
-    
-    lst_features_values = []
-    lst_features_names = []
-    
-    for key in dic_df:
-        lst_features_values.extend(list(dic_df[key]))
         
-        # Casos especiales
-        if key in ['ppp_local', 'ppp_away', 'ppp_difference']:
-            lst_features_names.append(key)
-        elif key.startswith('league_'):
-            lst_features_names.append(key)
-        elif key in ['lst_team1_opp_away', 'lst_team2_opp_home']:
-            # ✅ Métricas ORIGINALES (8 valores)
-            lst_features_names.extend([f"{key}_{col}" for col in lst_base_original])
-        else:
-            # ✅ Métricas AVANZADAS (23 valores)
-            lst_features_names.extend([f"{key}_{col}" for col in lst_base_advanced])
-    
-    lst_data.append(lst_features_values)
+        for i in self.lst_matches:
+            if i[2] < 5:
+                continue
+        
+            local = i[0]
+            away = i[1]
+            round_num = i[2]
+            season = i[3]
+            date = i[4]
+            league_code = i[5]
 
-# ===========================
-# CREAR DATAFRAME FINAL
-# ===========================
+            dic_df = {}
+            
+            # Promedios de liga
+            lst_avg = get_average(
+                self.df_dataset[
+                    (self.df_dataset['season'] == season) & 
+                    (self.df_dataset['round'] < round_num) &
+                    (self.df_dataset['league'] == league_code)
+                ],
+                is_team=False
+            )
+            
+            # ✅ FUNCIÓN MEJORADA: Maneja métricas originales y avanzadas
+            def create_line(df, is_form=True, is_team=False, use_advanced=True):
+                """
+                Args:
+                    df: DataFrame con datos del equipo
+                    is_form: Si True, toma solo últimos 8 partidos
+                    is_team: Si True, normaliza contra promedios de liga
+                    use_advanced: Si True, incluye métricas avanzadas (23 valores)
+                                Si False, solo métricas originales (8 valores)
+                """
+                if is_form:
+                    df = df[-6:]
+                
+                if use_advanced:
+                    # Retorna 23 valores (todas las métricas)
+                    return get_average(df, is_team, lst_avg)
+                else:
+                    # Retorna solo 8 valores originales
+                    result = get_average(df, is_team, lst_avg)
+                    return result[:9]  # Primeros 8 valores
 
-df_data = pd.DataFrame(data=lst_data, columns=lst_features_names)
 
-print(f"\n✅ PROCESAMIENTO COMPLETADO:")
-print(f"   Shape inicial: {df_data.shape}")
-print(f"   Total partidos: {len(df_data)}")
-print(f"   Features totales: {df_data.shape[1]}")
 
-# ===========================
-# LIMPIEZA DE DATOS NULOS
-# ===========================
+            # Extraer DataFrames
+            (team1_home, team1_away, team1_opp_home, team1_opp_away,
+            team2_home, team2_away, team2_opp_home, team2_opp_away) = get_dataframes(
+                self.df_dataset, season, round_num, local, away, league=league_code
+            )
+            
+            # Corners reales
+            ck = get_ck(self.df_dataset, season, round_num, local, away, league=league_code)
+            self.y.append(ck)
+            
+            # Head to Head
+            index = self.lst_years.index(season)
+            result = self.lst_years[:index+1]
+            team1_h2h, team2_h2h = get_head_2_head(
+                self.df_dataset, local, away, seasons=result, league=league_code
+            )
+            
+            # ✅ PPP
+            local_ppp = get_team_ppp(self.df_dataset, local, season, round_num, league=league_code)
+            away_ppp = get_team_ppp(self.df_dataset, away, season, round_num, league=league_code)
+            ppp_diff = local_ppp - away_ppp
+            
+            dic_df['ppp_local'] = (local_ppp,)
+            dic_df['ppp_away'] = (away_ppp,)
+            dic_df['ppp_difference'] = (ppp_diff,)
+            
+            # ✅ FEATURES CON MÉTRICAS AVANZADAS (23 valores cada una)
+            dic_df['lst_team1_home_form'] = create_line(team1_home, True, True, use_advanced=True)
+            dic_df['lst_team1_home_general'] = create_line(team1_home, False, True, use_advanced=True)
+            dic_df['lst_team1_away_form'] = create_line(team1_away, True, True, use_advanced=True)
+            dic_df['lst_team1_away_general'] = create_line(team1_away, False, True, use_advanced=True)
+            
+            dic_df['lst_team2_home_form'] = create_line(team2_home, True, True, use_advanced=True)
+            dic_df['lst_team2_home_general'] = create_line(team2_home, False, True, use_advanced=True)
+            dic_df['lst_team2_away_form'] = create_line(team2_away, True, True, use_advanced=True)
+            dic_df['lst_team2_away_general'] = create_line(team2_away, False, True, use_advanced=True)
+            
+            dic_df['lst_team1_h2h'] = create_line(team1_h2h, False, True, use_advanced=True)
+            dic_df['lst_team2_h2h'] = create_line(team2_h2h, False, True, use_advanced=True)
+            
+            # ✅ FEATURES CON MÉTRICAS ORIGINALES (8 valores) - SOLO PARA OPONENTES
+            dic_df['lst_team1_opp_away'] = create_line(team1_opp_away, False, True, use_advanced=False)
+            dic_df['lst_team2_opp_home'] = create_line(team2_opp_home, False, True, use_advanced=False)
+            
+            # One-Hot Encoding
+            if self.USE_ONE_HOT_ENCODING:
+                league_dummies = {
+                    'league_ESP': 1 if league_code == 'ESP' else 0,
+                    'league_GER': 1 if league_code == 'GER' else 0,
+                    'league_FRA': 1 if league_code == 'FRA' else 0,
+                    'league_ITA': 1 if league_code == 'ITA' else 0,
+                    'league_NED': 1 if league_code == 'NED' else 0
+                }
+                
+                for key, value in league_dummies.items():
+                    dic_df[key] = (value,)
+            
+            
+            
+            lst_features_values = []
+            self.lst_features_values = []
+            
+            for key in dic_df:
+                lst_features_values.extend(list(dic_df[key]))
+                
+                # Casos especiales
+                if key in ['ppp_local', 'ppp_away', 'ppp_difference']:
+                    self.lst_features_values.append(key)
+                elif key.startswith('league_'):
+                    self.lst_features_values.append(key)
+                elif key in ['lst_team1_opp_away', 'lst_team2_opp_home']:
+                    # ✅ Métricas ORIGINALES (8 valores)
+                    self.lst_features_values.extend([f"{key}_{col}" for col in self.lst_base_original])
+                else:
+                    # ✅ Métricas AVANZADAS (23 valores)
+                    self.lst_features_values.extend([f"{key}_{col}" for col in self.lst_base_advanced])
+            
+            self.lst_data.append(lst_features_values)
 
-print(f"\n🧹 LIMPIANDO DATOS NULOS...")
+    def clean_and_ouput_dataset(self):
+                
+        self.df_data = pd.DataFrame(data=self.lst_data, columns=self.lst_features_values)
 
-import numpy as np
-nulos_antes_X = df_data.isnull().sum().sum()
-nulos_antes_y = np.isnan(y).sum() if isinstance(y, np.ndarray) else sum(pd.isna(y))
+        print(f"\n✅ PROCESAMIENTO COMPLETADO:")
+        print(f"   Shape inicial: {self.df_data.shape}")
+        print(f"   Total partidos: {len(self.df_data)}")
+        print(f"   Features totales: {self.df_data.shape[1]}")
 
-print(f"   Nulos en X (antes): {nulos_antes_X}")
-print(f"   Nulos en Y (antes): {nulos_antes_y}")
+        # ===========================
+        # LIMPIEZA DE DATOS NULOS
+        # ===========================
 
-y_array = np.array(y).flatten()
+        print(f"\n🧹 LIMPIANDO DATOS NULOS...")
 
-mask_valid_X = ~df_data.isnull().any(axis=1)
-mask_valid_y = ~np.isnan(y_array)
-mask_combined = mask_valid_X & mask_valid_y
+        import numpy as np
+        nulos_antes_X = self.df_data.isnull().sum().sum()
+        nulos_antes_y = np.isnan(self.y).sum() if isinstance(self.y, np.ndarray) else sum(pd.isna(self.y))
 
-df_data = df_data[mask_combined].reset_index(drop=True)
-y_array = y_array[mask_combined]
+        print(f"   Nulos en X (antes): {nulos_antes_X}")
+        print(f"   Nulos en Y (antes): {nulos_antes_y}")
 
-print(f"\n✅ LIMPIEZA COMPLETADA:")
-print(f"   Nulos en X (después): {df_data.isnull().sum().sum()}")
-print(f"   Nulos en Y (después): {np.isnan(y_array).sum()}")
-print(f"   Filas eliminadas: {len(mask_combined) - mask_combined.sum()}")
-print(f"   Shape final: {df_data.shape}")
+        y_array = np.array(self.y).flatten()
 
-# ===========================
-# VERIFICACIÓN FINAL
-# ===========================
+        mask_valid_X = ~self.df_data.isnull().any(axis=1)
+        mask_valid_y = ~np.isnan(y_array)
+        mask_combined = mask_valid_X & mask_valid_y
 
-print(f"\n🔍 VERIFICACIÓN DE NUEVAS FEATURES:")
-print(f"   ✅ Features con 'var_ck': {len([c for c in df_data.columns if 'var_ck' in c])}")
-print(f"   ✅ Features con métricas avanzadas: {len([c for c in df_data.columns if any(m in c for m in ['sh_accuracy', 'offensive_index'])])}")
-print(f"   ✅ Features de oponentes (8 valores): {len([c for c in df_data.columns if 'opp' in c])}")
+        self.df_data = self.df_data[mask_combined].reset_index(drop=True)
+        y_array = y_array[mask_combined]
 
-y = y_array.tolist()
+        print(f"\n✅ LIMPIEZA COMPLETADA:")
+        print(f"   Nulos en X (después): {self.df_data.isnull().sum().sum()}")
+        print(f"   Nulos en Y (después): {np.isnan(y_array).sum()}")
+        print(f"   Filas eliminadas: {len(mask_combined) - mask_combined.sum()}")
+        print(f"   Shape final: {self.df_data.shape}")
 
-print("\n" + "=" * 80)
-print("✅ PROCESO COMPLETADO - DATOS LISTOS PARA ENTRENAMIENTO")
-print("=" * 80)
+        # ===========================
+        # VERIFICACIÓN FINAL
+        # ===========================
+
+        print(f"\n🔍 VERIFICACIÓN DE NUEVAS FEATURES:")
+        print(f"   ✅ Features con 'var_ck': {len([c for c in self.df_data.columns if 'var_ck' in c])}")
+        print(f"   ✅ Features con métricas avanzadas: {len([c for c in self.df_data.columns if any(m in c for m in ['sh_accuracy', 'offensive_index'])])}")
+        print(f"   ✅ Features de oponentes (8 valores): {len([c for c in self.df_data.columns if 'opp' in c])}")
+
+        print("\n" + "=" * 80)
+        print("✅ PROCESO COMPLETADO - DATOS LISTOS PARA ENTRENAMIENTO")
+        print("=" * 80)
+
+        self.y = y_array.tolist()
+
+        
+        self.df_data["y"] = self.y
+        self.df_data.to_csv("dataset\processed\dataset_processed.csv")
+
+        
+
+
