@@ -345,6 +345,8 @@ class PROCESS_DATA():
 
         self.y = []
 
+        self.lst_data = []
+
         self.lst_years = ["1819", "1920", "2021", "2122", "2223", "2324", "2425", "2526"]
 
         # ✅ CONSTRUIR VECTOR DE FEATURES CON NOMBRES DESCRIPTIVOS
@@ -360,6 +362,8 @@ class PROCESS_DATA():
         self.lst_base_original = [
             "var_ck","xg", "sca", "cross", "poss", "att_3rd", "gf", "ga","avg_ck"
         ]
+
+        print("Variables inicializadas")
 
     def load_clean_dataset(self):
 
@@ -385,6 +389,8 @@ class PROCESS_DATA():
         self.lst_matches = self.df_dataset_export.values.tolist()
 
         self.lst_matches = [row for row in self.lst_matches if row[3] != "1718"]
+
+        print("dataset loaded")
 
     def process_all_matches(self):
         
@@ -486,7 +492,8 @@ class PROCESS_DATA():
                     'league_GER': 1 if league_code == 'GER' else 0,
                     'league_FRA': 1 if league_code == 'FRA' else 0,
                     'league_ITA': 1 if league_code == 'ITA' else 0,
-                    'league_NED': 1 if league_code == 'NED' else 0
+                    'league_NED': 1 if league_code == 'NED' else 0,
+                    'league_ENG': 1 if league_code == 'ENG' else 0
                 }
                 
                 for key, value in league_dummies.items():
@@ -513,6 +520,7 @@ class PROCESS_DATA():
                     self.lst_features_values.extend([f"{key}_{col}" for col in self.lst_base_advanced])
             
             self.lst_data.append(lst_features_values)
+        print("Dataset processed")
 
     def clean_and_ouput_dataset(self):
                 
@@ -569,7 +577,9 @@ class PROCESS_DATA():
         
         self.df_data["y"] = self.y
         self.df_data.to_csv("dataset\processed\dataset_processed.csv")
+        print("Dataset")
 
         
 
+a = PROCESS_DATA(True)
 

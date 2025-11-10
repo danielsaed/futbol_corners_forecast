@@ -47,7 +47,11 @@ class GENERATE_DATASET():
             "GER": {},
             "FRA": {},
             "ITA": {},
-            "NED": {}
+            "NED": {},
+            "ENG2": {},
+            "MEX": {},
+            "POR": {},
+            "BEL": {}
         }
 
 
@@ -58,6 +62,22 @@ class GENERATE_DATASET():
             "ENG": {
                 "name": "ENG-Premier League",
                 "code": "ENG"
+            },
+            "ENG2": {
+                "name": "ENG-Championship",
+                "code": "ENG2"
+            },
+            "MEX": {
+                "name": "MEX-Liga MX",
+                "code": "MEX"
+            },
+            "POR": {
+                "name": "POR-Primeira Liga",
+                "code": "POR"
+            },
+            "BEL": {
+                "name": "BEL-Belgian Pro League",
+                "code": "BEL"
             },
             "ESP": {
                 "name": "ESP-La Liga",
@@ -100,7 +120,7 @@ class GENERATE_DATASET():
         print(f"\nLiga {league}... 📅 Año {year}...", end=" ")
                     # Extraer equipos local/visitante
         
-        if league["name"] == "NED-Eredivisie" and year == 2017:
+        if league["name"] in ["NED-Eredivisie","POR-Primeira Liga","ENG-Championship"] and year == 2017:
             return
         
         # Crear scraper para la liga específica
