@@ -7,23 +7,6 @@ import pandas as pd
 import joblib
 from scipy.stats import poisson
 from scipy import stats
-# ===========================
-# 1. CARGAR MODELO Y SCALER
-# ===========================
-
-print("\n" + "=" * 80)
-print("🎯 SISTEMA DE PREDICCIÓN DE CORNERS PARA APUESTAS (VERSIÓN AVANZADA)")
-print("=" * 80)
-
-xgb_model = joblib.load('models/xgboost_corners_optimized_v2_6_leagues.pkl')  # ✅ CAMBIO: versión v2
-scaler = joblib.load('models/scaler_corners_xgb_v2_6_leagues.pkl')
-
-print("✅ Modelo cargado correctamente")
-print(f"   Features esperadas: {len(scaler.feature_names_in_)}")
-
-
-
-
 
 # ===========================
 # 1. FUNCIONES FIABILIDAD
@@ -184,7 +167,6 @@ def analizar_fiabilidad_equipos(df_database, temporada="2526", min_partidos=5):
     
     df_resultado = pd.DataFrame(resultados)
 
-    print(df_resultado.head(10))
     df_resultado = df_resultado.sort_values('Score_Fiabilidad', ascending=False)
     
     return df_resultado
@@ -282,11 +264,6 @@ def obtener_fiabilidad_partido(local, visitante, df_analisis):
         'consistencia_local': datos_local['Pct_Cerca_Media'].values[0],
         'consistencia_away': datos_away['Pct_Cerca_Media'].values[0]
     }
- 
-
-# ===========================
-# 2. FUNCIONES PROBABILIDAD (IGUAL)
-# ===========================
 
 def calcular_probabilidades_poisson(lambda_pred, rango_inferior=5, rango_superior=5):
     """Calcula probabilidades usando distribución de Poisson"""
@@ -329,12 +306,6 @@ def clasificar_confianza(prob):
         return "MEDIA ⚠️"
     else:
         return "BAJA ❌"
-
-
-# ===========================
-# 3. ✅ NUEVA FUNCIÓN GET_AVERAGE CON MÉTRICAS AVANZADAS
-# ===========================
-
 
 def get_dataframes(df, season, round_num, local, away, league=None):
     """Retorna 8 DataFrames filtrados por equipo, venue y liga"""
@@ -513,10 +484,6 @@ def get_average(df, is_team=False, lst_avg=None):
         avg_ck       # 8
     )
 
-# ===========================
-# 4. ✅ NUEVA FUNCIÓN GET_TEAM_PPP
-# ===========================
-
 def get_points_from_result(result):
     """Convierte resultado (W/D/L) a puntos"""
     if result == 'W':
@@ -550,11 +517,6 @@ def get_ppp_difference(df, local, away, season, round_num, league=None):
     local_ppp = get_team_ppp(df, local, season, round_num, league)
     away_ppp = get_team_ppp(df, away, season, round_num, league)
     return local_ppp - away_ppp
-
-
-# ===========================
-# 5. ✅ FUNCIÓN PRINCIPAL DE PREDICCIÓN (ACTUALIZADA)
-# ===========================
 
 def predecir_corners(local, visitante, jornada, temporada="2526", league_code="ESP",df_database=pd.DataFrame(),xgb_model="",scaler="",lst_years=[]):
     """
@@ -644,12 +606,15 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         dic_features['lst_team2_opp_home'] = create_line(team2_opp_home, False, True, use_advanced=False)
         
         league_dummies = {
-            'league_ESP': 1 if league_code == 'ESP' else 0,
-            'league_GER': 1 if league_code == 'GER' else 0,
-            'league_FRA': 1 if league_code == 'FRA' else 0,
-            'league_ITA': 1 if league_code == 'ITA' else 0,
-            'league_NED': 1 if league_code == 'NED' else 0
-        }
+                    'league_ESP': 1 if league_code == 'ESP' else 0,
+                    'league_GER': 1 if league_code == 'GER' else 0,
+                    'league_FRA': 1 if league_code == 'FRA' else 0,
+                    'league_ITA': 1 if league_code == 'ITA' else 0,
+                    'league_NED': 1 if league_code == 'NED' else 0,
+                    'league_ENG': 1 if league_code == 'ENG' else 0,
+                    'league_POR': 1 if league_code == 'POR' else 0,
+                    'league_BEL': 1 if league_code == 'BEL' else 0
+                }
         
         for key, value in league_dummies.items():
             dic_features[key] = (value,)
@@ -1053,10 +1018,6 @@ def predecir_partidos_batch(partidos, jornada, temporada="2526", league_code="ES
     
     return df_resultados
 
-# ===========================
-# FUNCIÓN DE RESUMEN VISUAL
-# ===========================
-
 def mostrar_resumen_batch(df_resultados):
     """Muestra resumen visual de los resultados"""
     
@@ -1099,26 +1060,43 @@ def mostrar_resumen_batch(df_resultados):
                 conf = row.get(f'Under_{linea}_Confianza', '')
                 print(f"   • Under {linea}: {under_prob:.1f}% @{cuota:.2f} - {conf}")
 
-print("\n✅ Funciones de procesamiento batch listas")
-print("\n✅ Sistema listo con probabilidades Poisson y cuotas implícitas")
-
 
 
 
 class USE_MODEL():
     def __init__(self):
         self.load_models()
+        self.load_data()
         self.init_variables()
 
     def init_variables(self):
         self.lst_years = ["1819", "1920", "2021", "2122", "2223", "2324", "2425", "2526"]
+        print("Variables Loaded...")
 
     def load_data(self):
-        self.df_dataset = pd.read_csv(r"dataset\processed\dataset_processed.csv")
+
+        #self.df_dataset = pd.read_csv(r"dataset\processed\dataset_processed.csv")
+        import os
+        #load clean dataset generated on generate_dataset.py
+        self.df_dataset_historic = pd.read_csv("dataset/cleaned/dataset_cleaned.csv")
+
+        if os.path.exists(r"dataset/cleaned/dataset_cleaned_current_year.csv"):
+            self.df_dataset_current_year = pd.read_csv("dataset/cleaned/dataset_cleaned_current_year.csv")
+
+            self.df_dataset = pd.concat([self.df_dataset_historic,self.df_dataset_current_year])
+        else:
+            self.df_dataset = self.df_dataset_historic
+
+        self.df_dataset["season"] = self.df_dataset["season"].astype(str)
+        self.df_dataset["Performance_Save%"].fillna(0)
+
+        print("Data Loaded...")
+
 
     def load_models(self):
-        self.xgb_model = joblib.load('models/xgboost_corners_optimized_v2_6_leagues.pkl')  # ✅ CAMBIO: versión v2
+        self.xgb_model = joblib.load('models/xgboost_corners_optimized_v2_6_leagues.pkl')
         self.scaler = joblib.load('models/scaler_corners_xgb_v2_6_leagues.pkl')
+        print("Models Ready...")
 
     def consume_model(self,partidos,jornada,temporada,league_code):
 
@@ -1128,7 +1106,7 @@ class USE_MODEL():
             temporada=temporada,
             league_code=league_code,
             export_csv=True,
-            filename=f"{league_code}\{league_code}-{temporada}-{jornada}-predicciones.csv",
+            filename=f"results\{league_code}\{league_code}-{temporada}-{jornada}-predicciones.csv",
             df_database = self.df_dataset,
             xgb_model = self.xgb_model,
             scaler=self.scaler,
@@ -1146,5 +1124,25 @@ class USE_MODEL():
         f_star = max(f_star, 0)  # evita negativos
         return f_star * fraction  # usa 0.1 para Kelly 10%
 
+a = USE_MODEL()
+
+partidos = [
+    ("Werder Bremen", "Wolfsburg"),
+    ("Hoffenheim", "RB Leipzig"),
+    ("Leverkusen", "Heidenheim"),
+    ("Hamburger SV", "Dortmund"),
+    ("Union Berlin", "Bayern"),
+    ("Gladbach", "Köln"),
+    ("Freiburg", "St. Pauli"),
+    ("Stuttgart", "Augsburg"),
+    ("Eint Frankfurt", "Mainz 05")
+]
+
+a.consume_model(
+    partidos=partidos,
+    jornada=10,
+    temporada="2526",
+    league_code="GER"
+)
 
 
