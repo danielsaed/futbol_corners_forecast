@@ -33,7 +33,7 @@ def calc_metrics(y_true, y_pred, set_name):
 
 
 class TRAIN_MODEL():
-    def __init__(self):
+    def __init__(self,nombre):
         self.init_variables()
         self.load_dataset()
         self.split_train_test(.15)
@@ -42,7 +42,7 @@ class TRAIN_MODEL():
         self.train_model()
         self.test_and_eval()
         self.top_features()
-        self.save_models()
+        self.save_models(nombre)
 
     def init_variables(self):
         print("")
@@ -76,7 +76,7 @@ class TRAIN_MODEL():
 
         self.y_array = np.array(self.y).flatten()
 
-        mask = (self.y_array >= 4) & (self.y_array <= 16)
+        mask = (self.y_array >= 3) & (self.y_array <= 17)
 
         # Aplicar filtro
         self.df_data = self.df_data[mask].copy()
@@ -329,11 +329,11 @@ class TRAIN_MODEL():
             bar = '█' * int(row['Importance'] * 200)
             print(f"{idx:2d}. {row['Feature']:50s} {row['Importance']:.6f} {bar}")
 
-    def save_models(self):
+    def save_models(self,nombre):
 
-        joblib.dump(self.xgb_model, r'models/xgboost_corners_optimized_test.pkl')
-        joblib.dump(self.scaler, r'models/scaler_corners_xgb_test.pkl')
-        joblib.dump(self.grid_search.best_params_, r'models/best_params_xgb_test.pkl')
+        joblib.dump(self.xgb_model, f'models/xgboost_corners_optimized_{nombre}.pkl')
+        joblib.dump(self.scaler, f'models/scaler_corners_xgb_{nombre}.pkl')
+        joblib.dump(self.grid_search.best_params_, f'models/best_params_xgb_{nombre}.pkl')
 
         print("\n💾 ARCHIVOS GUARDADOS:")
         print("   ✅ xgboost_corners_optimized_v2.pkl")
@@ -344,4 +344,4 @@ class TRAIN_MODEL():
 
 
 
-a = TRAIN_MODEL()
+a = TRAIN_MODEL("11_nov")
