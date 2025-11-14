@@ -49,7 +49,6 @@ class GENERATE_DATASET():
             "ITA": {},
             "NED": {},
             "ENG2": {},
-            "MEX": {},
             "POR": {},
             "BEL": {}
         }
@@ -62,14 +61,6 @@ class GENERATE_DATASET():
             "ENG": {
                 "name": "ENG-Premier League",
                 "code": "ENG"
-            },
-            "ENG2": {
-                "name": "ENG-Championship",
-                "code": "ENG2"
-            },
-            "MEX": {
-                "name": "MEX-Liga MX",
-                "code": "MEX"
             },
             "POR": {
                 "name": "POR-Primeira Liga",
@@ -119,7 +110,6 @@ class GENERATE_DATASET():
 
         print(f"\nLiga {league}... 📅 Año {year}...", end=" ")
                     # Extraer equipos local/visitante
-        
         if league["name"] in ["NED-Eredivisie","POR-Primeira Liga","ENG-Championship"] and year == 2017:
             return
         
@@ -211,8 +201,11 @@ class GENERATE_DATASET():
         self.df_database = self.df_database.drop_duplicates()
 
         if current_year == True:
-            self.df_database.to_csv("dataset\cleaned\dataset_cleaned_current_year.csv")
+            self.df_database.to_csv("dataset\cleaned\dataset_cleaned_current_year.csv",index=False)
         else:
-            self.df_database.to_csv("dataset\cleaned\dataset_cleaned.csv")
+            self.df_database.to_csv("dataset\cleaned\dataset_cleaned.csv",index=False)
         print("Dataset cleaned and saved on dataset\cleaned")
 
+
+
+a = GENERATE_DATASET(False)
