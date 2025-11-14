@@ -378,6 +378,7 @@ class PROCESS_DATA():
             self.df_dataset = self.df_dataset_historic
 
         self.df_dataset["season"] = self.df_dataset["season"].astype(str)
+        self.df_dataset["Performance_Save%"].fillna(0)
 
         self.df_dataset_export = self.df_dataset.copy()
 
@@ -394,7 +395,6 @@ class PROCESS_DATA():
 
     def process_all_matches(self):
         
-        
         for i in self.lst_matches:
             if i[2] < 5:
                 continue
@@ -407,7 +407,6 @@ class PROCESS_DATA():
             league_code = i[5]
 
             dic_df = {}
-            
             # Promedios de liga
             lst_avg = get_average(
                 self.df_dataset[
@@ -493,7 +492,9 @@ class PROCESS_DATA():
                     'league_FRA': 1 if league_code == 'FRA' else 0,
                     'league_ITA': 1 if league_code == 'ITA' else 0,
                     'league_NED': 1 if league_code == 'NED' else 0,
-                    'league_ENG': 1 if league_code == 'ENG' else 0
+                    'league_ENG': 1 if league_code == 'ENG' else 0,
+                    'league_POR': 1 if league_code == 'POR' else 0,
+                    'league_BEL': 1 if league_code == 'BEL' else 0
                 }
                 
                 for key, value in league_dummies.items():
@@ -574,12 +575,9 @@ class PROCESS_DATA():
 
         self.y = y_array.tolist()
 
-        
         self.df_data["y"] = self.y
-        self.df_data.to_csv("dataset\processed\dataset_processed.csv")
+        self.df_data.to_csv("dataset\processed\dataset_processed.csv",index=False)
         print("Dataset")
-
-        
 
 a = PROCESS_DATA(True)
 
