@@ -29,6 +29,10 @@ Predicts **total corners** in matches with **MAE < 2.0** (average error less tha
 ```
 FBref.com → Download stats → Merge leagues → Clean data → CSV
 ```
+
+![alt text](https://github.com/danielsaed/futbol_corners_forecast/blob/main/img/example_fbstats.jpg?raw=true)
+
+
 **Output**: dataset_cleaned.csv
 
 ### 2. Feature Engineering
