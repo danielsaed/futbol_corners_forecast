@@ -1,0 +1,18 @@
+{
+    "model_name": "v4_retrain",
+    "timestamp": "20251114_191132",
+    "best_params": {
+        "colsample_bylevel": 0.6,
+        "colsample_bytree": 0.7,
+        "gamma": 1.0,
+        "learning_rate": 0.03,
+        "max_depth": 4,
+        "min_child_weight": 5,
+        "n_estimators": 200,
+        "reg_alpha": 3.0,
+        "reg_lambda": 5.0,
+        "subsample": 0.7
+    },
+    "cv_mae": 1.9606899645578793,
+    "run_id": "784148adc6794b7181e8b76489fce338"
+}
