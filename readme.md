@@ -6,6 +6,16 @@ Predicts **total corners** in matches with **MAE < 2.0** (average error less tha
 
 ---
 
+## Technologies
+
+- **Data**: `pandas`, `numpy`, `soccerdata`
+- **ML**: `XGBoost`, `scikit-learn`
+- **Tracking**: `MLflow`
+- **Statistics**: `scipy` (Poisson distribution)
+- **Visualization**: `matplotlib`, `plotly`
+
+---
+
 ## 📊 Dataset
 
 ### Data Source
@@ -185,7 +195,11 @@ MLFlow image
 | **Validation** | 1.95 | 0.38 | 2.45 |
 | **Test** | **1.93** | **0.39** | **2.42** |
 
-✅ **Test MAE = 1.85**: Predictions are off by **1.85 corners** on average
+✅ **Test MAE = 1.93**: Predictions are off by **1.93 corners** on average
+
+**Currently my Model has overfit, I am still improving data and model configuration**
+
+
 
 ### Usual Error Distribution
 
@@ -289,29 +303,21 @@ futbol_corners_forecast/
 └── README.md
 ```
 
----
 
-## Technologies
-
-- **Data**: `pandas`, `numpy`, `soccerdata`
-- **ML**: `XGBoost`, `scikit-learn`
-- **Tracking**: `MLflow`
-- **Statistics**: `scipy` (Poisson distribution)
-- **Visualization**: `matplotlib`, `plotly`
-
----
 
 ## Key Findings
 
 ### What Works Well ✅
-- Consistent teams → Better predictions (MAE ~1.6)
+- Consistent teams → Better predictions (MAE ~1.9)
 - Top leagues → More data = Better accuracy
 - Mid-season matches → More historical data
+- Matches where teams had low variance and low anomalies
 
 ### Challenges ⚠️
 - Inconsistent teams → Higher error (MAE ~2.3)
 - Early season → Limited historical data
-- Defensive matches → Fewer corners = harder to predict
+- ***uncertainty***
+
 
 
 
