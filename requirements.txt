@@ -1,0 +1,30 @@
+# Core Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+
+# Statistics
+scipy>=1.11.0
+
+# Data Collection
+soccerdata>=1.4.0
+
+# Experiment Tracking & Model Management
+mlflow>=2.8.0
+
+# Model Persistence
+joblib>=1.3.0
+
+fastapi>=0.115.4
+
+# Security
+python-dotenv>=1.0.0
+
+# Model
+joblib>=1.3.0
+
+
+uvicorn[standard]>=0.24.0
