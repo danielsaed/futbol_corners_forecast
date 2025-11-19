@@ -10,15 +10,15 @@ Predicts **total corners** in matches with **MAE < 2.0** (average error less tha
 
 ### Data Source
 - **Platform**: FBref.com (via `soccerdata` library)
-- **Leagues**: Premier League 🏴󠁧󠁢󠁥󠁮󠁧󠁿, La Liga 🇪🇸, Bundesliga 🇩🇪, Ligue 1 🇫🇷, Serie A 🇮🇹, Eredivisie 🇳🇱, Primeira Liga 🇵🇹, Pro League 🇧🇪
-- **Seasons**: 2017-2025
+- **Leagues**: Premier League, La Liga, Bundesliga, Ligue 1, Serie A, Eredivisie, Primeira Liga, Pro League
+- **Seasons**: 2018-2025 (years where advanced data is available)
 - **Total Matches**: ~21,000
 
 ### Features Collected
-- **Shooting**: xG, shots, shots on target, distance
-- **Passing**: corners, passes, long passes, assists
-- **Defense**: tackles, blocks, interceptions, clearances
-- **Possession**: touches, carries, possession %
+- **Shooting**: xG, shots, shots on target, shot distance, shot creation actions
+- **Passing**: corners, crosses, passes (total attemps, progressive, last 1/3, long passes), assists
+- **Defense**: tackles (Total, last 1/3), blocks, interceptions, clearances
+- **Possession**: touches, carries (progressive, last 1/3, penalty area), possession %
 - **Goalkeeping**: save %
 
 ---
@@ -37,24 +37,93 @@ FBref.com → Download stats → Merge leagues → Clean data → CSV
 
 ### 2. Feature Engineering
 
-Created **80+ features** per match:
+**Basic features used (9)**:
+
+Processed with averages of their own leagues, example Average corners  = Average corners team - Average corners league
+```python
+- Average corners
+- Varianze corners
+- Average Xg
+- Average sca
+- Average crosses
+- Average possession
+- Average attemps in 1/3
+- Average GF
+- Average GA
+```
+
+**Advanced Key engineered features used (15)**:
+```python
+SHOTS
+
+- shot accuracy
+- xg shot
+- possession_shot
+
+PASSES
+
+- progressive_pass_ratio
+- final_third_involvement
+- assist_sca
+- creative_efficiency
+
+DEFENSE
+
+- interception_tackle
+- clearance_ratio
+- high press intensity
+
+POSSESSION
+
+- progressive_carry_ratio
+- carry_pass_balance
+- transition_index
+
+ATTACK
+
+- offensive index
+- attacking presence
+
+```
+
+**Other features (11)**:
+```python
+POINTS PER GAME
+
+- average points per game local team
+- average points per game visit team
+- difference poinst per game
+
+
+LEAGUES ONE HOT ENCODING
+
+- premier league
+- ligue 1
+- bundesliga
+- la liga
+- eredivise
+- serie a
+- primeira liga, 
+- pro league
+
+```
+
+<br>
+
+### Created **269 features** per match:
+
+<br>
 
 | Category | Features | Examples |
 |----------|----------|----------|
-| **Team Averages** | 32 | Home/away avg corners, xG, shots |
-| **Opponent Stats** | 16 | Performance vs each team |
-| **Head-to-Head** | 3 | Last 3 matches between teams |
-| **Form & Variance** | 8 | Recent form, consistency |
+| **Local Team Averages** | 96 | Form, General (Home/away) - Basic  + Advance features|
+| **Visit Team Averages** | 96 | Form, General (Home/away) - Basic  + Advance features  |
+| **Head-to-Head Averages** | 48 | Last 3 matches (Home/away) - Basic  + Advance features |
+| **Points Per Game Features** | 3 | Poinst Local, Visit and Difference |
 | **League Encoding** | 8 | One-hot encoded leagues |
-| **Advanced Metrics** | 15 | Shot accuracy, offensive intensity |
+| **Team against Averages** | 18 | Basic features against teams |
 
-**Key engineered features**:
-```python
-- sh_accuracy = shots_on_target / total_shots
-- offensive_index = (goals + xG) × shot_accuracy
-- attacking_presence = touches_att_3rd / total_touches
-- high_press_intensity = tackles_att_3rd / total_tackles
-```
+
 
 **Output**: dataset_processed.csv
 
@@ -80,15 +149,22 @@ Total: 21,000 matches
 ```
 
 **Hyperparameters** (found via GridSearchCV):
+
+MLFlow image
+
+![alt text](https://github.com/danielsaed/futbol_corners_forecast/blob/main/img/Parameters.jpg?raw=true)
+
 ```python
 {
     'n_estimators': 200,
     'max_depth': 4,
-    'learning_rate': 0.02,
-    'reg_alpha': 5.0,
-    'reg_lambda': 8.0,
+    'learning_rate': 0.03,
+    'reg_alpha': 3.0,
+    'reg_lambda': 5.0,
     'subsample': 0.7,
-    'colsample_bytree': 0.7
+    'colsample_bytree': 0.7,
+    'colsample_bylevel': 0.6,
+    'best_gamma':1.0
 }
 ```
 
@@ -97,22 +173,27 @@ Total: 21,000 matches
 ## 📈 Results
 
 ### Model Performance
+MLFlow image
+
+![alt text](https://github.com/danielsaed/futbol_corners_forecast/blob/main/img/Metrics.jpg?raw=true)
+
+
 
 | Set | MAE | R² | RMSE |
 |-----|-----|-----|------|
-| **Train** | 1.65 | 0.52 | 2.21 |
-| **Validation** | 1.82 | 0.48 | 2.35 |
-| **Test** | **1.85** | **0.46** | **2.38** |
+| **Train** | 1.78 | 0.49 | 2.23 |
+| **Validation** | 1.95 | 0.38 | 2.45 |
+| **Test** | **1.93** | **0.39** | **2.42** |
 
 ✅ **Test MAE = 1.85**: Predictions are off by **1.85 corners** on average
 
-### Error Distribution
+### Usual Error Distribution
 
 ```
-Errors < 1 corner:    42%
-Errors < 1.5 corners: 58%
-Errors < 2 corners:   74%
-Errors < 3 corners:   91%
+Errors < 1 corner:    46%
+Errors < 1.5 corners: 55%
+Errors < 2 corners:   68%
+Errors < 3 corners:   82%
 ```
 
 ### Top 10 Most Important Features
