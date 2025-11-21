@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 
+
 def get_ck(df, season, round_num, local, away, league=None):
     """Obtiene corners totales de un partido específico"""
     season_round = (df['season'] == season) & (df['round'] == round_num)
@@ -579,5 +580,5 @@ class PROCESS_DATA():
         self.df_data.to_csv("dataset\processed\dataset_processed.csv",index=False)
         print("Dataset")
 
-a = PROCESS_DATA(True)
+#a = PROCESS_DATA(True)
 
