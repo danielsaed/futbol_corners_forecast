@@ -1,7 +1,6 @@
 # Football Corners Forecast
 
 [![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-WEB-181717?style=flat)](https://github.com/danielsaed/futbol_corners_forecast)
-    
 [![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-API-FFD21E?style=flat)](https://huggingface.co/spaces/daniel-saed/futbol-corners-forecast-api)
     
 
