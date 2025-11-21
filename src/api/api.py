@@ -12,6 +12,7 @@ from fastapi import Security
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
 from src.api.load import USE_MODEL
+#from load import USE_MODEL
 
 load_dotenv() 
 
