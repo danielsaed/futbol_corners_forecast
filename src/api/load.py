@@ -2,6 +2,8 @@
 # SISTEMA DE PREDICCIÓN DE CORNERS - OPTIMIZADO PARA APUESTAS (VERSIÓN COMPLETA)
 # ===========================
 
+import requests
+import tempfile
 import numpy as np
 import pandas as pd
 import joblib
@@ -9,9 +11,10 @@ from scipy.stats import poisson
 from scipy import stats
 import os
 import sys
-
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
-sys.path.insert(0, project_root)
+from src.process_data.process_dataset import get_dataframes,get_head_2_head,get_points_from_result,get_team_ppp,get_ppp_difference,get_average
+#from process_data.process_dataset import get_dataframes,get_head_2_head,get_points_from_result,get_team_ppp,get_ppp_difference,get_average
+#project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+#sys.path.insert(0, project_root)
 # ===========================
 # 1. FUNCIONES FIABILIDAD
 # ===========================
@@ -311,6 +314,7 @@ def clasificar_confianza(prob):
     else:
         return "BAJA ❌"
 
+'''
 def get_dataframes(df, season, round_num, local, away, league=None):
     """Retorna 8 DataFrames filtrados por equipo, venue y liga"""
     
@@ -521,6 +525,8 @@ def get_ppp_difference(df, local, away, season, round_num, league=None):
     local_ppp = get_team_ppp(df, local, season, round_num, league)
     away_ppp = get_team_ppp(df, away, season, round_num, league)
     return local_ppp - away_ppp
+
+'''
 
 def predecir_corners(local, visitante, jornada, temporada="2526", league_code="ESP",df_database=pd.DataFrame(),xgb_model="",scaler="",lst_years=[]):
     """
@@ -1074,81 +1080,87 @@ class USE_MODEL():
         self.init_variables()
 
     def load_models(self):
-        """Cargar modelos con manejo de errores y rutas flexibles"""
+        """Cargar modelos desde GitHub usando raw URLs"""
         
-        # ===========================
-        # CONFIGURACIÓN DE RUTAS
-        # ===========================
+        print("📦 Cargando modelos desde GitHub...")
         
-        # Obtener directorio raíz del proyecto
-        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
-        models_dir = os.path.join(project_root, 'models')
-        
-        # Buscar archivos más recientes
-        model_files = [f for f in os.listdir(models_dir) if f.startswith('xgboost_corners') and f.endswith('.pkl')]
-        scaler_files = [f for f in os.listdir(models_dir) if f.startswith('scaler_corners') and f.endswith('.pkl')]
-        
-        if not model_files or not scaler_files:
-            raise FileNotFoundError(
-                f"\n❌ ERROR: No se encontraron modelos en '{models_dir}'\n"
-                f"   Modelos disponibles: {model_files}\n"
-                f"   Scalers disponibles: {scaler_files}\n\n"
-                f"💡 Solución: Entrena un modelo primero ejecutando:\n"
-                f"   python src/models/train_model.py\n"
-            )
-        
-        # Tomar el más reciente (o específico)
-        model_file = sorted(model_files)[-1]  # Último alfabéticamente
-        scaler_file = sorted(scaler_files)[-1]
-        
-        model_path = os.path.join(models_dir, model_file)
-        scaler_path = os.path.join(models_dir, scaler_file)
-        
-        print(f"📦 Cargando modelo: {model_file}")
-        print(f"📦 Cargando scaler: {scaler_file}")
+        # URLs de descarga directa (raw.githubusercontent.com)
+        base_url = "https://raw.githubusercontent.com/danielsaed/futbol_corners_forecast/refs/heads/main/models"
+        model_url = f"{base_url}/xgboost_corners_v4_retrain.pkl"
+        scaler_url = f"{base_url}/scaler_corners_v4_retrain.pkl"
         
         try:
-            self.xgb_model = joblib.load(model_path)
-            self.scaler = joblib.load(scaler_path)
-            print("✅ Modelos cargados correctamente")
+            # Descargar modelo
+            print(f"📥 Descargando modelo desde: {model_url}")
+            response_model = requests.get(model_url, timeout=30)
+            response_model.raise_for_status()
+            
+            # Descargar scaler
+            print(f"📥 Descargando scaler desde: {scaler_url}")
+            response_scaler = requests.get(scaler_url, timeout=30)
+            response_scaler.raise_for_status()
+            
+            # Guardar temporalmente y cargar
+            with tempfile.NamedTemporaryFile(delete=False, suffix='.pkl') as tmp_model:
+                tmp_model.write(response_model.content)
+                tmp_model_path = tmp_model.name
+            
+            with tempfile.NamedTemporaryFile(delete=False, suffix='.pkl') as tmp_scaler:
+                tmp_scaler.write(response_scaler.content)
+                tmp_scaler_path = tmp_scaler.name
+            
+            # Cargar modelos desde archivos temporales
+            self.xgb_model = joblib.load(tmp_model_path)
+            self.scaler = joblib.load(tmp_scaler_path)
+            
+            # Limpiar archivos temporales
+            os.unlink(tmp_model_path)
+            os.unlink(tmp_scaler_path)
+            
+            print("✅ Modelos cargados correctamente desde GitHub")
+            
+        except requests.exceptions.RequestException as e:
+            raise Exception(f"❌ Error descargando modelos: {str(e)}")
         except Exception as e:
             raise Exception(f"❌ Error cargando modelos: {str(e)}")
 
     def load_data(self):
-        """Cargar datos con manejo de errores"""
+        """Cargar datos desde GitHub"""
         
-        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
+        print("📂 Cargando datos desde GitHub...")
         
-        historic_path = os.path.join(project_root, "dataset/cleaned/dataset_cleaned.csv")
-        current_path = os.path.join(project_root, "dataset/cleaned/dataset_cleaned_current_year.csv")
+        base_url = "https://raw.githubusercontent.com/danielsaed/futbol_corners_forecast/refs/heads/main/dataset/cleaned"
+        historic_url = f"{base_url}/dataset_cleaned.csv"
+        current_url = f"{base_url}/dataset_cleaned_current_year.csv"
         
-        print(f"📂 Buscando datos en: {historic_path}")
-        
-        if not os.path.exists(historic_path):
+        try:
+            # Cargar dataset histórico
+            print(f"📥 Descargando dataset histórico...")
+            self.df_dataset_historic = pd.read_csv(historic_url)
+            print(f"✅ Dataset histórico cargado: {len(self.df_dataset_historic)} registros")
+            
+            # Intentar cargar año actual
+            try:
+                print(f"📥 Descargando dataset año actual...")
+                self.df_dataset_current_year = pd.read_csv(current_url)
+                print(f"✅ Dataset año actual cargado: {len(self.df_dataset_current_year)} registros")
+                self.df_dataset = pd.concat([self.df_dataset_historic, self.df_dataset_current_year])
+            except:
+                print("⚠️ No se pudo cargar dataset del año actual, usando solo histórico")
+                self.df_dataset = self.df_dataset_historic
+            
+            # Limpieza
+            self.df_dataset["season"] = self.df_dataset["season"].astype(str)
+            self.df_dataset["Performance_Save%"].fillna(0, inplace=True)
+            
+            print(f"✅ Total registros: {len(self.df_dataset)}")
+            
+        except Exception as e:
             raise FileNotFoundError(
-                f"\n❌ ERROR: No se encontró dataset histórico\n"
-                f"   Ruta buscada: {historic_path}\n\n"
-                f"💡 Solución: Genera el dataset ejecutando:\n"
-                f"   python src/process_data/generate_dataset.py\n"
+                f"\n❌ ERROR: No se pudieron cargar los datos desde GitHub\n"
+                f"   Error: {str(e)}\n\n"
+                f"💡 Verifica que los archivos existan en el repositorio\n"
             )
-        
-        self.df_dataset_historic = pd.read_csv(historic_path)
-        print(f"✅ Dataset histórico cargado: {len(self.df_dataset_historic)} registros")
-        
-        # Intentar cargar año actual
-        if os.path.exists(current_path):
-            self.df_dataset_current_year = pd.read_csv(current_path)
-            print(f"✅ Dataset año actual cargado: {len(self.df_dataset_current_year)} registros")
-            self.df_dataset = pd.concat([self.df_dataset_historic, self.df_dataset_current_year])
-        else:
-            print("⚠️ No se encontró dataset del año actual, usando solo histórico")
-            self.df_dataset = self.df_dataset_historic
-        
-        # Limpieza
-        self.df_dataset["season"] = self.df_dataset["season"].astype(str)
-        self.df_dataset["Performance_Save%"].fillna(0, inplace=True)
-        
-        print(f"✅ Total registros: {len(self.df_dataset)}")
 
     def init_variables(self):
         self.lst_years = ["1819", "1920", "2021", "2122", "2223", "2324", "2425", "2526"]
