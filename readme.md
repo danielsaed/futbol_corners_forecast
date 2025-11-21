@@ -1,10 +1,23 @@
 # Football Corners Forecast
 
+[![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-WEB-181717?style=flat)](https://github.com/danielsaed/futbol_corners_forecast)
+    
+[![Hugging Face](https://img.shields.io/badge/🤗_Hugging_Face-API-FFD21E?style=flat)](https://huggingface.co/spaces/daniel-saed/futbol-corners-forecast-api)
+    
+
 A machine learning project that predicts total corners in football matches using historical data from 8 European leagues.
 
 Predicts **total corners** in matches with **MAE < 2.0** (average error less than 2 corners) to support betting analysis.
 
----
+- **API:** https://huggingface.co/spaces/daniel-saed/futbol-corners-forecast-api
+
+- **Web:** https://daniel-saed-corner-forecast.hf.space/
+--- 
+
+
+## Web Page
+
+![alt text](https://github.com/danielsaed/futbol_corners_forecast/blob/main/img/web_page.jpg?raw=true)
 
 ## Technologies
 
