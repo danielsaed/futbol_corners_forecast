@@ -577,7 +577,7 @@ class PROCESS_DATA():
         self.y = y_array.tolist()
 
         self.df_data["y"] = self.y
-        self.df_data.to_csv("dataset\processed\dataset_processed.csv",index=False)
+        self.df_data.to_csv(r"dataset/processed/dataset_processed.csv",index=False)
         print("Dataset")
 
 #a = PROCESS_DATA(True)

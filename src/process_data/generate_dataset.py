@@ -201,10 +201,10 @@ class GENERATE_DATASET():
         self.df_database = self.df_database.drop_duplicates()
 
         if current_year == True:
-            self.df_database.to_csv("dataset\cleaned\dataset_cleaned_current_year.csv",index=False)
+            self.df_database.to_csv(r"dataset/cleaned/dataset_cleaned_current_year.csv",index=False)
         else:
-            self.df_database.to_csv("dataset\cleaned\dataset_cleaned.csv",index=False)
-        print("Dataset cleaned and saved on dataset\cleaned")
+            self.df_database.to_csv(r"dataset/cleaned/dataset_cleaned.csv",index=False)
+        print("Dataset cleaned and saved on dataset/cleaned")
 
 
 
