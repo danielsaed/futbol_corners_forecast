@@ -1,18 +1,126 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+name: 📊 Update Football Dataset
+
+# Cuándo se ejecuta
+on:
+  # Opción 1: Ejecutar manualmente desde GitHub
+  workflow_dispatch:
+  
+  # Opción 2: Ejecutar automáticamente cada semana (lunes 3 AM)
+  schedule:
+    - cron: '0 3 * * 2'  # Lunes a las 3 AM UTC
+
+# Permisos necesarios
+permissions:
+  contents: write  # Para hacer commit y push
+
 jobs:
-  Explore-GitHub-Actions:
+  update-dataset:
+    name: 🔄 Download & Process Data
     runs-on: ubuntu-latest
+    
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
-        uses: actions/checkout@v5
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
+      # ============================================
+      # PASO 1: Descargar código del repositorio
+      # ============================================
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+      
+      # ============================================
+      # PASO 2: Configurar Python
+      # ============================================
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'  # Cachear dependencias para acelerar
+      
+      # ============================================
+      # PASO 3: Instalar dependencias
+      # ============================================
+      - name: 📦 Install Dependencies
         run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          pip install --upgrade pip
+          pip install pandas numpy soccerdata scikit-learn
+      
+      # ============================================
+      # PASO 4: Descargar datos desde FBref
+      # ============================================
+      - name: 🏟️ Download Raw Data (generate_dataset.py)
+        run: |
+          echo "📥 Descargando datos de FBref..."
+          python -c "from src.process_data.generate_dataset import GENERATE_DATASET; GENERATE_DATASET(False)"
+          echo "✅ Datos descargados"
+      
+      # ============================================
+      # PASO 5: Verificar que se creó el dataset
+      # ============================================
+      - name: ✅ Check Downloaded Files
+        run: |
+          echo "📂 Verificando archivos descargados:"
+          ls -lh dataset/cleaned/
+          echo ""
+          echo "📊 Primeras líneas del dataset:"
+          head -n 5 dataset/cleaned/dataset_cleaned.csv
+      
+      # ============================================
+      # PASO 6: Procesar features (Machine Learning)
+      # ============================================
+      - name: ⚙️ Process Features (process_dataset.py)
+        run: |
+          echo "⚙️ Procesando features para ML..."
+          python -c "from src.process_data.process_dataset import PROCESS_DATA; PROCESS_DATA(True)"
+          echo "✅ Features procesadas"
+      
+      # ============================================
+      # PASO 7: Verificar dataset procesado
+      # ============================================
+      - name: ✅ Check Processed Files
+        run: |
+          echo "📂 Verificando dataset procesado:"
+          ls -lh dataset/processed/
+          echo ""
+          echo "📊 Info del dataset:"
+          python -c "import pandas as pd; df = pd.read_csv('dataset/processed/dataset_processed.csv'); print(f'Filas: {len(df)}, Columnas: {len(df.columns)}')"
+      
+      # ============================================
+      # PASO 8: Guardar cambios en GitHub
+      # ============================================
+      - name: 💾 Commit & Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Agregar archivos
+          git add dataset/cleaned/dataset_cleaned.csv
+          git add dataset/processed/dataset_processed.csv
+          
+          # Verificar si hay cambios
+          if git diff --staged --quiet; then
+            echo "⚠️ No hay cambios en el dataset"
+          else
+            # Hacer commit
+            git commit -m "🤖 Auto-update dataset $(date +'%Y-%m-%d %H:%M')"
+            
+            # Push
+            git push
+            
+            echo "✅ Dataset actualizado y subido a GitHub"
+          fi
+      
+      # ============================================
+      # PASO 9: Resumen final
+      # ============================================
+      - name: 📋 Summary
+        if: always()
+        run: |
+          echo "================================"
+          echo "📊 RESUMEN DE EJECUCIÓN"
+          echo "================================"
+          echo "✅ Datos descargados desde FBref"
+          echo "✅ Features procesadas"
+          echo "✅ Datasets guardados en GitHub"
+          echo ""
+          echo "📂 Archivos generados:"
+          echo "   - dataset/cleaned/dataset_cleaned.csv"
+          echo "   - dataset/processed/dataset_processed.csv"
+          echo "================================"
