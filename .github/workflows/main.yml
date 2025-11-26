@@ -92,6 +92,7 @@ jobs:
           
           # Agregar archivos
           git add dataset/cleaned/dataset_cleaned.csv
+          git add dataset/cleaned/dataset_cleaned_current_year.csv
           git add dataset/processed/dataset_processed.csv
           
           # Verificar si hay cambios
