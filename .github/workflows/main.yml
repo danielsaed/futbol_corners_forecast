@@ -48,7 +48,7 @@ jobs:
       - name: 🏟️ Download Raw Data (generate_dataset.py)
         run: |
           echo "📥 Descargando datos de FBref..."
-          python -c "from src.process_data.generate_dataset import GENERATE_DATASET; GENERATE_DATASET(False)"
+          python -c "from src.process_data.generate_dataset import GENERATE_DATASET; GENERATE_DATASET(True)"
           echo "✅ Datos descargados"
       
       # ============================================
