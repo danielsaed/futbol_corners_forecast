@@ -40,7 +40,8 @@ jobs:
       - name: 📦 Install Dependencies
         run: |
           pip install --upgrade pip
-          pip install pandas numpy soccerdata scikit-learn
+          pip install --no-cache-dir git+https://github.com/danielsaed/soccerdata.git@master
+          pip install -r requirements.txt
       
       # ============================================
       # PASO 4: Descargar datos desde FBref
