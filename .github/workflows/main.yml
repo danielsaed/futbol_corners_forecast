@@ -95,7 +95,7 @@ jobs:
           git add dataset/cleaned/dataset_cleaned_current_year.csv
           git add dataset/processed/dataset_processed.csv
           
-          # Verificar si hay cambios
+          # Verificar si hay cambiosa
           if git diff --staged --quiet; then
             echo "⚠️ No hay cambios en el dataset"
           else
