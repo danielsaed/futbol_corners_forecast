@@ -9,15 +9,15 @@ import mlflow
 import mlflow.sklearn
 import mlflow.xgboost
 
-from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, KFold
+from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score, KFold,TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, make_scorer
+from sklearn.metrics import root_mean_squared_error,mean_squared_error, mean_absolute_error, r2_score, make_scorer
 from xgboost import XGBRegressor
 import joblib
 
 
 class TRAIN_MODEL():
-    def __init__(self, nombre, use_grid_search=False, config_path="config/model_config.json"):
+    def __init__(self, nombre, use_grid_search=False, config_path="config/model_config.json",y_corners = "y"):
         """
         Entrenar modelo con tracking MLflow
         
@@ -60,8 +60,8 @@ class TRAIN_MODEL():
             # Pipeline de entrenamiento
             try:
                 self.init_variables()
-                self.load_dataset()
-                self.split_train_test(0.15)
+                self.load_dataset(remove_features=None,y_corners= y_corners)
+                self.split_train_test(0.05)
                 self.define_model()
                 
                 if use_grid_search:
@@ -87,40 +87,117 @@ class TRAIN_MODEL():
                 raise
 
     def init_variables(self):
-        """Definir espacio de búsqueda para GridSearch"""
-        # ✅ GRID INTELIGENTE (~243 combinaciones = 1-3 horas)
-        self.param_grid = {
-            'n_estimators': [200],              # 1 valor (200 suele ser óptimo)
-            'max_depth': [3, 4, 5],             # 3 valores (clave)
-            'learning_rate': [0.02, 0.03],      # 2 valores (0.01 es muy lento)
-            'reg_alpha': [3.0, 5.0],            # 2 valores
-            'reg_lambda': [5.0, 8.0],           # 2 valores
-            'gamma': [0.5, 1.0],                # 2 valores
-            'subsample': [0.7],                 # 1 valor (0.7 suele funcionar)
-            'colsample_bytree': [0.7],          # 1 valor
-            'colsample_bylevel': [0.6],         # 1 valor
-            'min_child_weight': [5, 7]          # 2 valores
-        }
-        # Combinaciones: 1 × 3 × 2 × 2 × 2 × 2 × 1 × 1 × 1 × 2 = 192
-        # Tiempo: ~1.5-3 horas ⏱️
+        """Grid optimizado para 20 minutos - Enfoque en generalización"""
         
-        # Loggear configuración del grid
+        # ✅ CONFIGURACIÓN ÓPTIMA (20 min, mejor generalización)
+        """self.param_grid = {
+            # ===========================
+            # COMPLEJIDAD
+            # ===========================
+            'n_estimators': [250, 300,350],       # Más árboles = mejor generalización
+            'max_depth': [3, 4],             # Probar más profundidad
+            'learning_rate': [0.02, 0.03,.04], # Más valores alrededor de óptimo
+            
+            # ===========================
+            # REGULARIZACIÓN (PRIORIDAD)
+            # ===========================
+            'reg_alpha': [10.0, 15.0],        # L1 más agresivo
+            'reg_lambda': [15.0, 25.0],       # L2 más agresivo
+            'gamma': [1.0, 2.0, 3.0],              # Más conservador al hacer split
+            
+            # ===========================
+            # SAMPLING (REDUCE OVERFITTING)
+            # ===========================
+            'subsample': [0.6, 0.7],          # 3 valores
+            'colsample_bytree': [0.6, 0.7],   # 3 valores (probar más)
+            'colsample_bylevel': [0.6, 0.7],       # 2 valores
+            
+            # ===========================
+            # CONTROL DE NODOS
+            # ===========================
+            'min_child_weight': [20, 30, 40]     # 3 valores (nodos más grandes)
+        }"""
+
+        self.param_grid = {
+            # ===========================
+            # COMPLEJIDAD
+            # ===========================
+            'n_estimators': [250, 300,350],       # Más árboles = mejor generalización
+            'max_depth': [3, 4],             # Probar más profundidad
+            'learning_rate': [0.02, 0.03,.04], # Más valores alrededor de óptimo
+            
+            # ===========================
+            # REGULARIZACIÓN (PRIORIDAD)
+            # ===========================
+            'reg_alpha': [10.0, 15.0],        # L1 más agresivo
+            'reg_lambda': [15.0, 25.0],       # L2 más agresivo
+            'gamma': [1.0, 2.0, 3.0],              # Más conservador al hacer split
+            
+            # ===========================
+            # SAMPLING (REDUCE OVERFITTING)
+            # ===========================
+            'subsample': [0.7],          # 3 valores
+            'colsample_bytree': [0.6, 0.7],   # 3 valores (probar más)
+            'colsample_bylevel': [0.6, 0.7],       # 2 valores
+            
+            # ===========================
+            # CONTROL DE NODOS
+            # ===========================
+            'min_child_weight': [20, 30, 40]     # 3 valores (nodos más grandes)
+        }
+        
+        # Combinaciones: 3 × 4 × 3 × 4 × 3 × 4 × 3 × 3 × 2 × 3 = 279,936
+        # ⚠️ Demasiado para GridSearch completo
+        
+        # ✅ SOLUCIÓN: RandomizedSearchCV
+        self.use_randomized = True
+        self.n_iter = 300  # 120 combinaciones aleatorias ≈ 20 minutos
+        
         if self.use_grid_search:
+            mlflow.log_param("search_type", "RandomizedSearch")
+            mlflow.log_param("n_iterations", self.n_iter)
+            mlflow.log_param("focus", "generalization_and_regularization")
+            
             for param, values in self.param_grid.items():
                 mlflow.log_param(f"grid_{param}", str(values))
         
-        print("✅ Variables inicializadas")
+        print("✅ Grid extendido configurado:")
+        print(f"   - Enfoque: Generalización y reducción de overfitting")
+        print(f"   - Método: RandomizedSearchCV")
+        print(f"   - Iteraciones: {self.n_iter}")
+        print(f"   - Tiempo estimado: ~20 minutos")
 
-    def load_dataset(self):
-        """Cargar y preparar dataset"""
+    def load_dataset(self, remove_features=None,y_corners = "y"):
+        """
+        Cargar y preparar dataset
+        
+        Args:
+            remove_features: Lista de features a eliminar (ej: ['lst_team2_h2h_xg'])
+        """
         
         self.df_data = pd.read_csv("dataset/processed/dataset_processed.csv")
-        self.y = self.df_data["y"]
-        self.df_data = self.df_data.drop(["y"], axis=1)
+        
+        # ===========================
+        # ELIMINAR FEATURES (NO PASAR A 0)
+        # ===========================
+        if remove_features is None:
+            remove_features = []
+        
+        # Features a eliminar para testing
+        features_to_drop = [f for f in remove_features if f in self.df_data.columns]
+        
+        if features_to_drop:
+            print(f"🗑️ Eliminando features: {features_to_drop}")
+            self.df_data = self.df_data.drop(columns=features_to_drop)
+            mlflow.log_param("removed_features", str(features_to_drop))
+        
+        # Eliminar target
+        self.y = self.df_data[y_corners]
+        self.df_data = self.df_data.drop(["y","y_home","y_away","gol_total","gol_home","gol_away","eg_total","eg_home","eg_away","st_total","st_home","st_away"], axis=1)
         self.y_array = np.array(self.y).flatten()
         
         # Filtrar outliers (3-17 corners)
-        mask = (self.y_array >= 3) & (self.y_array <= 17)
+        mask = (self.y_array >= 0) & (self.y_array <= 18)
         self.df_data = self.df_data[mask].copy()
         self.y_array = self.y_array[mask]
         
@@ -140,46 +217,78 @@ class TRAIN_MODEL():
         
         print(f"✅ Dataset cargado: {self.df_data.shape}")
 
-    def split_train_test(self, test_size_):
-        """Dividir datos en train/val/test"""
+    def split_train_test(self, test_size_, h2h_weight=1):
+        """Dividir datos en train/val/test
+        
+        Args:
+            test_size_: Tamaño del conjunto de prueba (proporción)
+            h2h_weight: Peso de features H2H (default 0.3 = 30% importancia)
+                        - 1.0 = sin penalizar
+                        - 0.5 = importancia media
+                        - 0.3 = baja importancia (recomendado)
+                        - 0.1 = muy baja importancia
+        """
         
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
             self.df_data, self.y_array, 
             test_size=test_size_, 
-            random_state=42, 
-            shuffle=True
+            random_state=42,
+            shuffle=False
         )
         
-        # Escalar
+        # Identificar features H2H
+        h2h_cols = [col for col in self.X_train.columns 
+                    if col.startswith('lst_team1_h2h') or col.startswith('lst_team2_h2h')]
+        other_cols = [col for col in self.X_train.columns if col not in h2h_cols]
+        
+        print(f"📊 Features: {len(other_cols)} normales | {len(h2h_cols)} H2H")
+        
+        # Escalar features normales
         self.scaler = StandardScaler()
+        #X_train_other = self.scaler.fit_transform(self.X_train[other_cols])
+        #X_test_other = self.scaler.transform(self.X_test[other_cols])
+        self.X_train = self.scaler.fit_transform(self.X_train)
+        self.X_test = self.scaler.transform(self.X_test)
+        
+        
+        """# Escalar features H2H CON PENALIZACIÓN
+        self.scaler_h2h = StandardScaler()
+        X_train_h2h = self.scaler_h2h.fit_transform(self.X_train[h2h_cols])
+        X_test_h2h = self.scaler_h2h.transform(self.X_test[h2h_cols])
+        
+        # 👇 APLICAR PENALIZACIÓN
+        X_train_h2h = X_train_h2h * h2h_weight
+        X_test_h2h = X_test_h2h * h2h_weight
+        
+        print(f"⚖️ Features H2H penalizadas: {h2h_weight*100}% de importancia")
+        
+        # Loggear en MLflow
+        mlflow.log_param("h2h_weight_factor", h2h_weight)
+        mlflow.log_param("h2h_features_count", len(h2h_cols))
+        
+        # Recombinar
         self.X_train = pd.DataFrame(
-            self.scaler.fit_transform(self.X_train), 
-            columns=self.X_train.columns
+            np.concatenate([X_train_other, X_train_h2h], axis=1),
+            columns=other_cols + h2h_cols
         )
+        
         self.X_test = pd.DataFrame(
-            self.scaler.transform(self.X_test), 
-            columns=self.X_test.columns
-        )
+            np.concatenate([X_test_other, X_test_h2h], axis=1),
+            columns=other_cols + h2h_cols
+        )"""
         
         # Split validación
         self.X_train_fit, self.X_val, self.y_train_fit, self.y_val = train_test_split(
             self.X_train, self.y_train, 
             test_size=0.15, 
-            random_state=43
+            random_state=43,
+            shuffle=False
         )
-        
-        # Loggear splits
-        mlflow.log_params({
-            "train_samples": len(self.X_train_fit),
-            "val_samples": len(self.X_val),
-            "test_samples": len(self.X_test),
-            "test_size": test_size_
-        })
         
         print(f"✅ Train: {len(self.X_train_fit)} | Val: {len(self.X_val)} | Test: {len(self.X_test)}")
 
     def define_model(self):
-        """Definir modelo base y GridSearch"""
+        """Definir modelo base y búsqueda de hiperparámetros"""
         
         self.xgb_base = XGBRegressor(
             objective="reg:squarederror",
@@ -190,18 +299,39 @@ class TRAIN_MODEL():
         )
         
         if self.use_grid_search:
-            self.kfold = KFold(n_splits=5, shuffle=True, random_state=42)
-            self.mae_scorer = make_scorer(mean_absolute_error, greater_is_better=False)
+            self.cv_split = TimeSeriesSplit(n_splits=5)
+            self.mean_absolute_error = make_scorer(mean_absolute_error, greater_is_better=False)
             
-            self.grid_search = GridSearchCV(
-                estimator=self.xgb_base,
-                param_grid=self.param_grid,
-                cv=self.kfold,
-                scoring=self.mae_scorer,
-                n_jobs=-1,
-                verbose=2,
-                return_train_score=True
-            )
+            # ===========================
+            # RANDOMIZEDSEARCHCV (más eficiente para grids grandes)
+            # ===========================
+            if self.use_randomized:
+                from sklearn.model_selection import RandomizedSearchCV
+                
+                self.grid_search = RandomizedSearchCV(
+                    estimator=self.xgb_base,
+                    param_distributions=self.param_grid,  # 👈 param_distributions en lugar de param_grid
+                    n_iter=self.n_iter,                   # 👈 Número de combinaciones a probar
+                    cv=self.cv_split,
+                    scoring=self.mean_absolute_error,
+                    n_jobs=-1,
+                    verbose=2,
+                    random_state=42,
+                    return_train_score=True
+                )
+            else:
+                # GridSearch tradicional (para grids pequeños)
+                self.grid_search = GridSearchCV(
+                    estimator=self.xgb_base,
+                    param_grid=self.param_grid,
+                    cv=self.cv_split,
+                    scoring=self.mean_absolute_error,
+                    n_jobs=-1,
+                    verbose=2,
+                    return_train_score=True
+                )
+            
+            print(f"✅ Búsqueda configurada: {'Randomized' if self.use_randomized else 'Grid'} Search")
 
     def train_grid_search(self):
         """Ejecutar GridSearch y guardar mejores params"""
@@ -289,6 +419,38 @@ class TRAIN_MODEL():
         
         print("✅ Modelo entrenado")
 
+    def train_production(self):
+        """
+        Entrena el modelo con el 100% de los datos (Train + Val + Test).
+        Este es el modelo FINAL que se usa para apostar dinero real.
+        """
+        print(f"\n{'='*80}")
+        print(f"🚀 MODO PRODUCCIÓN: Re-entrenando con 100% de la data")
+        print(f"{'='*80}\n")
+        
+        # 2. Escalar TODA la data (Fit sobre el 100%)
+        self.scaler = StandardScaler()
+        X_full = self.scaler.fit_transform(self.df_data)
+        y_full = self.y_array
+
+        # 3. Entrenar modelo final con los mejores hiperparámetros encontrados
+        self.xgb_model = XGBRegressor(
+            **self.best_params,
+            objective="reg:squarederror",
+            tree_method="hist",
+            random_state=42,
+            n_jobs=-1,
+            verbosity=1
+        )
+        
+        # ¡AQUÍ ESTÁ LA CLAVE! Fit con el 100% de los datos
+        self.xgb_model.fit(X_full, y_full)
+        
+        print("✅ Modelo de Producción (100% data) entrenado.")
+        
+        # Guardar con un nombre especial para diferenciarlo
+        self.save_models(f"{self.nombre}_PRODUCTION")
+
     def test_and_eval(self):
         """Evaluar y loggear métricas"""
         
@@ -320,15 +482,17 @@ class TRAIN_MODEL():
         for set_name, set_metrics in metrics.items():
             for metric_name, value in set_metrics.items():
                 mlflow.log_metric(f"{set_name}_{metric_name}", value)
+
+        cv = TimeSeriesSplit(n_splits=5) 
         
         # Cross-validation
         cv_mae = cross_val_score(
             self.xgb_model, self.X_train, self.y_train, 
-            cv=5, scoring='neg_mean_absolute_error'
+            cv=cv, scoring='neg_mean_absolute_error'
         )
         cv_r2 = cross_val_score(
             self.xgb_model, self.X_train, self.y_train, 
-            cv=5, scoring='r2'
+            cv=cv, scoring='r2'
         )
         
         mlflow.log_metric("cv_mae_mean", -cv_mae.mean())
@@ -369,8 +533,8 @@ class TRAIN_MODEL():
         for idx, row in feature_importance.head(10).iterrows():
             mlflow.log_metric(f"feat_imp_{row['feature']}", row['importance'])
         
-        print(f"\n🔍 Top 5 features:")
-        for idx, row in feature_importance.head(5).iterrows():
+        print(f"\n🔍 Top 20 features:")
+        for idx, row in feature_importance.head(20).iterrows():
             print(f"   {row['feature']}: {row['importance']:.4f}")
 
     def save_models(self, nombre):
@@ -420,6 +584,23 @@ if __name__ == "__main__":
     # Usar hiperparámetros guardados (RÁPIDO, 2-5 min)
     # ========================================
     model = TRAIN_MODEL(
-        nombre="v4_retrain",
-        use_grid_search=True  # Usa config/model_config.json
+        nombre="v4_retrain_away",
+        use_grid_search=False,
+        y_corners = "st_total"  # Usa config/model_config.json
     )
+
+    model.train_production()
+    
+    # ========================================
+    # OPCIÓN 3: Probar diferentes pesos para features H2H
+    # ========================================
+    #model = TRAIN_MODEL(nombre="v5_h2h_weighted", use_grid_search=False)
+    
+    # for weight in [1.0, 0.5, 0.3, 0.1]:
+    #     print(f"\n{'='*60}")
+    #     print(f"Probando weight_factor = {weight}")
+    #     print(f"{'='*60}")
+        
+    #     model.split_train_test(0.15, h2h_weight=weight)
+    #     model.train_model()
+    #     model.test_and_eval()
