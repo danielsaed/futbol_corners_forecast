@@ -15,8 +15,22 @@ def get_ck(df, season, round_num, local, away, league=None):
     df_away = df[df['team'] == away]
     
     total_ck = df_local["Pass Types_CK"].sum() + df_away["Pass Types_CK"].sum()
+    local_ck = df_local["Pass Types_CK"].sum()
+    visit_ck = df_away["Pass Types_CK"].sum()
+
+    total_gol = df_local["GF"].sum() + df_away["GF"].sum()
+    local_gol = df_local["GF"].sum()
+    visit_gol = df_away["GF"].sum()
+
+    total_eg = df_local["Expected_xG"].sum() + df_away["Expected_xG"].sum()
+    local_eg = df_local["Expected_xG"].sum()
+    visit_eg = df_away["Expected_xG"].sum()
+
+    total_st = df_local["Standard_SoT"].sum() + df_away["Standard_SoT"].sum()
+    local_st = df_local["Standard_SoT"].sum()
+    visit_st = df_away["Standard_SoT"].sum()
     
-    return total_ck
+    return total_ck,local_ck,visit_ck, total_gol,local_gol,visit_gol,total_eg,local_eg,visit_eg,total_st,local_st,visit_st
 
 def get_dataframes(df, season, round_num, local, away, league=None):
     """Retorna 8 DataFrames filtrados por equipo, venue y liga"""
@@ -345,6 +359,8 @@ class PROCESS_DATA():
     def init_variables(self):
 
         self.y = []
+        self.y_home = []
+        self.y_away = []
 
         self.lst_data = []
 
@@ -366,33 +382,123 @@ class PROCESS_DATA():
 
         print("Variables inicializadas")
 
-    def load_clean_dataset(self):
-
-        #load clean dataset generated on generate_dataset.py
+    def load_clean_dataset(self, iqr_multiplier=4.5, by_league=True):
+        """
+        Cargar dataset y eliminar outliers con IQR
+        
+        Args:
+            iqr_multiplier: Multiplicador IQR (1.5 = estándar)
+            by_league: Si True, calcula IQR por liga (más preciso)
+        """
+        
+        # Cargar datasets
         self.df_dataset_historic = pd.read_csv("dataset/cleaned/dataset_cleaned.csv")
-
+        
         if os.path.exists(r"dataset/cleaned/dataset_cleaned_current_year.csv"):
             self.df_dataset_current_year = pd.read_csv("dataset/cleaned/dataset_cleaned_current_year.csv")
-
-            self.df_dataset = pd.concat([self.df_dataset_historic,self.df_dataset_current_year])
+            self.df_dataset = pd.concat([self.df_dataset_historic, self.df_dataset_current_year])
         else:
             self.df_dataset = self.df_dataset_historic
-
+        
         self.df_dataset["season"] = self.df_dataset["season"].astype(str)
-        self.df_dataset["Performance_Save%"].fillna(0)
-
+        self.df_dataset["Performance_Save%"].fillna(0, inplace=True)
+        
+        
+        print(f"✅ Dataset cargado: {self.df_dataset.shape}")
+        
+        # ===========================
+        # ELIMINAR OUTLIERS
+        # ===========================
+        
+        print(f"\n🧹 ELIMINANDO OUTLIERS (IQR × {iqr_multiplier})...")
+        if by_league:
+            print("   Método: IQR por liga (más preciso)")
+        else:
+            print("   Método: IQR global")
+        
+        # Columnas numéricas
+        exclude_cols = ['date', 'season', 'league', 'team', 'opponent', 'venue', 
+                        'round', 'game', 'result', 'local', 'away']
+        
+        numeric_cols = self.df_dataset.select_dtypes(include=['float64', 'int64']).columns.tolist()
+        numeric_cols = [col for col in numeric_cols if col not in exclude_cols]
+        
+        print(f"   Columnas numéricas: {len(numeric_cols)}")
+        
+        filas_antes = len(self.df_dataset)
+        
+        if by_league:
+            # ===========================
+            # ELIMINAR POR LIGA (RECOMENDADO)
+            # ===========================
+            
+            dfs_limpios = []
+            
+            for league in self.df_dataset['league'].unique():
+                df_league = self.df_dataset[self.df_dataset['league'] == league].copy()
+                filas_liga_antes = len(df_league)
+                
+                # Calcular IQR por liga
+                for col in numeric_cols:
+                    Q1 = df_league[col].quantile(0.25)
+                    Q3 = df_league[col].quantile(0.75)
+                    IQR = Q3 - Q1
+                    
+                    lower_bound = Q1 - iqr_multiplier * IQR
+                    upper_bound = Q3 + iqr_multiplier * IQR
+                    
+                    mask = (df_league[col] >= lower_bound) & (df_league[col] <= upper_bound)
+                    df_league = df_league[mask]
+                
+                filas_liga_despues = len(df_league)
+                eliminadas = filas_liga_antes - filas_liga_despues
+                
+                print(f"   {league}: {filas_liga_antes} → {filas_liga_despues} (-{eliminadas})")
+                
+                dfs_limpios.append(df_league)
+            
+            self.df_dataset = pd.concat(dfs_limpios, ignore_index=True)
+        
+        else:
+            # ===========================
+            # ELIMINAR GLOBAL
+            # ===========================
+            
+            for col in numeric_cols:
+                Q1 = self.df_dataset[col].quantile(0.25)
+                Q3 = self.df_dataset[col].quantile(0.75)
+                IQR = Q3 - Q1
+                
+                lower_bound = Q1 - iqr_multiplier * IQR
+                upper_bound = Q3 + iqr_multiplier * IQR
+                
+                mask = (self.df_dataset[col] >= lower_bound) & (self.df_dataset[col] <= upper_bound)
+                self.df_dataset = self.df_dataset[mask]
+        
+        filas_despues = len(self.df_dataset)
+        filas_eliminadas = filas_antes - filas_despues
+        porcentaje_eliminado = (filas_eliminadas / filas_antes) * 100
+        
+        print(f"\n✅ RESUMEN:")
+        print(f"   Filas antes:      {filas_antes:,}")
+        print(f"   Filas después:    {filas_despues:,}")
+        print(f"   Eliminadas:       {filas_eliminadas:,} ({porcentaje_eliminado:.2f}%)")
+        print(f"   Shape final:      {self.df_dataset.shape}")
+        
+        # ===========================
+        # PREPARAR MATCHES
+        # ===========================
+        
         self.df_dataset_export = self.df_dataset.copy()
-
-        #filter data to get key elements on mathces
         self.df_dataset_export = self.df_dataset_export.drop_duplicates(subset=["game", "league"])
+        self.df_dataset_export = self.df_dataset_export.sort_values(by='date', ascending=True)
+        print(self.df_dataset_export.head(10))
         self.df_dataset_export = self.df_dataset_export[["local", "away", "round", "season", "date", "league"]]
-
-        #load all unique matches on a list to process
+        
         self.lst_matches = self.df_dataset_export.values.tolist()
-
         self.lst_matches = [row for row in self.lst_matches if row[3] != "1718"]
-
-        print("dataset loaded")
+        
+        print(f"✅ Partidos a procesar: {len(self.lst_matches)}")
 
     def process_all_matches(self):
         
@@ -449,8 +555,19 @@ class PROCESS_DATA():
             
             # Corners reales
             ck = get_ck(self.df_dataset, season, round_num, local, away, league=league_code)
-            self.y.append(ck)
-            
+            self.y.append(ck[0])
+            dic_df['y_home'] = (ck[1],)
+            dic_df['y_away'] = (ck[2],)
+            dic_df['gol_total'] = (ck[3],)
+            dic_df['gol_home'] = (ck[4],)
+            dic_df['gol_away'] = (ck[5],)
+            dic_df['eg_total'] = (ck[6],)
+            dic_df['eg_home'] = (ck[7],)
+            dic_df['eg_away'] = (ck[8],)
+            dic_df['st_total'] = (ck[9],)
+            dic_df['st_home'] = (ck[10],)
+            dic_df['st_away'] = (ck[11],)
+
             # Head to Head
             index = self.lst_years.index(season)
             result = self.lst_years[:index+1]
@@ -466,6 +583,14 @@ class PROCESS_DATA():
             dic_df['ppp_local'] = (local_ppp,)
             dic_df['ppp_away'] = (away_ppp,)
             dic_df['ppp_difference'] = (ppp_diff,)
+            if i[2] < 15:
+                dic_df['round'] = (1,)
+            elif i[2] < 15 and i[2] > 25:
+                dic_df['round'] = (2,)
+            else:
+                dic_df['round'] = (3,)
+
+            
             
             # ✅ FEATURES CON MÉTRICAS AVANZADAS (23 valores cada una)
             dic_df['lst_team1_home_form'] = create_line(team1_home, True, True, use_advanced=True)
@@ -510,7 +635,7 @@ class PROCESS_DATA():
                 lst_features_values.extend(list(dic_df[key]))
                 
                 # Casos especiales
-                if key in ['ppp_local', 'ppp_away', 'ppp_difference']:
+                if key in ['ppp_local', 'ppp_away', 'ppp_difference','round','y_home','y_away',"gol_total","gol_home","gol_away","eg_total","eg_home","eg_away","st_total","st_home","st_away"]:
                     self.lst_features_values.append(key)
                 elif key.startswith('league_'):
                     self.lst_features_values.append(key)
@@ -527,6 +652,8 @@ class PROCESS_DATA():
     def clean_and_ouput_dataset(self):
                 
         self.df_data = pd.DataFrame(data=self.lst_data, columns=self.lst_features_values)
+
+        
 
         print(f"\n✅ PROCESAMIENTO COMPLETADO:")
         print(f"   Shape inicial: {self.df_data.shape}")
