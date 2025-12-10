@@ -598,6 +598,13 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         dic_features['ppp_local'] = (local_ppp,)
         dic_features['ppp_away'] = (away_ppp,)
         dic_features['ppp_difference'] = (ppp_diff,)
+        if jornada < 15:
+            dic_features['round'] = (1,)
+        elif jornada < 15 and jornada > 25:
+            dic_features['round'] = (2,)
+        else:
+            dic_features['round'] = (3,)
+
         
         dic_features['lst_team1_home_form'] = create_line(team1_home, True, True, use_advanced=True)
         dic_features['lst_team1_home_general'] = create_line(team1_home, False, True, use_advanced=True)
@@ -651,7 +658,7 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         for key in dic_features:
             lst_features_values.extend(list(dic_features[key]))
             
-            if key in ['ppp_local', 'ppp_away', 'ppp_difference']:
+            if key in ['ppp_local', 'ppp_away', 'ppp_difference','round']:
                 lst_features_names.append(key)
             elif key.startswith('league_'):
                 lst_features_names.append(key)
@@ -692,42 +699,113 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         # ===========================
         # ESTADÍSTICAS DETALLADAS
         # ===========================
+        def get_stat(df, col, form=False):
+            if len(df) == 0: return 0
+            data = df.tail(6) if form else df
+            return data[col].mean()
+
+        # --- 1. EQUIPO LOCAL (TEAM 1) ---
         
-        local_ck_home = team1_home['Pass Types_CK'].mean() if len(team1_home) > 0 else 0
-        local_xg_home = team1_home['Expected_xG'].mean() if len(team1_home) > 0 else 0
-        local_poss_home = team1_home['Poss'].mean() if len(team1_home) > 0 else 0
+        # 1.1 Cuando juega en CASA (Home)
+        local_ck_home = get_stat(team1_home, 'Pass Types_CK')
+        local_xg_home = get_stat(team1_home, 'Expected_xG')
+        local_gf_home = get_stat(team1_home, 'GF')
+
+        print(team1_home)
+        print(team2_away)
         
-        away_ck_away = team2_away['Pass Types_CK'].mean() if len(team2_away) > 0 else 0
-        away_xg_away = team2_away['Expected_xG'].mean() if len(team2_away) > 0 else 0
-        away_poss_away = team2_away['Poss'].mean() if len(team2_away) > 0 else 0
+        local_ck_home_form = get_stat(team1_home, 'Pass Types_CK', form=True)
+        local_xg_home_form = get_stat(team1_home, 'Expected_xG', form=True)
+        local_gf_home_form = get_stat(team1_home, 'GF', form=True)
+
+        local_ck_received_home = get_stat(team1_opp_home, 'Pass Types_CK')
+        local_gf_received_home = get_stat(team1_opp_home, 'GF')
+        local_xg_received_home = get_stat(team1_opp_home, 'Expected_xG')
         
-        local_ck_received = team1_opp_home['Pass Types_CK'].mean() if len(team1_opp_home) > 0 else 0
-        away_ck_received = team2_opp_away['Pass Types_CK'].mean() if len(team2_opp_away) > 0 else 0
+        local_ck_received_home_form = get_stat(team1_opp_home, 'Pass Types_CK', form=True)
+        local_gf_received_home_form = get_stat(team1_opp_home, 'GF', form=True)
+        local_xg_received_home_form = get_stat(team1_opp_home, 'Expected_xG', form=True)
+
+        # 1.2 Cuando juega FUERA (Away) - NUEVO
+        local_ck_away = get_stat(team1_away, 'Pass Types_CK')
+        local_xg_away = get_stat(team1_away, 'Expected_xG')
+        local_gf_away = get_stat(team1_away, 'GF')
         
+        local_ck_away_form = get_stat(team1_away, 'Pass Types_CK', form=True)
+        local_xg_away_form = get_stat(team1_away, 'Expected_xG', form=True)
+        local_gf_away_form = get_stat(team1_away, 'GF', form=True)
+
+        local_ck_received_away = get_stat(team1_opp_away, 'Pass Types_CK')
+        local_gf_received_away = get_stat(team1_opp_away, 'GF')
+        local_xg_received_away = get_stat(team1_opp_away, 'Expected_xG')
+
+        local_ck_received_away_form = get_stat(team1_opp_away, 'Pass Types_CK', form=True)
+        local_gf_received_away_form = get_stat(team1_opp_away, 'GF', form=True)
+        local_xg_received_away_form = get_stat(team1_opp_away, 'Expected_xG', form=True)
+
+
+        # --- 2. EQUIPO VISITANTE (TEAM 2) ---
+
+        # 2.1 Cuando juega FUERA (Away)
+        away_ck_away = get_stat(team2_away, 'Pass Types_CK')
+        away_xg_away = get_stat(team2_away, 'Expected_xG')
+        away_gf_away = get_stat(team2_away, 'GF')
+
+        away_ck_away_form = get_stat(team2_away, 'Pass Types_CK', form=True)
+        away_xg_away_form = get_stat(team2_away, 'Expected_xG', form=True)
+        away_gf_away_form = get_stat(team2_away, 'GF', form=True)
+
+        away_ck_received_away = get_stat(team2_opp_away, 'Pass Types_CK')
+        away_gf_received_away = get_stat(team2_opp_away, 'GF')
+        away_xg_received_away = get_stat(team2_opp_away, 'Expected_xG')
+
+        away_ck_received_away_form = get_stat(team2_opp_away, 'Pass Types_CK', form=True)
+        away_gf_received_away_form = get_stat(team2_opp_away, 'GF', form=True)
+        away_xg_received_away_form = get_stat(team2_opp_away, 'Expected_xG', form=True)
+
+        # 2.2 Cuando juega en CASA (Home) - NUEVO
+        away_ck_home = get_stat(team2_home, 'Pass Types_CK')
+        away_xg_home = get_stat(team2_home, 'Expected_xG')
+        away_gf_home = get_stat(team2_home, 'GF')
+
+        away_ck_home_form = get_stat(team2_home, 'Pass Types_CK', form=True)
+        away_xg_home_form = get_stat(team2_home, 'Expected_xG', form=True)
+        away_gf_home_form = get_stat(team2_home, 'GF', form=True)
+
+        away_ck_received_home = get_stat(team2_opp_home, 'Pass Types_CK')
+        away_gf_received_home = get_stat(team2_opp_home, 'GF')
+        away_xg_received_home = get_stat(team2_opp_home, 'Expected_xG')
+
+        away_ck_received_home_form = get_stat(team2_opp_home, 'Pass Types_CK', form=True)
+        away_gf_received_home_form = get_stat(team2_opp_home, 'GF', form=True)
+        away_xg_received_home_form = get_stat(team2_opp_home, 'Expected_xG', form=True)
+
+
+        # --- TOTALES ESPERADOS (Contexto del partido actual: Local en Casa vs Visitante Fuera) ---
         partido_ck_esperado = local_ck_home + away_ck_away
+        partido_gf_esperado = local_gf_home + away_gf_away
+        partido_xg_esperado = local_xg_home + away_xg_away
+
+        partido_ck_esperado_form = local_ck_home_form + away_ck_away_form 
+        partido_gf_esperado_form = local_gf_home_form + away_gf_away_form
+        partido_xg_esperado_form = local_xg_home_form + away_xg_away_form
         
-        h2h_ck_local = team1_h2h['Pass Types_CK'].mean() if len(team1_h2h) > 0 else 0
-        h2h_ck_away = team2_h2h['Pass Types_CK'].mean() if len(team2_h2h) > 0 else 0
-        h2h_total = h2h_ck_local + h2h_ck_away
+        # --- H2H ---
+        h2h_ck_local = get_stat(team1_h2h, 'Pass Types_CK')
+        h2h_ck_away = get_stat(team2_h2h, 'Pass Types_CK')
+        h2h_ck_total = h2h_ck_local + h2h_ck_away
+
+        h2h_gf_local = get_stat(team1_h2h, 'GF')
+        h2h_gf_away = get_stat(team2_h2h, 'GF')
+        h2h_gf_total = h2h_gf_local + h2h_gf_away
+
+        h2h_xg_local = get_stat(team1_h2h, 'Expected_xG')
+        h2h_xg_away = get_stat(team2_h2h, 'Expected_xG')
+        h2h_xg_total = h2h_xg_local + h2h_xg_away
+        print(team1_h2h.head())
+        print(team2_h2h.head())
         
-        # ===========================
-        # ✅ MOSTRAR RESULTADOS CON PROBABILIDADES
-        # ===========================
-        
-        print(f"\n🎲 PREDICCIÓN MODELO: {prediccion:.2f} corners totales")
-        print(f"   PPP: {local} ({local_ppp:.2f}) vs {visitante} ({away_ppp:.2f}) | Diff: {ppp_diff:+.2f}")
-        
-        print(f"\n📊 ESTADÍSTICAS HISTÓRICAS:")
-        print(f"   {local} (Casa): {local_ck_home:.1f} CK/partido | xG: {local_xg_home:.2f} | Poss: {local_poss_home:.1f}%")
-        print(f"   {visitante} (Fuera): {away_ck_away:.1f} CK/partido | xG: {away_xg_away:.2f} | Poss: {away_poss_away:.1f}%")
-        print(f"   Corners recibidos: {local} ({local_ck_received:.1f}) | {visitante} ({away_ck_received:.1f})")
-        print(f"   Total esperado (suma): {partido_ck_esperado:.1f} corners")
-        
-        if len(team1_h2h) > 0 or len(team2_h2h) > 0:
-            print(f"\n🔄 HEAD TO HEAD (últimos {max(len(team1_h2h), len(team2_h2h))} partidos):")
-            print(f"   {local}: {h2h_ck_local:.1f} CK/partido")
-            print(f"   {visitante}: {h2h_ck_away:.1f} CK/partido")
-            print(f"   Promedio total: {h2h_total:.1f} corners")
+
         
         # ===========================
         # ✅ MOSTRAR PROBABILIDADES EXACTAS
@@ -809,11 +887,6 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         df_varianza_temp = analizar_fiabilidad_equipos(df_database, temporada=temporada, min_partidos=3)
         riesgo = obtener_fiabilidad_partido(local, visitante, df_varianza_temp)
 
-        print(f"\n⚠️ ANÁLISIS DE RIESGO:")
-        print(f"   Local ({local}): {riesgo['nivel_local']} (CV: {riesgo['cv_local']:.1f}%)")
-        print(f"   Away ({visitante}): {riesgo['nivel_away']} (CV: {riesgo['cv_away']:.1f}%)")
-        print(f"   🎲 FIABILIDAD PARTIDO: {riesgo['fiabilidad']} (Score: {riesgo['score_promedio']:.1f})")
-        print(f"   💡 {riesgo['mensaje']}")
         
         # ===========================
         # RETORNAR DICCIONARIO COMPLETO
@@ -827,13 +900,89 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
             "ppp_away": away_ppp,
             "ppp_diff": ppp_diff,
             "riesgo": riesgo,
-            "stats": {
-                "local_ck": local_ck_home,
-                "away_ck": away_ck_away,
-                "local_ck_received": local_ck_received,
-                "away_ck_received": away_ck_received,
-                "h2h_total": h2h_total,
-                "partido_esperado": partido_ck_esperado
+            "stats_ck": {
+                # Local Team Stats
+                "local_ck_home": local_ck_home,
+                "local_ck_away": local_ck_away, # Nuevo
+                "local_ck_received_home": local_ck_received_home,
+                "local_ck_received_away": local_ck_received_away, # Nuevo
+                
+                "local_ck_home_form": local_ck_home_form,
+                "local_ck_away_form": local_ck_away_form, # Nuevo
+                "local_ck_received_home_form": local_ck_received_home_form,
+                "local_ck_received_away_form": local_ck_received_away_form, # Nuevo
+
+                # Away Team Stats
+                "away_ck_home": away_ck_home, # Nuevo
+                "away_ck_away": away_ck_away,
+                "away_ck_received_home": away_ck_received_home, # Nuevo
+                "away_ck_received_away": away_ck_received_away,
+
+                "away_ck_home_form": away_ck_home_form, # Nuevo
+                "away_ck_away_form": away_ck_away_form,
+                "away_ck_received_home_form": away_ck_received_home_form, # Nuevo
+                "away_ck_received_away_form": away_ck_received_away_form,
+
+                # Totals
+                "h2h_ck_total": h2h_ck_total,
+                "partido_ck_esperado": partido_ck_esperado,
+                "partido_ck_esperado_form": partido_ck_esperado_form
+            },
+            "stats_gf": {
+                # Local Team Stats
+                "local_gf_home": local_gf_home,
+                "local_gf_away": local_gf_away, # Nuevo
+                "local_gf_received_home": local_gf_received_home,
+                "local_gf_received_away": local_gf_received_away, # Nuevo
+
+                "local_gf_home_form": local_gf_home_form,
+                "local_gf_away_form": local_gf_away_form, # Nuevo
+                "local_gf_received_home_form": local_gf_received_home_form,
+                "local_gf_received_away_form": local_gf_received_away_form, # Nuevo
+
+                # Away Team Stats
+                "away_gf_home": away_gf_home, # Nuevo
+                "away_gf_away": away_gf_away,
+                "away_gf_received_home": away_gf_received_home, # Nuevo
+                "away_gf_received_away": away_gf_received_away,
+
+                "away_gf_home_form": away_gf_home_form, # Nuevo
+                "away_gf_away_form": away_gf_away_form,
+                "away_gf_received_home_form": away_gf_received_home_form, # Nuevo
+                "away_gf_received_away_form": away_gf_received_away_form,
+
+                # Totals
+                "h2h_gf_total": h2h_gf_total,
+                "partido_gf_esperado": partido_gf_esperado,
+                "partido_gf_esperado_form": partido_gf_esperado_form,
+            },
+            "stats_xg": {
+                # Local Team Stats
+                "local_xg_home": local_xg_home,
+                "local_xg_away": local_xg_away, # Nuevo
+                "local_xg_received_home": local_xg_received_home,
+                "local_xg_received_away": local_xg_received_away, # Nuevo
+
+                "local_xg_home_form": local_xg_home_form,
+                "local_xg_away_form": local_xg_away_form, # Nuevo
+                "local_xg_received_home_form": local_xg_received_home_form,
+                "local_xg_received_away_form": local_xg_received_away_form, # Nuevo
+
+                # Away Team Stats
+                "away_xg_home": away_xg_home, # Nuevo
+                "away_xg_away": away_xg_away,
+                "away_xg_received_home": away_xg_received_home, # Nuevo
+                "away_xg_received_away": away_xg_received_away,
+
+                "away_xg_home_form": away_xg_home_form, # Nuevo
+                "away_xg_away_form": away_xg_away_form,
+                "away_xg_received_home_form": away_xg_received_home_form, # Nuevo
+                "away_xg_received_away_form": away_xg_received_away_form,
+
+                # Totals
+                "h2h_xg_total": h2h_xg_total,
+                "partido_xg_esperado": partido_xg_esperado,
+                "partido_xg_esperado_form": partido_xg_esperado_form
             },
             "probabilidades_exactas": analisis['exactas'],
             "probabilidades_over": analisis['over'],
@@ -1086,8 +1235,9 @@ class USE_MODEL():
         
         # URLs de descarga directa (raw.githubusercontent.com)
         base_url = "https://raw.githubusercontent.com/danielsaed/futbol_corners_forecast/refs/heads/main/models"
-        model_url = f"{base_url}/xgboost_corners_v4_retrain.pkl"
-        scaler_url = f"{base_url}/scaler_corners_v4_retrain.pkl"
+        #model_url = f"{base_url}/xgboost_corners_v4_retrain.pkl"
+        model_url = f"{base_url}/xgboost_corners_v4_retrain_PRODUCTION.pkl"
+        scaler_url = f"{base_url}/scaler_corners_v4_retrain_PRODUCTION.pkl"
         
         try:
             # Descargar modelo
@@ -1152,6 +1302,9 @@ class USE_MODEL():
             # Limpieza
             self.df_dataset["season"] = self.df_dataset["season"].astype(str)
             self.df_dataset["Performance_Save%"].fillna(0, inplace=True)
+            self.df_dataset['date'] = pd.to_datetime(self.df_dataset['date'])
+
+            self.df_dataset = self.df_dataset.sort_values(by='date',ascending=True)
             
             print(f"✅ Total registros: {len(self.df_dataset)}")
             
