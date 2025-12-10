@@ -1,1 +1,5 @@
 \mlruns
+.env
+*.pyc
+*.csv
+*tempCodeRunnerFile.py
