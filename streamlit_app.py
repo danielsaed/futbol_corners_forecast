@@ -27,10 +27,31 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- CONSTANTES DEL MODELO ---
-MSE_MODELO = 1.9
-RMSE_MODELO = 2.42
+MSE_MODELO = 1.99
+RMSE_MODELO = 2.4
 R2_MODELO = 0.39
 N_SIMULACIONES = 5000
+
+# --- ERRORES ESTIMADOS POR MODELO (RMSE) ---
+# Corners
+RMSE_CK_TOTAL = 1.99
+RMSE_CK_LOCAL = 1.64
+RMSE_CK_AWAY = 1.45
+
+# Goles
+RMSE_GF_TOTAL = .95
+RMSE_GF_LOCAL = .6
+RMSE_GF_AWAY = .6
+
+# xG (Goles Esperados)
+RMSE_XG_TOTAL = 1
+RMSE_XG_LOCAL = .6
+RMSE_XG_AWAY = .6
+
+# Tiros a Puerta (Shots on Target)
+RMSE_ST_TOTAL = 1.7
+RMSE_ST_LOCAL = 1.4
+RMSE_ST_AWAY = 1.3
 
 # --- FUNCIONES AUXILIARES ---
 def probabilidad_a_momio(probabilidad):
@@ -162,8 +183,11 @@ st.markdown("<h1 style='text-align: center;'>Corners Forecast</h1>", unsafe_allo
 # --- CARGAR DATOS ---
 @st.cache_data
 def cargar_datos():
-    df = pd.read_csv(r"https://raw.githubusercontent.com/danielsaed/futbol_corners_forecast/refs/heads/main/dataset/cleaned/dataset_cleaned.csv")
-    return df[['local','league']].drop_duplicates()
+    df_historic = pd.read_csv(r"https://raw.githubusercontent.com/danielsaed/futbol_corners_forecast/refs/heads/main/dataset/cleaned/dataset_cleaned.csv")
+    df_current_year = pd.read_csv(r"https://raw.githubusercontent.com/danielsaed/futbol_corners_forecast/refs/heads/main/dataset/cleaned/dataset_cleaned_current_year.csv")
+
+    df = pd.concat([df_historic,df_current_year])
+    return df[['local','league','season']].drop_duplicates()
 
 df = cargar_datos()
 
@@ -249,7 +273,7 @@ with cl2:
         if jornada:
             option_local = st.selectbox(
                 "🏠 Equipo Local",
-                list(df["local"][df["league"] == LEAGUES_DICT[option]]),
+                list(df["local"][(df["league"] == LEAGUES_DICT[option]) & (df["season"] == temporada)]),
                 index=None,
                 placeholder="Equipo local",
                 key="local_select"
@@ -272,7 +296,7 @@ with cl4:
         if jornada:
             option_away = st.selectbox(
                 "✈️ Equipo Visitante",
-                list(df["local"][df["league"] == LEAGUES_DICT[option]]),
+                list(df["local"][(df["league"] == LEAGUES_DICT[option]) & (df["season"] == temporada)]),
                 index=None,
                 placeholder="Equipo visitante",
                 key="away_select"
@@ -306,8 +330,8 @@ if option and option_local and option_away and st.session_state.prediccion_reali
         
         with st.spinner('🔮 Generando predicción con análisis de incertidumbre...'):
             
-            #url = "https://daniel-saed-futbol-corners-forecast-api.hf.space/items/"
-            url = "http://localhost:7860/items/"
+            url = "https://daniel-saed-futbol-corners-forecast-api.hf.space/items/"
+            #url = "http://localhost:7860/items/"
             headers = {"X-API-Key": API_KEY}
             params = {
                 "local": option_local,
@@ -323,6 +347,7 @@ if option and option_local and option_away and st.session_state.prediccion_reali
                 if response.status_code == 200:
                     st.session_state.resultado_api = response.json()
                     st.success("✅ Predicción generada")
+                    
                 elif response.status_code == 401:
                     st.error("❌ Error de Autenticación - API Key inválida")
                     st.stop()
@@ -350,50 +375,85 @@ if option and option_local and option_away and st.session_state.prediccion_reali
         resultado = st.session_state.resultado_api
         lambda_pred = resultado['prediccion']
         
+        # Extraer predicciones detalladas
+        pred_ck_total = resultado.get('prediccion', 0)
+        pred_ck_local = resultado.get('prediccion_local', 0)
+        pred_ck_away = resultado.get('prediccion_away', 0)
+        
+        pred_xg_total = resultado.get('prediccion_xg', 0)
+        pred_xg_local = resultado.get('prediccion_xg_local', 0)
+        pred_xg_away = resultado.get('prediccion_xg_away', 0)
+        
+        pred_gf_total = resultado.get('prediccion_gf', 0)
+        pred_gf_local = resultado.get('prediccion_gf_local', 0)
+        pred_gf_away = resultado.get('prediccion_gf_away', 0)
+        
+        pred_st_total = resultado.get('prediccion_st', 0)
+        pred_st_local = resultado.get('prediccion_st_local', 0)
+        pred_st_away = resultado.get('prediccion_st_away', 0)
+        
         st.write("")
         st.write("")
         
         # ============================================
-        # 1. PREDICCIÓN PRINCIPAL
+        # 1. PREDICCIONES MACHINE LEARNING
         # ============================================
         
-        lambda_low = max(0, lambda_pred - 1.96 * RMSE_MODELO)
-        lambda_high = lambda_pred + 1.96 * RMSE_MODELO
+        st.markdown("# Predicciones")
+        st.write("")
+        st.caption("Modelos XGBoost entrenados con alrededor de 13,000 partidos utilizando metricas avanzadas de futbol de las principales ligas europeas (2018 a 2025). Datos obtenidos de OPTA.")
         
-        st.markdown("## 🎯 Predicción de Corners")
-        
+        def mostrar_bloque_prediccion(titulo, total, local, away, rmse_total, rmse_local, rmse_away, icono):
+            st.markdown(f"#### {icono} {titulo}")
+            c1, c2, c3 = st.columns(3)
+            with c1:
+                st.metric("Total", f"{total:.2f}", delta=f"± {rmse_total}", delta_color="off", help=f"RMSE estimado: {rmse_total}")
+            with c2:
+                st.metric(f"Local ({option_local})", f"{local:.2f}", delta=f"± {rmse_local}", delta_color="off", help=f"RMSE estimado: {rmse_local}")
+            with c3:
+                st.metric(f"Visitante ({option_away})", f"{away:.2f}", delta=f"± {rmse_away}", delta_color="off", help=f"RMSE estimado: {rmse_away}")
+            st.divider()
+
+        # 1. Tiros de Esquina
+        mostrar_bloque_prediccion(
+            "Tiros de esquina", 
+            pred_ck_total, pred_ck_local, pred_ck_away, 
+            RMSE_CK_TOTAL, RMSE_CK_LOCAL, RMSE_CK_AWAY, 
+            "🚩"
+        )
+
+        # 2. Goles
+        mostrar_bloque_prediccion(
+            "Goles", 
+            pred_gf_total, pred_gf_local, pred_gf_away, 
+            RMSE_GF_TOTAL, RMSE_GF_LOCAL, RMSE_GF_AWAY, 
+            "⚽"
+        )
+
+        # 3. xG (Goles Esperados)
+        mostrar_bloque_prediccion(
+            "xG (Goles Esperados)", 
+            pred_xg_total, pred_xg_local, pred_xg_away, 
+            RMSE_XG_TOTAL, RMSE_XG_LOCAL, RMSE_XG_AWAY, 
+            "📈"
+        )
+
+        # 4. Tiros a Puerta
+        mostrar_bloque_prediccion(
+            "Tiros a puerta", 
+            pred_st_total, pred_st_local, pred_st_away, 
+            RMSE_ST_TOTAL, RMSE_ST_LOCAL, RMSE_ST_AWAY, 
+            "🎯")
+
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
         st.write("")
         
-        col_pred1, col_pred2, col_pred3 = st.columns(3)
-        
-        with col_pred1:
-            st.metric(
-                label="Corners Esperados",
-                value=f"{lambda_pred:.1f}",
-                help="Valor esperado (λ) del modelo"
-            )
-        
-        with col_pred2:
-            st.metric(
-                label="Límite Inferior",
-                value=f"{lambda_low:.1f}",
-                delta=f"{lambda_low - lambda_pred:.1f}",
-                help="Intervalo de confianza 95% (inferior)"
-            )
-        
-        with col_pred3:
-            st.metric(
-                label="Límite Superior",
-                value=f"{lambda_high:.1f}",
-                delta=f"{lambda_high - lambda_pred:.1f}",
-                help="Intervalo de confianza 95% (superior)"
-            )
-        
-        st.write("")
-        st.write("")
-        st.markdown("---")
-        st.write("")
-        st.write("")
         
         # ============================================
         # 2. ANÁLISIS DE EQUIPOS
@@ -405,13 +465,14 @@ if option and option_local and option_away and st.session_state.prediccion_reali
         stats_ck = resultado.get('stats_ck', {})
         stats_gf = resultado.get('stats_gf', {})
         stats_xg = resultado.get('stats_xg', {})
+        stats_st = resultado.get('stats_st', {}) # Nuevo
         
         ppp_local = resultado.get('ppp_local', 0)
         ppp_away = resultado.get('ppp_away', 0)
         
         riesgo = resultado['riesgo']
         
-        st.markdown("### 📊 Estadísticas del Partido")
+        st.markdown("# Stats")
         
         # Métrica de Forma (PPP)
         col_form1, col_form2, col_form3 = st.columns(3)
@@ -463,6 +524,43 @@ if option and option_local and option_away and st.session_state.prediccion_reali
             l_rec_g_f = (l_rec_h_f + l_rec_a_f) / 2
             a_rec_g_f = (a_rec_h_f + a_rec_a_f) / 2
 
+            # --- FUNCIÓN AUXILIAR PARA MOSTRAR TABLA CON TOTALES ---
+            def display_styled_df(teams, favors, contras):
+                df = pd.DataFrame({
+                    'Equipo': teams,
+                    'A Favor': favors,
+                    'En Contra': contras
+                })
+                
+                # Calcular Totales por Fila (Total del equipo)
+                df['Total'] = df['A Favor'] + df['En Contra']
+                
+                # Calcular Totales por Columna (Suma de ambos equipos)
+                # NOTA: El total de totales (esquina inferior derecha) se deja vacío
+                total_row = pd.DataFrame({
+                    'Equipo': ['TOTAL'],
+                    'A Favor': [df['A Favor'].sum()],
+                    'En Contra': [df['En Contra'].sum()],
+                    'Total': [0]
+                })
+                
+                df_final = pd.concat([df, total_row], ignore_index=True)
+                
+                # Estilos
+                # na_rep="" hace que el None se muestre como celda vacía
+                styler = df_final.style.format(subset=['A Favor', 'En Contra', 'Total'], formatter="{:.2f}", na_rep="")
+                
+                # Estilo: Fondo transparente y texto gris
+                style_css = 'color: #888888; font-weight: bold;'
+                
+                # Resaltar última fila (Totales de columna)
+                styler.apply(lambda x: [style_css if x.name == df_final.index[-1] else '' for _ in x], axis=1)
+                
+                # Resaltar columna Total (Totales de fila)
+                styler.apply(lambda x: [style_css if x.name == 'Total' else '' for _ in x], axis=0)
+                
+                st.dataframe(styler, hide_index=True, use_container_width=True)
+
             # --- 2. RENDERIZAR SECCIÓN GENERAL ---
             st.markdown("#### 📊 Datos Generales (Temporada)")
             c1, c2, c3 = st.columns(3)
@@ -470,34 +568,29 @@ if option and option_local and option_away and st.session_state.prediccion_reali
             # Columna 1: Contexto Real
             with c1:
                 st.caption("🏟️ Contexto (Local en Casa / Vis. Fuera)")
-                df_ctx = pd.DataFrame({
-                    'Equipo': [f'🏠 {option_local}', f'✈️ {option_away}'],
-                    'A Favor': [f'{l_h:.2f}', f'{a_a:.2f}'],
-                    'En Contra': [f'{l_rec_h:.2f}', f'{a_rec_a:.2f}']
-                })
-                st.dataframe(df_ctx, hide_index=True, use_container_width=True)
+                display_styled_df(
+                    [f'🏠 {option_local}', f'✈️ {option_away}'],
+                    [l_h, a_a],
+                    [l_rec_h, a_rec_a]
+                )
 
             # Columna 2: Inversa
             with c2:
                 st.caption("🔄 Inversa (Local Fuera / Vis. Casa)")
-                df_inv = pd.DataFrame({
-                    'Equipo': [f'✈️ {option_local}', f'🏠 {option_away}'],
-                    'A Favor': [f'{l_a:.2f}', f'{a_h:.2f}'],
-                    'En Contra': [f'{l_rec_a:.2f}', f'{a_rec_h:.2f}']
-                })
-                st.dataframe(df_inv, hide_index=True, use_container_width=True)
+                display_styled_df(
+                    [f'✈️ {option_local}', f'🏠 {option_away}'],
+                    [l_a, a_h],
+                    [l_rec_a, a_rec_h]
+                )
 
             # Columna 3: Global
             with c3:
                 st.caption("🌍 Global (Promedio Total)")
-                df_glob = pd.DataFrame({
-                    'Equipo': [f'{option_local}', f'{option_away}'],
-                    'A Favor': [f'{l_g:.2f}', f'{a_g:.2f}'],
-                    'En Contra': [f'{l_rec_g:.2f}', f'{a_rec_g:.2f}']
-                })
-                st.dataframe(df_glob, hide_index=True, use_container_width=True)
-
-
+                display_styled_df(
+                    [f'{option_local}', f'{option_away}'],
+                    [l_g, a_g],
+                    [l_rec_g, a_rec_g]
+                )
 
             # --- 3. RENDERIZAR SECCIÓN FORMA ---
             st.markdown("#### 🔥 Estado de Forma (Últimos 6 Partidos)")
@@ -506,48 +599,38 @@ if option and option_local and option_away and st.session_state.prediccion_reali
             # Columna 1: Contexto Forma
             with c1_f:
                 st.caption("🏟️ Contexto (Forma)")
-                df_ctx_f = pd.DataFrame({
-                    'Equipo': [f'🏠 {option_local}', f'✈️ {option_away}'],
-                    'A Favor': [f'{l_h_f:.2f}', f'{a_a_f:.2f}'],
-                    'En Contra': [f'{l_rec_h_f:.2f}', f'{a_rec_a_f:.2f}']
-                })
-                st.dataframe(df_ctx_f, hide_index=True, use_container_width=True)
+                display_styled_df(
+                    [f'🏠 {option_local}', f'✈️ {option_away}'],
+                    [l_h_f, a_a_f],
+                    [l_rec_h_f, a_rec_a_f]
+                )
 
             # Columna 2: Inversa Forma
             with c2_f:
                 st.caption("🔄 Inversa (Forma)")
-                df_inv_f = pd.DataFrame({
-                    'Equipo': [f'✈️ {option_local}', f'🏠 {option_away}'],
-                    'A Favor': [f'{l_a_f:.2f}', f'{a_h_f:.2f}'],
-                    'En Contra': [f'{l_rec_a_f:.2f}', f'{a_rec_h_f:.2f}']
-                })
-                st.dataframe(df_inv_f, hide_index=True, use_container_width=True)
+                display_styled_df(
+                    [f'✈️ {option_local}', f'🏠 {option_away}'],
+                    [l_a_f, a_h_f],
+                    [l_rec_a_f, a_rec_h_f]
+                )
 
             # Columna 3: Global Forma
             with c3_f:
                 st.caption("🌍 Global (Forma)")
-                df_glob_f = pd.DataFrame({
-                    'Equipo': [f'{option_local}', f'{option_away}'],
-                    'A Favor': [f'{l_g_f:.2f}', f'{a_g_f:.2f}'],
-                    'En Contra': [f'{l_rec_g_f:.2f}', f'{a_rec_g_f:.2f}']
-                })
-                st.dataframe(df_glob_f, hide_index=True, use_container_width=True)
+                display_styled_df(
+                    [f'{option_local}', f'{option_away}'],
+                    [l_g_f, a_g_f],
+                    [l_rec_g_f, a_rec_g_f]
+                )
             
-
-
             # --- 4. RENDERIZAR H2H ---
             st.markdown("#### ⚔️ Head to Head (H2H)")
             h2h_val = stats_data.get(f'h2h_{type_key}_total', 0)
-            
-
             st.metric(f"Promedio {label_metric} H2H", f"{h2h_val:.2f}")
-
-
             
-
 
         # Tabs para las diferentes estadísticas
-        tab_ck, tab_gf, tab_xg = st.tabs(["🚩 Corners", "⚽ Goles", "📈 xG (Esperados)"])
+        tab_ck, tab_gf, tab_xg, tab_st = st.tabs(["🚩 Corners", "⚽ Goles", "📈 xG (Esperados)", "🎯 Tiros a Puerta"])
         
         with tab_ck:
             render_stats_tab(stats_ck, 'ck', 'Corners')
@@ -557,12 +640,78 @@ if option and option_local and option_away and st.session_state.prediccion_reali
             
         with tab_xg:
             render_stats_tab(stats_xg, 'xg', 'xG')
-        
+            
+        with tab_st:
+            render_stats_tab(stats_st, 'st', 'Tiros a Puerta')
+            
+        # --- MOSTRAR TABLA H2H DETALLADA ---
+        if 'h2h_matches' in resultado and resultado['h2h_matches']:
+            st.markdown("### 📜 Historial de Partidos (H2H)")
+            
+            h2h_data = []
+            for match in resultado['h2h_matches']:
+                # Datos del equipo local en ese partido
+                home_team = match['match_home_team']
+                away_team = match['match_away_team']
+                
+                # Identificar stats correctas
+                if match['local_team_stats']['team'] == home_team:
+                    home_stats = match['local_team_stats']
+                    away_stats = match['away_team_stats']
+                else:
+                    home_stats = match['away_team_stats']
+                    away_stats = match['local_team_stats']
+                
+                h2h_data.append({
+                    'Temporada': match['season'],
+                    'Jornada': match['round'],
+                    'Local': home_team,
+                    'Visitante': away_team,
+                    'Goles L': home_stats['goals'],
+                    'Goles V': away_stats['goals'],
+                    'Corners L': home_stats['corners'],
+                    'Corners V': away_stats['corners'],
+                    'xG L': home_stats['xg'],
+                    'xG V': away_stats['xg'],
+                    'SoT L': home_stats['sot'],
+                    'SoT V': away_stats['sot']
+                })
+            
+            df_h2h = pd.DataFrame(h2h_data)
+            
+            st.dataframe(
+                df_h2h, 
+                hide_index=True,
+                use_container_width=True,
+                column_config={
+                    'Temporada': st.column_config.TextColumn('📅 Temp', width='small'),
+                    'Jornada': st.column_config.NumberColumn('#', width='small', format="%d"),
+                    'Goles L': st.column_config.NumberColumn('⚽ L', format="%.0f"),
+                    'Goles V': st.column_config.NumberColumn('⚽ V', format="%.0f"),
+                    'Corners L': st.column_config.NumberColumn('🚩 L', format="%.0f"),
+                    'Corners V': st.column_config.NumberColumn('🚩 V', format="%.0f"),
+                    'xG L': st.column_config.NumberColumn('📈 xG L', format="%.2f"),
+                    'xG V': st.column_config.NumberColumn('📈 xG V', format="%.2f"),
+                    'SoT L': st.column_config.NumberColumn('🎯 SoT L', format="%.0f"),
+                    'SoT V': st.column_config.NumberColumn('🎯 SoT V', format="%.0f"),
+                }
+            )
+        st.divider()
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
         st.write("")
         st.write("")
 
-        st.divider()
+
+
         
+        st.markdown("# Momios y Valor de Apuesta")
+        st.write("")
+        st.write("")
         st.markdown("### Fiabilidad")
         
         col_fiab1, col_fiab2, col_fiab3 = st.columns(3)
@@ -788,16 +937,15 @@ if option and option_local and option_away and st.session_state.prediccion_reali
             
             st.plotly_chart(fig_under, use_container_width=True)
         
-        st.write("")
-        st.write("")
+
         st.markdown("---")
         st.write("")
-        st.write("")
+
             
         # ============================================
         # 4. CALCULADORA
         # ============================================
-        st.markdown("## 💰 Calculadora de Valor")
+        st.markdown("### 💰 Calculadora de Valor")
         
         st.write("")
         
@@ -944,7 +1092,7 @@ else:
 
 # Sidebar
 with st.sidebar:
-    st.markdown("## Corners Forecast")
+    st.markdown("# Corners Forecast")
     
     st.markdown("---")
     
