@@ -528,7 +528,7 @@ def get_ppp_difference(df, local, away, season, round_num, league=None):
 
 '''
 
-def predecir_corners(local, visitante, jornada, temporada="2526", league_code="ESP",df_database=pd.DataFrame(),xgb_model="",scaler="",lst_years=[]):
+def predecir_corners(local, visitante, jornada, temporada="2526", league_code="ESP",df_database=pd.DataFrame(),xgb_model="",xgb_model_local="",xgb_model_away="",xgb_model_xg="",xgb_model_xg_local="",xgb_model_xg_away="",xgb_model_gf="",xgb_model_gf_local="",xgb_model_gf_away="",xgb_model_st="",xgb_model_st_local="",xgb_model_st_away="",scaler="",lst_years=[]):
     """
     Predice corners totales con análisis completo para apuestas
     
@@ -689,6 +689,17 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         # ===========================
         
         prediccion = xgb_model.predict(X_input_scaled)[0]
+        prediccion_local = xgb_model_local.predict(X_input_scaled)[0]
+        prediccion_away = xgb_model_away.predict(X_input_scaled)[0]
+        prediccion_xg = xgb_model_xg.predict(X_input_scaled)[0]
+        prediccion_xg_local = xgb_model_xg_local.predict(X_input_scaled)[0]
+        prediccion_xg_away = xgb_model_xg_away.predict(X_input_scaled)[0]
+        prediccion_gf = xgb_model_gf.predict(X_input_scaled)[0]
+        prediccion_gf_local = xgb_model_gf_local.predict(X_input_scaled)[0]
+        prediccion_gf_away = xgb_model_gf_away.predict(X_input_scaled)[0]
+        prediccion_st = xgb_model_st.predict(X_input_scaled)[0]
+        prediccion_st_local = xgb_model_st_local.predict(X_input_scaled)[0]
+        prediccion_st_away = xgb_model_st_away.predict(X_input_scaled)[0]
         
         # ===========================
         # ✅ ANÁLISIS PROBABILÍSTICO CON POISSON
@@ -702,6 +713,7 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         def get_stat(df, col, form=False):
             if len(df) == 0: return 0
             data = df.tail(6) if form else df
+            if col not in data.columns: return 0
             return data[col].mean()
 
         # --- 1. EQUIPO LOCAL (TEAM 1) ---
@@ -710,6 +722,7 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         local_ck_home = get_stat(team1_home, 'Pass Types_CK')
         local_xg_home = get_stat(team1_home, 'Expected_xG')
         local_gf_home = get_stat(team1_home, 'GF')
+        local_st_home = get_stat(team1_home, 'Standard_SoT') # Nuevo
 
         print(team1_home)
         print(team2_away)
@@ -717,31 +730,38 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         local_ck_home_form = get_stat(team1_home, 'Pass Types_CK', form=True)
         local_xg_home_form = get_stat(team1_home, 'Expected_xG', form=True)
         local_gf_home_form = get_stat(team1_home, 'GF', form=True)
+        local_st_home_form = get_stat(team1_home, 'Standard_SoT', form=True) # Nuevo
 
         local_ck_received_home = get_stat(team1_opp_home, 'Pass Types_CK')
         local_gf_received_home = get_stat(team1_opp_home, 'GF')
         local_xg_received_home = get_stat(team1_opp_home, 'Expected_xG')
+        local_st_received_home = get_stat(team1_opp_home, 'Standard_SoT') # Nuevo
         
         local_ck_received_home_form = get_stat(team1_opp_home, 'Pass Types_CK', form=True)
         local_gf_received_home_form = get_stat(team1_opp_home, 'GF', form=True)
         local_xg_received_home_form = get_stat(team1_opp_home, 'Expected_xG', form=True)
+        local_st_received_home_form = get_stat(team1_opp_home, 'Standard_SoT', form=True) # Nuevo
 
         # 1.2 Cuando juega FUERA (Away) - NUEVO
         local_ck_away = get_stat(team1_away, 'Pass Types_CK')
         local_xg_away = get_stat(team1_away, 'Expected_xG')
         local_gf_away = get_stat(team1_away, 'GF')
+        local_st_away = get_stat(team1_away, 'Standard_SoT') # Nuevo
         
         local_ck_away_form = get_stat(team1_away, 'Pass Types_CK', form=True)
         local_xg_away_form = get_stat(team1_away, 'Expected_xG', form=True)
         local_gf_away_form = get_stat(team1_away, 'GF', form=True)
+        local_st_away_form = get_stat(team1_away, 'Standard_SoT', form=True) # Nuevo
 
         local_ck_received_away = get_stat(team1_opp_away, 'Pass Types_CK')
         local_gf_received_away = get_stat(team1_opp_away, 'GF')
         local_xg_received_away = get_stat(team1_opp_away, 'Expected_xG')
+        local_st_received_away = get_stat(team1_opp_away, 'Standard_SoT') # Nuevo
 
         local_ck_received_away_form = get_stat(team1_opp_away, 'Pass Types_CK', form=True)
         local_gf_received_away_form = get_stat(team1_opp_away, 'GF', form=True)
         local_xg_received_away_form = get_stat(team1_opp_away, 'Expected_xG', form=True)
+        local_st_received_away_form = get_stat(team1_opp_away, 'Standard_SoT', form=True) # Nuevo
 
 
         # --- 2. EQUIPO VISITANTE (TEAM 2) ---
@@ -750,45 +770,55 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         away_ck_away = get_stat(team2_away, 'Pass Types_CK')
         away_xg_away = get_stat(team2_away, 'Expected_xG')
         away_gf_away = get_stat(team2_away, 'GF')
+        away_st_away = get_stat(team2_away, 'Standard_SoT') # Nuevo
 
         away_ck_away_form = get_stat(team2_away, 'Pass Types_CK', form=True)
         away_xg_away_form = get_stat(team2_away, 'Expected_xG', form=True)
         away_gf_away_form = get_stat(team2_away, 'GF', form=True)
+        away_st_away_form = get_stat(team2_away, 'Standard_SoT', form=True) # Nuevo
 
         away_ck_received_away = get_stat(team2_opp_away, 'Pass Types_CK')
         away_gf_received_away = get_stat(team2_opp_away, 'GF')
         away_xg_received_away = get_stat(team2_opp_away, 'Expected_xG')
+        away_st_received_away = get_stat(team2_opp_away, 'Standard_SoT') # Nuevo
 
         away_ck_received_away_form = get_stat(team2_opp_away, 'Pass Types_CK', form=True)
         away_gf_received_away_form = get_stat(team2_opp_away, 'GF', form=True)
         away_xg_received_away_form = get_stat(team2_opp_away, 'Expected_xG', form=True)
+        away_st_received_away_form = get_stat(team2_opp_away, 'Standard_SoT', form=True) # Nuevo
 
         # 2.2 Cuando juega en CASA (Home) - NUEVO
         away_ck_home = get_stat(team2_home, 'Pass Types_CK')
         away_xg_home = get_stat(team2_home, 'Expected_xG')
         away_gf_home = get_stat(team2_home, 'GF')
+        away_st_home = get_stat(team2_home, 'Standard_SoT') # Nuevo
 
         away_ck_home_form = get_stat(team2_home, 'Pass Types_CK', form=True)
         away_xg_home_form = get_stat(team2_home, 'Expected_xG', form=True)
         away_gf_home_form = get_stat(team2_home, 'GF', form=True)
+        away_st_home_form = get_stat(team2_home, 'Standard_SoT', form=True) # Nuevo
 
         away_ck_received_home = get_stat(team2_opp_home, 'Pass Types_CK')
         away_gf_received_home = get_stat(team2_opp_home, 'GF')
         away_xg_received_home = get_stat(team2_opp_home, 'Expected_xG')
+        away_st_received_home = get_stat(team2_opp_home, 'Standard_SoT') # Nuevo
 
         away_ck_received_home_form = get_stat(team2_opp_home, 'Pass Types_CK', form=True)
         away_gf_received_home_form = get_stat(team2_opp_home, 'GF', form=True)
         away_xg_received_home_form = get_stat(team2_opp_home, 'Expected_xG', form=True)
+        away_st_received_home_form = get_stat(team2_opp_home, 'Standard_SoT', form=True) # Nuevo
 
 
         # --- TOTALES ESPERADOS (Contexto del partido actual: Local en Casa vs Visitante Fuera) ---
         partido_ck_esperado = local_ck_home + away_ck_away
         partido_gf_esperado = local_gf_home + away_gf_away
         partido_xg_esperado = local_xg_home + away_xg_away
+        partido_st_esperado = local_st_home + away_st_away # Nuevo
 
         partido_ck_esperado_form = local_ck_home_form + away_ck_away_form 
         partido_gf_esperado_form = local_gf_home_form + away_gf_away_form
         partido_xg_esperado_form = local_xg_home_form + away_xg_away_form
+        partido_st_esperado_form = local_st_home_form + away_st_away_form # Nuevo
         
         # --- H2H ---
         h2h_ck_local = get_stat(team1_h2h, 'Pass Types_CK')
@@ -802,9 +832,67 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         h2h_xg_local = get_stat(team1_h2h, 'Expected_xG')
         h2h_xg_away = get_stat(team2_h2h, 'Expected_xG')
         h2h_xg_total = h2h_xg_local + h2h_xg_away
-        print(team1_h2h.head())
-        print(team2_h2h.head())
         
+        h2h_st_local = get_stat(team1_h2h, 'Standard_SoT') # Nuevo
+        h2h_st_away = get_stat(team2_h2h, 'Standard_SoT') # Nuevo
+        h2h_st_total = h2h_st_local + h2h_st_away # Nuevo
+        
+        # --- H2H DATAFRAME ---
+        h2h_matches = []
+        
+        # Asegurar que trabajamos con copias limpias
+        t1_h2h = team1_h2h.copy()
+        t2_h2h = team2_h2h.copy()
+        
+        # Iterar sobre los partidos del equipo local (team1)
+        for idx, row1 in t1_h2h.iterrows():
+            # Buscar el partido correspondiente en el df del visitante (team2)
+            # Coincidencia por temporada y jornada
+            row2_match = t2_h2h[
+                (t2_h2h['season'] == row1['season']) & 
+                (t2_h2h['round'] == row1['round'])
+            ]
+            
+            if not row2_match.empty:
+                row2 = row2_match.iloc[0]
+                
+                # Determinar quién jugó en casa en ese partido histórico
+                if row1['venue'] == 'Home':
+                    match_home_team = local
+                    match_away_team = visitante
+                else:
+                    match_home_team = visitante
+                    match_away_team = local
+                
+                match_data = {
+                    'season': row1['season'],
+                    'round': int(row1['round']) if pd.notna(row1['round']) else 0,
+                    'match_home_team': match_home_team,
+                    'match_away_team': match_away_team,
+                    
+                    # Datos del equipo que es LOCAL en la predicción actual (team1)
+                    'local_team_stats': {
+                        'team': local,
+                        'venue': row1['venue'],
+                        'goals': int(row1['GF']),
+                        'corners': int(row1['Pass Types_CK']),
+                        'xg': float(row1['Expected_xG']),
+                        'sot': int(row1['Standard_SoT']) if 'Standard_SoT' in row1 else 0
+                    },
+                    
+                    # Datos del equipo que es VISITANTE en la predicción actual (team2)
+                    'away_team_stats': {
+                        'team': visitante,
+                        'venue': row2['venue'],
+                        'goals': int(row2['GF']),
+                        'corners': int(row2['Pass Types_CK']),
+                        'xg': float(row2['Expected_xG']),
+                        'sot': int(row2['Standard_SoT']) if 'Standard_SoT' in row2 else 0
+                    }
+                }
+                h2h_matches.append(match_data)
+
+        print(h2h_matches)
 
         
         # ===========================
@@ -894,11 +982,23 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
         
         return {
             "prediccion": round(prediccion, 2),
+            "prediccion_local": round(prediccion_local, 2),
+            "prediccion_away": round(prediccion_away, 2),
+            "prediccion_xg": round(prediccion_xg, 2),
+            "prediccion_xg_local": round(prediccion_xg_local, 2),
+            "prediccion_xg_away": round(prediccion_xg_away, 2),
+            "prediccion_gf": round(prediccion_gf, 2),
+            "prediccion_gf_local": round(prediccion_gf_local, 2),
+            "prediccion_gf_away": round(prediccion_gf_away, 2),
+            "prediccion_st": round(prediccion_st, 2),
+            "prediccion_st_local": round(prediccion_st_local, 2),
+            "prediccion_st_away": round(prediccion_st_away, 2),
             "local": local,
             "visitante": visitante,
             "ppp_local": local_ppp,
             "ppp_away": away_ppp,
             "ppp_diff": ppp_diff,
+            "h2h_matches": h2h_matches, # Nuevo
             "riesgo": riesgo,
             "stats_ck": {
                 # Local Team Stats
@@ -983,6 +1083,34 @@ def predecir_corners(local, visitante, jornada, temporada="2526", league_code="E
                 "h2h_xg_total": h2h_xg_total,
                 "partido_xg_esperado": partido_xg_esperado,
                 "partido_xg_esperado_form": partido_xg_esperado_form
+            },
+            "stats_st": { # Nuevo bloque
+                # Local Team Stats
+                "local_st_home": local_st_home,
+                "local_st_away": local_st_away,
+                "local_st_received_home": local_st_received_home,
+                "local_st_received_away": local_st_received_away,
+
+                "local_st_home_form": local_st_home_form,
+                "local_st_away_form": local_st_away_form,
+                "local_st_received_home_form": local_st_received_home_form,
+                "local_st_received_away_form": local_st_received_away_form,
+
+                # Away Team Stats
+                "away_st_home": away_st_home,
+                "away_st_away": away_st_away,
+                "away_st_received_home": away_st_received_home,
+                "away_st_received_away": away_st_received_away,
+
+                "away_st_home_form": away_st_home_form,
+                "away_st_away_form": away_st_away_form,
+                "away_st_received_home_form": away_st_received_home_form,
+                "away_st_received_away_form": away_st_received_away_form,
+
+                # Totals
+                "h2h_st_total": h2h_st_total,
+                "partido_st_esperado": partido_st_esperado,
+                "partido_st_esperado_form": partido_st_esperado_form,
             },
             "probabilidades_exactas": analisis['exactas'],
             "probabilidades_over": analisis['over'],
@@ -1236,38 +1364,46 @@ class USE_MODEL():
         # URLs de descarga directa (raw.githubusercontent.com)
         base_url = "https://raw.githubusercontent.com/danielsaed/futbol_corners_forecast/refs/heads/main/models"
         #model_url = f"{base_url}/xgboost_corners_v4_retrain.pkl"
-        model_url = f"{base_url}/xgboost_corners_v4_retrain_PRODUCTION.pkl"
-        scaler_url = f"{base_url}/scaler_corners_v4_retrain_PRODUCTION.pkl"
+        models_map = {
+            "xgb_model": "xgboost_corners_v4_retrain_PRODUCTION.pkl",
+            "xgb_model_local": "xgboost_corners_v4_retrain_local_PRODUCTION.pkl",
+            "xgb_model_away": "xgboost_corners_v4_retrain_away_PRODUCTION.pkl",
+            "xgb_model_xg": "xgboost_corners_v4_retrain_eg_total_PRODUCTION.pkl",
+            "xgb_model_xg_local": "xgboost_corners_v4_retrain_eg_local_PRODUCTION.pkl",
+            "xgb_model_xg_away": "xgboost_corners_v4_retrain_eg_away_PRODUCTION.pkl",
+            "xgb_model_gf": "xgboost_corners_v4_retrain_gol_total_PRODUCTION.pkl",
+            "xgb_model_gf_local": "xgboost_corners_v4_retrain_gol_local_PRODUCTION.pkl",
+            "xgb_model_gf_away": "xgboost_corners_v4_retrain_gol_away_PRODUCTION.pkl",
+            "xgb_model_st": "xgboost_corners_v4_retrain_st_total_PRODUCTION.pkl",
+            "xgb_model_st_local": "xgboost_corners_v4_retrain_st_local_PRODUCTION.pkl",
+            "xgb_model_st_away": "xgboost_corners_v4_retrain_st_away_PRODUCTION.pkl",
+            "scaler": "scaler_corners_v4_retrain_PRODUCTION.pkl"
+        }
         
         try:
-            # Descargar modelo
-            print(f"📥 Descargando modelo desde: {model_url}")
-            response_model = requests.get(model_url, timeout=30)
-            response_model.raise_for_status()
+            for attr_name, filename in models_map.items():
+                url = f"{base_url}/{filename}"
+                print(f"📥 Descargando {attr_name} desde: {url}")
+                
+                # 1. Descargar
+                response = requests.get(url, timeout=30)
+                response.raise_for_status()
+                
+                # 2. Guardar temporalmente
+                with tempfile.NamedTemporaryFile(delete=False, suffix='.pkl') as tmp_file:
+                    tmp_file.write(response.content)
+                    tmp_path = tmp_file.name
+                
+                # 3. Cargar con joblib y asignar al atributo de la clase
+                try:
+                    loaded_obj = joblib.load(tmp_path)
+                    setattr(self, attr_name, loaded_obj)
+                finally:
+                    # 4. Limpiar archivo temporal
+                    if os.path.exists(tmp_path):
+                        os.unlink(tmp_path)
             
-            # Descargar scaler
-            print(f"📥 Descargando scaler desde: {scaler_url}")
-            response_scaler = requests.get(scaler_url, timeout=30)
-            response_scaler.raise_for_status()
-            
-            # Guardar temporalmente y cargar
-            with tempfile.NamedTemporaryFile(delete=False, suffix='.pkl') as tmp_model:
-                tmp_model.write(response_model.content)
-                tmp_model_path = tmp_model.name
-            
-            with tempfile.NamedTemporaryFile(delete=False, suffix='.pkl') as tmp_scaler:
-                tmp_scaler.write(response_scaler.content)
-                tmp_scaler_path = tmp_scaler.name
-            
-            # Cargar modelos desde archivos temporales
-            self.xgb_model = joblib.load(tmp_model_path)
-            self.scaler = joblib.load(tmp_scaler_path)
-            
-            # Limpiar archivos temporales
-            os.unlink(tmp_model_path)
-            os.unlink(tmp_scaler_path)
-            
-            print("✅ Modelos cargados correctamente desde GitHub")
+            print("✅ Todos los modelos cargados correctamente desde GitHub")
             
         except requests.exceptions.RequestException as e:
             raise Exception(f"❌ Error descargando modelos: {str(e)}")
@@ -1347,6 +1483,17 @@ class USE_MODEL():
             league_code=league_code,
             df_database = self.df_dataset,
             xgb_model = self.xgb_model,
+            xgb_model_local= self.xgb_model_local,
+            xgb_model_away = self.xgb_model_away,
+            xgb_model_xg= self.xgb_model_xg,
+            xgb_model_xg_local= self.xgb_model_xg_local,
+            xgb_model_xg_away= self.xgb_model_xg_away,
+            xgb_model_gf = self.xgb_model_gf,
+            xgb_model_gf_local = self.xgb_model_gf_local,
+            xgb_model_gf_away = self.xgb_model_gf_away,
+            xgb_model_st = self.xgb_model_st,
+            xgb_model_st_local = self.xgb_model_st_local,
+            xgb_model_st_away = self.xgb_model_st_away,
             scaler=self.scaler,
             lst_years=self.lst_years
         )
