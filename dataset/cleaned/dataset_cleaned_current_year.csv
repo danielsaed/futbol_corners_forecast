@@ -19,6 +19,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Arsenal-Brighton,18,Sat,Home,Arsenal,2,1,Brighton,W,7,493,66,1,30,34,4,14,4,9,16,2.7,24,6,15.1,66.7,40,19,53,185,31,598,53,298,19,16,Arsenal,Brighton,ENG
 2526,2025-12-30,2025-12-30 Arsenal-Aston Villa,19,Tue,Home,Arsenal,4,1,Aston Villa,W,3,382,39,3,36,43,3,17,9,8,18,2.9,22,7,13.4,66.7,41,12,46,162,22,478,36,234,7,7,Arsenal,Aston Villa,ENG
 2526,2026-01-03,2026-01-03 Bournemouth-Arsenal,20,Sat,Away,Arsenal,3,2,Bournemouth,W,5,500,62,2,32,44,2,25,12,7,32,1.1,12,5,17.5,33.3,22,20,57,150,21,615,25,322,13,9,Bournemouth,Arsenal,ENG
+2526,2026-01-08,2026-01-08 Arsenal-Liverpool,21,Thu,Home,Arsenal,0,0,Liverpool,D,3,493,53,0,33,50,3,11,7,7,16,0.6,9,4,15.6,,17,15,48,191,21,570,22,329,20,6,Arsenal,Liverpool,ENG
 2526,2025-08-16,2025-08-16 Aston Villa-Newcastle Utd,1,Sat,Home,Aston Villa,0,0,Newcastle Utd,D,3,345,76,0,19,35,0,11,13,10,21,0.2,3,3,14.6,100.0,6,11,41,77,10,445,13,249,7,4,Aston Villa,Newcastle Utd,ENG
 2526,2025-08-23,2025-08-23 Brentford-Aston Villa,2,Sat,Away,Aston Villa,0,1,Brentford,L,9,642,79,0,51,48,1,14,3,6,13,1.2,17,2,16.9,50.0,31,27,76,218,27,746,41,515,13,6,Brentford,Aston Villa,ENG
 2526,2025-08-31,2025-08-31 Aston Villa-Crystal Palace,3,Sun,Home,Aston Villa,0,3,Crystal Palace,L,10,586,84,0,53,51,2,11,9,6,16,1.1,13,4,16.6,50.0,23,31,59,195,9,681,21,425,9,2,Aston Villa,Crystal Palace,ENG
@@ -39,6 +40,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Chelsea-Aston Villa,18,Sat,Away,Aston Villa,2,1,Chelsea,W,7,345,49,1,8,16,0,8,16,4,29,1.2,11,8,16.9,66.7,20,8,38,72,5,451,17,247,8,2,Chelsea,Aston Villa,ENG
 2526,2025-12-30,2025-12-30 Arsenal-Aston Villa,19,Tue,Away,Aston Villa,1,4,Arsenal,L,3,446,38,0,16,21,0,10,11,3,17,2.5,11,3,14.2,42.9,19,12,54,92,14,535,18,358,14,4,Arsenal,Aston Villa,ENG
 2526,2026-01-03,2026-01-03 Aston Villa-Nott'ham Forest,20,Sat,Home,Aston Villa,3,1,Nott'ham Forest,W,4,684,50,3,41,63,7,18,6,11,13,1.7,11,4,19.7,80.0,19,16,72,273,18,803,40,544,14,6,Aston Villa,Nott'ham Forest,ENG
+2526,2026-01-07,2026-01-07 Crystal Palace-Aston Villa,21,Wed,Away,Aston Villa,0,0,Crystal Palace,D,5,576,55,0,28,54,3,14,9,9,22,1.7,15,3,14.1,100.0,26,16,59,171,10,697,35,312,8,7,Crystal Palace,Aston Villa,ENG
 2526,2025-08-15,2025-08-15 Liverpool-Bournemouth,1,Fri,Away,Bournemouth,2,4,Liverpool,L,7,343,86,2,9,19,3,20,11,11,44,1.7,10,3,14.3,60.0,18,20,39,109,12,491,26,186,9,3,Liverpool,Bournemouth,ENG
 2526,2025-08-23,2025-08-23 Bournemouth-Wolves,2,Sat,Home,Bournemouth,1,0,Wolves,W,8,496,79,1,49,42,3,12,9,6,32,1.3,14,4,19.1,100.0,27,20,59,182,16,616,28,283,13,6,Bournemouth,Wolves,ENG
 2526,2025-08-30,2025-08-30 Tottenham-Bournemouth,3,Sat,Away,Bournemouth,1,0,Tottenham,W,8,335,71,1,24,34,5,28,8,9,31,1.5,20,6,16.1,100.0,36,18,39,123,13,475,29,185,10,3,Tottenham,Bournemouth,ENG
@@ -46,7 +48,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-09-21,2025-09-21 Bournemouth-Newcastle Utd,5,Sun,Home,Bournemouth,0,0,Newcastle Utd,D,5,547,83,0,35,41,1,15,12,16,28,0.5,11,2,22.7,100.0,17,21,55,156,12,671,16,419,10,3,Bournemouth,Newcastle Utd,ENG
 2526,2025-09-27,2025-09-27 Leeds United-Bournemouth,6,Sat,Away,Bournemouth,2,2,Leeds United,D,4,567,89,1,40,41,2,23,17,7,30,0.7,12,5,19.4,75.0,23,21,59,197,18,703,22,463,21,3,Leeds United,Bournemouth,ENG
 2526,2025-10-03,2025-10-03 Bournemouth-Fulham,7,Fri,Home,Bournemouth,3,1,Fulham,W,4,597,80,3,60,58,1,10,15,8,24,1.2,11,6,18.8,75.0,19,25,54,207,34,703,28,376,27,10,Bournemouth,Fulham,ENG
-2526,2025-10-18,2025-10-18 Crystal Palace-Bournemouth,8,Sat,Away,Bournemouth,3,3,Crystal Palace,D,5,403,62,1,20,26,5,18,15,12,49,2.0,8,5,15.9,71.4,16,12,48,128,15,546,17,308,16,2,Crystal Palace,Bournemouth,ENG
+2526,2025-10-18,2025-10-18 Crystal Palace-Bournemouth,8,Sat,Away,Bournemouth,3,3,Crystal Palace,D,5,403,62,1,20,26,5,18,15,12,49,2.0,8,5,15.9,71.4,16,12,48,128,15,546,17,306,16,2,Crystal Palace,Bournemouth,ENG
 2526,2025-10-26,2025-10-26 Bournemouth-Nott'ham Forest,9,Sun,Home,Bournemouth,2,0,Nott'ham Forest,W,5,487,60,1,28,40,1,9,11,12,18,0.6,13,5,22.1,100.0,22,10,52,145,17,594,16,323,16,0,Bournemouth,Nott'ham Forest,ENG
 2526,2025-11-02,2025-11-02 Manchester City-Bournemouth,10,Sun,Away,Bournemouth,1,3,Manchester City,L,4,557,70,0,34,36,5,23,15,5,27,0.6,8,5,26.4,57.1,11,20,51,139,16,668,17,440,12,5,Manchester City,Bournemouth,ENG
 2526,2025-11-09,2025-11-09 Aston Villa-Bournemouth,11,Sun,Away,Bournemouth,0,4,Aston Villa,L,9,365,55,0,27,18,4,16,12,11,34,1.6,11,2,20.4,50.0,20,21,49,129,14,495,9,293,9,0,Aston Villa,Bournemouth,ENG
@@ -55,10 +57,11 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-02,2025-12-02 Bournemouth-Everton,14,Tue,Home,Bournemouth,0,1,Everton,L,1,518,65,0,35,45,0,15,15,3,54,0.5,5,2,13.3,66.7,10,17,54,116,24,664,27,289,8,7,Bournemouth,Everton,ENG
 2526,2025-12-06,2025-12-06 Bournemouth-Chelsea,15,Sat,Home,Bournemouth,0,0,Chelsea,D,5,371,84,0,22,34,3,17,7,14,24,1.5,13,5,17.9,100.0,19,11,40,102,15,485,22,221,14,6,Bournemouth,Chelsea,ENG
 2526,2025-12-15,2025-12-15 Manchester Utd-Bournemouth,16,Mon,Away,Bournemouth,4,4,Manchester Utd,D,4,342,69,2,28,31,0,14,16,8,29,1.9,14,9,18.2,55.6,23,17,44,135,10,476,22,221,8,4,Manchester Utd,Bournemouth,ENG
-2526,2025-12-20,2025-12-20 Bournemouth-Burnley,17,Sat,Home,Bournemouth,1,1,Burnley,D,5,561,74,0,35,51,4,21,6,8,32,1.4,16,1,15.9,0.0,29,22,65,213,31,674,37,421,21,10,Bournemouth,Burnley,ENG
+2526,2025-12-20,2025-12-20 Bournemouth-Burnley,17,Sat,Home,Bournemouth,1,1,Burnley,D,5,561,74,0,35,51,4,21,6,8,32,1.4,16,1,15.9,0.0,29,22,65,213,31,675,37,421,21,10,Bournemouth,Burnley,ENG
 2526,2025-12-27,2025-12-27 Brentford-Bournemouth,18,Sat,Away,Bournemouth,1,4,Brentford,L,15,435,85,0,29,43,5,18,14,7,25,2.3,20,9,15.8,33.3,31,38,50,193,22,564,37,308,17,7,Brentford,Bournemouth,ENG
 2526,2025-12-30,2025-12-30 Chelsea-Bournemouth,19,Tue,Away,Bournemouth,2,2,Chelsea,D,3,304,70,0,17,26,0,16,15,17,40,3.0,17,6,13.9,66.7,31,16,33,110,17,440,22,193,10,2,Chelsea,Bournemouth,ENG
 2526,2026-01-03,2026-01-03 Bournemouth-Arsenal,20,Sat,Home,Bournemouth,2,3,Arsenal,L,7,381,78,1,29,33,1,16,15,4,35,1.4,15,3,22.1,40.0,22,22,43,115,12,500,11,210,5,2,Bournemouth,Arsenal,ENG
+2526,2026-01-07,2026-01-07 Bournemouth-Tottenham,21,Wed,Home,Bournemouth,3,2,Tottenham,W,3,357,66,3,14,28,2,17,12,10,36,1.3,11,3,18.5,50.0,18,12,42,100,15,484,14,230,10,3,Bournemouth,Tottenham,ENG
 2526,2025-08-17,2025-08-17 Nott'ham Forest-Brentford,1,Sun,Away,Brentford,1,3,Nott'ham Forest,L,5,392,73,0,19,22,4,20,10,5,26,1.4,9,2,16.2,40.0,15,16,46,83,16,508,18,229,11,4,Nott'ham Forest,Brentford,ENG
 2526,2025-08-23,2025-08-23 Brentford-Aston Villa,2,Sat,Home,Brentford,1,0,Aston Villa,W,2,205,64,0,14,16,5,28,20,11,49,1.2,9,2,12.6,100.0,15,11,24,75,12,362,23,140,12,6,Brentford,Aston Villa,ENG
 2526,2025-08-30,2025-08-30 Sunderland-Brentford,3,Sat,Away,Brentford,1,2,Sunderland,L,4,391,67,1,19,24,0,9,10,4,34,1.2,6,3,16.0,66.7,10,16,46,90,13,510,13,261,5,1,Sunderland,Brentford,ENG
@@ -79,6 +82,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Brentford-Bournemouth,18,Sat,Home,Brentford,4,1,Bournemouth,W,2,430,77,3,28,39,1,12,13,10,53,3.5,15,6,15.6,88.9,29,8,50,122,16,580,29,286,11,10,Brentford,Bournemouth,ENG
 2526,2026-01-01,2026-01-01 Brentford-Tottenham,19,Thu,Home,Brentford,0,0,Tottenham,D,3,562,81,0,37,42,5,18,10,9,20,0.9,7,2,16.7,100.0,10,20,56,159,12,669,18,430,8,0,Brentford,Tottenham,ENG
 2526,2026-01-04,2026-01-04 Everton-Brentford,20,Sun,Away,Brentford,4,2,Everton,W,5,497,81,4,26,22,1,16,15,10,23,2.7,11,7,17.9,60.0,19,12,54,107,13,631,21,265,5,7,Everton,Brentford,ENG
+2526,2026-01-07,2026-01-07 Brentford-Sunderland,21,Wed,Home,Brentford,3,0,Sunderland,W,7,431,89,3,23,36,2,8,8,8,22,3.0,18,6,12.8,100.0,30,22,51,162,18,539,40,260,13,4,Brentford,Sunderland,ENG
 2526,2025-08-16,2025-08-16 Brighton-Fulham,1,Sat,Home,Brighton,1,1,Fulham,D,4,454,62,0,30,38,2,19,11,9,27,1.5,9,3,19.0,50.0,17,11,49,107,11,570,21,318,7,5,Brighton,Fulham,ENG
 2526,2025-08-24,2025-08-24 Everton-Brighton,2,Sun,Away,Brighton,0,2,Everton,L,2,543,59,0,27,30,6,17,8,5,26,2.4,12,3,19.8,33.3,22,11,58,138,14,649,23,417,11,5,Everton,Brighton,ENG
 2526,2025-08-31,2025-08-31 Brighton-Manchester City,3,Sun,Home,Brighton,2,1,Manchester City,W,3,340,64,1,19,17,0,17,15,8,11,2.2,11,6,16.9,66.7,19,8,37,97,17,440,19,244,6,7,Brighton,Manchester City,ENG
@@ -99,6 +103,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Arsenal-Brighton,18,Sat,Away,Brighton,1,2,Arsenal,L,2,437,68,0,27,29,1,16,16,5,28,0.8,8,3,16.1,66.7,14,10,47,85,6,555,16,280,2,1,Arsenal,Brighton,ENG
 2526,2025-12-30,2025-12-30 West Ham-Brighton,19,Tue,Away,Brighton,2,2,West Ham,D,5,588,64,0,42,49,2,13,14,16,24,2.9,14,5,23.0,75.0,29,23,61,203,32,736,29,397,18,8,West Ham,Brighton,ENG
 2526,2026-01-03,2026-01-03 Brighton-Burnley,20,Sat,Home,Brighton,2,0,Burnley,W,4,637,43,1,28,39,3,17,9,6,24,1.4,15,4,16.6,100.0,26,11,59,156,22,765,25,431,17,7,Brighton,Burnley,ENG
+2526,2026-01-07,2026-01-07 Manchester City-Brighton,21,Wed,Away,Brighton,1,1,Manchester City,D,2,435,70,1,12,18,1,22,16,20,24,1.0,6,3,10.0,100.0,9,9,40,66,12,547,14,238,7,4,Manchester City,Brighton,ENG
 2526,2025-08-16,2025-08-16 Tottenham-Burnley,1,Sat,Away,Burnley,0,3,Tottenham,L,5,282,63,0,14,17,0,6,8,7,28,0.9,14,4,20.1,50.0,24,14,34,122,4,380,23,158,5,1,Tottenham,Burnley,ENG
 2526,2025-08-23,2025-08-23 Burnley-Sunderland,2,Sat,Home,Burnley,2,0,Sunderland,W,4,475,71,2,27,39,4,22,18,7,30,1.0,7,2,17.3,100.0,12,15,42,142,14,608,16,325,7,4,Burnley,Sunderland,ENG
 2526,2025-08-30,2025-08-30 Manchester Utd-Burnley,3,Sat,Away,Burnley,2,3,Manchester Utd,L,1,346,69,1,15,22,2,20,15,9,38,1.2,6,3,13.7,66.7,8,9,38,79,4,483,16,194,3,2,Manchester Utd,Burnley,ENG
@@ -119,6 +124,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Burnley-Everton,18,Sat,Home,Burnley,0,0,Everton,D,6,516,81,0,39,46,3,22,9,4,35,1.4,16,0,19.1,100.0,26,16,55,159,15,660,26,347,16,5,Burnley,Everton,ENG
 2526,2025-12-30,2025-12-30 Burnley-Newcastle Utd,19,Tue,Home,Burnley,1,3,Newcastle Utd,L,3,473,68,1,27,28,2,21,16,11,27,1.1,15,3,18.3,57.1,28,12,48,140,17,611,26,263,11,4,Burnley,Newcastle Utd,ENG
 2526,2026-01-03,2026-01-03 Brighton-Burnley,20,Sat,Away,Burnley,0,2,Brighton,L,4,439,57,0,25,19,1,25,13,3,20,0.3,5,2,15.5,50.0,9,16,41,101,5,542,9,284,4,2,Brighton,Burnley,ENG
+2526,2026-01-07,2026-01-07 Burnley-Manchester Utd,21,Wed,Home,Burnley,2,2,Manchester Utd,D,2,347,71,1,18,21,3,16,18,7,25,0.3,7,1,18.4,75.0,13,7,35,108,17,465,9,238,9,5,Burnley,Manchester Utd,ENG
 2526,2025-08-17,2025-08-17 Chelsea-Crystal Palace,1,Sun,Home,Chelsea,0,0,Crystal Palace,D,11,620,64,0,43,58,2,13,10,11,18,1.6,19,2,16.8,100.0,31,29,71,195,18,732,31,518,12,6,Chelsea,Crystal Palace,ENG
 2526,2025-08-22,2025-08-22 West Ham-Chelsea,2,Fri,Away,Chelsea,5,1,West Ham,W,5,613,66,4,37,29,0,19,7,4,17,2.7,12,7,12.3,75.0,20,15,58,121,21,684,26,383,14,7,West Ham,Chelsea,ENG
 2526,2025-08-30,2025-08-30 Chelsea-Fulham,3,Sat,Home,Chelsea,2,0,Fulham,W,6,531,63,1,43,40,3,19,6,18,21,2.1,12,5,15.6,100.0,21,13,54,157,18,656,21,343,5,4,Chelsea,Fulham,ENG
@@ -136,9 +142,10 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Bournemouth-Chelsea,15,Sat,Away,Chelsea,0,0,Bournemouth,D,0,557,60,0,42,45,1,17,11,10,25,0.9,11,4,17.8,100.0,18,14,60,165,25,691,19,338,19,7,Bournemouth,Chelsea,ENG
 2526,2025-12-13,2025-12-13 Chelsea-Everton,16,Sat,Home,Chelsea,2,0,Everton,W,4,560,58,2,29,32,2,15,15,11,33,2.2,17,5,15.7,100.0,30,10,57,131,17,693,22,428,13,4,Chelsea,Everton,ENG
 2526,2025-12-20,2025-12-20 Newcastle Utd-Chelsea,17,Sat,Away,Chelsea,2,2,Newcastle Utd,D,4,465,65,1,28,34,2,11,4,13,27,1.2,13,4,18.0,60.0,23,16,53,128,23,572,25,357,14,9,Newcastle Utd,Chelsea,ENG
-2526,2025-12-27,2025-12-27 Chelsea-Aston Villa,18,Sat,Home,Chelsea,1,2,Aston Villa,L,6,570,68,1,41,59,7,26,7,9,7,2.1,14,3,17.2,75.0,25,29,62,230,27,664,39,430,27,9,Chelsea,Aston Villa,ENG
+2526,2025-12-27,2025-12-27 Chelsea-Aston Villa,18,Sat,Home,Chelsea,1,2,Aston Villa,L,6,570,68,1,41,59,7,26,7,9,7,2.1,14,3,17.2,75.0,25,29,62,230,27,663,39,430,27,9,Chelsea,Aston Villa,ENG
 2526,2025-12-30,2025-12-30 Chelsea-Bournemouth,19,Tue,Home,Chelsea,2,2,Bournemouth,D,12,612,70,1,44,59,8,17,10,8,29,2.3,16,2,14.9,66.7,30,26,67,260,20,739,46,396,12,9,Chelsea,Bournemouth,ENG
 2526,2026-01-04,2026-01-04 Manchester City-Chelsea,20,Sun,Away,Chelsea,1,1,Manchester City,D,2,469,42,0,13,17,3,20,14,14,24,1.8,8,3,9.1,66.7,13,4,43,94,16,593,16,390,11,5,Manchester City,Chelsea,ENG
+2526,2026-01-07,2026-01-07 Fulham-Chelsea,21,Wed,Away,Chelsea,1,2,Fulham,L,11,499,84,0,25,32,2,13,16,8,30,2.3,14,5,13.6,60.0,25,22,45,123,15,605,24,376,10,2,Fulham,Chelsea,ENG
 2526,2025-08-17,2025-08-17 Chelsea-Crystal Palace,1,Sun,Away,Crystal Palace,0,0,Chelsea,D,2,257,56,0,12,16,1,16,15,7,43,0.6,11,4,27.0,100.0,15,11,29,53,5,380,8,153,7,1,Chelsea,Crystal Palace,ENG
 2526,2025-08-24,2025-08-24 Crystal Palace-Nott'ham Forest,2,Sun,Home,Crystal Palace,1,1,Nott'ham Forest,D,1,413,62,1,20,34,6,20,8,7,24,1.1,8,4,13.4,0.0,15,18,42,115,18,505,21,278,15,2,Crystal Palace,Nott'ham Forest,ENG
 2526,2025-08-31,2025-08-31 Aston Villa-Crystal Palace,3,Sun,Away,Crystal Palace,3,0,Aston Villa,W,1,414,58,1,26,24,2,26,5,10,43,2.6,5,3,14.9,100.0,12,11,41,94,6,533,14,224,2,1,Aston Villa,Crystal Palace,ENG
@@ -146,7 +153,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-09-20,2025-09-20 West Ham-Crystal Palace,5,Sat,Away,Crystal Palace,2,1,West Ham,W,8,381,74,0,25,35,0,22,14,10,35,2.1,18,3,13.9,66.7,33,18,43,114,12,518,27,281,6,2,West Ham,Crystal Palace,ENG
 2526,2025-09-27,2025-09-27 Crystal Palace-Liverpool,6,Sat,Home,Crystal Palace,2,1,Liverpool,W,2,304,82,1,19,27,0,24,11,9,32,2.9,16,7,14.9,75.0,27,8,29,88,9,424,32,117,5,4,Crystal Palace,Liverpool,ENG
 2526,2025-10-05,2025-10-05 Everton-Crystal Palace,7,Sun,Away,Crystal Palace,1,2,Everton,L,4,473,66,1,29,40,4,31,11,14,39,1.5,15,6,15.7,85.7,23,14,49,115,13,633,23,383,9,3,Everton,Crystal Palace,ENG
-2526,2025-10-18,2025-10-18 Crystal Palace-Bournemouth,8,Sat,Home,Crystal Palace,3,3,Bournemouth,D,6,444,95,1,28,35,4,23,12,6,32,4.4,19,6,14.7,40.0,37,19,52,153,14,587,40,235,8,4,Crystal Palace,Bournemouth,ENG
+2526,2025-10-18,2025-10-18 Crystal Palace-Bournemouth,8,Sat,Home,Crystal Palace,3,3,Bournemouth,D,6,444,95,1,28,35,4,23,12,6,32,4.4,19,6,14.7,40.0,37,19,52,153,14,587,40,234,8,4,Crystal Palace,Bournemouth,ENG
 2526,2025-10-26,2025-10-26 Arsenal-Crystal Palace,9,Sun,Away,Crystal Palace,0,1,Arsenal,L,3,393,71,0,20,28,0,16,9,12,44,0.5,7,1,17.6,66.7,12,10,41,96,14,509,15,268,14,4,Arsenal,Crystal Palace,ENG
 2526,2025-11-01,2025-11-01 Crystal Palace-Brentford,10,Sat,Home,Crystal Palace,2,0,Brentford,W,6,312,77,1,15,27,3,13,8,12,31,0.7,10,3,19.4,100.0,14,17,37,102,15,415,24,197,10,3,Crystal Palace,Brentford,ENG
 2526,2025-11-09,2025-11-09 Crystal Palace-Brighton,11,Sun,Home,Crystal Palace,0,0,Brighton,D,4,412,69,0,18,27,1,21,8,14,30,0.7,10,2,13.8,100.0,19,11,43,91,9,532,29,294,7,3,Crystal Palace,Brighton,ENG
@@ -159,6 +166,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-28,2025-12-28 Crystal Palace-Tottenham,18,Sun,Home,Crystal Palace,0,1,Tottenham,L,3,599,93,0,48,65,7,16,13,7,24,1.5,15,2,16.5,75.0,27,27,61,205,17,730,34,357,17,3,Crystal Palace,Tottenham,ENG
 2526,2026-01-01,2026-01-01 Crystal Palace-Fulham,19,Thu,Home,Crystal Palace,1,1,Fulham,D,6,424,64,1,26,30,2,14,15,9,30,1.9,11,2,14.6,80.0,21,12,40,126,13,540,33,276,10,5,Crystal Palace,Fulham,ENG
 2526,2026-01-04,2026-01-04 Newcastle Utd-Crystal Palace,20,Sun,Away,Crystal Palace,0,2,Newcastle Utd,L,6,380,57,0,15,28,3,28,16,11,46,0.7,11,1,15.9,71.4,19,15,41,145,12,533,23,228,15,2,Newcastle Utd,Crystal Palace,ENG
+2526,2026-01-07,2026-01-07 Crystal Palace-Aston Villa,21,Wed,Home,Crystal Palace,0,0,Aston Villa,D,3,405,57,0,17,36,3,20,15,4,32,1.4,11,5,14.3,100.0,19,11,41,110,13,525,22,282,11,2,Crystal Palace,Aston Villa,ENG
 2526,2025-08-18,2025-08-18 Leeds United-Everton,1,Mon,Away,Everton,0,1,Leeds United,L,2,450,69,0,25,28,1,16,17,2,32,0.8,7,1,14.5,100.0,13,11,46,113,9,582,13,277,9,1,Leeds United,Everton,ENG
 2526,2025-08-24,2025-08-24 Everton-Brighton,2,Sun,Home,Everton,2,0,Brighton,W,2,395,84,2,31,21,2,15,6,8,35,1.6,11,3,16.0,100.0,21,12,42,125,12,503,17,269,10,4,Everton,Brighton,ENG
 2526,2025-08-30,2025-08-30 Wolves-Everton,3,Sat,Away,Everton,3,2,Wolves,W,2,410,81,3,20,35,1,16,12,16,28,1.9,10,4,17.1,50.0,19,13,42,145,10,540,22,292,15,5,Wolves,Everton,ENG
@@ -179,6 +187,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Burnley-Everton,18,Sat,Away,Everton,0,0,Burnley,D,5,429,85,0,31,27,2,25,16,11,47,0.8,15,6,16.2,,26,18,45,138,17,605,22,232,14,3,Burnley,Everton,ENG
 2526,2025-12-30,2025-12-30 Nott'ham Forest-Everton,19,Tue,Away,Everton,2,0,Nott'ham Forest,W,2,328,85,2,18,22,3,23,14,9,56,1.3,11,3,17.5,100.0,22,7,31,90,11,487,17,218,6,6,Nott'ham Forest,Everton,ENG
 2526,2026-01-04,2026-01-04 Everton-Brentford,20,Sun,Home,Everton,2,4,Brentford,L,4,417,73,2,24,28,7,24,11,7,22,0.9,14,5,14.0,42.9,26,27,46,168,20,540,29,248,9,5,Everton,Brentford,ENG
+2526,2026-01-07,2026-01-07 Everton-Wolves,21,Wed,Home,Everton,1,1,Wolves,D,2,399,57,1,23,24,6,17,9,6,45,0.9,13,2,16.2,75.0,23,19,46,128,13,520,27,294,14,4,Everton,Wolves,ENG
 2526,2025-08-16,2025-08-16 Brighton-Fulham,1,Sat,Away,Fulham,1,1,Brighton,D,3,466,77,0,24,32,3,15,4,2,15,0.7,7,2,12.5,100.0,12,14,51,109,16,546,19,347,13,1,Brighton,Fulham,ENG
 2526,2025-08-24,2025-08-24 Fulham-Manchester Utd,2,Sun,Home,Fulham,1,1,Manchester Utd,D,9,479,67,1,29,40,1,10,5,8,23,1.7,13,3,12.9,66.7,23,33,53,190,22,588,37,371,14,5,Fulham,Manchester Utd,ENG
 2526,2025-08-30,2025-08-30 Chelsea-Fulham,3,Sat,Away,Fulham,0,2,Chelsea,L,4,459,72,0,24,33,3,29,10,6,21,0.9,11,1,15.3,83.3,18,15,46,110,17,579,19,334,11,3,Chelsea,Fulham,ENG
@@ -199,6 +208,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 West Ham-Fulham,18,Sat,Away,Fulham,1,0,West Ham,W,4,560,69,1,48,56,3,16,11,12,35,1.5,17,5,17.6,100.0,31,24,55,195,20,701,33,412,16,6,West Ham,Fulham,ENG
 2526,2026-01-01,2026-01-01 Crystal Palace-Fulham,19,Thu,Away,Fulham,1,1,Crystal Palace,D,3,625,78,1,49,46,0,16,11,9,35,1.7,17,5,15.7,50.0,29,19,60,157,20,755,31,391,11,2,Crystal Palace,Fulham,ENG
 2526,2026-01-04,2026-01-04 Fulham-Liverpool,20,Sun,Home,Fulham,2,2,Liverpool,D,3,499,59,2,17,30,1,15,11,10,44,0.7,8,2,18.8,0.0,15,13,42,127,20,623,15,324,15,5,Fulham,Liverpool,ENG
+2526,2026-01-07,2026-01-07 Fulham-Chelsea,21,Wed,Home,Fulham,2,1,Chelsea,W,2,609,60,1,43,60,5,16,11,9,29,1.2,16,5,17.2,80.0,28,19,55,231,26,724,34,502,21,3,Fulham,Chelsea,ENG
 2526,2025-08-18,2025-08-18 Leeds United-Everton,1,Mon,Home,Leeds United,1,0,Everton,W,7,534,72,0,38,44,4,15,9,9,28,2.0,20,2,18.1,100.0,32,26,54,187,17,648,27,321,8,5,Leeds United,Everton,ENG
 2526,2025-08-23,2025-08-23 Arsenal-Leeds United,2,Sat,Away,Leeds United,0,5,Arsenal,L,2,312,42,0,6,9,1,18,6,6,21,0.2,3,1,17.0,20.0,6,5,33,30,10,398,6,229,6,3,Arsenal,Leeds United,ENG
 2526,2025-08-30,2025-08-30 Leeds United-Newcastle Utd,3,Sat,Home,Leeds United,0,0,Newcastle Utd,D,5,453,85,0,27,30,1,18,11,13,20,0.7,10,1,20.8,100.0,19,17,43,121,17,560,17,286,12,4,Leeds United,Newcastle Utd,ENG
@@ -219,6 +229,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-28,2025-12-28 Sunderland-Leeds United,18,Sun,Away,Leeds United,1,1,Sunderland,D,9,561,77,1,29,38,3,14,12,6,23,2.2,17,5,15.3,66.7,30,27,56,165,18,674,40,409,11,4,Sunderland,Leeds United,ENG
 2526,2026-01-01,2026-01-01 Liverpool-Leeds United,19,Thu,Away,Leeds United,0,0,Liverpool,D,3,327,65,0,14,20,2,18,14,11,40,0.7,4,2,19.7,100.0,3,10,32,78,8,450,10,173,5,2,Liverpool,Leeds United,ENG
 2526,2026-01-04,2026-01-04 Leeds United-Manchester Utd,20,Sun,Home,Leeds United,1,1,Manchester Utd,D,6,470,79,1,31,41,3,18,11,17,23,0.9,11,3,19.3,50.0,17,20,46,137,11,597,23,230,10,3,Leeds United,Manchester Utd,ENG
+2526,2026-01-07,2026-01-07 Newcastle Utd-Leeds United,21,Wed,Away,Leeds United,3,4,Newcastle Utd,L,4,366,67,2,32,36,4,17,9,16,33,1.9,13,5,14.3,57.1,20,12,38,122,12,495,25,193,7,6,Newcastle Utd,Leeds United,ENG
 2526,2025-08-15,2025-08-15 Liverpool-Bournemouth,1,Fri,Home,Liverpool,4,2,Bournemouth,W,6,539,75,3,36,40,6,16,14,4,40,2.2,19,10,16.6,33.3,36,17,61,168,24,679,35,370,14,12,Liverpool,Bournemouth,ENG
 2526,2025-08-25,2025-08-25 Newcastle Utd-Liverpool,2,Mon,Away,Liverpool,3,2,Newcastle Utd,W,1,477,66,3,29,37,0,13,10,2,42,0.7,5,4,19.3,33.3,9,9,62,106,12,584,15,302,8,3,Newcastle Utd,Liverpool,ENG
 2526,2025-08-31,2025-08-31 Liverpool-Arsenal,3,Sun,Home,Liverpool,1,0,Arsenal,W,3,465,82,0,31,28,1,11,17,7,32,0.5,9,3,22.4,100.0,16,7,53,78,15,580,15,370,8,7,Liverpool,Arsenal,ENG
@@ -239,6 +250,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Liverpool-Wolves,18,Sat,Home,Liverpool,2,1,Wolves,W,6,702,56,2,62,67,1,19,10,9,22,1.5,14,4,15.9,75.0,26,21,66,273,24,807,37,551,22,7,Liverpool,Wolves,ENG
 2526,2026-01-01,2026-01-01 Liverpool-Leeds United,19,Thu,Home,Liverpool,0,0,Leeds United,D,8,692,70,0,75,69,2,8,14,6,19,2.1,19,4,17.8,100.0,32,25,68,305,32,807,30,438,22,8,Liverpool,Leeds United,ENG
 2526,2026-01-04,2026-01-04 Fulham-Liverpool,20,Sun,Away,Liverpool,2,2,Fulham,D,8,697,69,1,58,56,0,7,7,5,24,1.4,10,2,15.0,0.0,18,23,58,229,18,794,29,503,14,10,Fulham,Liverpool,ENG
+2526,2026-01-08,2026-01-08 Arsenal-Liverpool,21,Thu,Away,Liverpool,0,0,Arsenal,D,0,541,55,0,48,32,0,10,10,8,24,0.3,8,0,23.2,100.0,13,9,52,127,17,637,10,447,11,3,Arsenal,Liverpool,ENG
 2526,2025-08-16,2025-08-16 Wolves-Manchester City,1,Sat,Away,Manchester City,4,0,Wolves,W,5,603,48,3,39,51,3,18,9,7,24,2.4,15,4,17.2,100.0,25,20,58,163,25,720,26,404,15,4,Wolves,Manchester City,ENG
 2526,2025-08-23,2025-08-23 Manchester City-Tottenham,2,Sat,Home,Manchester City,0,2,Tottenham,L,7,572,61,0,29,44,3,20,8,6,23,1.6,10,4,16.3,60.0,18,19,61,180,22,689,32,424,13,11,Manchester City,Tottenham,ENG
 2526,2025-08-31,2025-08-31 Brighton-Manchester City,3,Sun,Away,Manchester City,1,2,Brighton,L,2,589,52,1,31,42,0,15,11,9,15,1.8,12,3,15.1,85.7,21,5,63,153,25,695,21,426,17,7,Brighton,Manchester City,ENG
@@ -259,6 +271,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Nott'ham Forest-Manchester City,18,Sat,Away,Manchester City,2,1,Nott'ham Forest,W,5,631,46,2,53,56,1,14,7,4,35,1.5,16,5,19.4,50.0,30,18,65,216,23,753,31,516,20,7,Nott'ham Forest,Manchester City,ENG
 2526,2026-01-01,2026-01-01 Sunderland-Manchester City,19,Thu,Away,Manchester City,0,0,Sunderland,D,5,687,70,0,48,55,3,23,9,12,22,2.1,14,4,12.4,100.0,25,21,67,220,35,812,47,405,14,16,Sunderland,Manchester City,ENG
 2526,2026-01-04,2026-01-04 Manchester City-Chelsea,20,Sun,Home,Manchester City,1,1,Chelsea,D,8,611,56,0,42,41,7,24,14,9,6,1.0,14,3,14.7,66.7,23,15,57,197,30,720,31,436,14,12,Manchester City,Chelsea,ENG
+2526,2026-01-07,2026-01-07 Manchester City-Brighton,21,Wed,Home,Manchester City,1,1,Brighton,D,6,645,61,0,39,47,2,14,9,19,8,2.5,20,3,15.6,66.7,35,13,60,228,28,757,45,507,25,9,Manchester City,Brighton,ENG
 2526,2025-08-17,2025-08-17 Manchester Utd-Arsenal,1,Sun,Home,Manchester Utd,0,1,Arsenal,L,3,514,89,0,33,48,4,22,9,4,23,1.5,22,7,17.4,66.7,42,15,61,156,31,625,34,372,23,10,Manchester Utd,Arsenal,ENG
 2526,2025-08-24,2025-08-24 Fulham-Manchester Utd,2,Sun,Away,Manchester Utd,1,1,Fulham,D,6,433,76,0,29,30,1,17,15,5,30,1.6,9,3,17.8,66.7,19,14,47,125,17,553,23,313,4,5,Fulham,Manchester Utd,ENG
 2526,2025-08-30,2025-08-30 Manchester Utd-Burnley,3,Sat,Home,Manchester Utd,3,2,Burnley,W,7,558,76,1,37,48,3,16,12,3,20,3.6,25,5,14.7,33.3,45,26,62,217,28,674,34,380,14,9,Manchester Utd,Burnley,ENG
@@ -277,8 +290,9 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-15,2025-12-15 Manchester Utd-Bournemouth,16,Mon,Home,Manchester Utd,4,4,Bournemouth,D,5,437,66,1,33,49,1,16,7,3,47,3.4,25,9,16.1,55.6,41,21,56,182,24,586,47,314,16,8,Manchester Utd,Bournemouth,ENG
 2526,2025-12-21,2025-12-21 Aston Villa-Manchester Utd,17,Sun,Away,Manchester Utd,1,2,Aston Villa,L,5,510,66,1,32,43,7,26,10,9,22,1.3,15,6,22.1,50.0,20,26,58,182,21,630,32,359,16,5,Aston Villa,Manchester Utd,ENG
 2526,2025-12-26,2025-12-26 Manchester Utd-Newcastle Utd,18,Fri,Home,Manchester Utd,1,0,Newcastle Utd,W,2,359,54,0,21,19,2,20,16,18,50,1.3,10,4,15.4,100.0,15,8,34,79,19,524,14,250,9,5,Manchester Utd,Newcastle Utd,ENG
-2526,2025-12-30,2025-12-30 Manchester Utd-Wolves,19,Tue,Home,Manchester Utd,1,1,Wolves,D,8,552,64,0,44,48,6,21,6,4,17,0.8,15,6,17.1,75.0,30,22,56,153,16,652,20,350,11,2,Manchester Utd,Wolves,ENG
+2526,2025-12-30,2025-12-30 Manchester Utd-Wolves,19,Tue,Home,Manchester Utd,1,1,Wolves,D,8,552,64,0,44,48,6,21,6,4,17,0.8,15,6,17.1,75.0,30,22,56,153,16,652,20,348,11,2,Manchester Utd,Wolves,ENG
 2526,2026-01-04,2026-01-04 Leeds United-Manchester Utd,20,Sun,Away,Manchester Utd,1,1,Leeds United,D,4,560,72,1,34,35,4,25,17,8,40,1.6,15,2,17.6,66.7,28,10,54,115,9,704,21,351,9,2,Leeds United,Manchester Utd,ENG
+2526,2026-01-07,2026-01-07 Burnley-Manchester Utd,21,Wed,Away,Manchester Utd,2,2,Burnley,D,6,637,64,2,53,48,1,19,17,6,14,2.5,30,8,16.9,-100.0,54,26,65,208,33,757,42,435,22,9,Burnley,Manchester Utd,ENG
 2526,2025-08-16,2025-08-16 Aston Villa-Newcastle Utd,1,Sat,Away,Newcastle Utd,0,0,Aston Villa,D,6,499,69,0,30,51,3,10,4,12,24,1.4,16,3,23.8,100.0,29,26,59,193,30,610,32,406,18,11,Aston Villa,Newcastle Utd,ENG
 2526,2025-08-25,2025-08-25 Newcastle Utd-Liverpool,2,Mon,Home,Newcastle Utd,2,3,Liverpool,L,7,298,66,1,17,25,1,12,7,8,22,1.0,10,3,13.5,25.0,20,26,38,129,15,391,27,199,11,5,Newcastle Utd,Liverpool,ENG
 2526,2025-08-30,2025-08-30 Leeds United-Newcastle Utd,3,Sat,Away,Newcastle Utd,0,0,Leeds United,D,5,603,88,0,39,52,0,10,13,8,7,0.5,8,2,20.4,100.0,15,21,57,145,14,695,13,439,16,4,Leeds United,Newcastle Utd,ENG
@@ -299,6 +313,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-26,2025-12-26 Manchester Utd-Newcastle Utd,18,Fri,Away,Newcastle Utd,0,1,Manchester Utd,L,11,696,78,0,64,62,5,14,13,6,14,1.2,16,3,13.9,75.0,30,46,66,289,24,815,42,475,18,6,Manchester Utd,Newcastle Utd,ENG
 2526,2025-12-30,2025-12-30 Burnley-Newcastle Utd,19,Tue,Away,Newcastle Utd,3,1,Burnley,W,4,509,69,0,24,26,2,19,7,11,37,2.3,20,7,15.6,66.7,30,19,52,115,15,644,23,318,15,2,Burnley,Newcastle Utd,ENG
 2526,2026-01-04,2026-01-04 Newcastle Utd-Crystal Palace,20,Sun,Home,Newcastle Utd,2,0,Crystal Palace,W,8,549,79,1,35,49,5,16,18,7,37,2.1,12,7,12.1,100.0,21,31,59,175,20,705,31,386,13,6,Newcastle Utd,Crystal Palace,ENG
+2526,2026-01-07,2026-01-07 Newcastle Utd-Leeds United,21,Wed,Home,Newcastle Utd,4,3,Leeds United,W,8,601,78,3,39,47,3,14,7,9,33,2.4,17,6,13.5,66.7,30,35,62,173,18,733,35,373,9,4,Newcastle Utd,Leeds United,ENG
 2526,2025-08-17,2025-08-17 Nott'ham Forest-Brentford,1,Sun,Home,Nott'ham Forest,3,1,Brentford,W,5,466,73,2,33,41,2,12,9,9,26,1.8,11,5,18.6,100.0,21,24,54,200,19,572,23,258,18,4,Nott'ham Forest,Brentford,ENG
 2526,2025-08-24,2025-08-24 Crystal Palace-Nott'ham Forest,2,Sun,Away,Nott'ham Forest,1,1,Crystal Palace,D,3,564,83,1,39,46,3,12,8,10,16,0.9,9,1,13.2,75.0,16,26,58,138,15,665,19,333,14,5,Crystal Palace,Nott'ham Forest,ENG
 2526,2025-08-31,2025-08-31 Nott'ham Forest-West Ham,3,Sun,Home,Nott'ham Forest,0,3,West Ham,L,9,596,54,0,53,59,8,19,11,6,17,0.7,11,3,15.9,75.0,21,35,58,226,22,707,28,364,13,5,Nott'ham Forest,West Ham,ENG
@@ -319,6 +334,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 Nott'ham Forest-Manchester City,18,Sat,Home,Nott'ham Forest,1,2,Manchester City,L,5,335,83,1,19,16,2,15,11,8,22,0.6,7,2,17.0,60.0,13,22,35,111,11,441,12,240,7,1,Nott'ham Forest,Manchester City,ENG
 2526,2025-12-30,2025-12-30 Nott'ham Forest-Everton,19,Tue,Home,Nott'ham Forest,0,2,Everton,L,9,744,65,0,69,98,4,21,11,5,13,1.5,21,6,18.3,33.3,39,52,69,324,32,864,40,554,21,6,Nott'ham Forest,Everton,ENG
 2526,2026-01-03,2026-01-03 Aston Villa-Nott'ham Forest,20,Sat,Away,Nott'ham Forest,1,3,Aston Villa,L,4,262,55,1,7,14,2,19,14,14,29,0.9,10,5,18.7,25.0,14,9,28,50,8,372,13,149,4,5,Aston Villa,Nott'ham Forest,ENG
+2526,2026-01-06,2026-01-06 West Ham-Nott'ham Forest,21,Tue,Away,Nott'ham Forest,2,1,West Ham,W,5,477,77,1,43,50,4,15,9,6,32,1.4,12,4,18.2,66.7,25,28,53,210,15,615,24,267,7,2,West Ham,Nott'ham Forest,ENG
 2526,2025-08-16,2025-08-16 Sunderland-West Ham,1,Sat,Home,Sunderland,3,0,West Ham,W,5,360,65,2,25,23,1,14,12,9,34,0.7,10,5,12.0,100.0,19,17,38,109,9,467,15,248,8,2,Sunderland,West Ham,ENG
 2526,2025-08-23,2025-08-23 Burnley-Sunderland,2,Sat,Away,Sunderland,0,2,Burnley,L,3,665,84,0,42,49,3,18,10,7,28,0.8,9,1,16.7,0.0,18,24,58,187,22,773,16,529,20,4,Burnley,Sunderland,ENG
 2526,2025-08-30,2025-08-30 Sunderland-Brentford,3,Sat,Home,Sunderland,2,1,Brentford,W,3,460,80,1,34,39,9,28,4,7,35,1.5,11,2,18.4,75.0,19,18,54,125,15,574,15,336,8,2,Sunderland,Brentford,ENG
@@ -339,6 +355,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-28,2025-12-28 Sunderland-Leeds United,18,Sun,Home,Sunderland,1,1,Leeds United,D,3,437,68,1,34,37,1,14,18,5,46,0.7,8,3,12.2,80.0,15,14,44,107,11,570,21,254,9,2,Sunderland,Leeds United,ENG
 2526,2026-01-01,2026-01-01 Sunderland-Manchester City,19,Thu,Home,Sunderland,0,0,Manchester City,D,3,335,65,0,24,27,2,18,16,17,32,0.9,10,4,15.7,100.0,16,9,33,106,17,473,21,233,6,6,Sunderland,Manchester City,ENG
 2526,2026-01-04,2026-01-04 Tottenham-Sunderland,20,Sun,Away,Sunderland,1,1,Tottenham,D,5,431,72,1,23,33,4,17,10,9,30,0.4,10,3,15.9,75.0,19,21,51,108,10,536,20,287,10,2,Tottenham,Sunderland,ENG
+2526,2026-01-07,2026-01-07 Brentford-Sunderland,21,Wed,Away,Sunderland,0,3,Brentford,L,4,419,78,0,26,27,1,7,8,10,25,1.8,10,2,20.5,50.0,21,13,49,102,14,514,19,294,8,2,Brentford,Sunderland,ENG
 2526,2025-08-16,2025-08-16 Tottenham-Burnley,1,Sat,Home,Tottenham,3,0,Burnley,W,6,559,81,3,40,31,2,12,6,1,29,2.3,16,6,13.7,100.0,29,27,66,153,17,649,24,422,15,2,Tottenham,Burnley,ENG
 2526,2025-08-23,2025-08-23 Manchester City-Tottenham,2,Sat,Away,Tottenham,2,0,Manchester City,W,2,367,74,1,19,22,6,24,9,7,27,1.1,12,5,14.5,100.0,19,11,39,102,14,500,26,216,6,2,Manchester City,Tottenham,ENG
 2526,2025-08-30,2025-08-30 Tottenham-Bournemouth,3,Sat,Home,Tottenham,0,1,Bournemouth,L,0,531,79,0,30,41,1,16,15,4,33,0.2,5,1,19.0,83.3,10,20,61,123,17,671,18,258,11,3,Tottenham,Bournemouth,ENG
@@ -359,6 +376,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-28,2025-12-28 Crystal Palace-Tottenham,18,Sun,Away,Tottenham,1,0,Crystal Palace,W,2,378,93,1,21,20,0,20,14,6,54,0.8,8,4,16.5,100.0,14,12,39,84,15,535,17,225,6,3,Crystal Palace,Tottenham,ENG
 2526,2026-01-01,2026-01-01 Brentford-Tottenham,19,Thu,Away,Tottenham,0,0,Brentford,D,1,442,77,0,25,32,1,18,11,10,31,0.8,9,2,16.0,100.0,16,11,44,118,21,563,18,281,16,3,Brentford,Tottenham,ENG
 2526,2026-01-04,2026-01-04 Tottenham-Sunderland,20,Sun,Home,Tottenham,1,1,Sunderland,D,3,415,84,1,25,20,1,15,13,8,35,1.1,13,4,16.3,66.7,22,23,49,154,29,529,29,319,16,8,Tottenham,Sunderland,ENG
+2526,2026-01-07,2026-01-07 Bournemouth-Tottenham,21,Wed,Away,Tottenham,2,3,Bournemouth,L,7,484,76,1,14,28,3,24,12,5,15,1.2,16,4,15.7,0.0,31,21,58,117,20,589,29,337,10,6,Bournemouth,Tottenham,ENG
 2526,2025-08-16,2025-08-16 Sunderland-West Ham,1,Sat,Away,West Ham,0,3,Sunderland,L,7,600,76,0,47,50,1,12,10,4,19,0.6,12,3,18.4,40.0,23,26,63,196,10,706,27,328,14,0,Sunderland,West Ham,ENG
 2526,2025-08-22,2025-08-22 West Ham-Chelsea,2,Fri,Home,West Ham,1,5,Chelsea,L,7,440,51,1,26,28,1,11,7,7,29,0.7,12,4,13.6,28.6,20,16,42,118,8,543,16,321,10,3,West Ham,Chelsea,ENG
 2526,2025-08-31,2025-08-31 Nott'ham Forest-West Ham,3,Sun,Away,West Ham,3,0,Nott'ham Forest,W,7,425,63,2,14,23,2,16,10,6,36,2.4,11,7,13.3,100.0,21,18,42,98,15,549,17,320,12,3,Nott'ham Forest,West Ham,ENG
@@ -379,6 +397,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-27,2025-12-27 West Ham-Fulham,18,Sat,Home,West Ham,0,1,Fulham,L,5,451,71,0,27,40,4,29,15,9,29,0.9,11,2,15.9,80.0,16,17,45,150,12,584,26,258,12,2,West Ham,Fulham,ENG
 2526,2025-12-30,2025-12-30 West Ham-Brighton,19,Tue,Home,West Ham,2,2,Brighton,D,5,372,82,1,28,27,4,27,9,9,28,1.9,9,3,15.4,83.3,15,16,39,112,16,499,20,276,13,7,West Ham,Brighton,ENG
 2526,2026-01-03,2026-01-03 Wolves-West Ham,20,Sat,Away,West Ham,0,3,Wolves,L,7,675,82,0,53,58,6,27,11,6,15,0.3,6,0,16.0,75.0,10,28,66,210,21,780,22,393,12,5,Wolves,West Ham,ENG
+2526,2026-01-06,2026-01-06 West Ham-Nott'ham Forest,21,Tue,Home,West Ham,1,2,Nott'ham Forest,L,6,427,84,0,31,36,5,28,12,7,38,0.9,14,3,14.7,80.0,25,19,47,144,16,571,16,245,12,3,West Ham,Nott'ham Forest,ENG
 2526,2025-08-16,2025-08-16 Wolves-Manchester City,1,Sat,Home,Wolves,0,4,Manchester City,L,4,445,69,0,23,23,4,25,11,6,21,0.6,9,3,17.7,0.0,18,20,42,115,12,542,19,327,12,2,Wolves,Manchester City,ENG
 2526,2025-08-23,2025-08-23 Bournemouth-Wolves,2,Sat,Away,Wolves,0,1,Bournemouth,L,3,349,75,0,24,21,0,21,12,9,32,0.5,6,1,16.8,75.0,11,17,41,93,5,450,13,222,4,1,Bournemouth,Wolves,ENG
 2526,2025-08-30,2025-08-30 Wolves-Everton,3,Sat,Home,Wolves,2,3,Everton,L,2,576,88,2,32,38,2,23,10,10,18,1.1,12,4,19.3,25.0,19,16,58,123,10,698,21,335,9,1,Wolves,Everton,ENG
@@ -397,8 +416,9 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-13,2025-12-13 Arsenal-Wolves,16,Sat,Away,Wolves,1,2,Arsenal,L,0,283,76,1,18,21,1,8,11,5,53,0.3,3,2,12.8,0.0,4,8,31,68,4,396,12,188,6,1,Arsenal,Wolves,ENG
 2526,2025-12-20,2025-12-20 Wolves-Brentford,17,Sat,Home,Wolves,0,2,Brentford,L,3,407,66,0,27,35,4,16,8,9,37,1.3,8,1,20.8,66.7,14,22,44,137,16,537,21,261,9,3,Wolves,Brentford,ENG
 2526,2025-12-27,2025-12-27 Liverpool-Wolves,18,Sat,Away,Wolves,1,2,Liverpool,L,4,362,75,0,21,30,0,16,7,8,25,1.2,9,4,18.3,50.0,15,15,34,94,10,482,13,250,11,3,Liverpool,Wolves,ENG
-2526,2025-12-30,2025-12-30 Manchester Utd-Wolves,19,Tue,Away,Wolves,1,1,Manchester Utd,D,4,430,47,0,24,26,1,20,13,10,27,1.2,11,4,14.1,83.3,19,14,44,129,18,546,22,276,16,4,Manchester Utd,Wolves,ENG
+2526,2025-12-30,2025-12-30 Manchester Utd-Wolves,19,Tue,Away,Wolves,1,1,Manchester Utd,D,4,430,47,0,24,26,1,20,13,10,27,1.2,11,4,14.1,83.3,19,14,44,130,18,546,22,276,16,4,Manchester Utd,Wolves,ENG
 2526,2026-01-03,2026-01-03 Wolves-West Ham,20,Sat,Home,Wolves,3,0,West Ham,W,6,349,49,2,14,9,0,23,8,9,32,1.9,10,7,17.9,,17,16,34,89,15,468,13,235,7,2,Wolves,West Ham,ENG
+2526,2026-01-07,2026-01-07 Everton-Wolves,21,Wed,Away,Wolves,1,1,Everton,D,7,474,78,1,47,39,1,16,13,5,24,0.7,13,4,18.6,50.0,25,30,54,136,15,590,28,362,6,0,Everton,Wolves,ENG
 2526,2025-08-16,2025-08-16 Alavés-Levante,1,Sat,Home,Alavés,2,1,Levante,W,10,536,95,1,46,50,1,15,14,10,24,1.2,15,4,15.2,66.7,27,37,61,192,13,650,24,342,11,3,Alavés,Levante,ESP
 2526,2025-08-22,2025-08-22 Betis-Alavés,2,Fri,Away,Alavés,0,1,Betis,L,2,526,61,0,47,36,2,23,9,7,27,1.1,11,5,18.7,80.0,19,16,51,122,14,634,9,302,9,3,Betis,Alavés,ESP
 2526,2025-08-30,2025-08-30 Alavés-Atlético Madrid,3,Sat,Home,Alavés,1,1,Atlético Madrid,D,1,398,64,0,22,27,1,14,13,5,33,0.9,4,1,24.7,83.3,10,7,40,107,8,524,10,294,14,0,Alavés,Atlético Madrid,ESP
@@ -416,7 +436,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Alavés-Real Sociedad,15,Sat,Home,Alavés,1,0,Real Sociedad,W,5,364,69,0,20,29,1,14,13,11,26,1.4,13,2,23.0,100.0,23,21,38,126,13,490,20,236,11,4,Alavés,Real Sociedad,ESP
 2526,2025-12-14,2025-12-14 Alavés-Real Madrid,16,Sun,Home,Alavés,1,2,Real Madrid,L,5,544,63,1,29,49,0,23,6,14,9,1.3,6,2,18.6,66.7,10,20,53,124,11,651,14,376,12,3,Alavés,Real Madrid,ESP
 2526,2025-12-20,2025-12-20 Osasuna-Alavés,17,Sat,Away,Alavés,0,3,Osasuna,L,0,475,69,0,19,23,1,18,6,6,39,0.8,7,3,15.7,71.4,14,15,53,114,14,604,9,242,10,2,Osasuna,Alavés,ESP
-2526,2026-01-04,2026-01-04 Alavés-Oviedo,18,Sun,Home,Alavés,1,1,Oviedo,D,6,492,77,0,38,50,0,19,14,6,31,1.3,18,7,20.0,83.3,32,28,57,187,18,639,22,352,13,3,Alavés,Oviedo,ESP
+2526,2026-01-04,2026-01-04 Alavés-Oviedo,18,Sun,Home,Alavés,1,1,Oviedo,D,6,492,77,0,38,50,0,19,14,6,31,1.4,19,7,19.2,83.3,34,28,57,188,18,640,23,353,13,3,Alavés,Oviedo,ESP
+2526,2026-01-10,2026-01-10 Villarreal-Alavés,19,Sat,Away,Alavés,1,3,Villarreal,L,6,598,75,0,22,44,2,19,8,11,17,0.9,16,5,23.0,25.0,25,25,55,133,16,708,17,317,14,4,Villarreal,Alavés,ESP
 2526,2025-08-17,2025-08-17 Athletic Club-Sevilla,1,Sun,Home,Athletic Club,3,2,Sevilla,W,10,433,83,1,23,38,2,11,11,6,12,2.8,13,2,14.7,66.7,25,21,46,133,20,532,26,248,12,4,Athletic Club,Sevilla,ESP
 2526,2025-08-25,2025-08-25 Athletic Club-Rayo Vallecano,2,Mon,Home,Athletic Club,1,0,Rayo Vallecano,W,3,366,60,0,21,39,3,14,11,5,29,1.5,10,3,22.3,100.0,18,16,40,126,14,485,24,227,9,6,Athletic Club,Rayo Vallecano,ESP
 2526,2025-08-31,2025-08-31 Betis-Athletic Club,3,Sun,Away,Athletic Club,2,1,Betis,W,10,487,56,0,29,34,4,15,14,11,17,1.1,15,6,20.0,50.0,23,20,50,161,20,611,24,318,17,4,Betis,Athletic Club,ESP
@@ -424,7 +445,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-09-20,2025-09-20 Valencia-Athletic Club,5,Sat,Away,Athletic Club,0,2,Valencia,L,6,534,89,0,50,48,2,14,9,8,17,0.5,11,5,18.9,60.0,18,24,56,167,16,645,23,345,9,6,Valencia,Athletic Club,ESP
 2526,2025-09-23,2025-09-23 Athletic Club-Girona,6,Tue,Home,Athletic Club,1,1,Girona,D,8,668,72,0,64,82,5,18,2,10,10,1.5,17,5,15.2,66.7,29,40,66,248,33,764,33,386,24,3,Athletic Club,Girona,ESP
 2526,2025-09-27,2025-09-27 Villarreal-Athletic Club,7,Sat,Away,Athletic Club,0,1,Villarreal,L,5,568,77,0,36,56,5,12,4,6,24,1.3,16,4,18.1,80.0,23,30,57,188,13,676,19,395,21,0,Villarreal,Athletic Club,ESP
-2526,2025-10-04,2025-10-04 Athletic Club-Mallorca,8,Sat,Home,Athletic Club,2,1,Mallorca,W,7,493,80,1,46,40,1,8,11,4,21,2.0,17,4,20.3,50.0,33,29,52,203,18,601,25,292,16,4,Athletic Club,Mallorca,ESP
+2526,2025-10-04,2025-10-04 Athletic Club-Mallorca,8,Sat,Home,Athletic Club,2,1,Mallorca,W,7,493,80,1,46,40,1,8,11,4,21,2.0,17,4,20.3,50.0,33,29,52,203,18,601,25,291,16,4,Athletic Club,Mallorca,ESP
 2526,2025-10-19,2025-10-19 Elche-Athletic Club,9,Sun,Away,Athletic Club,0,0,Elche,D,2,302,58,0,17,16,3,13,14,6,31,0.3,4,1,16.4,100.0,6,9,32,99,11,410,14,144,7,2,Elche,Athletic Club,ESP
 2526,2025-10-25,2025-10-25 Athletic Club-Getafe,10,Sat,Home,Athletic Club,0,1,Getafe,L,1,487,90,0,29,31,1,13,14,5,54,0.4,7,4,18.5,66.7,13,12,56,103,15,651,10,229,8,1,Athletic Club,Getafe,ESP
 2526,2025-11-01,2025-11-01 Real Sociedad-Athletic Club,11,Sat,Away,Athletic Club,2,3,Real Sociedad,L,2,399,69,1,23,31,0,20,10,4,32,1.0,11,4,15.4,40.0,19,14,49,106,4,522,19,245,7,1,Real Sociedad,Athletic Club,ESP
@@ -492,6 +513,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-15,2025-12-15 Rayo Vallecano-Betis,16,Mon,Away,Betis,0,0,Rayo Vallecano,D,3,355,75,0,16,27,1,12,11,11,53,0.8,13,6,22.6,100.0,25,11,42,96,8,491,14,236,7,2,Rayo Vallecano,Betis,ESP
 2526,2025-12-21,2025-12-21 Betis-Getafe,17,Sun,Home,Betis,4,0,Getafe,W,7,415,53,3,23,26,2,19,14,6,44,3.0,19,8,16.1,100.0,35,18,48,128,18,574,23,300,17,6,Betis,Getafe,ESP
 2526,2026-01-04,2026-01-04 Real Madrid-Betis,18,Sun,Away,Betis,1,5,Real Madrid,L,8,432,46,1,31,31,0,14,12,11,19,1.1,13,5,20.6,44.4,24,16,39,134,19,529,21,336,10,9,Real Madrid,Betis,ESP
+2526,2026-01-10,2026-01-10 Oviedo-Betis,19,Sat,Away,Betis,1,1,Oviedo,D,2,601,98,1,28,43,3,17,16,11,28,2.2,15,6,19.3,66.7,26,13,58,142,18,731,32,468,12,5,Oviedo,Betis,ESP
 2526,2025-08-17,2025-08-17 Celta Vigo-Getafe,1,Sun,Home,Celta Vigo,0,2,Getafe,L,9,620,64,0,51,60,4,23,6,2,25,0.7,11,3,19.7,33.3,21,22,69,199,26,726,25,391,15,4,Celta Vigo,Getafe,ESP
 2526,2025-08-23,2025-08-23 Mallorca-Celta Vigo,2,Sat,Away,Celta Vigo,1,1,Mallorca,D,4,480,72,1,34,31,2,11,8,7,28,0.7,8,2,23.9,75.0,16,11,50,84,9,566,9,306,6,2,Mallorca,Celta Vigo,ESP
 2526,2025-08-27,2025-08-27 Celta Vigo-Betis,6,Wed,Home,Celta Vigo,1,1,Betis,D,10,541,54,0,40,51,1,17,6,7,25,0.8,14,5,17.2,0.0,24,20,47,153,24,633,31,354,10,10,Celta Vigo,Betis,ESP
@@ -510,6 +532,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-14,2025-12-14 Celta Vigo-Athletic Club,16,Sun,Home,Celta Vigo,2,0,Athletic Club,W,1,541,86,1,28,20,2,16,20,6,21,1.3,5,2,14.4,100.0,10,3,50,72,11,647,9,405,5,5,Celta Vigo,Athletic Club,ESP
 2526,2025-12-20,2025-12-20 Oviedo-Celta Vigo,17,Sat,Away,Celta Vigo,0,0,Oviedo,D,3,431,55,0,15,22,0,9,6,8,41,0.7,6,2,15.2,100.0,12,8,44,82,9,552,10,274,8,4,Oviedo,Celta Vigo,ESP
 2526,2026-01-03,2026-01-03 Celta Vigo-Valencia,18,Sat,Home,Celta Vigo,4,1,Valencia,W,2,427,66,2,32,29,0,13,11,8,25,2.7,11,5,17.0,80.0,22,7,41,91,9,530,23,311,8,8,Celta Vigo,Valencia,ESP
+2526,2026-01-12,2026-01-12 Sevilla-Celta Vigo,19,Mon,Away,Celta Vigo,1,0,Sevilla,W,1,351,48,0,18,21,0,7,6,6,29,1.5,8,6,17.7,100.0,16,2,41,66,14,450,10,207,5,3,Sevilla,Celta Vigo,ESP
 2526,2025-08-18,2025-08-18 Elche-Betis,1,Mon,Home,Elche,1,1,Betis,D,1,726,59,1,59,53,0,13,10,6,15,0.6,6,2,17.1,75.0,10,20,68,188,19,809,15,511,15,3,Elche,Betis,ESP
 2526,2025-08-23,2025-08-23 Atlético Madrid-Elche,2,Sat,Away,Elche,1,1,Atlético Madrid,D,2,437,64,1,14,21,3,19,9,12,29,0.6,6,2,15.2,83.3,12,4,42,75,11,565,11,307,8,2,Atlético Madrid,Elche,ESP
 2526,2025-08-29,2025-08-29 Elche-Levante,3,Fri,Home,Elche,2,0,Levante,W,4,610,89,2,40,47,0,13,4,10,18,1.1,16,5,17.1,100.0,29,21,67,160,19,697,19,340,12,3,Elche,Levante,ESP
@@ -528,6 +551,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-13,2025-12-13 Mallorca-Elche,16,Sat,Away,Elche,1,3,Mallorca,L,1,558,45,0,45,54,2,21,5,4,24,0.3,9,0,19.0,62.5,18,6,57,151,24,656,17,323,11,6,Mallorca,Elche,ESP
 2526,2025-12-21,2025-12-21 Elche-Rayo Vallecano,17,Sun,Home,Elche,4,0,Rayo Vallecano,W,4,378,75,4,35,35,2,12,8,6,22,2.5,18,6,12.8,100.0,32,14,46,130,13,487,23,216,5,6,Elche,Rayo Vallecano,ESP
 2526,2026-01-03,2026-01-03 Elche-Villarreal,18,Sat,Home,Elche,1,3,Villarreal,L,6,834,61,1,61,86,2,17,5,10,6,1.3,16,2,15.3,25.0,29,33,77,341,25,935,30,449,20,5,Elche,Villarreal,ESP
+2526,2026-01-10,2026-01-10 Valencia-Elche,19,Sat,Away,Elche,1,1,Valencia,D,6,550,76,1,29,21,1,18,8,11,35,0.2,5,1,16.8,100.0,9,16,61,126,13,676,15,462,14,2,Valencia,Elche,ESP
 2526,2025-08-17,2025-08-17 Espanyol-Atlético Madrid,1,Sun,Home,Espanyol,2,1,Atlético Madrid,W,1,436,65,2,22,29,0,10,9,5,22,1.3,9,5,16.6,75.0,18,24,40,112,15,518,15,305,13,3,Espanyol,Atlético Madrid,ESP
 2526,2025-08-24,2025-08-24 Real Sociedad-Espanyol,2,Sun,Away,Espanyol,2,2,Real Sociedad,D,2,338,65,1,14,28,4,21,8,6,20,1.8,13,2,24.2,71.4,24,8,38,98,14,460,13,249,11,2,Real Sociedad,Espanyol,ESP
 2526,2025-08-31,2025-08-31 Espanyol-Osasuna,3,Sun,Home,Espanyol,1,0,Osasuna,W,2,446,66,0,26,39,2,16,11,2,34,1.2,10,4,21.4,100.0,16,18,46,121,12,557,14,298,9,1,Espanyol,Osasuna,ESP
@@ -546,6 +570,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-13,2025-12-13 Getafe-Espanyol,16,Sat,Away,Espanyol,1,0,Getafe,W,4,353,86,1,14,15,1,16,12,6,39,0.6,6,4,15.0,100.0,11,11,44,54,8,464,15,205,4,4,Getafe,Espanyol,ESP
 2526,2025-12-22,2025-12-22 Athletic Club-Espanyol,17,Mon,Away,Espanyol,2,1,Athletic Club,W,4,315,80,1,15,16,6,27,15,11,36,0.9,10,5,18.4,85.7,15,13,35,88,7,463,13,171,6,3,Athletic Club,Espanyol,ESP
 2526,2026-01-03,2026-01-03 Espanyol-Barcelona,18,Sat,Home,Espanyol,0,2,Barcelona,L,5,283,68,0,18,21,3,18,6,10,17,1.6,14,6,14.3,66.7,26,12,32,82,9,396,24,197,4,7,Espanyol,Barcelona,ESP
+2526,2026-01-11,2026-01-11 Levante-Espanyol,19,Sun,Away,Espanyol,1,1,Levante,D,3,469,54,0,36,42,5,27,9,9,28,1.4,19,3,19.3,50.0,33,19,50,148,16,602,27,261,18,6,Levante,Espanyol,ESP
 2526,2025-08-17,2025-08-17 Celta Vigo-Getafe,1,Sun,Away,Getafe,2,0,Celta Vigo,W,3,280,67,2,22,22,1,21,16,10,26,1.4,10,3,19.8,100.0,20,8,31,99,6,409,16,146,2,1,Celta Vigo,Getafe,ESP
 2526,2025-08-25,2025-08-25 Sevilla-Getafe,2,Mon,Away,Getafe,2,1,Sevilla,W,3,253,60,2,13,22,1,16,12,2,34,0.7,9,6,20.1,66.7,15,6,30,86,7,382,17,150,6,5,Sevilla,Getafe,ESP
 2526,2025-08-29,2025-08-29 Valencia-Getafe,3,Fri,Away,Getafe,0,3,Valencia,L,6,345,79,0,26,19,3,16,15,5,31,0.7,11,1,18.6,25.0,20,21,43,130,12,484,17,201,5,2,Valencia,Getafe,ESP
@@ -564,6 +589,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-13,2025-12-13 Getafe-Espanyol,16,Sat,Home,Getafe,0,1,Espanyol,L,6,444,103,0,36,32,1,9,9,4,18,0.2,11,1,24.6,75.0,16,27,56,146,4,550,10,233,10,0,Getafe,Espanyol,ESP
 2526,2025-12-21,2025-12-21 Betis-Getafe,17,Sun,Away,Getafe,0,4,Betis,L,5,448,59,0,30,40,1,12,8,12,20,1.4,14,3,20.2,50.0,27,28,52,160,15,549,17,304,9,2,Betis,Getafe,ESP
 2526,2026-01-02,2026-01-02 Rayo Vallecano-Getafe,18,Fri,Away,Getafe,1,1,Rayo Vallecano,D,2,354,78,1,25,31,1,17,13,4,22,0.6,12,4,18.0,75.0,20,17,41,127,5,466,12,167,5,2,Rayo Vallecano,Getafe,ESP
+2526,2026-01-09,2026-01-09 Getafe-Real Sociedad,19,Fri,Home,Getafe,1,2,Real Sociedad,L,2,373,94,1,19,19,0,20,16,8,35,0.3,6,3,21.1,60.0,11,13,43,76,7,502,5,216,8,1,Getafe,Real Sociedad,ESP
 2526,2025-08-15,2025-08-15 Girona-Rayo Vallecano,1,Fri,Home,Girona,1,3,Rayo Vallecano,L,2,425,74,1,18,22,1,13,10,3,18,0.6,7,2,20.0,50.0,10,12,45,108,8,521,8,320,10,1,Girona,Rayo Vallecano,ESP
 2526,2025-08-24,2025-08-24 Villarreal-Girona,2,Sun,Away,Girona,0,5,Villarreal,L,1,499,52,0,43,46,1,18,7,6,25,0.1,5,2,22.8,28.6,10,10,47,131,19,606,13,432,17,4,Villarreal,Girona,ESP
 2526,2025-08-30,2025-08-30 Girona-Sevilla,3,Sat,Home,Girona,0,2,Sevilla,L,11,492,70,0,25,50,2,15,5,2,16,2.0,20,5,17.1,50.0,33,35,59,158,19,599,39,374,11,5,Girona,Sevilla,ESP
@@ -582,6 +608,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-12,2025-12-12 Real Sociedad-Girona,16,Fri,Away,Girona,2,1,Real Sociedad,W,3,593,67,2,35,41,2,17,10,10,24,1.4,14,3,17.8,75.0,20,11,53,155,23,718,20,484,22,2,Real Sociedad,Girona,ESP
 2526,2025-12-21,2025-12-21 Girona-Atlético Madrid,17,Sun,Home,Girona,0,3,Atlético Madrid,L,3,560,69,0,41,35,4,17,7,11,24,1.1,9,2,17.2,50.0,15,14,51,158,23,662,13,435,18,4,Girona,Atlético Madrid,ESP
 2526,2026-01-04,2026-01-04 Mallorca-Girona,18,Sun,Away,Girona,2,1,Mallorca,W,6,508,61,1,21,32,2,19,8,8,26,1.5,8,3,18.3,100.0,17,11,51,146,11,636,16,349,11,3,Mallorca,Girona,ESP
+2526,2026-01-10,2026-01-10 Girona-Osasuna,19,Sat,Home,Girona,1,0,Osasuna,W,2,468,73,1,27,30,5,28,7,4,33,0.6,8,4,17.7,,16,5,46,133,28,581,16,355,13,7,Girona,Osasuna,ESP
 2526,2025-08-16,2025-08-16 Alavés-Levante,1,Sat,Away,Levante,1,2,Alavés,L,1,337,90,0,15,23,3,16,11,4,33,0.9,7,3,19.9,50.0,11,13,39,90,6,435,8,173,4,0,Alavés,Levante,ESP
 2526,2025-08-23,2025-08-23 Levante-Barcelona,2,Sat,Home,Levante,2,3,Barcelona,L,0,196,55,1,11,7,0,31,16,8,45,1.8,7,4,13.5,70.0,14,5,19,41,7,338,15,149,3,3,Levante,Barcelona,ESP
 2526,2025-08-29,2025-08-29 Elche-Levante,3,Fri,Away,Levante,0,2,Elche,L,2,304,58,0,24,29,2,13,9,5,25,0.7,11,1,24.3,60.0,19,12,33,80,12,402,13,223,7,2,Elche,Levante,ESP
@@ -599,6 +626,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-08,2025-12-08 Osasuna-Levante,15,Mon,Away,Levante,0,2,Osasuna,L,3,583,79,0,41,37,1,9,16,9,32,0.5,11,4,22.9,66.7,16,18,59,171,14,714,14,448,12,2,Osasuna,Levante,ESP
 2526,2025-12-20,2025-12-20 Levante-Real Sociedad,17,Sat,Home,Levante,1,1,Real Sociedad,D,7,399,78,0,29,34,1,14,11,12,28,1.3,12,2,21.2,83.3,23,28,44,125,17,522,21,267,9,2,Levante,Real Sociedad,ESP
 2526,2026-01-04,2026-01-04 Sevilla-Levante,18,Sun,Away,Levante,3,0,Sevilla,W,1,316,64,3,18,12,1,18,11,6,32,1.0,6,4,20.4,100.0,12,8,36,73,6,436,7,242,8,2,Sevilla,Levante,ESP
+2526,2026-01-11,2026-01-11 Levante-Espanyol,19,Sun,Home,Levante,1,1,Espanyol,D,4,464,71,1,22,27,0,17,11,11,24,1.1,8,2,15.5,66.7,14,8,50,85,14,582,18,343,7,4,Levante,Espanyol,ESP
 2526,2025-08-16,2025-08-16 Mallorca-Barcelona,1,Sat,Home,Mallorca,0,3,Barcelona,L,3,256,69,0,9,15,1,12,13,5,17,0.2,4,1,17.5,62.5,7,9,30,57,1,345,10,162,4,0,Mallorca,Barcelona,ESP
 2526,2025-08-23,2025-08-23 Mallorca-Celta Vigo,2,Sat,Home,Mallorca,1,1,Celta Vigo,D,3,472,71,0,42,35,0,9,16,3,10,0.7,12,4,17.0,50.0,20,21,50,148,11,557,19,342,14,0,Mallorca,Celta Vigo,ESP
 2526,2025-08-30,2025-08-30 Real Madrid-Mallorca,3,Sat,Away,Mallorca,1,2,Real Madrid,L,5,409,91,1,22,26,1,14,13,7,25,0.7,9,3,13.7,71.4,15,16,41,83,11,517,14,281,6,2,Real Madrid,Mallorca,ESP
@@ -617,6 +645,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-13,2025-12-13 Mallorca-Elche,16,Sat,Home,Mallorca,3,1,Elche,W,1,427,48,2,26,32,2,10,6,6,9,2.4,15,8,16.8,,28,13,43,127,26,509,20,317,20,8,Mallorca,Elche,ESP
 2526,2025-12-19,2025-12-19 Valencia-Mallorca,17,Fri,Away,Mallorca,1,1,Valencia,D,3,267,71,1,13,16,1,15,16,7,46,0.2,4,2,18.4,50.0,8,11,29,56,12,410,14,164,8,2,Valencia,Mallorca,ESP
 2526,2026-01-04,2026-01-04 Mallorca-Girona,18,Sun,Home,Mallorca,1,2,Girona,L,3,488,83,0,34,35,5,18,10,8,17,1.3,8,1,18.7,75.0,13,22,49,138,14,597,25,375,20,4,Mallorca,Girona,ESP
+2526,2026-01-11,2026-01-11 Rayo Vallecano-Mallorca,19,Sun,Away,Mallorca,1,2,Rayo Vallecano,L,5,370,86,1,20,29,1,11,8,6,30,0.7,9,2,15.1,80.0,17,23,47,95,12,478,10,230,15,2,Rayo Vallecano,Mallorca,ESP
 2526,2025-08-19,2025-08-19 Real Madrid-Osasuna,1,Tue,Away,Osasuna,0,1,Real Madrid,L,0,326,60,0,13,19,0,20,10,7,41,0.4,2,0,11.0,100.0,4,9,30,56,9,432,8,189,10,0,Real Madrid,Osasuna,ESP
 2526,2025-08-24,2025-08-24 Osasuna-Valencia,2,Sun,Home,Osasuna,1,0,Valencia,W,3,505,82,1,44,46,1,13,8,8,19,0.8,16,4,21.3,100.0,28,19,55,179,19,596,24,279,17,7,Osasuna,Valencia,ESP
 2526,2025-08-31,2025-08-31 Espanyol-Osasuna,3,Sun,Away,Osasuna,0,1,Espanyol,L,3,530,87,0,31,30,0,14,6,10,17,1.4,10,3,16.0,75.0,16,17,54,128,17,647,23,384,17,4,Espanyol,Osasuna,ESP
@@ -635,6 +664,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-13,2025-12-13 Barcelona-Osasuna,16,Sat,Away,Osasuna,0,2,Barcelona,L,1,210,57,0,6,7,2,14,14,13,47,0.4,3,2,16.8,71.4,5,4,21,36,7,334,7,126,5,1,Barcelona,Osasuna,ESP
 2526,2025-12-20,2025-12-20 Osasuna-Alavés,17,Sat,Home,Osasuna,3,0,Alavés,W,9,425,68,1,29,36,4,20,9,3,20,2.0,15,6,16.6,100.0,28,26,47,161,12,543,22,296,15,2,Osasuna,Alavés,ESP
 2526,2026-01-03,2026-01-03 Osasuna-Athletic Club,18,Sat,Home,Osasuna,1,1,Athletic Club,D,1,444,70,0,12,16,1,18,11,12,42,0.7,11,4,20.5,83.3,20,7,48,72,19,581,14,322,9,7,Osasuna,Athletic Club,ESP
+2526,2026-01-10,2026-01-10 Girona-Osasuna,19,Sat,Away,Osasuna,0,1,Girona,L,1,546,79,0,34,36,2,10,5,2,19,1.4,12,0,14.2,75.0,22,20,54,172,16,637,27,406,13,5,Girona,Osasuna,ESP
 2526,2025-08-15,2025-08-15 Villarreal-Oviedo,1,Fri,Away,Oviedo,0,2,Villarreal,L,1,345,65,0,10,14,1,11,7,5,34,0.9,4,3,21.8,80.0,7,4,32,42,6,446,6,202,3,0,Villarreal,Oviedo,ESP
 2526,2025-08-24,2025-08-24 Oviedo-Real Madrid,2,Sun,Home,Oviedo,0,3,Real Madrid,L,1,409,65,0,24,25,0,20,19,10,24,0.5,6,3,20.1,70.0,11,9,36,86,20,533,15,299,8,5,Oviedo,Real Madrid,ESP
 2526,2025-08-30,2025-08-30 Oviedo-Real Sociedad,3,Sat,Home,Oviedo,1,0,Real Sociedad,W,1,438,82,1,17,22,1,14,14,7,44,0.5,8,1,20.6,100.0,13,11,43,97,11,573,12,335,9,3,Oviedo,Real Sociedad,ESP
@@ -653,6 +683,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-14,2025-12-14 Sevilla-Oviedo,16,Sun,Away,Oviedo,0,4,Sevilla,L,3,372,63,0,24,25,4,14,10,11,17,0.6,4,1,12.8,42.9,8,17,44,109,11,479,13,260,11,1,Sevilla,Oviedo,ESP
 2526,2025-12-20,2025-12-20 Oviedo-Celta Vigo,17,Sat,Home,Oviedo,0,0,Celta Vigo,D,4,546,91,0,40,45,1,16,9,7,15,0.6,10,3,19.3,100.0,16,28,56,179,15,648,24,350,16,1,Oviedo,Celta Vigo,ESP
 2526,2026-01-04,2026-01-04 Alavés-Oviedo,18,Sun,Away,Oviedo,1,1,Alavés,D,7,377,84,1,17,30,2,22,9,12,40,2.4,18,6,19.5,85.7,31,19,43,138,18,529,26,208,8,5,Alavés,Oviedo,ESP
+2526,2026-01-10,2026-01-10 Oviedo-Betis,19,Sat,Home,Oviedo,1,1,Betis,D,5,443,74,1,26,34,1,19,8,5,23,1.1,13,3,18.1,83.3,23,27,42,137,26,575,17,257,12,3,Oviedo,Betis,ESP
 2526,2025-08-15,2025-08-15 Girona-Rayo Vallecano,1,Fri,Away,Rayo Vallecano,3,1,Girona,W,4,520,72,1,33,34,2,27,9,8,20,3.4,15,3,17.4,50.0,22,15,55,145,15,641,24,379,16,4,Girona,Rayo Vallecano,ESP
 2526,2025-08-25,2025-08-25 Athletic Club-Rayo Vallecano,2,Mon,Away,Rayo Vallecano,0,1,Athletic Club,L,6,548,88,0,23,32,0,16,14,13,20,0.3,6,1,23.3,100.0,10,18,60,112,21,667,12,350,17,2,Athletic Club,Rayo Vallecano,ESP
 2526,2025-08-31,2025-08-31 Rayo Vallecano-Barcelona,3,Sun,Home,Rayo Vallecano,1,1,Barcelona,D,9,383,98,1,29,28,2,17,14,8,12,1.8,12,6,14.9,100.0,19,18,44,129,14,479,13,202,5,3,Rayo Vallecano,Barcelona,ESP
@@ -671,6 +702,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-15,2025-12-15 Rayo Vallecano-Betis,16,Mon,Home,Rayo Vallecano,0,0,Betis,D,8,493,78,0,29,54,1,17,16,3,19,1.5,23,7,22.2,100.0,40,29,58,187,17,621,17,331,17,0,Rayo Vallecano,Betis,ESP
 2526,2025-12-21,2025-12-21 Elche-Rayo Vallecano,17,Sun,Away,Rayo Vallecano,0,4,Elche,L,5,436,67,0,28,31,1,15,5,8,16,0.9,18,8,21.5,33.3,34,16,54,139,13,534,19,310,14,6,Elche,Rayo Vallecano,ESP
 2526,2026-01-02,2026-01-02 Rayo Vallecano-Getafe,18,Fri,Home,Rayo Vallecano,1,1,Getafe,D,3,508,106,1,36,51,2,15,7,7,30,1.0,13,4,20.8,75.0,21,10,59,101,8,630,14,257,7,0,Rayo Vallecano,Getafe,ESP
+2526,2026-01-11,2026-01-11 Rayo Vallecano-Mallorca,19,Sun,Home,Rayo Vallecano,2,1,Mallorca,W,6,419,88,1,20,31,2,20,10,7,27,2.4,13,4,17.9,50.0,24,19,53,116,9,536,16,267,7,2,Rayo Vallecano,Mallorca,ESP
 2526,2025-08-19,2025-08-19 Real Madrid-Osasuna,1,Tue,Home,Real Madrid,1,0,Osasuna,W,7,767,85,0,66,63,4,16,8,6,17,1.6,17,4,20.7,,34,19,70,390,26,883,34,579,21,12,Real Madrid,Osasuna,ESP
 2526,2025-08-24,2025-08-24 Oviedo-Real Madrid,2,Sun,Away,Real Madrid,3,0,Oviedo,W,9,737,60,3,60,63,5,23,4,9,13,2.7,26,10,19.5,100.0,49,15,64,349,36,860,34,634,26,15,Oviedo,Real Madrid,ESP
 2526,2025-08-30,2025-08-30 Real Madrid-Mallorca,3,Sat,Home,Real Madrid,2,1,Mallorca,W,4,577,78,2,56,63,4,13,12,7,21,1.8,17,7,20.3,66.7,33,14,59,287,38,692,44,471,23,18,Real Madrid,Mallorca,ESP
@@ -708,6 +740,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-12,2025-12-12 Real Sociedad-Girona,16,Fri,Home,Real Sociedad,1,2,Girona,L,4,528,50,1,33,43,6,25,13,13,18,0.9,9,4,16.6,33.3,17,16,47,179,18,645,20,468,21,6,Real Sociedad,Girona,ESP
 2526,2025-12-20,2025-12-20 Levante-Real Sociedad,17,Sat,Away,Real Sociedad,1,1,Levante,D,10,505,69,0,30,36,2,18,8,4,49,1.4,18,6,18.6,100.0,32,23,56,143,15,637,19,309,12,3,Levante,Real Sociedad,ESP
 2526,2026-01-04,2026-01-04 Real Sociedad-Atlético Madrid,18,Sun,Home,Real Sociedad,1,1,Atlético Madrid,D,6,462,71,1,29,50,6,27,9,6,17,1.6,18,8,18.4,50.0,31,24,46,160,22,573,23,298,7,9,Real Sociedad,Atlético Madrid,ESP
+2526,2026-01-09,2026-01-09 Getafe-Real Sociedad,19,Fri,Away,Real Sociedad,2,1,Getafe,W,4,497,73,1,34,40,6,23,12,11,18,1.6,12,5,19.3,66.7,16,20,57,167,7,635,18,339,5,2,Getafe,Real Sociedad,ESP
 2526,2025-08-17,2025-08-17 Athletic Club-Sevilla,1,Sun,Away,Sevilla,2,3,Athletic Club,L,1,517,88,2,27,36,1,18,18,12,33,1.0,12,6,15.8,33.3,22,10,54,106,17,635,20,290,17,7,Athletic Club,Sevilla,ESP
 2526,2025-08-25,2025-08-25 Sevilla-Getafe,2,Mon,Home,Sevilla,1,2,Getafe,L,5,592,89,0,47,53,6,24,14,5,22,0.5,12,3,17.9,66.7,24,31,70,171,24,711,25,470,11,5,Sevilla,Getafe,ESP
 2526,2025-08-30,2025-08-30 Girona-Sevilla,3,Sat,Away,Sevilla,2,0,Girona,W,3,343,68,2,20,20,2,17,15,3,52,1.3,13,4,17.8,100.0,20,5,41,86,17,495,24,259,5,7,Girona,Sevilla,ESP
@@ -726,6 +759,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-14,2025-12-14 Sevilla-Oviedo,16,Sun,Home,Sevilla,4,0,Oviedo,W,5,467,73,3,22,23,1,14,10,7,25,2.0,13,7,15.1,100.0,20,8,56,118,15,586,23,351,9,7,Sevilla,Oviedo,ESP
 2526,2025-12-20,2025-12-20 Real Madrid-Sevilla,17,Sat,Away,Sevilla,0,2,Real Madrid,L,5,466,49,0,21,32,2,16,6,8,22,1.5,14,5,15.9,87.5,23,10,47,106,13,566,23,404,13,6,Real Madrid,Sevilla,ESP
 2526,2026-01-04,2026-01-04 Sevilla-Levante,18,Sun,Home,Sevilla,0,3,Levante,L,5,567,76,0,44,57,0,11,6,12,18,1.7,14,6,16.9,25.0,29,28,64,194,15,676,31,364,11,3,Sevilla,Levante,ESP
+2526,2026-01-12,2026-01-12 Sevilla-Celta Vigo,19,Mon,Home,Sevilla,0,1,Celta Vigo,L,6,506,76,0,36,49,3,17,3,8,8,0.3,7,2,20.5,100.0,12,28,59,151,22,580,18,276,11,2,Sevilla,Celta Vigo,ESP
 2526,2025-08-16,2025-08-16 Valencia-Real Sociedad,1,Sat,Home,Valencia,1,1,Real Sociedad,D,8,441,70,1,23,40,2,12,6,5,26,2.0,18,2,17.8,66.7,26,24,54,141,22,552,29,301,18,5,Valencia,Real Sociedad,ESP
 2526,2025-08-24,2025-08-24 Osasuna-Valencia,2,Sun,Away,Valencia,0,1,Osasuna,L,4,410,74,0,27,30,0,12,13,5,30,0.4,4,1,24.0,75.0,5,12,45,89,9,508,7,290,10,2,Osasuna,Valencia,ESP
 2526,2025-08-29,2025-08-29 Valencia-Getafe,3,Fri,Home,Valencia,3,0,Getafe,W,8,458,65,3,24,27,0,12,7,3,31,1.1,7,4,15.3,100.0,13,22,57,98,17,563,10,313,11,5,Valencia,Getafe,ESP
@@ -744,6 +778,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-13,2025-12-13 Atlético Madrid-Valencia,16,Sat,Away,Valencia,1,2,Atlético Madrid,L,7,565,74,1,35,45,2,14,6,8,19,1.2,13,2,16.6,66.7,22,24,54,156,10,668,21,322,9,3,Atlético Madrid,Valencia,ESP
 2526,2025-12-19,2025-12-19 Valencia-Mallorca,17,Fri,Home,Valencia,1,1,Mallorca,D,12,641,80,1,63,78,5,11,8,1,18,1.3,17,2,19.1,50.0,28,40,71,258,18,742,43,402,11,6,Valencia,Mallorca,ESP
 2526,2026-01-03,2026-01-03 Celta Vigo-Valencia,18,Sat,Away,Valencia,1,4,Celta Vigo,L,4,619,58,0,38,37,1,9,4,7,14,1.9,15,5,17.8,50.0,31,25,59,173,25,706,28,378,11,3,Celta Vigo,Valencia,ESP
+2526,2026-01-10,2026-01-10 Valencia-Elche,19,Sat,Home,Valencia,1,1,Elche,D,8,355,61,0,28,22,1,13,9,9,25,1.9,15,3,19.3,0.0,24,22,39,139,16,477,25,262,11,4,Valencia,Elche,ESP
 2526,2025-08-15,2025-08-15 Villarreal-Oviedo,1,Fri,Home,Villarreal,2,0,Oviedo,W,10,726,63,1,68,72,1,11,7,14,6,2.4,25,10,16.3,100.0,46,32,68,330,46,808,50,536,27,15,Villarreal,Oviedo,ESP
 2526,2025-08-24,2025-08-24 Villarreal-Girona,2,Sun,Home,Villarreal,5,0,Girona,W,8,554,55,4,36,54,3,22,4,5,14,2.3,19,7,15.3,100.0,34,14,53,186,28,653,37,480,20,10,Villarreal,Girona,ESP
 2526,2025-08-31,2025-08-31 Celta Vigo-Villarreal,3,Sun,Away,Villarreal,1,1,Celta Vigo,D,5,431,63,1,13,31,1,28,15,13,22,1.0,8,3,16.3,50.0,15,12,36,107,10,560,20,309,11,3,Celta Vigo,Villarreal,ESP
@@ -761,6 +796,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Villarreal-Getafe,15,Sat,Home,Villarreal,2,0,Getafe,W,5,551,78,1,35,41,3,18,10,8,24,0.6,10,5,15.9,,17,19,62,163,23,681,27,415,18,8,Villarreal,Getafe,ESP
 2526,2025-12-21,2025-12-21 Villarreal-Barcelona,17,Sun,Home,Villarreal,0,2,Barcelona,L,5,232,59,0,11,13,3,14,21,9,22,1.6,14,5,15.7,75.0,18,10,22,98,9,352,22,156,4,3,Villarreal,Barcelona,ESP
 2526,2026-01-03,2026-01-03 Elche-Villarreal,18,Sat,Away,Villarreal,3,1,Elche,W,2,243,54,3,16,17,3,22,10,5,47,1.7,12,4,14.6,50.0,24,2,23,87,17,386,19,187,12,8,Elche,Villarreal,ESP
+2526,2026-01-10,2026-01-10 Villarreal-Alavés,19,Sat,Home,Villarreal,3,1,Alavés,W,1,484,59,1,25,34,3,22,10,10,29,1.5,11,4,16.2,80.0,19,3,45,98,17,605,19,321,10,6,Villarreal,Alavés,ESP
 2526,2025-08-23,2025-08-23 Freiburg-Augsburg,1,Sat,Away,Augsburg,3,1,Freiburg,W,5,334,64,1,17,20,3,15,13,12,48,1.3,14,5,17.3,100.0,20,17,39,117,20,478,18,222,14,5,Freiburg,Augsburg,GER
 2526,2025-08-30,2025-08-30 Augsburg-Bayern Munich,2,Sat,Home,Augsburg,2,3,Bayern Munich,L,7,417,66,2,20,30,1,21,14,11,29,0.5,10,3,18.1,70.0,17,18,43,88,12,555,19,312,6,2,Augsburg,Bayern Munich,GER
 2526,2025-09-14,2025-09-14 St. Pauli-Augsburg,3,Sun,Away,Augsburg,1,2,St. Pauli,L,1,458,62,1,18,33,2,17,8,11,40,0.8,10,5,18.4,71.4,19,10,44,93,15,610,19,358,9,2,St. Pauli,Augsburg,GER
@@ -776,6 +812,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Augsburg-Leverkusen,13,Sat,Home,Augsburg,2,0,Leverkusen,W,5,351,70,2,20,24,1,15,19,12,29,1.5,13,6,19.3,100.0,22,12,33,82,9,471,21,212,7,4,Augsburg,Leverkusen,GER
 2526,2025-12-13,2025-12-13 Eint Frankfurt-Augsburg,14,Sat,Away,Augsburg,0,1,Eint Frankfurt,L,6,487,80,0,30,41,1,17,11,2,31,0.6,12,1,13.0,75.0,22,22,49,135,16,605,34,276,6,3,Eint Frankfurt,Augsburg,GER
 2526,2025-12-20,2025-12-20 Augsburg-Werder Bremen,15,Sat,Home,Augsburg,0,0,Werder Bremen,D,6,498,76,0,32,37,1,11,10,4,24,1.0,14,6,15.4,,26,23,54,156,14,610,31,303,10,4,Augsburg,Werder Bremen,GER
+2526,2026-01-11,2026-01-11 Gladbach-Augsburg,16,Sun,Away,Augsburg,0,4,Gladbach,L,2,553,55,0,40,36,7,33,17,8,14,1.8,17,2,20.3,50.0,32,18,49,187,18,692,18,432,14,3,Gladbach,Augsburg,GER
 2526,2025-08-22,2025-08-22 Bayern Munich-RB Leipzig,1,Fri,Home,Bayern Munich,6,0,RB Leipzig,W,5,691,73,5,56,51,2,13,11,10,16,1.7,19,9,16.9,100.0,36,13,63,201,30,803,32,585,20,13,Bayern Munich,RB Leipzig,GER
 2526,2025-08-30,2025-08-30 Augsburg-Bayern Munich,2,Sat,Away,Bayern Munich,3,2,Augsburg,W,5,560,74,3,40,42,1,14,12,10,24,4.2,20,10,14.7,33.3,36,12,57,199,13,681,35,453,11,10,Augsburg,Bayern Munich,GER
 2526,2025-09-13,2025-09-13 Bayern Munich-Hamburger SV,3,Sat,Home,Bayern Munich,5,0,Hamburger SV,W,5,809,42,4,79,62,1,8,10,7,17,2.4,21,11,19.5,100.0,41,17,70,319,15,898,45,563,15,6,Bayern Munich,Hamburger SV,GER
@@ -791,6 +828,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Stuttgart-Bayern Munich,13,Sat,Away,Bayern Munich,5,0,Stuttgart,W,4,598,85,4,53,46,1,6,13,8,23,3.3,18,9,14.8,100.0,32,8,59,209,28,705,44,415,7,17,Stuttgart,Bayern Munich,GER
 2526,2025-12-14,2025-12-14 Bayern Munich-Mainz 05,14,Sun,Home,Bayern Munich,2,2,Mainz 05,D,7,1039,75,1,90,95,1,7,10,4,12,4.4,23,9,14.6,0.0,45,25,84,369,31,1137,49,796,34,9,Bayern Munich,Mainz 05,GER
 2526,2025-12-21,2025-12-21 Heidenheim-Bayern Munich,15,Sun,Away,Bayern Munich,4,0,Heidenheim,W,6,826,89,2,58,69,0,10,5,8,15,4.2,23,10,15.3,100.0,41,22,73,274,27,922,44,578,19,8,Heidenheim,Bayern Munich,GER
+2526,2026-01-11,2026-01-11 Bayern Munich-Wolfsburg,16,Sun,Home,Bayern Munich,8,1,Wolfsburg,W,6,753,89,6,64,57,4,14,14,8,11,3.3,16,10,14.5,66.7,31,13,68,200,28,847,41,589,15,17,Bayern Munich,Wolfsburg,GER
 2526,2025-08-23,2025-08-23 St. Pauli-Dortmund,1,Sat,Away,Dortmund,3,3,St. Pauli,D,2,514,49,3,24,29,0,10,8,8,49,1.6,7,6,14.8,71.4,16,8,49,78,5,654,17,400,4,2,St. Pauli,Dortmund,GER
 2526,2025-08-31,2025-08-31 Dortmund-Union Berlin,2,Sun,Home,Dortmund,3,0,Union Berlin,W,4,743,75,2,51,63,2,10,9,4,33,2.4,11,6,13.3,100.0,17,14,65,194,24,850,21,498,19,3,Dortmund,Union Berlin,GER
 2526,2025-09-13,2025-09-13 Heidenheim-Dortmund,3,Sat,Away,Dortmund,2,0,Heidenheim,W,4,836,53,2,78,102,2,9,9,7,12,2.7,17,8,12.9,100.0,33,22,75,415,36,937,39,648,42,7,Heidenheim,Dortmund,GER
@@ -806,6 +844,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-07,2025-12-07 Dortmund-Hoffenheim,13,Sun,Home,Dortmund,2,0,Hoffenheim,W,7,420,80,2,22,33,1,15,12,6,24,1.6,8,4,16.8,100.0,15,19,43,147,13,540,19,211,6,4,Dortmund,Hoffenheim,GER
 2526,2025-12-14,2025-12-14 Freiburg-Dortmund,14,Sun,Away,Dortmund,1,1,Freiburg,D,0,431,76,0,18,19,3,14,17,7,29,1.0,9,4,14.6,83.3,16,11,44,119,8,542,14,242,10,2,Freiburg,Dortmund,GER
 2526,2025-12-19,2025-12-19 Dortmund-Gladbach,15,Fri,Home,Dortmund,2,0,Gladbach,W,6,662,76,2,55,55,2,18,11,12,31,1.4,10,4,14.9,100.0,20,16,57,210,14,790,24,458,17,3,Dortmund,Gladbach,GER
+2526,2026-01-09,2026-01-09 Eint Frankfurt-Dortmund,16,Fri,Away,Dortmund,3,3,Eint Frankfurt,D,5,613,81,1,52,54,1,11,10,10,24,2.2,16,6,14.4,66.7,22,27,61,204,18,728,29,346,15,1,Eint Frankfurt,Dortmund,GER
 2526,2025-08-23,2025-08-23 Eint Frankfurt-Werder Bremen,1,Sat,Home,Eint Frankfurt,4,1,Werder Bremen,W,7,520,84,4,39,40,5,21,13,15,16,2.7,18,5,13.2,80.0,33,26,53,193,14,647,34,295,9,7,Eint Frankfurt,Werder Bremen,GER
 2526,2025-08-30,2025-08-30 Hoffenheim-Eint Frankfurt,2,Sat,Away,Eint Frankfurt,3,1,Hoffenheim,W,5,388,78,3,17,25,1,15,17,9,38,1.6,9,6,17.3,80.0,18,14,42,106,12,511,14,205,10,3,Hoffenheim,Eint Frankfurt,GER
 2526,2025-09-12,2025-09-12 Leverkusen-Eint Frankfurt,3,Fri,Away,Eint Frankfurt,1,3,Leverkusen,L,8,526,64,0,44,43,4,13,8,3,19,0.8,13,2,19.5,71.4,23,29,60,195,28,644,22,417,23,5,Leverkusen,Eint Frankfurt,GER
@@ -821,6 +860,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 RB Leipzig-Eint Frankfurt,13,Sat,Away,Eint Frankfurt,0,6,RB Leipzig,L,0,485,54,0,31,33,6,24,10,8,20,0.6,8,2,14.9,28.6,15,8,48,113,9,593,16,329,9,3,RB Leipzig,Eint Frankfurt,GER
 2526,2025-12-13,2025-12-13 Eint Frankfurt-Augsburg,14,Sat,Home,Eint Frankfurt,1,0,Augsburg,W,2,513,70,1,32,31,1,16,13,13,24,1.1,11,4,14.5,100.0,16,11,51,128,13,616,17,397,11,5,Eint Frankfurt,Augsburg,GER
 2526,2025-12-20,2025-12-20 Hamburger SV-Eint Frankfurt,15,Sat,Away,Eint Frankfurt,1,1,Hamburger SV,D,5,607,78,1,42,46,1,11,15,8,25,1.5,9,2,15.5,50.0,14,16,59,165,14,731,26,464,8,4,Hamburger SV,Eint Frankfurt,GER
+2526,2026-01-09,2026-01-09 Eint Frankfurt-Dortmund,16,Fri,Home,Eint Frankfurt,3,3,Dortmund,D,2,398,83,1,16,25,0,20,16,12,30,1.6,11,5,17.0,50.0,21,8,39,102,9,528,23,279,9,2,Eint Frankfurt,Dortmund,GER
 2526,2025-08-23,2025-08-23 Freiburg-Augsburg,1,Sat,Home,Freiburg,1,3,Augsburg,L,5,514,88,0,33,50,1,13,12,13,30,2.4,15,3,16.0,40.0,28,19,61,147,13,649,29,319,9,4,Freiburg,Augsburg,GER
 2526,2025-08-31,2025-08-31 Köln-Freiburg,2,Sun,Away,Freiburg,1,4,Köln,L,5,611,95,1,25,38,0,8,7,4,17,0.9,12,2,15.2,33.3,21,29,61,161,17,691,26,415,13,2,Köln,Freiburg,GER
 2526,2025-09-13,2025-09-13 Freiburg-Stuttgart,3,Sat,Home,Freiburg,3,1,Stuttgart,W,7,419,81,1,30,38,1,12,9,12,20,1.5,13,5,18.4,50.0,24,31,46,170,9,519,24,269,10,2,Freiburg,Stuttgart,GER
@@ -836,6 +876,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Heidenheim-Freiburg,13,Sat,Away,Freiburg,1,2,Heidenheim,L,6,514,62,1,31,35,3,15,13,9,26,1.0,16,2,16.7,33.3,27,28,61,188,25,640,30,315,16,3,Heidenheim,Freiburg,GER
 2526,2025-12-14,2025-12-14 Freiburg-Dortmund,14,Sun,Home,Freiburg,1,1,Dortmund,D,6,557,66,1,37,47,2,15,6,11,24,1.5,21,6,16.7,75.0,38,30,56,187,13,670,29,330,16,3,Freiburg,Dortmund,GER
 2526,2025-12-20,2025-12-20 Wolfsburg-Freiburg,15,Sat,Away,Freiburg,4,3,Wolfsburg,W,6,416,72,1,22,22,0,12,5,8,32,3.3,14,6,12.8,50.0,24,16,45,116,16,537,23,230,13,5,Wolfsburg,Freiburg,GER
+2526,2026-01-10,2026-01-10 Freiburg-Hamburger SV,16,Sat,Home,Freiburg,2,1,Hamburger SV,W,0,551,61,1,48,37,4,12,8,7,22,2.8,19,6,18.4,80.0,38,15,60,176,16,658,22,410,16,1,Freiburg,Hamburger SV,GER
 2526,2025-08-24,2025-08-24 Gladbach-Hamburger SV,1,Sun,Home,Gladbach,0,0,Hamburger SV,D,7,606,59,0,49,63,4,15,8,8,19,1.1,17,4,17.6,100.0,32,29,61,181,20,700,18,342,21,2,Gladbach,Hamburger SV,GER
 2526,2025-08-30,2025-08-30 Stuttgart-Gladbach,2,Sat,Away,Gladbach,0,1,Stuttgart,L,10,518,76,0,38,40,1,20,11,9,25,1.8,15,6,11.7,80.0,28,26,49,164,19,617,31,285,11,7,Stuttgart,Gladbach,GER
 2526,2025-09-14,2025-09-14 Gladbach-Werder Bremen,3,Sun,Home,Gladbach,0,4,Werder Bremen,L,9,554,52,0,43,65,3,20,8,7,21,1.5,19,2,18.0,57.1,27,28,55,214,14,677,35,386,15,4,Gladbach,Werder Bremen,GER
@@ -851,6 +892,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-05,2025-12-05 Mainz 05-Gladbach,13,Fri,Away,Gladbach,1,0,Mainz 05,W,6,472,70,0,26,31,2,23,11,9,49,1.7,14,4,14.7,100.0,26,17,45,143,20,626,30,334,18,4,Mainz 05,Gladbach,GER
 2526,2025-12-13,2025-12-13 Gladbach-Wolfsburg,14,Sat,Home,Gladbach,1,3,Wolfsburg,L,6,646,66,0,33,47,2,16,7,8,20,0.8,14,4,16.5,50.0,27,29,59,196,19,757,28,336,12,1,Gladbach,Wolfsburg,GER
 2526,2025-12-19,2025-12-19 Dortmund-Gladbach,15,Fri,Away,Gladbach,0,2,Dortmund,L,4,506,70,0,26,35,3,22,11,6,21,0.3,6,1,16.3,50.0,9,13,43,118,11,608,17,300,9,2,Dortmund,Gladbach,GER
+2526,2026-01-11,2026-01-11 Gladbach-Augsburg,16,Sun,Home,Gladbach,4,0,Augsburg,W,2,587,58,2,27,35,1,18,11,11,31,2.8,11,5,14.6,100.0,18,7,51,100,12,716,20,372,9,2,Gladbach,Augsburg,GER
 2526,2025-08-24,2025-08-24 Gladbach-Hamburger SV,1,Sun,Away,Hamburger SV,0,0,Gladbach,D,6,394,65,0,16,18,2,13,6,4,44,0.4,7,1,21.1,100.0,11,16,39,84,19,507,17,280,8,5,Gladbach,Hamburger SV,GER
 2526,2025-08-29,2025-08-29 Hamburger SV-St. Pauli,2,Fri,Home,Hamburger SV,0,2,St. Pauli,L,2,475,79,0,28,39,2,14,17,9,35,0.4,5,2,21.4,66.7,8,10,47,107,18,613,11,382,16,4,Hamburger SV,St. Pauli,GER
 2526,2025-09-13,2025-09-13 Bayern Munich-Hamburger SV,3,Sat,Away,Hamburger SV,0,5,Bayern Munich,L,3,350,56,0,14,22,1,10,13,8,28,0.6,9,2,13.7,66.7,16,12,30,81,16,454,15,260,9,5,Bayern Munich,Hamburger SV,GER
@@ -866,6 +908,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-07,2025-12-07 Hamburger SV-Werder Bremen,13,Sun,Home,Hamburger SV,3,2,Werder Bremen,W,5,492,61,2,33,42,2,18,12,14,31,1.3,12,6,16.6,33.3,22,21,53,156,15,625,23,383,10,2,Hamburger SV,Werder Bremen,GER
 2526,2025-12-13,2025-12-13 Hoffenheim-Hamburger SV,14,Sat,Away,Hamburger SV,1,4,Hoffenheim,L,3,422,79,1,14,18,1,12,14,9,28,1.4,13,5,21.6,33.3,23,12,41,73,13,550,17,302,12,5,Hoffenheim,Hamburger SV,GER
 2526,2025-12-20,2025-12-20 Hamburger SV-Eint Frankfurt,15,Sat,Home,Hamburger SV,1,1,Eint Frankfurt,D,5,416,77,0,19,27,2,18,11,15,44,0.7,9,2,12.9,50.0,15,19,41,90,10,545,11,313,10,0,Hamburger SV,Eint Frankfurt,GER
+2526,2026-01-10,2026-01-10 Freiburg-Hamburger SV,16,Sat,Away,Hamburger SV,1,2,Freiburg,L,3,370,78,1,14,22,1,10,13,6,23,0.6,10,5,23.1,85.7,16,13,40,69,12,474,12,263,6,3,Freiburg,Hamburger SV,GER
 2526,2025-08-23,2025-08-23 Heidenheim-Wolfsburg,1,Sat,Home,Heidenheim,1,3,Wolfsburg,L,2,431,59,0,22,22,0,12,12,7,22,0.7,7,2,20.9,60.0,12,15,49,105,16,523,10,344,13,3,Heidenheim,Wolfsburg,GER
 2526,2025-08-30,2025-08-30 RB Leipzig-Heidenheim,2,Sat,Away,Heidenheim,0,2,RB Leipzig,L,3,307,71,0,13,20,0,16,13,7,22,0.9,5,3,11.2,60.0,10,13,34,61,10,412,12,194,5,2,RB Leipzig,Heidenheim,GER
 2526,2025-09-13,2025-09-13 Heidenheim-Dortmund,3,Sat,Home,Heidenheim,0,2,Dortmund,L,5,273,75,0,9,9,1,11,14,19,34,0.4,6,1,21.2,75.0,10,7,25,63,5,399,9,145,8,1,Heidenheim,Dortmund,GER
@@ -881,6 +924,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Heidenheim-Freiburg,13,Sat,Home,Heidenheim,2,1,Freiburg,W,8,324,68,1,19,29,3,18,13,13,47,2.1,16,3,17.6,50.0,28,21,39,108,9,477,23,204,5,2,Heidenheim,Freiburg,GER
 2526,2025-12-13,2025-12-13 St. Pauli-Heidenheim,14,Sat,Away,Heidenheim,1,2,St. Pauli,L,11,658,79,1,50,62,0,9,11,5,23,2.4,20,7,16.3,50.0,35,40,64,200,30,770,45,439,22,1,St. Pauli,Heidenheim,GER
 2526,2025-12-21,2025-12-21 Heidenheim-Bayern Munich,15,Sun,Home,Heidenheim,0,4,Bayern Munich,L,0,306,96,0,24,21,3,12,14,6,41,1.2,7,1,13.5,60.0,12,12,27,73,5,418,15,188,1,1,Heidenheim,Bayern Munich,GER
+2526,2026-01-10,2026-01-10 Heidenheim-Köln,16,Sat,Home,Heidenheim,2,2,Köln,D,5,537,100,1,36,36,2,15,11,5,29,1.9,14,6,16.7,75.0,25,19,56,145,17,654,13,307,8,3,Heidenheim,Köln,GER
 2526,2025-08-23,2025-08-23 Leverkusen-Hoffenheim,1,Sat,Away,Hoffenheim,2,1,Leverkusen,W,4,419,75,2,29,30,1,15,14,10,29,0.4,10,5,18.9,50.0,17,11,40,105,10,529,22,217,4,3,Leverkusen,Hoffenheim,GER
 2526,2025-08-30,2025-08-30 Hoffenheim-Eint Frankfurt,2,Sat,Home,Hoffenheim,1,3,Eint Frankfurt,L,4,533,81,1,42,50,1,16,11,5,26,1.4,17,5,17.9,50.0,30,29,58,170,24,655,28,270,10,2,Hoffenheim,Eint Frankfurt,GER
 2526,2025-09-13,2025-09-13 Union Berlin-Hoffenheim,3,Sat,Away,Hoffenheim,4,2,Union Berlin,W,2,505,75,1,23,39,1,21,17,8,60,2.8,7,6,15.2,66.7,13,11,57,118,27,671,22,238,13,5,Union Berlin,Hoffenheim,GER
@@ -911,6 +955,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Köln-St. Pauli,13,Sat,Home,Köln,1,1,St. Pauli,D,5,631,82,1,26,35,1,8,7,6,25,1.9,11,7,16.2,0.0,16,12,59,100,20,719,13,495,12,5,Köln,St. Pauli,GER
 2526,2025-12-13,2025-12-13 Leverkusen-Köln,14,Sat,Away,Köln,0,2,Leverkusen,L,3,396,94,0,15,24,0,20,7,4,21,0.1,5,4,25.6,66.7,7,11,39,67,11,486,7,293,9,2,Leverkusen,Köln,GER
 2526,2025-12-20,2025-12-20 Köln-Union Berlin,15,Sat,Home,Köln,0,1,Union Berlin,L,3,566,65,0,23,37,2,9,13,2,43,0.5,13,2,17.8,50.0,21,24,61,124,15,680,25,425,11,1,Köln,Union Berlin,GER
+2526,2026-01-10,2026-01-10 Heidenheim-Köln,16,Sat,Away,Köln,2,2,Heidenheim,D,4,423,73,2,23,30,0,11,18,5,31,2.9,21,8,16.3,66.7,38,19,44,139,22,552,28,294,18,5,Heidenheim,Köln,GER
 2526,2025-08-23,2025-08-23 Leverkusen-Hoffenheim,1,Sat,Home,Leverkusen,1,2,Hoffenheim,L,6,618,68,1,36,41,0,7,7,9,15,0.7,7,2,19.0,60.0,14,26,60,143,11,710,12,487,10,2,Leverkusen,Hoffenheim,GER
 2526,2025-08-30,2025-08-30 Werder Bremen-Leverkusen,2,Sat,Away,Leverkusen,3,3,Werder Bremen,D,7,615,75,1,37,24,4,12,9,7,20,2.1,9,3,19.3,60.0,17,17,55,156,19,717,19,498,13,3,Werder Bremen,Leverkusen,GER
 2526,2025-09-12,2025-09-12 Leverkusen-Eint Frankfurt,3,Fri,Home,Leverkusen,3,1,Eint Frankfurt,W,4,345,61,0,16,17,4,25,9,4,31,2.1,17,6,17.6,50.0,33,7,40,101,9,472,17,225,8,5,Leverkusen,Eint Frankfurt,GER
@@ -926,6 +971,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Augsburg-Leverkusen,13,Sat,Away,Leverkusen,0,2,Augsburg,L,7,728,64,0,59,62,4,13,10,7,25,1.6,20,2,17.5,66.7,35,26,67,243,28,839,39,631,22,5,Augsburg,Leverkusen,GER
 2526,2025-12-13,2025-12-13 Leverkusen-Köln,14,Sat,Home,Leverkusen,2,0,Köln,W,8,622,61,2,69,52,4,12,5,8,17,2.1,17,6,15.2,100.0,31,20,61,246,21,710,24,391,19,7,Leverkusen,Köln,GER
 2526,2025-12-20,2025-12-20 RB Leipzig-Leverkusen,15,Sat,Away,Leverkusen,3,1,RB Leipzig,W,8,653,66,2,50,40,0,10,15,11,22,2.7,15,8,14.5,85.7,28,20,56,148,16,766,30,498,16,10,RB Leipzig,Leverkusen,GER
+2526,2026-01-10,2026-01-10 Leverkusen-Stuttgart,16,Sat,Home,Leverkusen,1,4,Stuttgart,L,5,595,78,0,29,39,0,11,9,18,18,2.0,15,3,19.4,57.1,27,11,57,158,15,711,27,413,13,6,Leverkusen,Stuttgart,GER
 2526,2025-08-24,2025-08-24 Mainz 05-Köln,1,Sun,Home,Mainz 05,0,1,Köln,L,8,460,102,0,34,31,3,10,8,3,22,1.4,19,2,16.2,50.0,32,34,51,198,8,560,44,202,4,4,Mainz 05,Köln,GER
 2526,2025-08-31,2025-08-31 Wolfsburg-Mainz 05,2,Sun,Away,Mainz 05,1,1,Wolfsburg,D,10,528,99,0,42,56,3,13,10,13,22,1.9,16,2,15.1,66.7,29,43,60,233,17,646,41,332,11,5,Wolfsburg,Mainz 05,GER
 2526,2025-09-13,2025-09-13 Mainz 05-RB Leipzig,3,Sat,Home,Mainz 05,0,1,RB Leipzig,L,3,506,101,0,38,61,4,14,18,13,19,1.1,13,2,16.0,66.7,25,25,56,193,16,632,33,271,12,7,Mainz 05,RB Leipzig,GER
@@ -941,6 +987,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-05,2025-12-05 Mainz 05-Gladbach,13,Fri,Home,Mainz 05,0,1,Gladbach,L,8,572,75,0,38,40,2,17,16,12,31,1.0,8,2,15.8,75.0,15,20,55,157,20,711,22,320,10,5,Mainz 05,Gladbach,GER
 2526,2025-12-14,2025-12-14 Bayern Munich-Mainz 05,14,Sun,Away,Mainz 05,2,2,Bayern Munich,D,0,193,59,2,9,9,0,19,17,15,49,0.5,5,2,22.7,90.0,9,5,16,40,5,325,8,114,3,2,Bayern Munich,Mainz 05,GER
 2526,2025-12-21,2025-12-21 Mainz 05-St. Pauli,15,Sun,Home,Mainz 05,0,0,St. Pauli,D,9,467,67,0,24,43,1,8,10,10,49,1.1,13,1,14.9,100.0,24,22,53,157,21,597,20,342,15,2,Mainz 05,St. Pauli,GER
+2526,2026-01-10,2026-01-10 Union Berlin-Mainz 05,16,Sat,Away,Mainz 05,2,2,Union Berlin,D,1,408,73,2,23,40,2,22,17,5,39,1.0,9,6,15.2,60.0,15,7,43,92,13,556,15,257,6,2,Union Berlin,Mainz 05,GER
 2526,2025-08-22,2025-08-22 Bayern Munich-RB Leipzig,1,Fri,Away,RB Leipzig,0,6,Bayern Munich,L,5,406,57,0,17,31,2,18,13,9,23,0.5,12,1,17.1,33.3,21,7,37,94,22,520,24,303,6,3,Bayern Munich,RB Leipzig,GER
 2526,2025-08-30,2025-08-30 RB Leipzig-Heidenheim,2,Sat,Home,RB Leipzig,2,0,Heidenheim,W,4,583,50,2,36,53,2,11,10,8,25,2.2,19,5,14.0,100.0,31,20,66,203,32,711,36,449,23,8,RB Leipzig,Heidenheim,GER
 2526,2025-09-13,2025-09-13 Mainz 05-RB Leipzig,3,Sat,Away,RB Leipzig,1,0,Mainz 05,W,5,395,71,1,21,29,1,16,18,16,63,1.8,19,3,19.5,100.0,35,10,44,95,14,578,21,259,10,8,Mainz 05,RB Leipzig,GER
@@ -986,6 +1033,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Stuttgart-Bayern Munich,13,Sat,Home,Stuttgart,0,5,Bayern Munich,L,3,414,55,0,19,19,0,11,9,9,26,0.9,13,1,18.2,60.0,21,13,41,77,5,507,19,288,2,3,Stuttgart,Bayern Munich,GER
 2526,2025-12-14,2025-12-14 Werder Bremen-Stuttgart,14,Sun,Away,Stuttgart,4,0,Werder Bremen,W,9,651,58,4,52,50,3,19,7,13,12,2.1,24,12,16.2,100.0,46,24,63,243,26,756,39,330,17,5,Werder Bremen,Stuttgart,GER
 2526,2025-12-20,2025-12-20 Stuttgart-Hoffenheim,15,Sat,Home,Stuttgart,0,0,Hoffenheim,D,4,417,74,0,26,26,1,10,8,11,34,1.2,10,3,14.6,100.0,19,22,48,101,6,543,14,189,5,0,Stuttgart,Hoffenheim,GER
+2526,2026-01-10,2026-01-10 Leverkusen-Stuttgart,16,Sat,Away,Stuttgart,4,1,Leverkusen,W,3,444,53,3,29,25,3,11,15,12,21,2.6,9,6,17.9,100.0,17,11,43,141,11,554,20,266,5,4,Leverkusen,Stuttgart,GER
 2526,2025-08-23,2025-08-23 Union Berlin-Stuttgart,1,Sat,Home,Union Berlin,2,1,Stuttgart,W,5,230,78,1,15,15,1,16,13,7,47,0.3,8,2,17.6,83.3,12,16,25,89,8,372,14,119,5,2,Union Berlin,Stuttgart,GER
 2526,2025-08-31,2025-08-31 Dortmund-Union Berlin,2,Sun,Away,Union Berlin,0,3,Dortmund,L,6,402,84,0,18,21,0,12,7,10,20,1.1,12,3,16.1,50.0,20,22,35,86,11,492,13,303,9,1,Dortmund,Union Berlin,GER
 2526,2025-09-13,2025-09-13 Union Berlin-Hoffenheim,3,Sat,Home,Union Berlin,2,4,Hoffenheim,L,9,386,67,1,22,27,2,15,9,13,34,2.6,20,6,13.1,75.0,32,26,43,136,15,523,30,275,10,4,Union Berlin,Hoffenheim,GER
@@ -1001,6 +1049,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Wolfsburg-Union Berlin,13,Sat,Away,Union Berlin,1,3,Wolfsburg,L,11,542,108,0,41,46,2,13,6,8,16,1.9,20,5,15.7,0.0,40,44,57,219,19,653,43,406,5,3,Wolfsburg,Union Berlin,GER
 2526,2025-12-12,2025-12-12 Union Berlin-RB Leipzig,14,Fri,Home,Union Berlin,3,1,RB Leipzig,W,4,361,73,3,19,21,4,35,11,10,37,1.4,12,6,15.8,66.7,22,19,38,115,9,515,22,242,9,6,Union Berlin,RB Leipzig,GER
 2526,2025-12-20,2025-12-20 Köln-Union Berlin,15,Sat,Away,Union Berlin,1,0,Köln,W,6,355,74,0,31,29,0,7,12,3,37,1.2,11,2,12.8,100.0,20,22,39,97,7,466,20,202,4,1,Köln,Union Berlin,GER
+2526,2026-01-10,2026-01-10 Union Berlin-Mainz 05,16,Sat,Home,Union Berlin,2,2,Mainz 05,D,2,533,84,1,37,39,3,22,7,5,31,3.4,17,5,13.2,66.7,29,20,57,168,11,676,32,368,8,2,Union Berlin,Mainz 05,GER
 2526,2025-08-23,2025-08-23 Eint Frankfurt-Werder Bremen,1,Sat,Away,Werder Bremen,1,4,Eint Frankfurt,L,1,466,68,1,30,37,2,16,13,7,33,0.5,10,5,21.5,20.0,19,6,47,113,16,581,21,349,10,5,Eint Frankfurt,Werder Bremen,GER
 2526,2025-08-30,2025-08-30 Werder Bremen-Leverkusen,2,Sat,Home,Werder Bremen,3,3,Leverkusen,D,3,499,61,1,30,44,4,17,8,5,25,2.6,11,4,19.2,50.0,21,18,45,139,12,591,22,401,9,2,Werder Bremen,Leverkusen,GER
 2526,2025-09-14,2025-09-14 Gladbach-Werder Bremen,3,Sun,Away,Werder Bremen,4,0,Gladbach,W,4,461,56,3,19,25,0,25,17,10,35,2.1,11,6,17.5,100.0,24,8,45,89,13,597,18,375,8,4,Gladbach,Werder Bremen,GER
@@ -1031,6 +1080,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Wolfsburg-Union Berlin,13,Sat,Home,Wolfsburg,3,1,Union Berlin,W,0,401,71,3,15,20,0,14,11,7,54,0.7,4,3,14.8,83.3,7,3,43,60,7,537,8,211,4,5,Wolfsburg,Union Berlin,GER
 2526,2025-12-13,2025-12-13 Gladbach-Wolfsburg,14,Sat,Away,Wolfsburg,3,1,Gladbach,W,3,458,67,2,18,21,4,15,14,9,44,1.7,11,6,13.3,75.0,21,9,41,89,13,598,16,318,7,3,Gladbach,Wolfsburg,GER
 2526,2025-12-20,2025-12-20 Wolfsburg-Freiburg,15,Sat,Home,Wolfsburg,3,4,Freiburg,L,2,515,69,2,27,37,3,17,11,4,19,1.6,13,6,17.9,57.1,23,16,55,125,13,634,23,349,8,3,Wolfsburg,Freiburg,GER
+2526,2026-01-11,2026-01-11 Bayern Munich-Wolfsburg,16,Sun,Away,Wolfsburg,1,8,Bayern Munich,L,2,360,61,1,22,21,3,26,4,10,28,1.4,8,3,20.4,20.0,14,6,32,81,8,468,9,253,8,3,Bayern Munich,Wolfsburg,GER
 2526,2025-08-17,2025-08-17 Angers-Paris FC,1,Sun,Home,Angers,1,0,Paris FC,W,3,307,69,1,15,20,1,20,6,4,29,1.0,8,2,17.6,100.0,13,10,32,73,12,419,10,212,12,4,Angers,Paris FC,FRA
 2526,2025-08-22,2025-08-22 Paris S-G-Angers,2,Fri,Away,Angers,0,1,Paris S-G,L,0,210,40,0,3,5,3,34,12,14,42,0.2,3,0,15.7,75.0,6,3,17,17,8,351,4,130,4,1,Paris S,G,FRA
 2526,2025-08-31,2025-08-31 Angers-Rennes,3,Sun,Home,Angers,1,1,Rennes,D,1,421,63,1,18,25,1,15,16,4,14,1.2,10,7,17.7,85.7,16,12,37,76,20,520,9,263,5,3,Angers,Rennes,FRA
@@ -1251,7 +1301,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-11-30,2025-11-30 Lorient-Nice,14,Sun,Away,Nice,1,3,Lorient,L,7,610,76,0,43,42,1,11,7,8,17,0.9,9,2,15.6,57.1,18,28,57,141,18,692,18,371,14,2,Lorient,Nice,FRA
 2526,2025-12-07,2025-12-07 Nice-Angers,15,Sun,Home,Nice,0,1,Angers,L,4,566,63,0,37,42,1,17,12,7,22,1.3,13,3,19.3,75.0,25,18,50,117,17,673,22,416,8,4,Nice,Angers,FRA
 2526,2025-12-14,2025-12-14 Lens-Nice,16,Sun,Away,Nice,0,2,Lens,L,5,548,64,0,30,39,0,18,12,14,13,0.8,8,4,20.9,60.0,15,22,54,118,26,652,17,432,14,6,Lens,Nice,FRA
-2526,2026-01-03,2026-01-03 Nice-Strasbourg,17,Sat,Home,Nice,1,1,Strasbourg,D,5,433,71,1,28,29,0,17,12,12,25,2.6,19,6,16.8,100.0,29,14,43,105,8,556,30,238,4,2,Nice,Strasbourg,FRA
+2526,2026-01-03,2026-01-03 Nice-Strasbourg,17,Sat,Home,Nice,1,1,Strasbourg,D,5,473,76,1,28,30,0,17,12,12,30,2.6,19,6,16.6,100.0,31,14,45,109,8,606,32,260,5,2,Nice,Strasbourg,FRA
 2526,2025-08-17,2025-08-17 Angers-Paris FC,1,Sun,Away,Paris FC,0,1,Angers,L,7,639,77,0,51,69,2,12,6,5,12,0.9,17,7,23.4,50.0,29,26,68,191,29,726,18,421,13,7,Angers,Paris FC,FRA
 2526,2025-08-23,2025-08-23 Marseille-Paris FC,2,Sat,Away,Paris FC,2,5,Marseille,L,2,414,67,1,14,24,1,10,3,11,28,1.1,8,4,18.7,42.9,15,8,40,60,12,499,9,252,10,4,Marseille,Paris FC,FRA
 2526,2025-08-31,2025-08-31 Paris FC-Metz,3,Sun,Home,Paris FC,3,2,Metz,W,14,532,67,2,25,52,1,7,12,7,28,3.2,23,8,16.7,0.0,42,27,51,195,28,642,40,328,18,14,Paris FC,Metz,FRA
@@ -1268,7 +1318,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-11-29,2025-11-29 Paris FC-Auxerre,14,Sat,Home,Paris FC,1,1,Auxerre,D,4,547,60,0,18,36,3,23,8,5,29,1.8,10,1,19.0,66.7,20,12,54,88,14,665,10,427,5,1,Paris FC,Auxerre,FRA
 2526,2025-12-07,2025-12-07 Le Havre-Paris FC,15,Sun,Away,Paris FC,0,0,Le Havre,D,2,551,69,0,30,30,1,12,9,5,23,1.2,13,2,17.7,100.0,25,12,55,95,23,639,14,368,14,6,Le Havre,Paris FC,FRA
 2526,2025-12-13,2025-12-13 Paris FC-Toulouse,16,Sat,Home,Paris FC,0,3,Toulouse,L,7,651,76,0,30,40,2,14,2,7,30,0.5,9,2,23.3,25.0,13,25,65,145,25,748,17,372,14,3,Paris FC,Toulouse,FRA
-2526,2026-01-04,2026-01-04 Paris S-G-Paris FC,17,Sun,Away,Paris FC,1,2,Paris S-G,L,1,336,53,0,17,18,2,15,11,5,36,1.0,5,2,24.7,66.7,10,8,31,56,6,448,9,159,6,2,Paris S,G,FRA
+2526,2026-01-04,2026-01-04 Paris S-G-Paris FC,17,Sun,Away,Paris FC,1,2,Paris S-G,L,1,364,54,0,17,21,2,17,14,5,36,1.0,5,2,25.2,66.7,12,8,31,63,6,485,9,170,7,2,Paris S,G,FRA
 2526,2025-08-17,2025-08-17 Nantes-Paris S-G,1,Sun,Away,Paris S-G,1,0,Nantes,W,7,787,74,1,87,85,6,14,5,6,10,1.4,18,4,18.2,,36,21,70,410,36,896,40,524,21,12,Nantes,Paris S,FRA
 2526,2025-08-22,2025-08-22 Paris S-G-Angers,2,Fri,Home,Paris S-G,1,0,Angers,W,12,1033,85,0,132,76,6,19,4,6,3,1.8,20,4,21.7,,41,28,83,577,39,1119,42,608,38,15,Paris S,G,FRA
 2526,2025-08-30,2025-08-30 Toulouse-Paris S-G,3,Sat,Away,Paris S-G,6,3,Toulouse,W,7,877,56,2,49,53,3,14,12,7,14,2.6,11,6,19.0,50.0,24,4,75,206,33,991,31,663,23,9,Toulouse,Paris S,FRA
@@ -1319,7 +1369,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-11-30,2025-11-30 Strasbourg-Brest,14,Sun,Home,Strasbourg,1,2,Brest,L,5,602,60,1,36,50,3,10,5,9,29,0.8,14,6,17.1,75.0,26,26,57,135,25,701,21,399,19,5,Strasbourg,Brest,FRA
 2526,2025-12-06,2025-12-06 Toulouse-Strasbourg,15,Sat,Away,Strasbourg,0,1,Toulouse,L,2,822,53,0,38,36,1,7,8,5,18,0.1,3,0,16.4,66.7,6,23,71,132,15,899,10,646,11,2,Toulouse,Strasbourg,FRA
 2526,2025-12-14,2025-12-14 Strasbourg-Lorient,16,Sun,Home,Strasbourg,0,0,Lorient,D,11,744,61,0,47,61,2,13,5,11,9,0.7,12,1,17.4,100.0,23,38,62,202,19,831,16,635,24,3,Strasbourg,Lorient,FRA
-2526,2026-01-03,2026-01-03 Nice-Strasbourg,17,Sat,Away,Strasbourg,1,1,Nice,D,7,574,43,0,16,32,2,17,10,6,25,1.4,7,2,18.4,83.3,13,14,57,110,14,675,25,463,10,3,Nice,Strasbourg,FRA
+2526,2026-01-03,2026-01-03 Nice-Strasbourg,17,Sat,Away,Strasbourg,1,1,Nice,D,7,574,43,0,16,32,2,17,10,6,25,1.4,7,2,18.4,83.3,13,14,55,110,14,675,25,463,10,3,Nice,Strasbourg,FRA
 2526,2025-08-16,2025-08-16 Nice-Toulouse,1,Sat,Away,Toulouse,1,0,Nice,W,4,388,60,1,33,26,1,18,16,2,44,0.6,10,2,16.3,100.0,19,17,43,110,16,514,30,233,10,8,Nice,Toulouse,FRA
 2526,2025-08-24,2025-08-24 Toulouse-Brest,2,Sun,Home,Toulouse,2,0,Brest,W,3,422,56,0,24,31,2,18,11,5,30,1.3,6,3,10.3,100.0,10,10,48,101,11,560,14,341,9,3,Toulouse,Brest,FRA
 2526,2025-08-30,2025-08-30 Toulouse-Paris S-G,3,Sat,Home,Toulouse,3,6,Paris S-G,L,5,290,54,1,19,19,1,17,7,13,18,2.2,13,5,17.8,50.0,21,11,25,106,15,401,18,202,5,4,Toulouse,Paris S,FRA
@@ -1355,6 +1405,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-21,2025-12-21 Genoa-Atalanta,16,Sun,Away,Atalanta,1,0,Genoa,W,10,594,72,1,58,60,4,21,3,10,20,1.4,16,4,16.5,100.0,29,31,70,286,29,703,29,418,24,7,Genoa,Atalanta,ITA
 2526,2025-12-28,2025-12-28 Atalanta-Inter,17,Sun,Home,Atalanta,0,1,Inter,L,4,463,86,0,31,39,2,12,7,11,27,0.8,7,0,20.8,75.0,12,18,45,116,20,572,13,323,11,5,Atalanta,Inter,ITA
 2526,2026-01-03,2026-01-03 Atalanta-Roma,18,Sat,Home,Atalanta,1,0,Roma,W,7,424,76,0,37,33,1,28,13,8,28,1.9,13,2,16.5,100.0,22,13,46,164,18,563,21,199,12,9,Atalanta,Roma,ITA
+2526,2026-01-07,2026-01-07 Bologna-Atalanta,19,Wed,Away,Atalanta,2,0,Bologna,W,6,429,73,2,22,22,2,16,12,8,29,1.4,11,5,21.2,100.0,18,11,48,145,13,543,27,242,8,4,Bologna,Atalanta,ITA
+2526,2026-01-10,2026-01-10 Atalanta-Torino,20,Sat,Home,Atalanta,2,0,Torino,W,5,536,70,2,36,55,5,22,7,7,27,2.6,18,5,16.6,100.0,30,16,56,197,17,660,24,376,9,6,Atalanta,Torino,ITA
 2526,2025-08-23,2025-08-23 Roma-Bologna,1,Sat,Away,Bologna,0,1,Roma,L,4,434,90,0,17,17,1,14,6,5,16,0.6,10,2,18.5,75.0,19,14,49,59,11,517,10,231,6,3,Roma,Bologna,ITA
 2526,2025-08-30,2025-08-30 Bologna-Como,2,Sat,Home,Bologna,1,0,Como,W,7,297,76,1,10,15,1,16,15,9,27,1.1,15,2,17.2,100.0,26,17,37,86,12,411,17,189,7,6,Bologna,Como,ITA
 2526,2025-09-14,2025-09-14 Milan-Bologna,3,Sun,Away,Bologna,0,1,Milan,L,4,559,80,0,34,34,0,13,5,5,16,0.2,5,0,20.4,66.7,10,19,60,121,10,645,9,416,9,0,Milan,Bologna,ITA
@@ -1372,6 +1424,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-14,2025-12-14 Bologna-Juventus,15,Sun,Home,Bologna,0,1,Juventus,L,3,494,103,0,24,34,3,18,12,16,28,0.5,11,4,17.8,66.7,14,19,50,112,20,613,20,314,9,7,Bologna,Juventus,ITA
 2526,2025-12-28,2025-12-28 Bologna-Sassuolo,17,Sun,Home,Bologna,1,1,Sassuolo,D,2,509,76,1,45,51,3,16,4,10,15,0.9,16,5,21.5,80.0,28,29,58,161,26,609,23,409,21,8,Bologna,Sassuolo,ITA
 2526,2026-01-04,2026-01-04 Inter-Bologna,18,Sun,Away,Bologna,1,3,Inter,L,1,370,87,1,11,21,2,21,12,9,36,1.0,6,2,16.0,70.0,10,9,42,65,9,505,9,210,8,2,Inter,Bologna,ITA
+2526,2026-01-07,2026-01-07 Bologna-Atalanta,19,Wed,Home,Bologna,0,2,Atalanta,L,6,462,83,0,24,28,0,11,7,4,37,1.1,11,2,13.4,60.0,20,23,52,124,25,580,21,322,13,7,Bologna,Atalanta,ITA
+2526,2026-01-10,2026-01-10 Como-Bologna,20,Sat,Away,Bologna,1,1,Como,D,2,345,101,1,10,17,5,15,5,9,25,1.1,7,2,10.5,66.7,12,12,41,72,11,446,18,191,6,2,Como,Bologna,ITA
 2526,2025-08-24,2025-08-24 Cagliari-Fiorentina,1,Sun,Home,Cagliari,1,1,Fiorentina,D,3,393,55,1,26,31,3,12,2,3,27,1.1,14,5,16.9,0.0,28,13,45,108,19,491,23,270,9,7,Cagliari,Fiorentina,ITA
 2526,2025-08-30,2025-08-30 Napoli-Cagliari,2,Sat,Away,Cagliari,0,1,Napoli,L,0,327,55,0,11,12,0,16,14,4,42,0.5,10,1,26.8,83.3,15,6,32,48,12,446,9,256,7,5,Napoli,Cagliari,ITA
 2526,2025-09-13,2025-09-13 Cagliari-Parma,3,Sat,Home,Cagliari,2,0,Parma,W,4,439,78,0,16,28,0,14,9,10,33,1.1,12,5,16.8,100.0,22,13,51,84,8,549,15,230,8,4,Cagliari,Parma,ITA
@@ -1390,6 +1444,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-21,2025-12-21 Cagliari-Pisa,16,Sun,Home,Cagliari,2,2,Pisa,D,2,442,84,2,16,21,4,15,12,5,38,1.4,14,5,20.7,66.7,26,13,59,99,17,562,13,297,12,4,Cagliari,Pisa,ITA
 2526,2025-12-27,2025-12-27 Torino-Cagliari,17,Sat,Away,Cagliari,2,1,Torino,W,2,407,61,2,18,24,0,12,16,14,42,0.9,9,4,20.2,90.0,12,5,44,71,11,543,10,182,12,3,Torino,Cagliari,ITA
 2526,2026-01-02,2026-01-02 Cagliari-Milan,18,Fri,Home,Cagliari,0,1,Milan,L,6,484,61,0,28,38,1,22,12,5,21,0.5,6,1,17.2,75.0,7,19,46,84,19,598,14,387,9,3,Cagliari,Milan,ITA
+2526,2026-01-08,2026-01-08 Cremonese-Cagliari,19,Thu,Away,Cagliari,2,2,Cremonese,D,4,566,55,2,39,49,3,11,4,3,29,1.7,21,5,16.6,60.0,42,24,56,172,28,684,36,468,11,9,Cremonese,Cagliari,ITA
+2526,2026-01-12,2026-01-12 Genoa-Cagliari,20,Mon,Away,Cagliari,0,3,Genoa,L,3,556,56,0,29,35,0,14,8,10,25,1.2,15,3,20.3,57.1,26,24,57,149,22,658,20,394,16,4,Genoa,Cagliari,ITA
 2526,2025-08-24,2025-08-24 Como-Lazio,1,Sun,Home,Como,2,0,Lazio,W,6,577,54,1,26,39,7,25,11,10,8,1.3,19,6,18.3,100.0,34,15,63,170,26,681,28,427,14,12,Como,Lazio,ITA
 2526,2025-08-30,2025-08-30 Bologna-Como,2,Sat,Away,Como,0,1,Bologna,L,4,499,60,0,25,37,1,16,17,7,27,0.7,13,2,20.5,50.0,25,11,63,100,10,616,26,289,7,8,Bologna,Como,ITA
 2526,2025-09-15,2025-09-15 Como-Genoa,3,Mon,Home,Como,1,1,Genoa,D,0,494,62,1,21,16,2,15,15,6,26,1.8,13,4,17.3,75.0,24,7,53,106,15,631,16,315,10,6,Como,Genoa,ITA
@@ -1401,12 +1457,14 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-29,2025-10-29 Como-Hellas Verona,9,Wed,Home,Como,3,1,Hellas Verona,W,1,631,57,3,45,49,1,14,12,11,28,1.5,15,5,21.0,87.5,28,20,70,196,18,767,19,495,25,6,Como,Hellas Verona,ITA
 2526,2025-11-01,2025-11-01 Napoli-Como,10,Sat,Away,Como,0,0,Napoli,D,2,506,59,0,30,32,2,25,7,9,19,1.1,12,1,25.1,100.0,23,10,54,129,15,621,17,298,10,3,Napoli,Como,ITA
 2526,2025-11-08,2025-11-08 Como-Cagliari,11,Sat,Home,Como,0,0,Cagliari,D,10,687,61,0,48,65,1,12,4,9,10,1.0,10,6,19.6,100.0,17,23,74,181,14,775,22,478,13,2,Como,Cagliari,ITA
-2526,2025-11-24,2025-11-24 Torino-Como,12,Mon,Away,Como,5,1,Torino,W,4,599,83,4,33,44,0,22,5,9,24,2.7,15,6,12.7,100.0,24,16,64,151,22,718,35,357,13,9,Torino,Como,ITA
+2526,2025-11-24,2025-11-24 Torino-Como,12,Mon,Away,Como,5,1,Torino,W,4,599,83,4,33,44,0,22,5,9,24,2.7,15,6,12.7,100.0,24,16,64,151,22,716,35,355,13,9,Torino,Como,ITA
 2526,2025-11-28,2025-11-28 Como-Sassuolo,13,Fri,Home,Como,2,0,Sassuolo,W,4,670,60,1,42,50,1,11,12,3,17,1.8,18,13,18.7,100.0,32,16,63,156,18,767,25,565,20,6,Como,Sassuolo,ITA
 2526,2025-12-06,2025-12-06 Inter-Como,14,Sat,Away,Como,0,4,Inter,L,4,542,67,0,38,47,2,7,12,6,12,1.0,15,3,20.4,42.9,26,18,58,149,25,625,17,386,11,4,Inter,Como,ITA
 2526,2025-12-15,2025-12-15 Roma-Como,15,Mon,Away,Como,0,1,Roma,L,3,402,60,0,18,19,0,15,10,11,26,0.5,13,1,18.7,75.0,23,10,47,110,15,546,20,237,12,4,Roma,Como,ITA
 2526,2025-12-27,2025-12-27 Lecce-Como,17,Sat,Away,Como,3,0,Lecce,W,6,509,43,3,20,44,0,9,7,9,26,1.3,12,6,13.2,100.0,23,18,61,105,31,629,24,437,17,6,Lecce,Como,ITA
 2526,2026-01-03,2026-01-03 Como-Udinese,18,Sat,Home,Como,1,0,Udinese,W,3,601,71,0,27,39,5,26,4,8,15,2.2,14,2,18.4,,25,15,61,202,22,700,36,483,19,7,Como,Udinese,ITA
+2526,2026-01-06,2026-01-06 Pisa-Como,19,Tue,Away,Como,3,0,Pisa,W,5,637,59,2,47,69,1,17,5,6,27,1.7,14,6,17.9,100.0,28,17,72,198,32,762,30,552,21,6,Pisa,Como,ITA
+2526,2026-01-10,2026-01-10 Como-Bologna,20,Sat,Home,Como,1,1,Bologna,D,4,487,71,1,39,45,1,18,9,3,17,0.8,12,3,15.7,50.0,21,17,59,129,25,592,24,329,10,10,Como,Bologna,ITA
 2526,2025-08-23,2025-08-23 Milan-Cremonese,1,Sat,Away,Cremonese,2,1,Milan,W,2,376,66,2,12,18,1,17,20,6,37,0.2,4,3,13.6,80.0,7,16,36,74,14,494,6,301,11,0,Milan,Cremonese,ITA
 2526,2025-08-29,2025-08-29 Cremonese-Sassuolo,2,Fri,Home,Cremonese,3,2,Sassuolo,W,5,408,65,2,10,27,2,19,7,5,19,2.7,10,5,16.3,83.3,19,16,43,115,10,508,14,256,7,5,Cremonese,Sassuolo,ITA
 2526,2025-09-15,2025-09-15 Hellas Verona-Cremonese,3,Mon,Away,Cremonese,0,0,Hellas Verona,D,1,530,72,0,20,22,3,8,11,4,35,0.2,6,2,24.4,100.0,11,7,54,74,10,632,5,360,9,0,Hellas Verona,Cremonese,ITA
@@ -1418,13 +1476,15 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-29,2025-10-29 Genoa-Cremonese,9,Wed,Away,Cremonese,2,0,Genoa,W,3,356,85,2,20,24,2,22,13,10,34,1.3,11,4,16.9,100.0,14,10,46,81,9,496,12,208,6,1,Genoa,Cremonese,ITA
 2526,2025-11-01,2025-11-01 Cremonese-Juventus,10,Sat,Home,Cremonese,1,2,Juventus,L,2,514,71,1,31,39,3,18,8,9,28,0.5,9,2,22.3,60.0,18,21,51,97,16,625,16,373,14,1,Cremonese,Juventus,ITA
 2526,2025-11-07,2025-11-07 Pisa-Cremonese,11,Fri,Away,Cremonese,0,1,Pisa,L,5,552,98,0,43,55,5,16,7,6,24,1.0,13,3,15.7,83.3,22,26,62,171,13,667,29,338,11,3,Pisa,Cremonese,ITA
-2526,2025-11-23,2025-11-23 Cremonese-Roma,12,Sun,Home,Cremonese,1,3,Roma,L,3,476,74,1,23,39,2,16,9,9,26,0.9,9,4,18.0,50.0,15,15,50,113,12,573,15,340,7,5,Cremonese,Roma,ITA
+2526,2025-11-23,2025-11-23 Cremonese-Roma,12,Sun,Home,Cremonese,1,3,Roma,L,3,476,74,1,23,39,2,16,9,9,26,0.9,9,4,18.0,50.0,15,15,50,113,12,572,15,341,7,5,Cremonese,Roma,ITA
 2526,2025-12-01,2025-12-01 Bologna-Cremonese,13,Mon,Away,Cremonese,3,1,Bologna,W,8,299,83,3,12,11,2,14,17,11,53,2.1,10,5,12.5,100.0,17,19,35,77,7,454,13,145,4,1,Bologna,Cremonese,ITA
 2526,2025-12-07,2025-12-07 Cremonese-Lecce,14,Sun,Home,Cremonese,2,0,Lecce,W,5,382,73,1,17,22,2,20,7,10,43,2.1,10,3,15.3,100.0,20,18,49,113,10,524,19,270,10,2,Cremonese,Lecce,ITA
 2526,2025-12-13,2025-12-13 Torino-Cremonese,15,Sat,Away,Cremonese,0,1,Torino,L,6,509,99,0,33,37,1,20,13,10,34,0.7,10,3,16.6,83.3,18,30,53,134,13,637,19,308,8,1,Torino,Cremonese,ITA
 2526,2025-12-20,2025-12-20 Lazio-Cremonese,16,Sat,Away,Cremonese,0,0,Lazio,D,0,450,72,0,14,17,0,8,8,3,19,0.7,9,2,26.9,100.0,12,8,43,52,13,539,4,264,10,0,Lazio,Cremonese,ITA
 2526,2025-12-28,2025-12-28 Cremonese-Napoli,17,Sun,Home,Cremonese,0,2,Napoli,L,1,455,83,0,33,22,2,13,15,11,15,0.5,6,2,21.0,75.0,12,19,47,108,12,547,10,335,10,1,Cremonese,Napoli,ITA
 2526,2026-01-04,2026-01-04 Fiorentina-Cremonese,18,Sun,Away,Cremonese,0,1,Fiorentina,L,3,318,74,0,6,12,0,8,16,10,49,0.7,6,2,19.1,87.5,12,10,35,52,5,458,9,202,5,1,Fiorentina,Cremonese,ITA
+2526,2026-01-08,2026-01-08 Cremonese-Cagliari,19,Thu,Home,Cremonese,2,2,Cagliari,D,2,437,70,1,14,26,0,11,13,4,38,1.8,12,5,16.3,60.0,20,13,44,105,10,554,14,291,14,1,Cremonese,Cagliari,ITA
+2526,2026-01-12,2026-01-12 Juventus-Cremonese,20,Mon,Away,Cremonese,0,5,Juventus,L,5,444,44,0,21,32,0,13,10,12,27,0.9,9,2,16.0,50.0,15,17,42,100,8,542,17,311,5,3,Juventus,Cremonese,ITA
 2526,2025-08-24,2025-08-24 Cagliari-Fiorentina,1,Sun,Away,Fiorentina,1,1,Cagliari,D,2,473,67,1,21,26,2,18,8,6,16,1.0,4,1,16.3,80.0,8,9,55,85,14,555,10,271,7,0,Cagliari,Fiorentina,ITA
 2526,2025-08-31,2025-08-31 Torino-Fiorentina,2,Sun,Away,Fiorentina,0,0,Torino,D,3,397,54,0,20,26,1,11,5,10,23,1.7,16,3,20.8,100.0,28,11,54,91,16,494,19,289,8,4,Torino,Fiorentina,ITA
 2526,2025-09-13,2025-09-13 Fiorentina-Napoli,3,Sat,Home,Fiorentina,1,3,Napoli,L,8,496,66,0,20,32,3,13,10,6,16,1.4,19,3,16.0,75.0,31,23,53,138,20,580,29,343,15,3,Fiorentina,Napoli,ITA
@@ -1443,6 +1503,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-21,2025-12-21 Fiorentina-Udinese,16,Sun,Home,Fiorentina,5,1,Udinese,W,1,624,53,4,39,48,2,11,8,3,25,3.1,20,6,16.7,75.0,38,13,63,188,25,713,26,376,22,8,Fiorentina,Udinese,ITA
 2526,2025-12-27,2025-12-27 Parma-Fiorentina,17,Sat,Away,Fiorentina,0,1,Parma,L,6,519,95,0,54,55,3,16,9,6,21,1.2,23,4,19.2,50.0,39,34,58,205,28,638,35,331,17,6,Parma,Fiorentina,ITA
 2526,2026-01-04,2026-01-04 Fiorentina-Cremonese,18,Sun,Home,Fiorentina,1,0,Cremonese,W,7,587,63,0,33,49,2,9,6,8,20,2.0,22,8,17.4,100.0,38,36,65,249,34,691,43,467,28,10,Fiorentina,Cremonese,ITA
+2526,2026-01-07,2026-01-07 Lazio-Fiorentina,19,Wed,Away,Fiorentina,2,2,Lazio,D,2,499,67,1,30,33,3,16,16,4,37,1.7,7,4,18.5,87.5,13,8,51,114,10,619,16,364,10,3,Lazio,Fiorentina,ITA
+2526,2026-01-11,2026-01-11 Fiorentina-Milan,20,Sun,Home,Fiorentina,1,1,Milan,D,8,478,71,1,23,43,1,10,10,6,16,1.9,20,7,15.1,66.7,37,33,52,170,32,570,30,304,15,9,Fiorentina,Milan,ITA
 2526,2025-08-23,2025-08-23 Genoa-Lecce,1,Sat,Home,Genoa,0,0,Lecce,D,3,468,64,0,14,22,3,23,9,6,25,0.5,5,2,20.8,,10,10,57,93,9,583,6,350,6,0,Genoa,Lecce,ITA
 2526,2025-08-31,2025-08-31 Genoa-Juventus,2,Sun,Home,Genoa,0,1,Juventus,L,3,391,59,0,16,18,3,21,18,6,21,0.5,10,1,16.9,66.7,18,17,44,99,12,530,14,285,6,5,Genoa,Juventus,ITA
 2526,2025-09-15,2025-09-15 Como-Genoa,3,Mon,Away,Genoa,1,1,Como,D,8,438,62,0,22,36,3,30,17,10,17,2.2,12,4,12.0,75.0,19,18,47,124,14,573,22,321,12,2,Como,Genoa,ITA
@@ -1461,6 +1523,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-21,2025-12-21 Genoa-Atalanta,16,Sun,Home,Genoa,0,1,Atalanta,L,6,250,76,0,14,11,2,16,11,7,31,0.8,6,3,10.5,75.0,11,18,30,80,5,367,17,144,3,2,Genoa,Atalanta,ITA
 2526,2025-12-29,2025-12-29 Roma-Genoa,17,Mon,Away,Genoa,1,3,Roma,L,1,408,71,0,21,25,2,22,13,14,19,0.7,10,2,15.9,62.5,16,7,40,105,10,531,14,250,5,3,Roma,Genoa,ITA
 2526,2026-01-03,2026-01-03 Genoa-Pisa,18,Sat,Home,Genoa,1,1,Pisa,D,2,487,69,0,21,25,0,15,9,6,42,0.5,12,4,17.7,50.0,22,19,62,149,15,628,16,380,17,1,Genoa,Pisa,ITA
+2526,2026-01-08,2026-01-08 Milan-Genoa,19,Thu,Away,Genoa,1,1,Milan,D,1,403,73,1,16,17,1,12,20,7,52,1.3,6,2,16.5,87.5,13,13,39,76,11,547,13,291,11,2,Milan,Genoa,ITA
+2526,2026-01-12,2026-01-12 Genoa-Cagliari,20,Mon,Home,Genoa,3,0,Cagliari,W,2,428,59,2,19,22,5,18,15,9,27,1.0,11,7,19.9,100.0,20,13,43,91,13,533,15,254,12,2,Genoa,Cagliari,ITA
 2526,2025-08-25,2025-08-25 Udinese-Hellas Verona,1,Mon,Away,Hellas Verona,1,1,Udinese,D,1,321,77,1,21,18,2,22,12,10,24,0.5,9,3,22.5,75.0,16,8,38,83,5,436,5,226,5,1,Udinese,Hellas Verona,ITA
 2526,2025-08-31,2025-08-31 Lazio-Hellas Verona,2,Sun,Away,Hellas Verona,0,4,Lazio,L,1,324,65,0,17,20,2,20,14,9,25,0.9,12,4,18.3,33.3,18,7,30,62,9,437,18,211,2,2,Lazio,Hellas Verona,ITA
 2526,2025-09-15,2025-09-15 Hellas Verona-Cremonese,3,Mon,Home,Hellas Verona,0,0,Cremonese,D,10,460,73,0,38,37,0,11,8,9,22,1.5,20,9,19.8,100.0,35,24,46,152,27,566,26,361,16,9,Hellas Verona,Cremonese,ITA
@@ -1472,12 +1536,14 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-29,2025-10-29 Como-Hellas Verona,9,Wed,Away,Hellas Verona,1,3,Como,L,3,276,65,0,17,19,0,21,11,9,23,1.5,13,8,16.0,40.0,23,8,30,96,7,397,23,173,4,4,Como,Hellas Verona,ITA
 2526,2025-11-02,2025-11-02 Hellas Verona-Inter,10,Sun,Home,Hellas Verona,1,2,Inter,L,4,277,70,1,23,22,1,8,20,9,42,0.4,8,2,17.0,60.0,16,13,28,79,9,397,13,168,5,3,Hellas Verona,Inter,ITA
 2526,2025-11-08,2025-11-08 Lecce-Hellas Verona,11,Sat,Away,Hellas Verona,0,0,Lecce,D,2,307,69,0,18,29,2,18,13,10,51,0.6,5,2,12.7,100.0,8,12,40,99,7,472,18,134,8,1,Lecce,Hellas Verona,ITA
-2526,2025-11-23,2025-11-23 Hellas Verona-Parma,12,Sun,Home,Hellas Verona,1,2,Parma,L,4,523,73,1,43,39,4,24,14,10,26,0.6,10,2,18.7,71.4,13,21,59,166,24,672,20,402,23,6,Hellas Verona,Parma,ITA
+2526,2025-11-23,2025-11-23 Hellas Verona-Parma,12,Sun,Home,Hellas Verona,1,2,Parma,L,4,523,73,1,43,39,4,24,14,10,26,0.6,10,2,18.7,71.4,13,21,59,166,24,673,20,402,23,6,Hellas Verona,Parma,ITA
 2526,2025-11-29,2025-11-29 Genoa-Hellas Verona,13,Sat,Away,Hellas Verona,1,2,Genoa,L,3,341,72,0,15,28,2,22,10,13,17,1.9,13,5,11.1,50.0,20,14,41,102,11,464,23,165,4,2,Genoa,Hellas Verona,ITA
 2526,2025-12-06,2025-12-06 Hellas Verona-Atalanta,14,Sat,Home,Hellas Verona,3,1,Atalanta,W,5,311,66,2,22,33,2,21,15,15,30,1.0,12,7,17.5,100.0,18,15,36,108,7,452,19,181,8,4,Hellas Verona,Atalanta,ITA
 2526,2025-12-14,2025-12-14 Fiorentina-Hellas Verona,15,Sun,Away,Hellas Verona,2,1,Fiorentina,W,4,287,74,2,16,20,1,24,12,12,47,0.9,13,3,21.0,75.0,24,9,35,89,9,437,19,200,9,1,Fiorentina,Hellas Verona,ITA
 2526,2025-12-28,2025-12-28 Milan-Hellas Verona,17,Sun,Away,Hellas Verona,0,3,Milan,L,3,433,64,0,31,34,4,18,9,9,25,0.4,9,1,21.6,60.0,12,17,48,120,10,533,13,257,9,1,Milan,Hellas Verona,ITA
 2526,2026-01-04,2026-01-04 Hellas Verona-Torino,18,Sun,Home,Hellas Verona,0,3,Torino,L,4,446,57,0,32,45,3,15,19,10,38,0.2,7,3,22.5,40.0,12,24,48,158,14,593,17,313,14,1,Hellas Verona,Torino,ITA
+2526,2026-01-07,2026-01-07 Napoli-Hellas Verona,19,Wed,Away,Hellas Verona,2,2,Napoli,D,1,320,56,1,27,22,4,20,11,13,40,1.8,10,3,31.2,50.0,17,6,30,88,8,459,10,148,5,1,Napoli,Hellas Verona,ITA
+2526,2026-01-11,2026-01-11 Hellas Verona-Lazio,20,Sun,Home,Hellas Verona,0,1,Lazio,L,2,422,78,0,25,32,2,15,7,15,16,0.5,10,2,19.7,50.0,15,10,37,113,10,516,19,277,13,5,Hellas Verona,Lazio,ITA
 2526,2025-08-25,2025-08-25 Inter-Torino,1,Mon,Home,Inter,5,0,Torino,W,6,612,70,4,33,47,2,14,10,6,17,1.6,20,9,15.4,100.0,33,14,60,140,18,713,35,342,8,5,Inter,Torino,ITA
 2526,2025-08-31,2025-08-31 Inter-Udinese,2,Sun,Home,Inter,1,2,Udinese,L,13,567,98,1,43,54,2,12,6,5,19,1.8,16,3,12.6,80.0,24,37,67,185,16,657,39,319,11,4,Inter,Udinese,ITA
 2526,2025-09-13,2025-09-13 Juventus-Inter,3,Sat,Away,Inter,3,4,Juventus,L,9,557,75,3,44,54,3,9,9,6,19,0.9,18,4,19.8,0.0,34,32,59,246,22,654,32,322,22,2,Juventus,Inter,ITA
@@ -1489,12 +1555,14 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-29,2025-10-29 Inter-Fiorentina,9,Wed,Home,Inter,3,0,Fiorentina,W,8,611,96,2,52,51,1,20,9,2,16,2.6,21,7,14.5,100.0,36,28,64,220,21,705,35,492,15,4,Inter,Fiorentina,ITA
 2526,2025-11-02,2025-11-02 Hellas Verona-Inter,10,Sun,Away,Inter,2,1,Hellas Verona,W,8,717,98,1,56,67,2,17,6,6,15,1.1,21,5,17.6,50.0,39,28,72,191,21,812,27,420,6,3,Hellas Verona,Inter,ITA
 2526,2025-11-09,2025-11-09 Inter-Lazio,11,Sun,Home,Inter,2,0,Lazio,W,3,608,86,2,28,44,6,14,8,4,11,1.9,8,3,13.1,100.0,13,21,54,178,12,685,23,335,13,3,Inter,Lazio,ITA
-2526,2025-11-23,2025-11-23 Inter-Milan,12,Sun,Home,Inter,0,1,Milan,L,9,683,70,0,46,68,2,12,7,5,18,1.9,19,5,18.4,66.7,39,32,64,283,25,789,46,534,21,9,Inter,Milan,ITA
+2526,2025-11-23,2025-11-23 Inter-Milan,12,Sun,Home,Inter,0,1,Milan,L,9,683,70,0,46,68,2,12,7,5,18,1.9,19,5,18.4,66.7,39,32,64,282,25,788,46,534,21,9,Inter,Milan,ITA
 2526,2025-11-30,2025-11-30 Pisa-Inter,13,Sun,Away,Inter,2,0,Pisa,W,6,552,73,2,33,48,3,10,7,8,27,2.0,14,3,15.8,100.0,28,21,60,208,16,656,32,382,14,5,Pisa,Inter,ITA
 2526,2025-12-06,2025-12-06 Inter-Como,14,Sat,Home,Inter,4,0,Como,W,7,392,48,3,22,23,3,10,10,9,20,1.6,11,7,14.4,100.0,22,15,42,94,14,477,17,238,7,4,Inter,Como,ITA
 2526,2025-12-14,2025-12-14 Genoa-Inter,15,Sun,Away,Inter,2,1,Genoa,W,6,569,62,1,32,37,5,18,10,8,19,1.3,18,8,18.1,66.7,29,13,64,216,16,682,23,416,14,5,Genoa,Inter,ITA
 2526,2025-12-28,2025-12-28 Atalanta-Inter,17,Sun,Away,Inter,1,0,Atalanta,W,7,562,74,1,46,45,1,17,9,6,24,1.1,15,4,17.3,,25,14,55,153,24,675,26,339,6,9,Atalanta,Inter,ITA
 2526,2026-01-04,2026-01-04 Inter-Bologna,18,Sun,Home,Inter,3,1,Bologna,W,7,503,57,2,24,39,6,17,8,6,9,2.9,19,10,13.4,50.0,34,20,58,133,13,624,29,387,9,4,Inter,Bologna,ITA
+2526,2026-01-07,2026-01-07 Parma-Inter,19,Wed,Away,Inter,2,0,Parma,W,3,714,53,1,73,75,3,18,9,9,21,2.6,26,8,17.8,,47,35,63,302,31,831,41,426,18,9,Parma,Inter,ITA
+2526,2026-01-11,2026-01-11 Inter-Napoli,20,Sun,Home,Inter,2,2,Napoli,D,4,525,73,1,44,35,6,21,14,10,15,1.4,12,3,20.1,33.3,26,17,50,193,19,625,25,379,7,3,Inter,Napoli,ITA
 2526,2025-08-24,2025-08-24 Juventus-Parma,1,Sun,Home,Juventus,2,0,Parma,W,6,549,45,2,36,40,5,15,7,12,21,2.3,25,8,17.1,100.0,49,18,64,254,26,682,35,444,28,5,Juventus,Parma,ITA
 2526,2025-08-31,2025-08-31 Genoa-Juventus,2,Sun,Away,Juventus,1,0,Genoa,W,4,499,63,1,11,29,5,26,11,6,23,0.9,13,3,16.9,100.0,22,14,56,141,11,632,19,345,16,3,Genoa,Juventus,ITA
 2526,2025-09-13,2025-09-13 Juventus-Inter,3,Sat,Home,Juventus,4,3,Inter,W,5,388,49,4,24,23,1,17,7,6,39,0.7,12,4,21.3,25.0,23,10,41,97,11,502,15,283,12,0,Juventus,Inter,ITA
@@ -1513,6 +1581,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-20,2025-12-20 Juventus-Roma,16,Sat,Home,Juventus,2,1,Roma,W,2,440,57,2,26,40,3,25,6,5,21,2.4,13,9,15.9,80.0,23,7,42,145,23,581,25,245,11,7,Juventus,Roma,ITA
 2526,2025-12-27,2025-12-27 Pisa-Juventus,17,Sat,Away,Juventus,2,0,Pisa,W,8,553,73,1,32,55,2,17,10,5,33,1.7,15,7,17.7,,24,22,59,217,32,685,43,380,19,10,Pisa,Juventus,ITA
 2526,2026-01-03,2026-01-03 Juventus-Lecce,18,Sat,Home,Juventus,1,1,Lecce,D,10,750,57,0,49,71,5,20,6,3,4,2.6,24,4,18.5,0.0,42,37,72,351,45,858,60,638,37,16,Juventus,Lecce,ITA
+2526,2026-01-06,2026-01-06 Sassuolo-Juventus,19,Tue,Away,Juventus,3,0,Sassuolo,W,5,663,56,1,67,62,3,15,9,11,13,2.6,17,10,16.7,100.0,25,20,56,288,21,763,31,512,17,7,Sassuolo,Juventus,ITA
+2526,2026-01-12,2026-01-12 Juventus-Cremonese,20,Mon,Home,Juventus,5,0,Cremonese,W,4,621,53,3,53,53,1,11,11,9,13,3.3,17,9,17.3,100.0,29,13,58,192,17,717,29,527,17,5,Juventus,Cremonese,ITA
 2526,2025-08-24,2025-08-24 Como-Lazio,1,Sun,Away,Lazio,0,2,Como,L,0,346,58,0,17,13,3,24,9,11,20,0.3,5,1,23.0,66.7,10,6,37,64,8,450,10,207,1,5,Como,Lazio,ITA
 2526,2025-08-31,2025-08-31 Lazio-Hellas Verona,2,Sun,Home,Lazio,4,0,Hellas Verona,W,8,745,91,4,78,64,2,9,6,14,7,4.1,22,6,17.1,100.0,42,20,70,178,18,842,28,545,14,5,Lazio,Hellas Verona,ITA
 2526,2025-09-14,2025-09-14 Sassuolo-Lazio,3,Sun,Away,Lazio,0,1,Sassuolo,L,7,637,55,0,53,56,3,12,9,9,16,0.8,13,3,15.2,66.7,23,24,59,182,10,722,20,362,11,4,Sassuolo,Lazio,ITA
@@ -1524,13 +1594,15 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-30,2025-10-30 Pisa-Lazio,9,Thu,Away,Lazio,0,0,Pisa,D,1,614,69,0,35,34,0,9,7,6,16,0.5,11,6,21.7,100.0,22,7,60,97,14,698,12,443,9,6,Pisa,Lazio,ITA
 2526,2025-11-03,2025-11-03 Lazio-Cagliari,10,Mon,Home,Lazio,2,0,Cagliari,W,7,481,75,1,27,34,2,17,13,5,31,0.7,8,3,18.6,100.0,12,18,51,109,19,586,17,387,8,8,Lazio,Cagliari,ITA
 2526,2025-11-09,2025-11-09 Inter-Lazio,11,Sun,Away,Lazio,0,2,Inter,L,1,509,71,0,32,28,1,5,10,9,23,0.6,8,5,20.5,33.3,15,6,46,125,11,595,5,332,17,1,Inter,Lazio,ITA
-2526,2025-11-23,2025-11-23 Lazio-Lecce,12,Sun,Home,Lazio,2,0,Lecce,W,8,757,74,1,44,46,1,8,6,15,17,1.9,19,9,17.4,100.0,35,20,67,172,15,860,33,573,13,5,Lazio,Lecce,ITA
+2526,2025-11-23,2025-11-23 Lazio-Lecce,12,Sun,Home,Lazio,2,0,Lecce,W,8,757,74,1,44,47,1,8,6,15,17,1.9,19,9,17.4,100.0,35,20,67,173,15,862,33,572,14,5,Lazio,Lecce,ITA
 2526,2025-11-29,2025-11-29 Milan-Lazio,13,Sat,Away,Lazio,0,1,Milan,L,4,603,63,0,37,40,5,12,9,10,11,0.7,9,4,18.5,75.0,14,16,53,152,17,699,16,383,13,1,Milan,Lazio,ITA
 2526,2025-12-07,2025-12-07 Lazio-Bologna,14,Sun,Home,Lazio,1,1,Bologna,D,7,453,70,0,14,19,1,11,8,7,10,1.2,16,9,17.1,80.0,27,17,48,99,11,542,22,292,12,3,Lazio,Bologna,ITA
 2526,2025-12-13,2025-12-13 Parma-Lazio,15,Sat,Away,Lazio,1,0,Parma,W,4,469,62,1,40,28,0,12,9,5,41,1.4,15,4,18.4,100.0,26,18,52,116,8,592,16,268,6,1,Parma,Lazio,ITA
 2526,2025-12-20,2025-12-20 Lazio-Cremonese,16,Sat,Home,Lazio,0,0,Cremonese,D,3,590,57,0,37,35,4,12,9,5,13,0.4,8,2,19.6,100.0,15,18,57,118,16,666,11,475,12,2,Lazio,Cremonese,ITA
 2526,2025-12-27,2025-12-27 Udinese-Lazio,17,Sat,Away,Lazio,1,1,Udinese,D,6,471,73,0,30,27,0,11,6,9,27,0.5,14,1,21.3,75.0,25,20,54,100,13,579,15,330,13,3,Udinese,Lazio,ITA
 2526,2026-01-04,2026-01-04 Lazio-Napoli,18,Sun,Home,Lazio,0,2,Napoli,L,2,370,71,0,17,13,2,19,10,6,27,0.4,5,0,12.2,33.3,9,11,35,76,13,458,11,256,10,1,Lazio,Napoli,ITA
+2526,2026-01-07,2026-01-07 Lazio-Fiorentina,19,Wed,Home,Lazio,2,2,Fiorentina,D,8,480,57,1,37,47,2,12,14,7,13,2.7,16,7,16.2,80.0,30,21,49,160,18,575,35,375,13,4,Lazio,Fiorentina,ITA
+2526,2026-01-11,2026-01-11 Hellas Verona-Lazio,20,Sun,Away,Lazio,1,0,Hellas Verona,W,1,733,68,0,38,43,3,13,8,7,24,0.9,11,2,17.8,100.0,21,6,63,119,15,836,22,384,10,4,Hellas Verona,Lazio,ITA
 2526,2025-08-23,2025-08-23 Genoa-Lecce,1,Sat,Away,Lecce,0,0,Genoa,D,7,346,67,0,23,26,3,15,7,12,18,0.4,7,0,15.2,100.0,13,21,43,130,7,453,14,235,5,0,Genoa,Lecce,ITA
 2526,2025-08-29,2025-08-29 Lecce-Milan,2,Fri,Home,Lecce,0,2,Milan,L,4,424,65,0,30,41,0,16,8,1,18,0.3,7,2,15.8,66.7,13,19,45,132,6,515,19,235,8,2,Lecce,Milan,ITA
 2526,2025-09-14,2025-09-14 Atalanta-Lecce,3,Sun,Away,Lecce,1,4,Atalanta,L,2,390,71,1,28,30,1,13,12,9,29,0.5,12,3,21.8,50.0,20,12,44,150,16,503,16,273,7,4,Atalanta,Lecce,ITA
@@ -1542,12 +1614,14 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-28,2025-10-28 Lecce-Napoli,9,Tue,Home,Lecce,0,1,Napoli,L,3,398,64,0,33,33,7,29,14,9,27,1.1,6,1,22.0,66.7,10,13,41,105,8,517,13,253,9,3,Lecce,Napoli,ITA
 2526,2025-11-02,2025-11-02 Fiorentina-Lecce,10,Sun,Away,Lecce,1,0,Fiorentina,W,4,315,78,0,21,21,3,21,11,2,42,1.2,11,4,20.8,100.0,21,14,38,101,9,431,10,165,7,3,Fiorentina,Lecce,ITA
 2526,2025-11-08,2025-11-08 Lecce-Hellas Verona,11,Sat,Home,Lecce,0,0,Hellas Verona,D,7,457,81,0,23,38,1,20,7,6,21,0.5,11,6,21.1,100.0,18,29,60,144,17,575,15,302,12,5,Lecce,Hellas Verona,ITA
-2526,2025-11-23,2025-11-23 Lazio-Lecce,12,Sun,Away,Lecce,0,2,Lazio,L,2,379,74,0,15,28,1,15,15,7,29,0.4,5,1,17.7,77.8,10,12,33,74,11,481,5,252,5,1,Lazio,Lecce,ITA
+2526,2025-11-23,2025-11-23 Lazio-Lecce,12,Sun,Away,Lecce,0,2,Lazio,L,2,379,74,0,15,28,1,15,15,7,29,0.4,5,1,17.7,77.8,10,12,33,74,11,483,5,250,5,1,Lazio,Lecce,ITA
 2526,2025-11-30,2025-11-30 Lecce-Torino,13,Sun,Home,Lecce,2,1,Torino,W,6,371,88,2,22,23,1,17,8,2,41,1.0,10,2,17.8,83.3,18,12,47,107,10,495,15,257,11,1,Lecce,Torino,ITA
 2526,2025-12-07,2025-12-07 Cremonese-Lecce,14,Sun,Away,Lecce,0,2,Cremonese,L,5,401,91,0,32,38,3,19,13,7,36,0.9,9,1,16.7,75.0,14,24,51,154,19,537,12,233,13,3,Cremonese,Lecce,ITA
 2526,2025-12-12,2025-12-12 Lecce-Pisa,15,Fri,Home,Lecce,1,0,Pisa,W,12,421,73,1,26,28,1,14,6,4,23,2.2,21,3,15.1,,32,22,51,139,17,532,30,262,9,5,Lecce,Pisa,ITA
 2526,2025-12-27,2025-12-27 Lecce-Como,17,Sat,Home,Lecce,0,3,Como,L,4,319,56,0,16,23,2,20,9,15,29,0.8,11,5,19.3,50.0,21,20,39,122,13,430,22,227,11,6,Lecce,Como,ITA
 2526,2026-01-03,2026-01-03 Juventus-Lecce,18,Sat,Away,Lecce,1,1,Juventus,D,1,296,56,0,18,18,1,30,20,7,60,0.3,6,1,28.6,80.0,12,5,28,63,6,463,4,197,6,1,Juventus,Lecce,ITA
+2526,2026-01-06,2026-01-06 Lecce-Roma,19,Tue,Home,Lecce,0,2,Roma,L,2,459,79,0,25,34,3,14,16,12,28,0.5,6,1,21.7,33.3,12,16,50,134,8,584,10,301,12,3,Lecce,Roma,ITA
+2526,2026-01-11,2026-01-11 Lecce-Parma,20,Sun,Home,Lecce,1,2,Parma,L,3,332,63,1,20,20,3,20,12,4,38,0.8,10,1,15.6,0.0,19,19,41,125,9,479,17,178,6,3,Lecce,Parma,ITA
 2526,2025-08-23,2025-08-23 Milan-Cremonese,1,Sat,Home,Milan,1,2,Cremonese,L,9,665,71,1,53,61,1,8,3,4,22,1.8,24,5,15.5,33.3,46,22,64,224,28,779,48,554,14,7,Milan,Cremonese,ITA
 2526,2025-08-29,2025-08-29 Lecce-Milan,2,Fri,Away,Milan,2,0,Lecce,W,5,523,68,1,23,30,2,18,5,9,18,1.8,14,6,14.4,100.0,25,16,55,145,21,621,32,407,13,9,Lecce,Milan,ITA
 2526,2025-09-14,2025-09-14 Milan-Bologna,3,Sun,Home,Milan,1,0,Bologna,W,7,372,49,1,19,24,1,14,7,5,24,1.0,14,3,16.0,,26,14,40,114,17,480,21,264,9,5,Milan,Bologna,ITA
@@ -1559,12 +1633,14 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-28,2025-10-28 Atalanta-Milan,9,Tue,Away,Milan,1,1,Atalanta,D,4,439,55,0,22,28,1,15,9,5,23,0.4,6,1,17.9,66.7,7,12,44,89,14,530,14,343,8,2,Atalanta,Milan,ITA
 2526,2025-11-02,2025-11-02 Milan-Roma,10,Sun,Home,Milan,1,0,Roma,W,7,344,72,1,21,23,4,11,9,2,37,3.3,17,7,14.3,100.0,27,14,37,111,11,462,27,206,7,6,Milan,Roma,ITA
 2526,2025-11-08,2025-11-08 Parma-Milan,11,Sat,Away,Milan,2,2,Parma,D,3,594,67,1,58,54,1,9,9,6,22,2.1,8,4,18.4,50.0,18,16,56,166,16,688,30,366,15,3,Parma,Milan,ITA
-2526,2025-11-23,2025-11-23 Inter-Milan,12,Sun,Away,Milan,1,0,Inter,W,1,389,62,0,18,30,0,13,16,7,49,1.0,7,3,19.3,100.0,13,10,36,95,24,521,16,250,13,7,Inter,Milan,ITA
+2526,2025-11-23,2025-11-23 Inter-Milan,12,Sun,Away,Milan,1,0,Inter,W,1,389,62,0,18,30,0,13,16,7,49,1.0,7,3,19.3,100.0,13,10,36,95,24,519,16,252,13,7,Inter,Milan,ITA
 2526,2025-11-29,2025-11-29 Milan-Lazio,13,Sat,Home,Milan,1,0,Lazio,W,1,532,61,1,31,37,2,17,7,10,24,1.4,16,4,17.7,100.0,29,13,47,138,11,647,23,426,12,3,Milan,Lazio,ITA
 2526,2025-12-08,2025-12-08 Torino-Milan,14,Mon,Away,Milan,3,2,Torino,W,4,602,69,3,45,46,1,11,7,6,13,1.7,17,6,16.0,75.0,32,23,64,173,19,703,27,382,19,5,Torino,Milan,ITA
 2526,2025-12-14,2025-12-14 Milan-Sassuolo,15,Sun,Home,Milan,2,2,Sassuolo,D,7,595,58,2,41,54,3,17,8,4,24,1.4,13,4,16.4,33.3,21,31,59,163,17,696,35,362,12,5,Milan,Sassuolo,ITA
 2526,2025-12-28,2025-12-28 Milan-Hellas Verona,17,Sun,Home,Milan,3,0,Hellas Verona,W,7,473,66,1,23,37,1,15,9,10,17,2.4,10,4,15.3,100.0,18,15,52,127,9,577,20,303,10,2,Milan,Hellas Verona,ITA
 2526,2026-01-02,2026-01-02 Cagliari-Milan,18,Fri,Away,Milan,1,0,Cagliari,W,7,579,87,1,34,40,7,14,4,9,26,0.7,11,4,17.9,100.0,20,13,54,176,19,685,27,473,16,6,Cagliari,Milan,ITA
+2526,2026-01-08,2026-01-08 Milan-Genoa,19,Thu,Home,Milan,1,1,Genoa,D,12,630,66,0,56,80,3,14,13,5,9,2.4,32,8,14.9,50.0,58,49,61,298,30,737,55,490,17,9,Milan,Genoa,ITA
+2526,2026-01-11,2026-01-11 Fiorentina-Milan,20,Sun,Away,Milan,1,1,Fiorentina,D,5,440,65,1,29,34,2,13,10,3,22,1.5,13,3,15.3,85.7,26,19,48,121,14,530,22,271,11,3,Fiorentina,Milan,ITA
 2526,2025-08-23,2025-08-23 Sassuolo-Napoli,1,Sat,Away,Napoli,2,0,Sassuolo,W,2,637,44,1,30,42,1,14,5,5,10,1.2,13,4,20.2,100.0,21,10,62,127,13,722,12,528,15,3,Sassuolo,Napoli,ITA
 2526,2025-08-30,2025-08-30 Napoli-Cagliari,2,Sat,Home,Napoli,1,0,Cagliari,W,13,686,48,1,51,68,1,4,3,7,6,1.5,20,6,15.4,100.0,32,42,68,230,33,756,34,528,20,6,Napoli,Cagliari,ITA
 2526,2025-09-13,2025-09-13 Fiorentina-Napoli,3,Sat,Away,Napoli,3,1,Fiorentina,W,5,446,61,2,23,35,1,14,17,6,32,2.7,13,7,14.3,66.7,24,12,47,120,20,561,25,225,18,10,Fiorentina,Napoli,ITA
@@ -1582,6 +1658,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-14,2025-12-14 Udinese-Napoli,15,Sun,Away,Napoli,0,1,Udinese,L,3,555,69,0,36,39,2,11,12,7,13,1.3,7,0,13.6,80.0,13,15,62,133,13,651,18,347,10,5,Udinese,Napoli,ITA
 2526,2025-12-28,2025-12-28 Cremonese-Napoli,17,Sun,Away,Napoli,2,0,Cremonese,W,10,507,62,1,31,40,0,10,6,6,21,2.5,22,8,17.2,100.0,39,17,53,176,24,618,28,382,13,8,Cremonese,Napoli,ITA
 2526,2026-01-04,2026-01-04 Lazio-Napoli,18,Sun,Away,Napoli,2,0,Lazio,W,6,694,50,2,25,35,3,8,5,1,5,1.9,14,3,14.7,,25,23,65,163,32,767,28,496,17,8,Lazio,Napoli,ITA
+2526,2026-01-07,2026-01-07 Napoli-Hellas Verona,19,Wed,Home,Napoli,2,2,Hellas Verona,D,6,737,51,2,48,49,2,8,3,6,17,1.2,15,4,16.2,75.0,28,29,70,192,24,835,26,612,17,5,Napoli,Hellas Verona,ITA
+2526,2026-01-11,2026-01-11 Inter-Napoli,20,Sun,Away,Napoli,2,2,Inter,D,1,522,52,2,17,27,1,13,10,6,20,0.7,7,3,14.6,75.0,13,12,50,87,15,612,20,411,11,3,Inter,Napoli,ITA
 2526,2025-08-24,2025-08-24 Juventus-Parma,1,Sun,Away,Parma,0,2,Juventus,L,6,313,71,0,21,15,1,12,8,6,18,0.6,8,1,19.2,75.0,13,17,36,75,10,401,9,218,10,1,Juventus,Parma,ITA
 2526,2025-08-30,2025-08-30 Parma-Atalanta,2,Sat,Home,Parma,1,1,Atalanta,D,1,390,84,0,35,28,3,10,11,8,16,0.7,7,3,20.1,66.7,11,23,46,133,13,494,16,217,9,5,Parma,Atalanta,ITA
 2526,2025-09-13,2025-09-13 Cagliari-Parma,3,Sat,Away,Parma,0,2,Cagliari,L,5,418,71,0,20,32,2,20,15,5,16,1.9,17,5,16.1,60.0,30,20,49,156,17,539,24,318,9,3,Cagliari,Parma,ITA
@@ -1593,12 +1671,14 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-29,2025-10-29 Roma-Parma,9,Wed,Away,Parma,1,2,Roma,L,2,379,69,1,15,15,0,17,13,11,39,1.1,8,5,17.1,66.7,14,11,39,71,5,502,11,200,5,0,Roma,Parma,ITA
 2526,2025-11-02,2025-11-02 Parma-Bologna,10,Sun,Home,Parma,1,3,Bologna,L,1,258,81,0,13,15,0,14,8,5,27,0.5,7,1,20.2,50.0,12,4,35,61,5,355,12,103,4,0,Parma,Bologna,ITA
 2526,2025-11-08,2025-11-08 Parma-Milan,11,Sat,Home,Parma,2,2,Milan,D,4,459,56,2,20,34,0,7,8,7,26,1.9,14,4,17.5,80.0,24,23,44,121,14,564,21,365,15,2,Parma,Milan,ITA
-2526,2025-11-23,2025-11-23 Hellas Verona-Parma,12,Sun,Away,Parma,2,1,Hellas Verona,W,4,363,98,0,18,27,1,21,10,8,32,1.4,15,7,20.6,50.0,22,12,41,98,10,501,17,215,7,2,Hellas Verona,Parma,ITA
+2526,2025-11-23,2025-11-23 Hellas Verona-Parma,12,Sun,Away,Parma,2,1,Hellas Verona,W,4,363,98,0,18,27,1,21,10,8,32,1.4,15,7,20.6,50.0,22,12,41,97,10,500,17,214,7,2,Hellas Verona,Parma,ITA
 2526,2025-11-29,2025-11-29 Parma-Udinese,13,Sat,Home,Parma,0,2,Udinese,L,5,394,92,0,22,26,2,21,9,6,25,0.9,17,2,21.0,80.0,28,25,50,119,8,515,18,275,7,2,Parma,Udinese,ITA
 2526,2025-12-08,2025-12-08 Pisa-Parma,14,Mon,Away,Parma,1,0,Pisa,W,0,334,77,0,16,19,2,13,7,5,51,1.2,8,1,19.5,100.0,17,11,40,66,6,454,7,194,4,1,Pisa,Parma,ITA
 2526,2025-12-13,2025-12-13 Parma-Lazio,15,Sat,Home,Parma,0,1,Lazio,L,4,426,61,0,28,40,0,6,9,8,22,1.1,19,5,19.1,75.0,36,37,48,135,18,519,25,322,17,3,Parma,Lazio,ITA
 2526,2025-12-27,2025-12-27 Parma-Fiorentina,17,Sat,Home,Parma,1,0,Fiorentina,W,5,370,92,1,29,29,3,16,13,7,33,0.9,13,2,17.3,100.0,22,21,42,132,13,492,23,202,9,5,Parma,Fiorentina,ITA
 2526,2026-01-03,2026-01-03 Sassuolo-Parma,18,Sat,Away,Parma,1,1,Sassuolo,D,7,492,72,0,29,30,1,21,8,11,26,1.2,16,5,19.6,66.7,28,22,47,147,20,615,20,366,13,4,Sassuolo,Parma,ITA
+2526,2026-01-07,2026-01-07 Parma-Inter,19,Wed,Home,Parma,0,2,Inter,L,1,424,60,0,20,25,1,12,15,13,26,0.3,4,0,17.0,75.0,8,14,37,89,16,528,7,344,5,1,Parma,Inter,ITA
+2526,2026-01-11,2026-01-11 Lecce-Parma,20,Sun,Away,Parma,2,1,Lecce,W,3,475,63,1,26,39,2,19,6,7,19,1.0,12,2,22.0,0.0,19,22,59,127,21,594,14,361,14,3,Lecce,Parma,ITA
 2526,2025-08-24,2025-08-24 Atalanta-Pisa,1,Sun,Away,Pisa,1,1,Atalanta,D,4,321,79,0,17,15,0,17,8,8,33,0.6,11,2,17.7,83.3,18,15,34,95,7,458,13,168,8,2,Atalanta,Pisa,ITA
 2526,2025-08-30,2025-08-30 Pisa-Roma,2,Sat,Home,Pisa,0,1,Roma,L,1,299,64,0,20,32,1,22,13,11,40,0.6,7,3,21.7,80.0,14,11,32,68,11,441,8,201,5,3,Pisa,Roma,ITA
 2526,2025-09-14,2025-09-14 Pisa-Udinese,3,Sun,Home,Pisa,0,1,Udinese,L,8,434,74,0,36,45,1,14,14,4,24,0.5,12,2,18.4,66.7,22,29,51,133,20,547,21,341,11,7,Pisa,Udinese,ITA
@@ -1617,6 +1697,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-21,2025-12-21 Cagliari-Pisa,16,Sun,Away,Pisa,2,2,Cagliari,D,6,305,80,1,16,28,3,14,8,11,26,2.5,14,2,14.7,60.0,24,21,41,131,9,431,31,186,13,4,Cagliari,Pisa,ITA
 2526,2025-12-27,2025-12-27 Pisa-Juventus,17,Sat,Home,Pisa,0,2,Juventus,L,2,384,77,0,21,27,3,12,12,13,34,0.6,8,0,15.7,71.4,13,19,41,141,16,506,16,246,11,2,Pisa,Juventus,ITA
 2526,2026-01-03,2026-01-03 Genoa-Pisa,18,Sat,Away,Pisa,1,1,Genoa,D,7,297,76,0,23,26,4,22,8,12,38,0.6,10,2,18.6,75.0,17,18,38,125,8,445,20,182,4,2,Genoa,Pisa,ITA
+2526,2026-01-06,2026-01-06 Pisa-Como,19,Tue,Home,Pisa,0,3,Como,L,1,248,62,0,11,23,1,20,9,9,35,1.6,9,3,19.5,71.4,17,6,28,76,11,380,19,171,8,9,Pisa,Como,ITA
+2526,2026-01-10,2026-01-10 Udinese-Pisa,20,Sat,Away,Pisa,2,2,Udinese,D,8,360,71,1,26,31,2,11,10,8,36,1.5,14,7,15.0,50.0,24,34,47,120,11,452,22,149,5,5,Udinese,Pisa,ITA
 2526,2025-08-23,2025-08-23 Roma-Bologna,1,Sat,Home,Roma,1,0,Bologna,W,2,444,75,0,21,24,0,13,12,9,17,1.6,14,4,18.7,100.0,20,8,51,116,24,552,24,357,16,8,Roma,Bologna,ITA
 2526,2025-08-30,2025-08-30 Pisa-Roma,2,Sat,Away,Roma,1,0,Pisa,W,7,640,98,1,51,54,3,16,7,7,23,0.8,10,5,19.3,100.0,20,27,68,227,21,750,34,365,20,8,Pisa,Roma,ITA
 2526,2025-09-14,2025-09-14 Roma-Torino,3,Sun,Home,Roma,0,1,Torino,L,7,647,76,0,54,61,2,12,4,7,12,1.1,22,5,16.9,75.0,41,31,72,235,23,751,29,417,20,6,Roma,Torino,ITA
@@ -1628,13 +1710,15 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-29,2025-10-29 Roma-Parma,9,Wed,Home,Roma,2,1,Parma,W,9,581,58,1,41,45,3,11,12,11,15,1.0,18,6,19.0,80.0,31,28,61,176,19,684,27,460,20,6,Roma,Parma,ITA
 2526,2025-11-02,2025-11-02 Milan-Roma,10,Sun,Away,Roma,0,1,Milan,L,8,581,75,0,41,49,5,22,5,10,23,1.8,19,5,17.2,85.7,35,38,63,230,20,689,31,323,15,8,Milan,Roma,ITA
 2526,2025-11-09,2025-11-09 Roma-Udinese,11,Sun,Home,Roma,2,0,Udinese,W,3,535,98,1,43,44,5,13,13,5,13,1.5,12,3,16.6,100.0,22,16,57,174,16,630,22,401,11,1,Roma,Udinese,ITA
-2526,2025-11-23,2025-11-23 Cremonese-Roma,12,Sun,Away,Roma,3,1,Cremonese,W,5,472,55,3,23,49,1,9,7,6,21,1.9,12,6,18.9,75.0,24,14,50,172,19,583,31,340,19,6,Cremonese,Roma,ITA
+2526,2025-11-23,2025-11-23 Cremonese-Roma,12,Sun,Away,Roma,3,1,Cremonese,W,5,472,55,3,23,48,1,9,7,6,21,1.9,12,6,18.9,75.0,24,14,50,171,19,579,30,343,19,7,Cremonese,Roma,ITA
 2526,2025-11-30,2025-11-30 Roma-Napoli,13,Sun,Home,Roma,0,1,Napoli,L,4,588,90,0,31,42,1,14,14,6,16,0.5,8,2,20.0,80.0,15,14,56,164,16,687,12,358,17,1,Roma,Napoli,ITA
 2526,2025-12-07,2025-12-07 Cagliari-Roma,14,Sun,Away,Roma,0,1,Cagliari,L,1,462,75,0,37,46,0,11,9,8,20,0.3,6,2,12.4,87.5,11,11,53,94,14,566,24,342,6,6,Cagliari,Roma,ITA
 2526,2025-12-15,2025-12-15 Roma-Como,15,Mon,Home,Roma,1,0,Como,W,6,449,73,1,35,47,2,21,13,8,24,1.1,14,4,14.6,100.0,28,17,53,154,16,584,34,288,10,5,Roma,Como,ITA
 2526,2025-12-20,2025-12-20 Juventus-Roma,16,Sat,Away,Roma,1,2,Juventus,L,4,617,53,0,45,60,2,20,10,8,24,1.4,14,5,17.3,77.8,26,13,58,242,22,741,30,400,27,4,Juventus,Roma,ITA
 2526,2025-12-29,2025-12-29 Roma-Genoa,17,Mon,Home,Roma,3,1,Genoa,W,6,601,66,1,27,48,3,21,8,14,21,1.4,16,8,15.7,50.0,23,12,60,197,18,723,39,373,13,8,Roma,Genoa,ITA
 2526,2026-01-03,2026-01-03 Atalanta-Roma,18,Sat,Away,Roma,0,1,Atalanta,L,5,496,67,0,31,32,2,20,13,7,26,0.8,10,3,14.7,50.0,16,15,54,129,10,623,23,352,11,4,Atalanta,Roma,ITA
+2526,2026-01-06,2026-01-06 Lecce-Roma,19,Tue,Away,Roma,2,0,Lecce,W,2,450,65,1,33,37,7,29,10,14,31,1.3,10,3,16.8,100.0,18,8,50,154,8,597,17,258,5,2,Lecce,Roma,ITA
+2526,2026-01-10,2026-01-10 Roma-Sassuolo,20,Sat,Home,Roma,2,0,Sassuolo,W,5,636,54,2,49,88,3,23,2,7,12,2.5,26,6,17.7,100.0,48,23,64,254,25,772,46,511,13,10,Roma,Sassuolo,ITA
 2526,2025-08-23,2025-08-23 Sassuolo-Napoli,1,Sat,Home,Sassuolo,0,2,Napoli,L,1,386,54,0,26,19,5,16,11,12,12,0.4,7,2,22.1,50.0,14,4,38,94,14,476,8,288,11,2,Sassuolo,Napoli,ITA
 2526,2025-08-29,2025-08-29 Cremonese-Sassuolo,2,Fri,Away,Sassuolo,2,3,Cremonese,L,4,541,95,1,33,41,1,11,12,3,31,1.3,8,5,19.8,66.7,17,14,57,121,12,657,21,353,6,5,Cremonese,Sassuolo,ITA
 2526,2025-09-14,2025-09-14 Sassuolo-Lazio,3,Sun,Home,Sassuolo,1,0,Lazio,W,3,447,69,1,21,35,2,20,15,12,32,1.1,10,3,15.2,100.0,16,10,41,99,21,570,21,309,14,7,Sassuolo,Lazio,ITA
@@ -1653,6 +1737,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-21,2025-12-21 Sassuolo-Torino,16,Sun,Home,Sassuolo,0,1,Torino,L,2,499,74,0,27,36,1,6,6,9,21,0.4,7,1,16.5,100.0,13,10,53,113,13,609,17,339,7,2,Sassuolo,Torino,ITA
 2526,2025-12-28,2025-12-28 Bologna-Sassuolo,17,Sun,Away,Sassuolo,1,1,Bologna,D,3,372,75,1,11,17,1,14,6,9,34,1.6,8,5,16.6,80.0,13,7,42,61,11,482,13,215,4,5,Bologna,Sassuolo,ITA
 2526,2026-01-03,2026-01-03 Sassuolo-Parma,18,Sat,Home,Sassuolo,1,1,Parma,D,4,551,55,1,61,48,3,13,14,6,37,0.8,11,3,18.6,80.0,20,20,53,246,24,690,24,388,22,6,Sassuolo,Parma,ITA
+2526,2026-01-06,2026-01-06 Sassuolo-Juventus,19,Tue,Home,Sassuolo,0,3,Juventus,L,5,518,70,0,23,33,2,9,11,12,22,0.2,6,2,21.0,70.0,10,13,44,110,12,606,13,389,13,2,Sassuolo,Juventus,ITA
+2526,2026-01-10,2026-01-10 Roma-Sassuolo,20,Sat,Away,Sassuolo,0,2,Roma,L,2,355,78,0,15,16,0,20,14,11,32,0.7,5,3,17.4,66.7,7,5,36,58,14,488,10,248,6,4,Roma,Sassuolo,ITA
 2526,2025-08-25,2025-08-25 Inter-Torino,1,Mon,Away,Torino,0,5,Inter,L,5,411,67,0,24,38,2,10,9,3,11,0.9,12,4,17.1,44.4,21,16,40,78,13,497,16,248,5,4,Inter,Torino,ITA
 2526,2025-08-31,2025-08-31 Torino-Fiorentina,2,Sun,Home,Torino,0,0,Fiorentina,D,7,336,67,0,18,27,1,7,5,6,22,1.0,7,4,13.9,100.0,14,18,46,112,16,424,21,233,7,3,Torino,Fiorentina,ITA
 2526,2025-09-14,2025-09-14 Roma-Torino,3,Sun,Away,Torino,1,0,Roma,W,4,253,64,1,15,14,2,23,12,5,43,0.6,8,4,19.5,100.0,13,7,28,81,7,386,8,163,4,2,Roma,Torino,ITA
@@ -1664,13 +1750,15 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-10-29,2025-10-29 Bologna-Torino,9,Wed,Away,Torino,0,0,Bologna,D,3,284,67,0,12,17,3,18,8,9,29,0.5,8,2,19.5,100.0,16,11,29,69,9,393,12,173,5,2,Bologna,Torino,ITA
 2526,2025-11-02,2025-11-02 Torino-Pisa,10,Sun,Home,Torino,2,2,Pisa,D,4,586,89,0,56,53,0,8,8,5,15,0.9,15,3,17.0,66.7,28,19,64,171,27,672,30,302,12,7,Torino,Pisa,ITA
 2526,2025-11-08,2025-11-08 Juventus-Torino,11,Sat,Away,Torino,0,0,Juventus,D,2,318,63,0,13,14,2,14,16,15,43,0.7,8,3,19.2,100.0,12,11,28,62,7,462,17,254,6,1,Juventus,Torino,ITA
-2526,2025-11-24,2025-11-24 Torino-Como,12,Mon,Home,Torino,1,5,Como,L,3,334,56,0,23,35,1,15,6,15,22,1.5,9,1,18.8,16.7,19,21,36,109,15,457,19,232,14,2,Torino,Como,ITA
+2526,2025-11-24,2025-11-24 Torino-Como,12,Mon,Home,Torino,1,5,Como,L,3,334,56,0,23,35,1,15,6,15,22,1.5,9,1,18.8,16.7,19,21,36,109,14,456,19,227,14,2,Torino,Como,ITA
 2526,2025-11-30,2025-11-30 Lecce-Torino,13,Sun,Away,Torino,1,2,Lecce,L,6,411,73,1,35,38,1,19,11,5,15,1.7,14,5,21.6,0.0,23,29,53,127,8,508,15,269,8,1,Lecce,Torino,ITA
 2526,2025-12-08,2025-12-08 Torino-Milan,14,Mon,Home,Torino,2,3,Milan,L,2,332,79,1,25,24,5,24,10,3,23,1.0,7,3,25.5,50.0,12,10,36,98,13,457,13,241,13,3,Torino,Milan,ITA
 2526,2025-12-13,2025-12-13 Torino-Cremonese,15,Sat,Home,Torino,1,0,Cremonese,W,6,447,105,1,30,36,3,21,8,5,38,1.0,18,6,15.3,100.0,32,22,47,147,25,582,32,290,14,8,Torino,Cremonese,ITA
 2526,2025-12-21,2025-12-21 Sassuolo-Torino,16,Sun,Away,Torino,1,0,Sassuolo,W,3,439,73,0,20,30,2,22,9,8,38,1.7,9,4,25.1,100.0,16,18,47,95,13,557,11,237,15,1,Sassuolo,Torino,ITA
 2526,2025-12-27,2025-12-27 Torino-Cagliari,17,Sat,Home,Torino,1,2,Cagliari,L,6,523,76,1,41,34,2,10,11,10,10,1.5,19,10,16.7,50.0,32,29,56,181,22,617,35,348,15,3,Torino,Cagliari,ITA
 2526,2026-01-04,2026-01-04 Hellas Verona-Torino,18,Sun,Away,Torino,3,0,Hellas Verona,W,7,487,91,2,22,32,4,26,14,14,32,1.5,21,5,20.3,100.0,33,17,52,110,16,633,15,321,11,3,Hellas Verona,Torino,ITA
+2526,2026-01-07,2026-01-07 Torino-Udinese,19,Wed,Home,Torino,1,2,Udinese,L,3,485,98,1,32,33,4,19,10,8,24,1.1,10,4,14.0,50.0,20,22,53,162,13,607,20,323,16,2,Torino,Udinese,ITA
+2526,2026-01-10,2026-01-10 Atalanta-Torino,20,Sat,Away,Torino,0,2,Atalanta,L,4,416,64,0,27,35,5,23,18,11,31,0.8,10,3,17.4,60.0,16,14,44,112,13,549,23,292,7,2,Atalanta,Torino,ITA
 2526,2025-08-25,2025-08-25 Udinese-Hellas Verona,1,Mon,Home,Udinese,1,1,Hellas Verona,D,5,526,83,1,38,45,0,13,7,3,35,0.7,14,4,19.4,66.7,27,21,62,141,20,636,18,369,19,2,Udinese,Hellas Verona,ITA
 2526,2025-08-31,2025-08-31 Inter-Udinese,2,Sun,Away,Udinese,2,1,Inter,W,2,279,64,1,15,19,2,8,13,4,50,1.1,9,4,24.9,66.7,16,12,33,92,6,403,13,147,6,0,Inter,Udinese,ITA
 2526,2025-09-14,2025-09-14 Pisa-Udinese,3,Sun,Away,Udinese,1,0,Pisa,W,6,416,76,0,22,28,2,13,9,5,38,1.0,13,3,18.0,100.0,19,17,49,115,20,531,21,312,11,9,Pisa,Udinese,ITA
@@ -1689,6 +1777,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-21,2025-12-21 Fiorentina-Udinese,16,Sun,Away,Udinese,1,5,Fiorentina,L,4,370,68,1,24,31,1,10,9,10,17,0.6,11,4,15.6,0.0,22,16,37,107,10,456,16,242,12,3,Fiorentina,Udinese,ITA
 2526,2025-12-27,2025-12-27 Udinese-Lazio,17,Sat,Home,Udinese,1,1,Lazio,D,5,404,61,1,14,20,4,14,13,1,26,0.9,15,4,18.6,0.0,22,23,46,136,19,506,21,319,19,4,Udinese,Lazio,ITA
 2526,2026-01-03,2026-01-03 Como-Udinese,18,Sat,Away,Udinese,0,1,Como,L,2,384,68,0,12,23,2,14,9,13,31,0.6,3,0,18.5,100.0,3,9,39,58,11,495,9,244,8,2,Como,Udinese,ITA
+2526,2026-01-07,2026-01-07 Torino-Udinese,19,Wed,Away,Udinese,2,1,Torino,W,6,430,55,2,20,28,0,10,5,8,38,2.1,9,4,12.2,75.0,16,12,47,122,18,542,29,297,13,6,Torino,Udinese,ITA
+2526,2026-01-10,2026-01-10 Udinese-Pisa,20,Sat,Home,Udinese,2,2,Pisa,D,3,412,65,1,24,32,0,5,12,8,34,2.1,10,1,19.3,71.4,19,20,53,124,15,526,20,282,13,3,Udinese,Pisa,ITA
 2526,2025-08-10,2025-08-10 AZ Alkmaar-Groningen,1,Sun,Home,AZ Alkmaar,4,1,Groningen,W,6,438,73,2,22,34,1,24,3,10,26,1.5,9,4,14.3,85.7,19,10,51,115,14,549,25,341,12,7,AZ Alkmaar,Groningen,NED
 2526,2025-08-17,2025-08-17 Volendam-AZ Alkmaar,2,Sun,Away,AZ Alkmaar,2,2,Volendam,D,4,643,70,2,45,53,5,20,16,6,22,1.4,19,3,17.7,33.3,35,18,66,257,29,761,43,527,35,9,Volendam,AZ Alkmaar,NED
 2526,2025-08-31,2025-08-31 NAC Breda-AZ Alkmaar,4,Sun,Away,AZ Alkmaar,1,0,NAC Breda,W,7,495,59,1,33,66,2,14,10,4,30,2.8,25,8,17.1,100.0,47,14,61,229,28,630,41,359,19,8,NAC Breda,AZ Alkmaar,NED
@@ -1705,6 +1795,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-11-30,2025-11-30 Twente-AZ Alkmaar,14,Sun,Away,AZ Alkmaar,0,1,Twente,L,3,469,74,0,38,36,1,17,11,7,23,1.3,6,1,17.8,50.0,14,12,49,150,18,584,16,304,12,4,Twente,AZ Alkmaar,NED
 2526,2025-12-07,2025-12-07 AZ Alkmaar-Go Ahead Eag,15,Sun,Home,AZ Alkmaar,2,2,Go Ahead Eag,D,11,447,83,1,38,45,3,19,17,5,30,2.0,23,7,14.4,66.7,41,19,48,177,21,583,43,320,20,6,AZ Alkmaar,Go Ahead Eag,NED
 2526,2025-12-21,2025-12-21 Fortuna Sittard-AZ Alkmaar,17,Sun,Away,AZ Alkmaar,3,4,Fortuna Sittard,L,8,509,77,2,38,56,1,11,7,6,23,4.0,20,7,13.8,33.3,39,25,66,192,23,624,31,408,27,4,Fortuna Sittard,AZ Alkmaar,NED
+2526,2026-01-10,2026-01-10 AZ Alkmaar-Volendam,18,Sat,Home,AZ Alkmaar,1,0,Volendam,W,7,470,55,0,34,56,6,34,11,12,24,2.3,17,8,15.0,100.0,26,13,49,186,17,626,45,372,16,6,AZ Alkmaar,Volendam,NED
 2526,2025-08-10,2025-08-10 Ajax-Telstar,1,Sun,Home,Ajax,2,0,Telstar,W,8,649,53,2,51,64,4,21,13,9,21,1.6,15,7,15.8,100.0,26,18,62,218,28,754,39,417,19,10,Ajax,Telstar,NED
 2526,2025-08-17,2025-08-17 Go Ahead Eag-Ajax,2,Sun,Away,Ajax,2,2,Go Ahead Eag,D,9,529,50,0,29,43,2,13,5,13,30,1.7,22,11,16.0,50.0,38,20,51,168,22,646,39,336,13,6,Go Ahead Eag,Ajax,NED
 2526,2025-08-24,2025-08-24 Ajax-Heracles Almelo,3,Sun,Home,Ajax,2,0,Heracles Almelo,W,10,691,53,1,36,55,3,12,9,10,21,2.6,27,8,13.6,,47,19,65,202,27,810,52,455,15,9,Ajax,Heracles Almelo,NED
@@ -1722,6 +1813,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Fortuna Sittard-Ajax,15,Sat,Away,Ajax,3,1,Fortuna Sittard,W,4,586,67,1,50,52,2,13,9,3,28,1.1,13,4,19.5,85.7,24,15,64,216,19,703,22,393,18,7,Fortuna Sittard,Ajax,NED
 2526,2025-12-14,2025-12-14 Ajax-Feyenoord,16,Sun,Home,Ajax,2,0,Feyenoord,W,3,424,61,2,19,22,2,20,18,16,40,1.3,15,6,18.5,100.0,25,6,42,85,13,561,17,298,8,5,Ajax,Feyenoord,NED
 2526,2025-12-20,2025-12-20 NEC Nijmegen-Ajax,17,Sat,Away,Ajax,2,2,NEC Nijmegen,D,7,571,49,2,27,48,2,9,9,8,27,2.0,19,8,15.9,60.0,34,22,60,180,20,683,33,451,14,6,NEC Nijmegen,Ajax,NED
+2526,2026-01-11,2026-01-11 Telstar-Ajax,18,Sun,Away,Ajax,3,2,Telstar,W,3,673,72,3,46,53,4,15,13,10,37,1.7,16,10,15.2,33.3,29,7,64,153,20,798,24,471,13,4,Telstar,Ajax,NED
 2526,2025-08-09,2025-08-09 NEC Nijmegen-Excelsior,1,Sat,Away,Excelsior,0,5,NEC Nijmegen,L,2,321,100,0,26,26,6,24,14,11,22,1.0,9,6,13.3,60.0,15,13,38,107,6,460,17,198,6,4,NEC Nijmegen,Excelsior,NED
 2526,2025-08-16,2025-08-16 Excelsior-Feyenoord,2,Sat,Home,Excelsior,1,2,Feyenoord,L,5,449,83,1,25,32,2,16,15,6,34,1.1,8,2,17.1,71.4,11,17,47,114,9,566,11,333,13,1,Excelsior,Feyenoord,NED
 2526,2025-08-24,2025-08-24 Utrecht-Excelsior,3,Sun,Away,Excelsior,1,4,Utrecht,L,5,445,60,0,30,33,2,13,10,11,17,1.3,12,4,18.0,55.6,23,17,50,133,16,553,19,368,16,4,Utrecht,Excelsior,NED
@@ -1738,6 +1830,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-11-29,2025-11-29 Excelsior-NAC Breda,14,Sat,Home,Excelsior,1,0,NAC Breda,W,1,378,102,0,29,27,1,14,15,11,29,0.9,5,1,24.4,100.0,10,11,42,77,13,498,5,250,13,2,Excelsior,NAC Breda,NED
 2526,2025-12-05,2025-12-05 Excelsior-Groningen,15,Fri,Home,Excelsior,0,2,Groningen,L,5,450,102,0,26,19,1,16,14,7,25,2.0,16,5,13.5,87.5,26,13,45,106,14,572,22,326,14,4,Excelsior,Groningen,NED
 2526,2025-12-20,2025-12-20 Excelsior-Zwolle,17,Sat,Home,Excelsior,2,1,Zwolle,W,3,491,106,2,21,24,3,17,11,9,23,2.1,13,4,12.6,66.7,19,17,48,105,20,594,18,321,10,6,Excelsior,Zwolle,NED
+2526,2026-01-10,2026-01-10 PSV Eindhoven-Excelsior,18,Sat,Away,Excelsior,1,5,PSV Eindhoven,L,4,521,84,1,19,28,0,12,11,8,19,0.7,8,3,16.7,37.5,15,16,50,78,15,633,19,361,12,4,PSV Eindhoven,Excelsior,NED
 2526,2025-08-09,2025-08-09 Feyenoord-NAC Breda,1,Sat,Home,Feyenoord,2,0,NAC Breda,W,3,517,51,0,30,41,6,22,9,7,22,2.4,20,4,19.0,,36,13,59,211,28,645,32,445,30,8,Feyenoord,NAC Breda,NED
 2526,2025-08-16,2025-08-16 Excelsior-Feyenoord,2,Sat,Away,Feyenoord,2,1,Excelsior,W,6,505,69,1,26,42,2,18,6,3,28,2.4,16,7,16.5,50.0,27,15,53,139,24,630,31,403,13,6,Excelsior,Feyenoord,NED
 2526,2025-08-31,2025-08-31 Sparta R'dam-Feyenoord,4,Sun,Away,Feyenoord,4,0,Sparta R'dam,W,9,525,68,1,46,66,1,11,6,5,27,2.4,24,11,15.9,100.0,42,24,62,257,39,639,68,392,20,16,Sparta R'dam,Feyenoord,NED
@@ -1755,6 +1848,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Feyenoord-Zwolle,15,Sat,Home,Feyenoord,6,1,Zwolle,W,8,468,39,5,45,47,3,17,7,6,15,3.3,24,11,14.4,75.0,44,18,56,140,29,573,32,354,10,2,Feyenoord,Zwolle,NED
 2526,2025-12-14,2025-12-14 Ajax-Feyenoord,16,Sun,Away,Feyenoord,0,2,Ajax,L,12,584,50,0,50,61,2,9,6,9,10,1.9,18,1,14.8,66.7,34,36,58,268,29,678,42,432,18,11,Ajax,Feyenoord,NED
 2526,2025-12-21,2025-12-21 Feyenoord-Twente,17,Sun,Home,Feyenoord,1,1,Twente,D,7,443,65,1,25,29,1,14,18,13,33,0.6,10,4,16.5,90.9,20,13,46,112,22,567,18,289,13,7,Feyenoord,Twente,NED
+2526,2026-01-11,2026-01-11 Heerenveen-Feyenoord,18,Sun,Away,Feyenoord,2,2,Heerenveen,D,3,463,63,2,25,28,3,12,16,8,27,1.2,7,3,20.6,71.4,14,8,44,120,17,576,23,317,10,9,Heerenveen,Feyenoord,NED
 2526,2025-08-08,2025-08-08 Fortuna Sittard-Go Ahead Eag,1,Fri,Home,Fortuna Sittard,2,2,Go Ahead Eag,D,8,553,69,1,40,41,5,15,10,6,19,2.2,36,7,16.3,0.0,66,42,67,299,35,663,43,451,21,7,Fortuna Sittard,Go Ahead Eag,NED
 2526,2025-08-17,2025-08-17 NAC Breda-Fortuna Sittard,2,Sun,Away,Fortuna Sittard,1,2,NAC Breda,L,5,555,51,1,33,36,3,17,14,7,12,0.7,10,4,18.6,66.7,18,24,61,200,25,657,22,363,18,4,NAC Breda,Fortuna Sittard,NED
 2526,2025-08-31,2025-08-31 Fortuna Sittard-NEC Nijmegen,4,Sun,Home,Fortuna Sittard,3,2,NEC Nijmegen,W,3,309,86,2,22,24,0,19,10,11,60,1.4,9,4,19.3,60.0,15,10,38,85,8,460,17,162,6,5,Fortuna Sittard,NEC Nijmegen,NED
@@ -1772,6 +1866,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Fortuna Sittard-Ajax,15,Sat,Home,Fortuna Sittard,1,3,Ajax,L,4,335,74,0,19,28,1,15,13,10,23,2.7,26,7,17.1,25.0,48,26,36,146,21,458,29,179,14,7,Fortuna Sittard,Ajax,NED
 2526,2025-12-13,2025-12-13 Zwolle-Fortuna Sittard,16,Sat,Away,Fortuna Sittard,0,1,Zwolle,L,12,567,78,0,39,41,1,11,11,5,17,0.9,11,3,17.5,66.7,18,32,64,176,19,667,22,324,19,1,Zwolle,Fortuna Sittard,NED
 2526,2025-12-21,2025-12-21 Fortuna Sittard-AZ Alkmaar,17,Sun,Home,Fortuna Sittard,4,3,AZ Alkmaar,W,5,268,69,4,19,22,4,30,10,2,27,1.7,15,6,18.3,62.5,29,11,34,94,10,387,14,109,6,1,Fortuna Sittard,AZ Alkmaar,NED
+2526,2026-01-11,2026-01-11 Go Ahead Eag-Fortuna Sittard,18,Sun,Away,Fortuna Sittard,2,2,Go Ahead Eag,D,1,367,79,2,24,27,1,8,12,5,32,1.1,12,5,18.3,75.0,24,13,38,100,17,474,14,263,8,3,Go Ahead Eag,Fortuna Sittard,NED
 2526,2025-08-08,2025-08-08 Fortuna Sittard-Go Ahead Eag,1,Fri,Away,Go Ahead Eag,2,2,Fortuna Sittard,D,5,278,70,1,14,20,0,8,20,6,42,1.2,6,2,9.3,71.4,11,18,33,65,6,396,17,195,3,2,Fortuna Sittard,Go Ahead Eag,NED
 2526,2025-08-17,2025-08-17 Go Ahead Eag-Ajax,2,Sun,Home,Go Ahead Eag,2,2,Ajax,D,6,503,74,2,32,36,5,20,7,2,18,0.7,9,4,18.0,81.8,16,20,49,165,15,598,22,319,12,3,Go Ahead Eag,Ajax,NED
 2526,2025-08-23,2025-08-23 Go Ahead Eag-Sparta R'dam,3,Sat,Home,Go Ahead Eag,0,3,Sparta R'dam,L,12,616,88,0,48,68,0,5,6,7,11,2.6,18,4,16.4,40.0,35,43,68,220,36,702,34,424,15,4,Go Ahead Eag,Sparta R'dam,NED
@@ -1789,6 +1884,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-07,2025-12-07 AZ Alkmaar-Go Ahead Eag,15,Sun,Away,Go Ahead Eag,2,2,AZ Alkmaar,D,4,478,96,1,26,32,3,12,17,8,29,1.5,12,6,15.9,71.4,20,19,52,101,14,598,16,248,10,4,AZ Alkmaar,Go Ahead Eag,NED
 2526,2025-12-14,2025-12-14 Twente-Go Ahead Eag,16,Sun,Away,Go Ahead Eag,0,2,Twente,L,6,452,97,0,31,35,3,10,8,8,17,0.4,6,2,15.3,85.7,12,24,46,118,13,541,13,229,7,2,Twente,Go Ahead Eag,NED
 2526,2025-12-21,2025-12-21 Go Ahead Eag-Groningen,17,Sun,Home,Go Ahead Eag,1,1,Groningen,D,1,428,96,1,25,35,0,13,7,9,34,1.2,8,3,13.0,66.7,14,13,47,94,12,526,19,253,11,2,Go Ahead Eag,Groningen,NED
+2526,2026-01-11,2026-01-11 Go Ahead Eag-Fortuna Sittard,18,Sun,Home,Go Ahead Eag,2,2,Fortuna Sittard,D,9,601,70,1,43,52,1,7,8,6,20,1.6,23,8,19.5,60.0,42,31,62,202,23,701,21,517,21,3,Go Ahead Eag,Fortuna Sittard,NED
 2526,2025-08-10,2025-08-10 AZ Alkmaar-Groningen,1,Sun,Away,Groningen,1,4,AZ Alkmaar,L,1,426,59,1,30,39,2,14,14,14,12,1.5,11,7,14.9,40.0,17,17,49,128,13,559,12,319,13,1,AZ Alkmaar,Groningen,NED
 2526,2025-08-16,2025-08-16 Groningen-Heerenveen,2,Sat,Home,Groningen,2,1,Heerenveen,W,3,488,91,2,26,21,1,15,11,8,23,0.8,8,5,19.5,80.0,14,12,54,108,12,616,17,268,11,5,Groningen,Heerenveen,NED
 2526,2025-08-23,2025-08-23 PSV Eindhoven-Groningen,3,Sat,Away,Groningen,2,4,PSV Eindhoven,L,4,316,71,1,17,20,7,27,17,5,23,1.3,17,6,20.1,42.9,22,12,34,109,9,447,24,166,9,1,PSV Eindhoven,Groningen,NED
@@ -1806,6 +1902,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-05,2025-12-05 Excelsior-Groningen,15,Fri,Away,Groningen,2,0,Excelsior,W,5,544,98,0,47,47,2,15,9,7,16,3.9,19,7,19.3,100.0,39,19,55,156,25,655,29,406,15,8,Excelsior,Groningen,NED
 2526,2025-12-13,2025-12-13 Groningen-Volendam,16,Sat,Home,Groningen,3,0,Volendam,W,18,534,56,1,48,55,8,17,6,4,14,3.1,25,5,16.8,,46,29,67,258,20,645,39,410,19,6,Groningen,Volendam,NED
 2526,2025-12-21,2025-12-21 Go Ahead Eag-Groningen,17,Sun,Away,Groningen,1,1,Go Ahead Eag,D,8,475,77,1,33,40,1,11,7,5,19,1.3,14,3,18.1,66.7,27,27,53,142,12,560,17,292,12,1,Go Ahead Eag,Groningen,NED
+2526,2026-01-10,2026-01-10 Groningen-NAC Breda,18,Sat,Home,Groningen,0,0,NAC Breda,D,3,535,53,0,37,52,1,12,12,8,27,1.8,16,5,18.1,100.0,27,23,55,173,18,669,17,341,17,2,Groningen,NAC Breda,NED
 2526,2025-08-09,2025-08-09 Heerenveen-Volendam,1,Sat,Home,Heerenveen,1,1,Volendam,D,9,516,66,1,48,52,1,14,5,3,20,1.5,18,6,16.8,66.7,36,30,57,206,30,618,37,414,17,9,Heerenveen,Volendam,NED
 2526,2025-08-16,2025-08-16 Groningen-Heerenveen,2,Sat,Away,Heerenveen,1,2,Groningen,L,8,416,92,1,34,31,1,19,14,4,30,2.1,16,5,15.4,60.0,27,14,46,107,11,568,24,217,2,4,Groningen,Heerenveen,NED
 2526,2025-08-24,2025-08-24 Heerenveen-Twente,3,Sun,Home,Heerenveen,1,2,Twente,L,7,529,85,1,26,45,1,12,13,11,20,2.3,18,3,16.2,60.0,33,28,55,162,17,655,32,407,16,4,Heerenveen,Twente,NED
@@ -1823,6 +1920,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Heerenveen-PSV Eindhoven,15,Sat,Home,Heerenveen,0,2,PSV Eindhoven,L,7,395,59,0,21,27,5,21,5,9,23,0.8,12,3,18.5,71.4,22,20,38,104,18,492,20,326,14,9,Heerenveen,PSV Eindhoven,NED
 2526,2025-12-14,2025-12-14 Sparta R'dam-Heerenveen,16,Sun,Away,Heerenveen,3,0,Sparta R'dam,W,10,436,69,2,24,30,2,10,8,6,25,1.5,20,5,18.9,100.0,34,16,48,152,12,547,26,339,21,4,Sparta R'dam,Heerenveen,NED
 2526,2025-12-20,2025-12-20 Heracles Almelo-Heerenveen,17,Sat,Away,Heerenveen,3,0,Heracles Almelo,W,4,544,76,2,36,51,1,13,7,11,30,2.0,14,7,18.5,100.0,28,16,58,127,21,642,30,327,13,7,Heracles Almelo,Heerenveen,NED
+2526,2026-01-11,2026-01-11 Heerenveen-Feyenoord,18,Sun,Home,Heerenveen,2,2,Feyenoord,D,5,595,73,2,48,55,7,18,14,7,9,1.1,16,7,19.2,33.3,30,14,56,190,23,703,29,394,18,6,Heerenveen,Feyenoord,NED
 2526,2025-08-10,2025-08-10 Utrecht-Heracles Almelo,1,Sun,Away,Heracles Almelo,0,4,Utrecht,L,4,408,82,0,23,24,0,11,11,3,33,0.9,10,3,16.3,42.9,16,12,52,87,10,523,13,275,10,0,Utrecht,Heracles Almelo,NED
 2526,2025-08-16,2025-08-16 Heracles Almelo-NEC Nijmegen,2,Sat,Home,Heracles Almelo,1,4,NEC Nijmegen,L,3,167,67,1,13,10,2,12,14,6,43,1.3,13,6,18.2,63.6,21,16,19,77,6,284,14,95,4,1,Heracles Almelo,NEC Nijmegen,NED
 2526,2025-08-24,2025-08-24 Ajax-Heracles Almelo,3,Sun,Away,Heracles Almelo,0,2,Ajax,L,1,367,69,0,20,21,3,13,18,8,23,0.2,4,0,16.7,75.0,8,12,35,91,8,474,8,243,11,2,Ajax,Heracles Almelo,NED
@@ -1840,6 +1938,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Heracles Almelo-Telstar,15,Sat,Home,Heracles Almelo,1,1,Telstar,D,6,388,68,1,23,37,0,24,9,3,35,2.1,15,6,13.4,50.0,27,25,47,120,14,516,29,234,6,4,Heracles Almelo,Telstar,NED
 2526,2025-12-13,2025-12-13 PSV Eindhoven-Heracles Almelo,16,Sat,Away,Heracles Almelo,3,4,PSV Eindhoven,L,4,314,67,2,15,14,1,16,7,13,32,2.8,10,5,13.9,66.7,17,14,34,72,4,429,20,204,4,1,PSV Eindhoven,Heracles Almelo,NED
 2526,2025-12-20,2025-12-20 Heracles Almelo-Heerenveen,17,Sat,Home,Heracles Almelo,0,3,Heerenveen,L,4,388,75,0,16,25,2,12,7,10,22,0.6,8,2,20.2,75.0,15,21,42,110,13,491,11,270,12,2,Heracles Almelo,Heerenveen,NED
+2526,2026-01-11,2026-01-11 Sparta R'dam-Heracles Almelo,18,Sun,Away,Heracles Almelo,0,2,Sparta R'dam,L,5,444,84,0,27,31,2,13,11,7,29,0.4,6,2,18.9,77.8,9,27,50,117,12,547,16,283,6,2,Sparta R'dam,Heracles Almelo,NED
 2526,2025-08-09,2025-08-09 Feyenoord-NAC Breda,1,Sat,Away,NAC Breda,0,2,Feyenoord,L,4,353,43,0,8,23,1,31,14,8,43,0.2,7,0,23.9,50.0,14,13,41,70,15,495,3,288,17,1,Feyenoord,NAC Breda,NED
 2526,2025-08-17,2025-08-17 NAC Breda-Fortuna Sittard,2,Sun,Home,NAC Breda,2,1,Fortuna Sittard,W,4,354,50,1,23,25,2,15,7,10,45,2.0,14,6,13.8,75.0,26,16,39,110,16,486,22,269,12,3,NAC Breda,Fortuna Sittard,NED
 2526,2025-08-24,2025-08-24 NEC Nijmegen-NAC Breda,3,Sun,Away,NAC Breda,0,3,NEC Nijmegen,L,1,435,69,0,23,21,2,15,11,6,25,0.5,7,2,18.6,80.0,14,10,49,91,11,552,15,326,13,3,NEC Nijmegen,NAC Breda,NED
@@ -1857,6 +1956,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-07,2025-12-07 Sparta R'dam-NAC Breda,15,Sun,Away,NAC Breda,0,1,Sparta R'dam,L,14,533,64,0,37,55,3,16,6,8,13,2.2,22,8,16.6,80.0,36,37,59,237,31,641,39,368,15,9,Sparta R'dam,NAC Breda,NED
 2526,2025-12-14,2025-12-14 NAC Breda-Utrecht,16,Sun,Home,NAC Breda,1,1,Utrecht,D,6,570,47,1,47,55,5,16,6,16,16,1.4,16,3,18.4,83.3,28,17,56,163,25,676,26,366,16,7,NAC Breda,Utrecht,NED
 2526,2025-12-20,2025-12-20 NAC Breda-Telstar,17,Sat,Home,NAC Breda,0,1,Telstar,L,8,613,74,0,28,45,3,14,12,6,16,0.7,11,2,17.6,75.0,20,31,62,176,25,717,34,340,13,9,NAC Breda,Telstar,NED
+2526,2026-01-10,2026-01-10 Groningen-NAC Breda,18,Sat,Away,NAC Breda,0,0,Groningen,D,4,438,91,0,22,31,2,16,11,10,36,0.9,10,2,15.0,100.0,15,18,45,120,22,578,12,318,15,4,Groningen,NAC Breda,NED
 2526,2025-08-09,2025-08-09 NEC Nijmegen-Excelsior,1,Sat,Home,NEC Nijmegen,5,0,Excelsior,W,7,517,70,4,24,56,5,28,8,4,19,2.5,15,9,18.7,100.0,31,12,62,142,17,647,30,424,14,4,NEC Nijmegen,Excelsior,NED
 2526,2025-08-16,2025-08-16 Heracles Almelo-NEC Nijmegen,2,Sat,Away,NEC Nijmegen,4,1,Heracles Almelo,W,7,713,78,3,82,89,3,12,3,1,28,3.0,24,11,15.8,83.3,45,36,81,354,21,816,58,420,17,6,Heracles Almelo,NEC Nijmegen,NED
 2526,2025-08-24,2025-08-24 NEC Nijmegen-NAC Breda,3,Sun,Home,NEC Nijmegen,3,0,NAC Breda,W,3,453,78,2,32,37,6,17,12,7,17,4.2,17,9,14.6,100.0,34,19,51,175,18,567,35,327,12,5,NEC Nijmegen,NAC Breda,NED
@@ -1891,6 +1991,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Heerenveen-PSV Eindhoven,15,Sat,Away,PSV Eindhoven,2,0,Heerenveen,W,3,648,56,2,40,58,2,13,18,8,16,0.8,11,7,17.8,100.0,20,13,62,197,29,756,31,572,19,11,Heerenveen,PSV Eindhoven,NED
 2526,2025-12-13,2025-12-13 PSV Eindhoven-Heracles Almelo,16,Sat,Home,PSV Eindhoven,4,3,Heracles Almelo,W,10,599,79,2,39,51,0,10,10,4,13,2.9,19,4,14.8,66.7,40,28,66,190,28,712,43,340,17,12,PSV Eindhoven,Heracles Almelo,NED
 2526,2025-12-21,2025-12-21 Utrecht-PSV Eindhoven,17,Sun,Away,PSV Eindhoven,2,1,Utrecht,W,12,548,69,2,41,48,2,18,17,12,30,1.4,14,8,16.8,66.7,26,26,57,200,20,673,31,440,10,5,Utrecht,PSV Eindhoven,NED
+2526,2026-01-10,2026-01-10 PSV Eindhoven-Excelsior,18,Sat,Home,PSV Eindhoven,5,1,Excelsior,W,6,529,50,5,38,59,3,23,15,8,16,2.6,16,8,16.1,66.7,28,11,50,153,29,645,33,446,14,10,PSV Eindhoven,Excelsior,NED
 2526,2025-08-09,2025-08-09 PSV Eindhoven-Sparta R'dam,1,Sat,Away,Sparta R'dam,1,6,PSV Eindhoven,L,5,364,74,1,28,28,1,10,20,11,25,1.2,8,4,20.6,45.5,15,14,34,101,17,473,13,267,7,4,PSV Eindhoven,Sparta R'dam,NED
 2526,2025-08-17,2025-08-17 Sparta R'dam-Utrecht,2,Sun,Home,Sparta R'dam,2,1,Utrecht,W,5,433,79,1,16,28,3,22,16,11,44,1.5,14,4,19.4,80.0,28,7,44,99,14,582,22,250,11,3,Sparta R'dam,Utrecht,NED
 2526,2025-08-23,2025-08-23 Go Ahead Eag-Sparta R'dam,3,Sat,Away,Sparta R'dam,3,0,Go Ahead Eag,W,1,294,62,3,19,26,1,13,9,6,50,1.7,13,5,15.8,100.0,23,7,32,83,14,413,21,212,10,7,Go Ahead Eag,Sparta R'dam,NED
@@ -1908,6 +2009,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-07,2025-12-07 Sparta R'dam-NAC Breda,15,Sun,Home,Sparta R'dam,1,0,NAC Breda,W,1,378,71,1,20,18,3,25,13,9,45,2.4,12,5,15.1,100.0,21,5,41,90,9,537,25,262,6,6,Sparta R'dam,NAC Breda,NED
 2526,2025-12-14,2025-12-14 Sparta R'dam-Heerenveen,16,Sun,Home,Sparta R'dam,0,3,Heerenveen,L,5,476,65,0,27,34,5,23,21,15,23,0.6,11,3,17.6,40.0,18,19,52,134,12,612,19,375,14,2,Sparta R'dam,Heerenveen,NED
 2526,2025-12-21,2025-12-21 Volendam-Sparta R'dam,17,Sun,Away,Sparta R'dam,1,0,Volendam,W,8,484,79,0,36,51,1,14,7,4,21,2.7,22,9,18.8,100.0,40,24,60,189,21,601,34,292,14,5,Volendam,Sparta R'dam,NED
+2526,2026-01-11,2026-01-11 Sparta R'dam-Heracles Almelo,18,Sun,Home,Sparta R'dam,2,0,Heracles Almelo,W,9,451,86,2,32,33,2,16,11,7,28,2.2,22,9,18.9,100.0,37,26,50,157,22,581,30,273,14,8,Sparta R'dam,Heracles Almelo,NED
 2526,2025-08-10,2025-08-10 Ajax-Telstar,1,Sun,Away,Telstar,0,2,Ajax,L,10,396,77,0,20,26,0,14,13,8,23,1.2,18,5,17.6,71.4,29,16,38,101,24,522,23,323,13,7,Ajax,Telstar,NED
 2526,2025-08-15,2025-08-15 Telstar-Zwolle,2,Fri,Home,Telstar,0,2,Zwolle,L,7,490,98,0,40,56,4,12,12,7,10,0.9,11,5,19.0,33.3,19,27,53,152,24,576,22,303,5,3,Telstar,Zwolle,NED
 2526,2025-08-23,2025-08-23 Telstar-Volendam,3,Sat,Home,Telstar,2,2,Volendam,D,4,454,73,2,29,54,3,13,8,7,40,1.8,18,9,15.6,66.7,31,23,49,217,17,589,34,354,19,4,Telstar,Volendam,NED
@@ -1925,6 +2027,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Heracles Almelo-Telstar,15,Sat,Away,Telstar,1,1,Heracles Almelo,D,6,433,85,1,20,31,3,14,13,6,32,0.9,11,2,20.2,83.3,19,16,53,145,18,567,15,294,9,1,Heracles Almelo,Telstar,NED
 2526,2025-12-13,2025-12-13 Telstar-NEC Nijmegen,16,Sat,Home,Telstar,2,2,NEC Nijmegen,D,5,274,73,2,14,19,3,29,11,11,33,1.7,9,3,18.6,71.4,14,12,33,70,10,402,14,201,5,2,Telstar,NEC Nijmegen,NED
 2526,2025-12-20,2025-12-20 NAC Breda-Telstar,17,Sat,Away,Telstar,1,0,NAC Breda,W,3,377,63,1,21,29,2,14,11,11,38,1.8,11,4,17.1,100.0,18,7,38,109,16,504,16,278,13,3,NAC Breda,Telstar,NED
+2526,2026-01-11,2026-01-11 Telstar-Ajax,18,Sun,Home,Telstar,2,3,Ajax,L,8,376,64,1,25,38,1,21,13,14,18,0.8,7,3,7.2,70.0,13,22,36,106,9,478,25,265,9,3,Telstar,Ajax,NED
 2526,2025-08-10,2025-08-10 Zwolle-Twente,1,Sun,Away,Twente,0,1,Zwolle,L,4,504,94,0,35,35,0,16,9,5,23,1.1,16,4,20.3,50.0,26,29,57,170,11,625,25,328,12,1,Zwolle,Twente,NED
 2526,2025-08-17,2025-08-17 Twente-PSV Eindhoven,2,Sun,Home,Twente,0,2,PSV Eindhoven,L,8,498,88,0,37,40,5,17,14,8,14,0.9,19,4,19.7,50.0,31,29,50,183,13,615,27,328,14,4,Twente,PSV Eindhoven,NED
 2526,2025-08-24,2025-08-24 Heerenveen-Twente,3,Sun,Away,Twente,2,1,Heerenveen,W,4,439,82,1,23,31,3,23,18,9,32,1.8,9,5,15.9,66.7,13,9,45,96,15,571,18,319,7,4,Heerenveen,Twente,NED
@@ -1942,6 +2045,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-07,2025-12-07 Utrecht-Twente,15,Sun,Away,Twente,1,1,Utrecht,D,8,549,69,1,29,39,2,16,13,4,22,1.4,21,6,17.8,66.7,31,20,62,153,20,678,34,390,14,9,Utrecht,Twente,NED
 2526,2025-12-14,2025-12-14 Twente-Go Ahead Eag,16,Sun,Home,Twente,2,0,Go Ahead Eag,W,3,522,81,1,38,58,2,14,4,3,37,3.6,22,6,17.2,100.0,41,7,54,170,19,632,38,285,12,5,Twente,Go Ahead Eag,NED
 2526,2025-12-21,2025-12-21 Feyenoord-Twente,17,Sun,Away,Twente,1,1,Feyenoord,D,12,515,115,1,54,69,2,13,11,5,20,2.6,29,11,15.9,75.0,47,26,54,239,21,644,51,290,13,10,Feyenoord,Twente,NED
+2526,2026-01-10,2026-01-10 Twente-Zwolle,18,Sat,Home,Twente,1,1,Zwolle,D,7,637,74,1,41,70,5,16,8,3,22,2.0,26,7,17.7,0.0,46,24,64,262,32,766,47,417,16,11,Twente,Zwolle,NED
 2526,2025-08-10,2025-08-10 Utrecht-Heracles Almelo,1,Sun,Home,Utrecht,4,0,Heracles Almelo,W,4,384,76,3,31,33,0,16,5,6,28,2.3,18,7,14.3,100.0,32,22,48,124,16,510,26,219,7,5,Utrecht,Heracles Almelo,NED
 2526,2025-08-17,2025-08-17 Sparta R'dam-Utrecht,2,Sun,Away,Utrecht,1,2,Sparta R'dam,L,6,542,87,0,48,45,4,14,14,10,22,1.4,20,5,17.0,80.0,32,30,56,209,27,675,26,374,15,5,Sparta R'dam,Utrecht,NED
 2526,2025-08-24,2025-08-24 Utrecht-Excelsior,3,Sun,Home,Utrecht,4,1,Excelsior,W,7,452,81,4,16,22,1,13,8,3,25,1.8,16,9,14.8,75.0,29,16,50,86,13,570,21,340,6,5,Utrecht,Excelsior,NED
@@ -1976,6 +2080,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-07,2025-12-07 Volendam-NEC Nijmegen,15,Sun,Home,Volendam,2,3,NEC Nijmegen,L,4,330,78,1,19,16,3,17,17,4,29,1.7,12,4,16.8,57.1,21,20,42,106,14,457,24,233,6,1,Volendam,NEC Nijmegen,NED
 2526,2025-12-13,2025-12-13 Groningen-Volendam,16,Sat,Away,Volendam,0,3,Groningen,L,1,261,58,0,10,12,1,17,18,8,34,0.1,4,0,38.8,66.7,5,3,33,52,3,384,8,187,1,0,Groningen,Volendam,NED
 2526,2025-12-21,2025-12-21 Volendam-Sparta R'dam,17,Sun,Home,Volendam,0,1,Sparta R'dam,L,6,326,69,0,21,29,2,18,16,2,29,0.9,12,5,16.9,100.0,21,20,40,97,12,440,20,214,3,2,Volendam,Sparta R'dam,NED
+2526,2026-01-10,2026-01-10 AZ Alkmaar-Volendam,18,Sat,Away,Volendam,0,1,AZ Alkmaar,L,2,498,81,0,38,25,2,28,17,9,18,0.5,7,2,15.4,87.5,11,16,51,119,15,627,14,375,9,3,AZ Alkmaar,Volendam,NED
 2526,2025-08-10,2025-08-10 Zwolle-Twente,1,Sun,Home,Zwolle,1,0,Twente,W,2,383,79,1,22,34,6,22,14,16,28,0.9,7,2,18.8,100.0,13,10,43,133,12,532,14,280,8,5,Zwolle,Twente,NED
 2526,2025-08-15,2025-08-15 Telstar-Zwolle,2,Fri,Away,Zwolle,2,0,Telstar,W,0,436,71,2,22,28,3,20,14,13,41,2.4,10,3,17.9,100.0,19,3,47,81,16,571,17,344,11,6,Telstar,Zwolle,NED
 2526,2025-08-31,2025-08-31 Zwolle-Utrecht,4,Sun,Home,Zwolle,0,2,Utrecht,L,3,459,85,0,31,43,1,15,13,14,20,1.0,6,2,18.6,71.4,9,9,49,123,20,566,17,304,10,3,Zwolle,Utrecht,NED
@@ -1993,6 +2098,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 Feyenoord-Zwolle,15,Sat,Away,Zwolle,1,6,Feyenoord,L,4,364,73,1,11,18,2,9,14,6,18,0.8,7,4,13.7,58.3,13,8,44,45,9,448,13,208,3,2,Feyenoord,Zwolle,NED
 2526,2025-12-13,2025-12-13 Zwolle-Fortuna Sittard,16,Sat,Home,Zwolle,1,0,Fortuna Sittard,W,2,317,66,1,22,33,2,20,12,6,41,1.6,8,3,19.7,100.0,13,7,36,103,13,459,19,184,8,4,Zwolle,Fortuna Sittard,NED
 2526,2025-12-20,2025-12-20 Excelsior-Zwolle,17,Sat,Away,Zwolle,1,2,Excelsior,L,1,524,81,1,35,46,1,7,11,7,15,1.3,9,3,12.0,50.0,17,11,52,141,23,619,27,366,13,7,Excelsior,Zwolle,NED
+2526,2026-01-10,2026-01-10 Twente-Zwolle,18,Sat,Away,Zwolle,1,1,Twente,D,2,359,58,0,14,20,2,27,15,8,51,0.4,3,1,16.7,85.7,4,6,36,82,10,512,11,177,4,3,Twente,Zwolle,NED
 2526,2025-08-09,2025-08-09 Arouca-AVS Futebol,1,Sat,Away,AVS Futebol,1,3,Arouca,L,5,434,84,1,17,27,2,9,10,10,18,1.1,15,2,17.1,25.0,28,26,46,113,16,516,21,301,11,4,Arouca,AVS Futebol,POR
 2526,2025-08-15,2025-08-15 AVS Futebol-Casa Pia,2,Fri,Home,AVS Futebol,0,2,Casa Pia,L,1,359,72,0,22,21,5,17,4,7,41,1.2,9,3,22.1,60.0,18,14,52,111,9,480,12,234,8,0,AVS Futebol,Casa Pia,POR
 2526,2025-08-24,2025-08-24 Braga-AVS Futebol,3,Sun,Away,AVS Futebol,2,2,Braga,D,3,247,69,2,5,11,0,13,11,9,48,0.5,4,2,14.4,80.0,6,7,25,54,4,384,10,120,5,0,Braga,AVS Futebol,POR
@@ -2026,7 +2132,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-14,2025-12-14 Arouca-Alverca,14,Sun,Away,Alverca,0,1,Arouca,L,5,322,78,0,17,20,2,9,15,7,43,0.2,5,1,19.5,75.0,8,12,32,64,3,436,8,222,2,2,Arouca,Alverca,POR
 2526,2025-12-22,2025-12-22 Alverca-Porto,15,Mon,Home,Alverca,0,3,Porto,L,4,355,72,0,23,24,1,19,9,15,16,0.8,8,5,14.1,50.0,16,19,40,109,9,458,12,213,15,0,Alverca,Porto,POR
 2526,2025-12-27,2025-12-27 Estoril-Alverca,16,Sat,Away,Alverca,1,4,Estoril,L,7,370,62,1,19,23,1,19,11,9,19,0.8,11,7,16.9,0.0,15,18,36,89,16,475,20,226,9,3,Estoril,Alverca,POR
-2526,2026-01-04,2026-01-04 Alverca-Famalicão,17,Sun,Home,Alverca,1,0,Famalicão,W,3,423,65,0,29,26,2,14,11,7,39,2.0,8,2,24.9,100.0,17,16,44,91,16,534,11,299,7,2,Alverca,Famalicão,POR
+2526,2026-01-04,2026-01-04 Alverca-Famalicão,17,Sun,Home,Alverca,1,0,Famalicão,W,3,423,62,0,29,26,3,13,11,6,40,2.1,8,2,24.9,100.0,17,16,44,93,18,533,11,305,7,2,Alverca,Famalicão,POR
 2526,2025-08-09,2025-08-09 Arouca-AVS Futebol,1,Sat,Home,Arouca,3,1,AVS Futebol,W,4,503,89,2,28,33,1,14,9,5,25,1.1,9,4,16.0,50.0,18,21,54,107,18,592,11,316,15,5,Arouca,AVS Futebol,POR
 2526,2025-08-17,2025-08-17 Sporting CP-Arouca,2,Sun,Away,Arouca,0,6,Sporting CP,L,1,454,75,0,15,18,3,25,12,8,25,0.2,7,1,25.4,50.0,11,7,43,68,10,564,3,268,8,1,Sporting CP,Arouca,POR
 2526,2025-08-23,2025-08-23 Arouca-Rio Ave,3,Sat,Home,Arouca,3,3,Rio Ave,D,4,523,76,1,43,41,3,18,4,5,18,0.6,14,6,16.9,50.0,28,24,56,121,14,614,17,339,7,3,Arouca,Rio Ave,POR
@@ -2094,7 +2200,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-13,2025-12-13 Casa Pia-Gil Vicente FC,14,Sat,Home,Casa Pia,1,1,Gil Vicente FC,D,1,276,69,1,13,12,0,11,11,14,59,0.1,3,1,15.5,50.0,6,6,33,52,5,405,10,180,7,2,Casa Pia,Gil Vicente FC,POR
 2526,2025-12-21,2025-12-21 Tondela-Casa Pia,15,Sun,Away,Casa Pia,2,1,Tondela,W,4,414,71,2,20,28,1,11,7,8,23,1.2,12,5,14.0,100.0,22,20,53,104,7,512,15,281,6,1,Tondela,Casa Pia,POR
 2526,2025-12-28,2025-12-28 Casa Pia-Vitória,16,Sun,Home,Casa Pia,0,0,Vitória,D,2,322,73,0,21,21,0,12,11,5,57,0.3,5,2,18.7,100.0,10,13,43,83,12,451,10,157,4,4,Casa Pia,Vitória,POR
-2526,2026-01-04,2026-01-04 Rio Ave-Casa Pia,17,Sun,Away,Casa Pia,1,3,Rio Ave,L,4,359,75,1,22,28,2,21,8,4,29,1.8,15,4,16.3,50.0,25,14,48,105,9,474,22,193,5,1,Rio Ave,Casa Pia,POR
+2526,2026-01-04,2026-01-04 Rio Ave-Casa Pia,17,Sun,Away,Casa Pia,1,3,Rio Ave,L,4,360,70,1,22,29,2,21,8,4,31,1.9,15,4,16.5,50.0,25,14,48,103,9,480,22,232,8,1,Rio Ave,Casa Pia,POR
 2526,2025-08-11,2025-08-11 Estoril-Estrela,1,Mon,Home,Estoril,1,1,Estrela,D,4,560,75,0,24,35,2,15,7,8,11,0.7,8,3,17.8,80.0,15,17,65,142,14,653,25,432,10,5,Estoril,Estrela,POR
 2526,2025-08-16,2025-08-16 Vitória-Estoril,2,Sat,Away,Estoril,2,3,Vitória,L,2,377,62,0,25,27,0,11,11,2,34,0.9,11,5,20.8,50.0,19,11,45,123,6,496,19,264,5,1,Vitória,Estoril,POR
 2526,2025-08-31,2025-08-31 Tondela-Estoril,4,Sun,Away,Estoril,2,2,Tondela,D,4,365,79,2,25,29,0,10,11,7,33,1.8,21,5,17.7,75.0,38,10,48,127,8,487,28,196,5,4,Tondela,Estoril,POR
@@ -2145,7 +2251,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-14,2025-12-14 Famalicão-Estoril,14,Sun,Home,Famalicão,4,0,Estoril,W,4,471,100,2,31,45,1,17,14,8,26,3.0,20,12,17.6,100.0,32,15,54,138,20,587,24,334,14,3,Famalicão,Estoril,POR
 2526,2025-12-22,2025-12-22 Benfica-Famalicão,15,Mon,Away,Famalicão,0,1,Benfica,L,2,468,66,0,33,34,4,15,5,16,18,0.2,4,2,19.8,100.0,7,14,46,115,11,585,12,357,8,5,Benfica,Famalicão,POR
 2526,2025-12-27,2025-12-27 Famalicão-Estrela,16,Sat,Home,Famalicão,2,3,Estrela,L,9,501,85,1,45,52,8,24,9,4,18,2.4,22,5,16.3,25.0,41,38,61,205,18,613,37,394,10,5,Famalicão,Estrela,POR
-2526,2026-01-04,2026-01-04 Alverca-Famalicão,17,Sun,Away,Famalicão,0,1,Alverca,L,4,544,71,0,33,43,4,17,5,7,23,1.1,14,2,20.3,100.0,27,28,56,176,12,639,15,442,21,0,Alverca,Famalicão,POR
+2526,2026-01-04,2026-01-04 Alverca-Famalicão,17,Sun,Away,Famalicão,0,1,Alverca,L,4,546,72,0,32,41,4,18,5,6,24,1.1,14,2,19.2,100.0,27,28,56,177,10,641,15,443,19,1,Alverca,Famalicão,POR
 2526,2025-08-09,2025-08-09 Nacional-Gil Vicente FC,1,Sat,Away,Gil Vicente FC,2,0,Nacional,W,6,237,76,2,10,9,0,10,10,7,48,0.6,12,2,17.9,100.0,17,15,41,63,2,360,12,94,0,2,Nacional,Gil Vicente FC,POR
 2526,2025-08-18,2025-08-18 Gil Vicente FC-Porto,2,Mon,Home,Gil Vicente FC,0,2,Porto,L,1,370,67,0,17,16,2,16,12,5,20,1.0,14,1,17.4,50.0,22,14,41,96,5,473,16,288,6,1,Gil Vicente FC,Porto,POR
 2526,2025-08-24,2025-08-24 Famalicão-Gil Vicente FC,3,Sun,Away,Gil Vicente FC,0,0,Famalicão,D,9,467,86,0,34,30,2,12,7,4,27,1.4,20,8,15.9,100.0,34,20,54,138,11,591,25,344,8,4,Famalicão,Gil Vicente FC,POR
@@ -2179,6 +2285,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-14,2025-12-14 Moreirense-Benfica,14,Sun,Home,Moreirense,0,4,Benfica,L,4,560,63,0,27,18,4,15,12,2,21,0.5,10,2,18.7,20.0,16,14,53,114,8,649,8,303,6,3,Moreirense,Benfica,POR
 2526,2025-12-20,2025-12-20 Estrela-Moreirense,15,Sat,Away,Moreirense,0,0,Estrela,D,7,445,75,0,21,24,3,14,9,5,23,1.1,16,7,19.2,100.0,26,24,51,163,16,545,21,266,9,3,Estrela,Moreirense,POR
 2526,2026-01-03,2026-01-03 AVS Futebol-Moreirense,17,Sat,Away,Moreirense,2,0,AVS Futebol,W,4,572,76,1,20,41,1,12,13,5,30,2.0,12,5,19.3,100.0,22,16,59,112,12,684,16,338,9,1,AVS Futebol,Moreirense,POR
+2526,2026-01-11,2026-01-11 Moreirense-Tondela,16,Sun,Home,Moreirense,1,0,Tondela,W,4,598,75,1,31,41,0,6,6,5,26,0.4,7,2,19.3,100.0,11,15,58,117,2,684,13,308,5,0,Moreirense,Tondela,POR
 2526,2025-08-09,2025-08-09 Nacional-Gil Vicente FC,1,Sat,Home,Nacional,0,2,Gil Vicente FC,L,14,348,94,0,14,22,5,15,11,6,39,0.8,14,3,16.5,0.0,25,33,59,123,9,461,22,195,8,1,Nacional,Gil Vicente FC,POR
 2526,2025-08-17,2025-08-17 Rio Ave-Nacional,2,Sun,Away,Nacional,1,1,Rio Ave,D,6,299,85,1,20,29,2,15,12,11,16,0.9,13,6,15.4,88.9,20,26,39,119,13,406,26,173,8,5,Rio Ave,Nacional,POR
 2526,2025-08-23,2025-08-23 Nacional-Sporting CP,3,Sat,Home,Nacional,1,4,Sporting CP,L,3,204,58,1,13,14,1,19,16,12,44,0.7,3,1,7.0,33.3,5,10,27,61,6,333,6,131,6,2,Nacional,Sporting CP,POR
@@ -2195,6 +2302,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-15,2025-12-15 Nacional-Tondela,14,Mon,Home,Nacional,3,1,Tondela,W,3,325,74,1,20,22,1,7,13,3,46,2.4,7,2,14.8,80.0,14,16,44,94,14,448,16,214,9,2,Nacional,Tondela,POR
 2526,2025-12-21,2025-12-21 AVS Futebol-Nacional,15,Sun,Away,Nacional,2,2,AVS Futebol,D,2,520,71,1,39,45,1,13,13,5,40,1.1,19,6,19.1,33.3,32,29,63,165,18,660,24,344,17,5,AVS Futebol,Nacional,POR
 2526,2026-01-02,2026-01-02 Vitória-Nacional,17,Fri,Away,Nacional,1,2,Vitória,L,3,326,87,1,29,32,3,20,9,9,15,1.5,14,4,18.2,50.0,25,10,43,110,14,444,28,158,1,6,Vitória,Nacional,POR
+2526,2026-01-11,2026-01-11 Nacional-Santa Clara,16,Sun,Home,Nacional,3,3,Santa Clara,D,2,386,62,2,32,37,2,12,9,12,39,2.0,12,4,17.4,50.0,25,13,46,123,14,519,18,234,9,3,Nacional,Santa Clara,POR
 2526,2025-08-11,2025-08-11 Porto-Vitória,1,Mon,Home,Porto,3,0,Vitória,W,7,426,47,2,20,26,0,6,8,8,22,2.7,17,9,16.8,100.0,27,12,49,120,10,538,24,319,8,2,Porto,Vitória,POR
 2526,2025-08-18,2025-08-18 Gil Vicente FC-Porto,2,Mon,Away,Porto,2,0,Gil Vicente FC,W,5,527,64,2,27,37,0,11,14,7,15,1.7,15,4,16.4,100.0,28,14,59,127,17,630,28,346,10,8,Gil Vicente FC,Porto,POR
 2526,2025-08-24,2025-08-24 Porto-Casa Pia,3,Sun,Home,Porto,4,0,Casa Pia,W,7,613,46,3,32,50,5,11,12,7,7,2.2,20,7,14.7,,30,16,65,174,23,704,29,504,11,8,Porto,Casa Pia,POR
@@ -2227,8 +2335,8 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-06,2025-12-06 AVS Futebol-Rio Ave,13,Sat,Away,Rio Ave,2,1,AVS Futebol,W,11,494,64,1,28,36,1,11,7,3,18,2.3,16,7,16.6,80.0,32,33,65,176,27,586,35,390,15,8,AVS Futebol,Rio Ave,POR
 2526,2025-12-13,2025-12-13 Rio Ave-Vitória,14,Sat,Home,Rio Ave,0,1,Vitória,L,6,401,68,0,18,19,2,17,14,7,35,0.5,8,2,18.9,66.7,12,14,43,60,8,516,12,341,4,2,Rio Ave,Vitória,POR
 2526,2025-12-20,2025-12-20 Gil Vicente FC-Rio Ave,15,Sat,Away,Rio Ave,2,2,Gil Vicente FC,D,1,351,71,0,13,16,4,17,17,4,37,0.3,3,2,20.1,60.0,5,12,45,59,13,483,11,243,7,4,Gil Vicente FC,Rio Ave,POR
-2526,2025-12-28,2025-12-28 Sporting CP-Rio Ave,16,Sun,Away,Rio Ave,0,4,Sporting CP,L,1,425,53,0,8,12,1,13,9,7,34,0.1,5,0,31.9,66.7,9,3,41,69,6,544,10,240,5,4,Sporting CP,Rio Ave,POR
-2526,2026-01-04,2026-01-04 Rio Ave-Casa Pia,17,Sun,Home,Rio Ave,3,1,Casa Pia,W,9,390,66,2,17,22,2,12,11,11,18,2.2,12,6,19.9,75.0,16,18,52,120,13,489,13,301,11,2,Rio Ave,Casa Pia,POR
+2526,2025-12-28,2025-12-28 Sporting CP-Rio Ave,16,Sun,Away,Rio Ave,0,4,Sporting CP,L,1,424,53,0,8,12,1,13,8,7,34,0.1,5,0,32.2,66.7,9,3,41,69,6,543,10,241,5,4,Sporting CP,Rio Ave,POR
+2526,2026-01-04,2026-01-04 Rio Ave-Casa Pia,17,Sun,Home,Rio Ave,3,1,Casa Pia,W,9,391,66,2,16,21,2,12,12,11,18,2.7,12,6,19.5,75.0,16,18,52,121,17,494,16,305,13,4,Rio Ave,Casa Pia,POR
 2526,2025-08-10,2025-08-10 Famalicão-Santa Clara,1,Sun,Away,Santa Clara,0,3,Famalicão,L,3,478,81,0,26,25,0,7,10,6,12,0.4,7,2,20.0,0.0,10,16,54,83,9,558,13,357,5,3,Famalicão,Santa Clara,POR
 2526,2025-08-17,2025-08-17 Santa Clara-Moreirense,2,Sun,Home,Santa Clara,0,1,Moreirense,L,3,523,84,0,45,43,1,16,11,8,9,0.6,12,3,18.9,50.0,17,19,58,166,10,621,17,398,12,1,Santa Clara,Moreirense,POR
 2526,2025-08-31,2025-08-31 Santa Clara-Estrela,4,Sun,Home,Santa Clara,0,0,Estrela,D,8,475,88,0,37,52,5,16,5,7,24,1.0,13,3,18.5,,19,28,55,154,11,586,19,361,11,6,Santa Clara,Estrela,POR
@@ -2245,6 +2353,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-15,2025-12-15 Braga-Santa Clara,14,Mon,Away,Santa Clara,0,1,Braga,L,1,397,50,0,18,20,1,9,9,11,22,0.6,5,2,18.9,66.7,7,8,33,59,6,479,7,308,9,1,Braga,Santa Clara,POR
 2526,2025-12-21,2025-12-21 Santa Clara-Arouca,15,Sun,Home,Santa Clara,0,0,Arouca,D,2,474,87,0,26,27,1,9,5,12,29,0.5,9,5,19.2,100.0,18,13,52,108,9,586,13,331,11,0,Santa Clara,Arouca,POR
 2526,2026-01-04,2026-01-04 Santa Clara-Porto,17,Sun,Home,Santa Clara,0,1,Porto,L,2,361,71,0,20,19,3,18,10,6,31,0.3,12,0,29.4,80.0,18,16,44,93,11,475,5,189,6,1,Santa Clara,Porto,POR
+2526,2026-01-11,2026-01-11 Nacional-Santa Clara,16,Sun,Away,Santa Clara,3,3,Nacional,D,8,458,75,1,24,40,2,17,15,3,41,2.4,22,6,16.5,60.0,36,35,54,161,11,588,25,311,13,3,Nacional,Santa Clara,POR
 2526,2025-08-08,2025-08-08 Casa Pia-Sporting CP,1,Fri,Away,Sporting CP,2,0,Casa Pia,W,9,601,60,2,39,52,2,12,6,4,20,2.8,27,10,15.9,100.0,41,22,67,208,28,710,47,360,20,10,Casa Pia,Sporting CP,POR
 2526,2025-08-17,2025-08-17 Sporting CP-Arouca,2,Sun,Home,Sporting CP,6,0,Arouca,W,6,605,63,4,65,64,4,14,11,6,9,3.0,18,9,20.4,100.0,36,11,57,197,25,704,29,469,19,9,Sporting CP,Arouca,POR
 2526,2025-08-23,2025-08-23 Nacional-Sporting CP,3,Sat,Away,Sporting CP,4,1,Nacional,W,13,543,68,4,55,82,3,12,7,6,11,2.5,27,6,18.0,0.0,48,23,73,241,28,637,46,428,17,8,Nacional,Sporting CP,POR
@@ -2260,7 +2369,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-05,2025-12-05 Benfica-Sporting CP,13,Fri,Away,Sporting CP,1,1,Benfica,D,2,553,45,1,24,32,3,19,5,8,16,0.6,5,2,18.4,75.0,7,9,59,113,11,652,8,389,7,2,Benfica,Sporting CP,POR
 2526,2025-12-13,2025-12-13 Sporting CP-AVS Futebol,14,Sat,Home,Sporting CP,6,0,AVS Futebol,W,8,576,47,5,52,55,1,10,9,7,12,2.6,24,14,17.2,100.0,43,24,67,217,33,677,38,506,19,7,Sporting CP,AVS Futebol,POR
 2526,2025-12-23,2025-12-23 Vitória-Sporting CP,15,Tue,Away,Sporting CP,4,1,Vitória,W,5,454,46,1,24,35,0,22,11,3,38,2.5,16,6,14.0,80.0,26,14,56,102,8,582,22,393,13,3,Vitória,Sporting CP,POR
-2526,2025-12-28,2025-12-28 Sporting CP-Rio Ave,16,Sun,Home,Sporting CP,4,0,Rio Ave,W,8,622,81,3,83,72,2,28,8,11,13,3.2,23,12,13.1,,39,23,59,225,19,731,32,422,12,3,Sporting CP,Rio Ave,POR
+2526,2025-12-28,2025-12-28 Sporting CP-Rio Ave,16,Sun,Home,Sporting CP,4,0,Rio Ave,W,8,621,77,3,83,72,3,29,8,11,13,3.4,23,12,13.1,,39,23,59,226,19,732,32,419,12,3,Sporting CP,Rio Ave,POR
 2526,2026-01-02,2026-01-02 Gil Vicente FC-Sporting CP,17,Fri,Away,Sporting CP,1,1,Gil Vicente FC,D,7,499,53,1,20,36,2,14,15,9,26,1.4,14,4,17.4,88.9,27,22,63,114,24,622,21,394,12,7,Gil Vicente FC,Sporting CP,POR
 2526,2025-08-10,2025-08-10 Braga-Tondela,1,Sun,Away,Tondela,0,3,Braga,L,3,316,53,0,15,14,1,22,11,13,19,0.8,7,3,20.8,66.7,7,16,32,72,12,424,11,263,6,4,Braga,Tondela,POR
 2526,2025-08-16,2025-08-16 Tondela-Famalicão,2,Sat,Home,Tondela,0,1,Famalicão,L,2,405,89,0,29,39,1,16,13,16,32,1.1,15,4,20.1,66.7,26,22,49,127,12,539,18,259,13,2,Tondela,Famalicão,POR
@@ -2278,6 +2387,7 @@ season,date,game,round,day,venue,team,GF,GA,opponent,result,Pass Types_CK,Total_
 2526,2025-12-15,2025-12-15 Nacional-Tondela,14,Mon,Away,Tondela,1,3,Nacional,L,10,413,79,1,30,45,0,5,7,4,28,3.5,19,3,17.7,33.3,38,36,56,166,16,509,28,275,10,2,Nacional,Tondela,POR
 2526,2025-12-21,2025-12-21 Tondela-Casa Pia,15,Sun,Home,Tondela,1,2,Casa Pia,L,6,361,65,0,15,22,1,10,7,11,30,1.7,10,3,16.8,60.0,21,20,47,106,12,454,15,252,8,3,Tondela,Casa Pia,POR
 2526,2026-01-03,2026-01-03 Tondela-Arouca,17,Sat,Home,Tondela,3,1,Arouca,W,2,278,63,2,16,16,1,14,8,13,36,0.4,5,3,14.7,75.0,8,10,31,69,3,396,10,183,2,1,Tondela,Arouca,POR
+2526,2026-01-11,2026-01-11 Moreirense-Tondela,16,Sun,Away,Tondela,0,1,Moreirense,L,2,441,83,0,32,34,2,7,5,13,20,0.5,8,2,17.7,50.0,16,17,42,117,6,528,12,214,4,0,Moreirense,Tondela,POR
 2526,2025-08-11,2025-08-11 Porto-Vitória,1,Mon,Away,Vitória,0,3,Porto,L,4,446,72,0,28,20,1,18,4,5,21,0.5,10,2,20.1,66.7,18,13,51,97,9,539,11,327,5,2,Porto,Vitória,POR
 2526,2025-08-16,2025-08-16 Vitória-Estoril,2,Sat,Home,Vitória,3,2,Estoril,W,4,454,80,2,41,34,2,21,6,3,36,1.9,15,3,20.4,60.0,25,24,55,153,12,573,22,232,4,4,Vitória,Estoril,POR
 2526,2025-08-23,2025-08-23 Moreirense-Vitória,3,Sat,Away,Vitória,0,2,Moreirense,L,7,434,86,0,32,35,3,14,7,11,14,0.3,11,4,22.4,50.0,20,28,52,153,7,529,17,326,5,2,Moreirense,Vitória,POR
